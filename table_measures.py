@@ -54,7 +54,7 @@ if __name__ == '__main__':
         ''' Parameters of fitted line '''
         [m, q] = np.polyfit(df['<l>'], df['ln(N)'], 1)
 
-        # print(m)
+        print(m)
         # print(df[df['<l>'] == df['<l>'].max()])
         # df.describe().to_csv('results/all/tables/describe.csv', index=False, float_format='%.2f')
 
