@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/colormap/__init__.py
+src/colormap/colors.py
+src/colormap/get_cmap.py
+src/colormap/xfree86.py
+src/colormap.egg-info/PKG-INFO
+src/colormap.egg-info/SOURCES.txt
+src/colormap.egg-info/dependency_links.txt
+src/colormap.egg-info/top_level.txt
+test/test_colors.py
+test/test_get_cmap.py
