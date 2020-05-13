@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # areas = nf.get_list_sorted_values('area', area_population_dict)
     #
     # ''' Load info (previously computed) for certain measures for each network '''
-    # measures_dict = nf.load_json(measures_file)
+    measures_dict = nf.load_json(measures_file)
     # fig2 = pf.plot_measures(measures_dict)
     # fig_name = prefix_png+'basic_measures/measure_plot.png'
     # plt.savefig(fig_name)
@@ -45,7 +45,8 @@ if __name__ == '__main__':
     # plt.close('all')
     #
     # ''' Plot x: #nodes, y: #edges and size of scatter points proportional to area of the city'''
-    # n_nodes = nf.get_list_sorted_values('#nodes', measures_dict)
+    n_nodes = nf.get_list_sorted_values('#nodes', measures_dict)
+    n_edges = nf.get_list_sorted_values('#edges', measures_dict)
     # x_values = np.array(n_nodes)
     # y_values = np.array(nf.get_list_sorted_values('#edges', measures_dict))
     # x_label = 'number_of_nodes'
@@ -89,21 +90,18 @@ if __name__ == '__main__':
     # fig_name = prefix_png+'ccdf_degree_distr.png'
     # fig.savefig(fig_name, bbox_inches='tight')
 
-    # cols = ['City', 'min(k)', 'max(k)', '25%', '50%', '75%', '<k>']
-    # df = pd.DataFrame(columns=cols)
     d = {}
-    for city, list_k in degrees.items():
-
+    for city, E, N in zip(degrees.keys(), n_edges, n_nodes):
+        list_k = degrees[city]
         row = {
-            # 'City': city,
             'min(k)': np.min(list_k),
             'max(k)': np.max(list_k),
             '25%': np.percentile(list_k, 25),
             '50%': np.percentile(list_k, 50),
             '75%': np.percentile(list_k, 75),
-            '<k>': float(f'{np.mean(list_k):.2f}')
+            '<k>': float(f'{np.mean(list_k):.2f}'),
+            'E/N': round((2*E)/N, 2)
         }
         d[city] = row
-        # df.append(row, ignore_index=True)
     df = pd.DataFrame.from_dict(d)
     print(df.T)
