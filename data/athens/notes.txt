@@ -1,0 +1,4 @@
+Original data downloaded on 2017-11-22 from:
+    athens: http://geodata.gov.gr/dataset/244cfb87-21a0-4f9f-90af-25e9a232af41/resource/d94179a0-a2bd-432f-8c5e-e05eae2886cf/download/googletransit.zip
+Extract timezone: Europe/Athens (+0200)
+Commuter trains are missing.

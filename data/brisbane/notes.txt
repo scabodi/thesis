@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    south_east_queensland: http://gtfsrt.api.translink.com.au/GTFS/SEQ_GTFS.zip
+Extract timezone: Australia/Brisbane (+1000)
+The data should cover all relevant modes of intra-city public transport.

@@ -1,0 +1,5 @@
+Original data downloaded on 2016-12-07 from:
+    venice,bus: http://actv.avmspa.it/sites/default/files/attachments/opendata/automobilistico/actv_aut.zip
+    venice,water: http://actv.avmspa.it/sites/default/files/attachments/opendata/navigazione/actv_nav.zip
+Extract timezone: Europe/Rome (+0100)
+Commuter trains are missing.

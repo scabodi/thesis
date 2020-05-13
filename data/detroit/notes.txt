@@ -1,0 +1,7 @@
+Original data downloaded on 2016-12-07 from:
+    detroit: http://www.detroitmi.gov/Portals/0/docs/deptoftransportation/pdfs/ddot_gtfs.zip
+Extract timezone: America/Detroit (-0500)
+Only bus services in the operated by the Detroit Department of Transportation are included.
+ Services operated by the Suburban Mobility Authority for Regional Transportation (SMART) are not included.
+'People Mover'- monorail service in the city center is not included.
+ Public transport of the neighboring city of Windsor (Ontario, Canada) is not included.

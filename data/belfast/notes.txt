@@ -1,0 +1,4 @@
+Original data downloaded on 2017-10-30 from:
+    belfast: http://data.nicva.org/sites/default/files/metrogtfs.zip
+Extract timezone: UTC (+0000)
+Commuter trains are missing.

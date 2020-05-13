@@ -1,0 +1,5 @@
+Original data downloaded on 2016-12-07 from:
+    luxembourg: http://openov.lu/data/gtfs/gtfs-openov-lu.zip
+Extract timezone: Europe/Luxembourg (+0100)
+The data should cover all relevant modes of intra-city public transport.
+There are some stop pairs for which minimum transfer time is defined, although they are more than 1000 meters apart. Thus walking distances are also computed between these stops.

@@ -1,0 +1,6 @@
+Original data downloaded on 2016-12-07 from:
+    dublin,bus: http://www.transportforireland.ie/transitData/google_transit_dublinbus.zip
+    dublin,luas: http://www.transportforireland.ie/transitData/google_transit_luas.zip
+    dublin,irish_rail: http://www.transportforireland.ie/transitData/google_transit_irishrail.zip
+Extract timezone: Europe/Dublin (+0000)
+The data should cover all relevant modes of intra-city public transport.

@@ -1,0 +1,5 @@
+Original data downloaded on 2016-12-07 from:
+    bordeaux,tram: http://data.lacub.fr/files.php?gid=67&format=14
+    bordeaux,bus: http://data.lacub.fr/files.php?gid=68&format=14
+Extract timezone: Europe/Paris (+0100)
+Commuter trains and regional buses are missing.

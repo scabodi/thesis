@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    victoria: http://data.ptv.vic.gov.au/downloads/gtfs.zip
+Extract timezone: Australia/Melbourne (+1100)
+The data should cover all relevant modes of intra-city public transport.

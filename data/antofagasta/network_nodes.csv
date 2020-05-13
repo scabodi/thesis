@@ -1,0 +1,651 @@
+stop_I;lat;lon;name
+1;-23.57872286;-70.38353026;Héroes de la concepción, null
+2;-23.5809402;-70.38313866;Heroes de La Concepción, 9254-9266
+3;-23.57859749;-70.38172379;Juan Orione, 896
+4;-23.58228239;-70.38312793;Héroes de la concepción, null
+5;-23.5838163;-70.38371801;Heroes de La Concepción, 9046
+6;-23.58430794;-70.38262367;El Roble, 8974-8992
+7;-23.58471108;-70.38261831;El Roble, 8968
+8;-23.5864072;-70.38297772;El Roble, 8816-8840
+9;-23.58679558;-70.38302063;Juan Bolívar
+10;-23.59287848;-70.38076566;Huamachuco, 8346-8366
+11;-23.5938502;-70.38082123;Huamachuco, 8261-8285
+12;-23.59647532;-70.38180292;Mateo de Toro y Zambrano / Bandera
+13;-23.60114532;-70.38211942;Pantaleón Cortes, 805-835
+14;-23.60376537;-70.38223207;Bandera, 7315
+15;-23.60469442;-70.38090706;Agustinas, 642
+16;-23.59247495;-70.38483649;Morro de Arica, 8324-8374
+17;-23.63537631;-70.39381653;Iquique, 3909-3929
+18;-23.62850331;-70.38609445;Presidente Salvador Allende
+19;-23.62866058;-70.38365901;Talcahuano, 4569-4575
+20;-23.62961894;-70.38137912;Domingo Faustino Sarmiento, 4536
+21;-23.63048391;-70.3798449;Paraguay, 1360-1390
+22;-23.62992856;-70.3776294;Paraguay, 1286-1292
+23;-23.62835095;-70.38707078;Card Carlos Oviedo Cavada, 4535-4585
+24;-23.56679474;-70.39094817;Pedro Aguirre cerda / Lomas del Sur
+25;-23.55091682;-70.39354026;Oficina Lastenia /Oficina Peñaflor
+26;-23.55946332;-70.39961815;Benito Ocampo / Oficina Ausonia
+27;-23.5543345;-70.39873301;Benito Ocampo / Oficina Anita
+28;-23.56421086;-70.39107531;Pedro Aguirre Cerda / Santiago Humberstone
+29;-23.57637764;-70.39103508;Pedro Aguirre Cerda / Chacalluta
+30;-23.57908176;-70.39078832;Pedro Aguirre Cerda / Río de los Cipreses
+31;-23.58286744;-70.39043427;Pedro Aguirre Cerda / Los Paquenes
+32;-23.58652519;-70.39019823;Pedro Aguirre Cerda / Los Guindos
+33;-23.58813771;-70.39232254;Los Chañares /  los Almendros
+34;-23.59161342;-70.3937012;Los Almendros / Los Pimientos
+35;-23.59274411;-70.39525687;El Oro / Nicolás Tirado
+36;-23.59458269;-70.39330423;El Azufre / Avenida El Yodo
+37;-23.59235574;-70.39160907;El Salitre / Nicolás Tirado
+38;-23.59199687;-70.38813829;Nicolás Tirado / Héroes de la Concepción
+39;-23.59614104;-70.38313329;El Roble / Mateo Toro y Zambrano
+40;-23.611753;-70.38154006;Isabel Riquelme / Las Delicias
+41;-23.61624552;-70.38010776;Card Carlos Oviedo Cavada / Cobija
+42;-23.61982861;-70.381127;Paihuano / Castro
+43;-23.62065924;-70.38154006;Castro / Huasco
+44;-23.62157834;-70.38211942;Castro / Elqui
+45;-23.62621305;-70.38504303;Castro / Vallenar
+46;-23.62735818;-70.38394868;Magallanes / Punta Arenas
+47;-23.62748597;-70.38147032;Magallanes / Domingo Faustino Sarmiento
+48;-23.62824775;-70.38137913;Domingo Faustino Sarmiento / Avenida Salvador Allende
+49;-23.62885225;-70.38325131;Colombia / Talcahuano
+50;-23.62894072;-70.38675427;Colombia / Cardenal Carlos Oviedo Cavada
+51;-23.6302775;-70.38814366;Llanquihue / Paraguay
+52;-23.63423862;-70.38790226;Llanquihue / Quito
+53;-23.63735436;-70.38771451;Llanquihue / Zenteno
+54;-23.64178703;-70.38751602;Llanquihue / Eleuterio Ramirez
+55;-23.64338904;-70.38814902;Manuel Antonio Matta / Av. Andrés Sabella
+56;-23.64457825;-70.38967252;Manuel Antonio Matta / Valdivia
+57;-23.64594927;-70.39132476;Manuel Antonio Matta / Covadonga
+58;-23.64665689;-70.39223135;Manuel Antonio Matta / Riquelme
+59;-23.64632765;-70.39527833;Almirante Juan José Latorre / Simón Bolívar
+60;-23.64507949;-70.39686084;Simon Bolívar / Washington
+61;-23.64551193;-70.39779425;Jorge Washington / Sucre
+62;-23.64620972;-70.39865792;Jorge Washington / Capitán Arturo Prat Chacón
+63;-23.64686328;-70.39950013;Jorge Washington / Baquedano
+64;-23.64801315;-70.40029943;Maipú / José de San Martín
+65;-23.64904016;-70.39937139;Maipú / Almirante Latorre
+66;-23.64963474;-70.3987813;Maipú / Carlos Condell
+67;-23.65055364;-70.39792836;Maipú / Manuel Antonio Matta
+68;-23.65141847;-70.39708614;Maipú / José Santos Ossa
+69;-23.65247494;-70.39607227;Maipú / Catorce de Febrero
+70;-23.66691576;-70.40095389;Galleguillos Lorca / Gral. Borgoño
+71;-23.66963275;-70.40234327;Galleguillos Lorca / Angol
+72;-23.6720156;-70.40570676;Homero Ávila Silva / Angamos
+73;-23.67286064;-70.40694594;Angamos / Las Losas
+74;-23.67449667;-70.40763259;Angamos / Santo Domingo
+75;-23.67605898;-70.40830851;Angamos / Augusto Dhalmar
+76;-23.6788986;-70.40975154;Angamos / Virgilio Arias
+77;-23.6838113;-70.41297018;Angamos / Sangra
+78;-23.70094043;-70.42316794;Universidad de Chile
+79;-23.70588177;-70.42440176;Av. Jaime Guzmán Errázuriz / Subida del Destino
+80;-23.7098799;-70.43142915;Av. Jaime Guzmán Errázuriz
+81;-23.71592106;-70.43392897;Av. Jaime Guzmán Errázuriz
+82;-23.70188352;-70.42333961;Universidad de Chile / Acceso Campus Coloso
+83;-23.68538332;-70.41350126;Angamos / Sangra
+84;-23.68221961;-70.41196704;Angamos / Universidad Católica del Norte
+85;-23.67926706;-70.40989101;Angamos / García Lorca
+86;-23.67814203;-70.40910244;Angamos / Eusebio Lillo
+87;-23.67588703;-70.40814221;Angamos / Pedro Prado
+88;-23.67457527;-70.40754676;Rebeca Matte
+89;-23.67294416;-70.40687084;Angamos / Nicanor Plaza
+90;-23.66911196;-70.40504158;Angamos / Los Inmigrantes
+91;-23.66748569;-70.40416718;Angamos / Talca
+92;-23.6681932;-70.4018122;Talca / Galleguillos Lorca
+93;-23.66796718;-70.40012777;Eduardo Orchard / Gral. Borgoño
+94;-23.66522068;-70.39914072;Eduardo Orchard / Díaz Gana
+95;-23.66339291;-70.39731681;Argentina / Antonio Toro
+96;-23.66100499;-70.39634585;Argentina / General José Velásquez
+97;-23.65963413;-70.39638877;Argentina / Salvador Reyes
+98;-23.65816989;-70.39612055;Argentina / Blanco Encalada
+99;-23.65868581;-70.39616346;Argentina
+100;-23.65632729;-70.39711297;Veintiuno de Mayo / Esmeralda
+101;-23.65508414;-70.3982234;Veintiuno de Mayo / 14 de febreo
+102;-23.65438148;-70.39886713;Veintiuno de Mayo / José Santos Ossa
+103;-23.65376726;-70.3991729;José Santos Ossa / 21 de Mayo
+104;-23.65282382;-70.39802492;José Santos Ossa / Teniente Luis Uribe
+105;-23.65047502;-70.39947331;Teniente Luis Uribe / Almirante Latorre
+106;-23.64783133;-70.40202141;Teniente Luis Uribe / Av. José Manuel Balmaceda
+107;-23.64708441;-70.40115237;Maipú / Av. José Manuel Balmaceda
+108;-23.65001312;-70.39814293;Capitán Carlos Condell / Maipú
+109;-23.64960035;-70.39755821;Capitán Carlos Condell / Baquedano
+110;-23.64823428;-70.39584696;Capitán Carlos Condell / Sucre
+111;-23.64769374;-70.39517641;Capitán Carlos Condell / Simón Bolívar
+112;-23.6457478;-70.39275706;Capitán Carlos Condell / Av, Argentina
+113;-23.63989014;-70.39103508;Caracoles / Buenos Aires
+114;-23.63881882;-70.39073467;Caracoles / Lima
+115;-23.63757059;-70.3900212;Pedro de Valdivia / Montevideo
+116;-23.63445977;-70.38554728;Chiloé / Quito
+117;-23.63126533;-70.38569748;Chiloé / Paraguay
+118;-23.61685008;-70.3804028;Card Carlos Oviedo Cavada / Cobija
+119;-23.6142991;-70.38011313;Rancagua / Calbuco
+120;-23.61279012;-70.38238764;Av. Antonio Rendic / Isabel Riquelme
+121;-23.60840071;-70.38009703;Teatinos / Las Condes
+122;-23.60628214;-70.38027942;Teatinos / Merced
+123;-23.60370147;-70.38088024;Irarrázaval / Bandera
+124;-23.59686859;-70.38174391;Bandera / Mateo Toto y Zambrano
+125;-23.59602305;-70.38516641;Gran Avenida Radomiro Tomic / Mateo Toro y Zambrano
+126;-23.59192313;-70.38901806;Nicolás Tirado
+127;-23.59479899;-70.38960278;Pedro Aguirre Cerda / Liparita
+128;-23.59698657;-70.38961887;Pedro Aguirre Cerda / Onix
+129;-23.59454828;-70.39517641;Azufre / El Oro
+130;-23.59193788;-70.39361537;Los Pimientos / Los Almendros
+131;-23.58946999;-70.39441466;Del Alto / Los Naranjos
+132;-23.58956832;-70.39293945;Los Naranjos / Los Aromos
+133;-23.58759693;-70.38993537;Pedro Aguirre Cerda / Juan Bolívar
+134;-23.58498147;-70.3901714;Pedro Aguirre Cerda / Los Canelos
+135;-23.57804929;-70.39085806;Pedro Aguirre Cerda / Gabriel Silva
+136;-23.57248361;-70.39099216;Pedro Aguirre Cerda / Félix García
+137;-23.56440262;-70.39095193;Pedro Aguirre Cerda / Av. Oficina Petronila
+138;-23.56253166;-70.39717198;Av. Oficina Petronila / Benito Ocampo
+139;-23.55971901;-70.39929628;Benito Ocampo / Inacap
+140;-23.55460496;-70.3987813;Benito Ocampo / Oficina Anita
+141;-23.55291335;-70.39530516;Rica Aventura / Oficina Carmela
+142;-23.55145284;-70.39328545;Oficina Francisco Puelma / Oficina Lastenia
+143;-23.54132225;-70.39081514;Amatista / Terminal 102
+144;-23.55544093;-70.38973153;Oficina Anita / Av. Pedro Aguirre Cerda (Terminal 107)
+145;-23.57663331;-70.39015532;Arturo Pérez Canto / Carrizal
+146;-23.57636781;-70.38682938;Arturo Pérez Canto / Valle del Encanto
+147;-23.56954825;-70.38265049;Huamachuco / Los Nitratos
+148;-23.57299495;-70.38003266;General Oscar Bonilla / Mamiña
+149;-23.57529598;-70.379861;General Oscar Bonilla / Arturo Pérez Canto
+150;-23.57631864;-70.37978053;General Oscar Bonilla / Lontue
+151;-23.57996182;-70.3794533;General Oscar Bonilla / María Elena
+152;-23.58108769;-70.37935674;General Oscar Bonilla / Julio Montt Salamanca
+153;-23.58354099;-70.37915289;General Oscar Bonillan / Ignacio Carrera pinto
+154;-23.58894888;-70.37882566;General Oscar Bonilla / Stgo Manuel silva
+155;-23.59074327;-70.37882566;Gral Oscar Bonilla / Clodomiro Rozas
+156;-23.59702589;-70.37721634;Los Leones / Mateo Toro y Zambrano
+157;-23.59912987;-70.37679791;Los Leones / Juvenal Morla
+158;-23.60130263;-70.37706614;Los Leones / Pantaleón Cortes
+159;-23.60319024;-70.37763476;Los Leones / Irarrázaval
+160;-23.60894141;-70.37790298;Los Leones / Isabel La Católica
+161;-23.61707126;-70.37667453;General Oscar Bonilla / Pto Natales
+162;-23.62003012;-70.38063884;Paihuano / Achao
+163;-23.62368683;-70.38071394;Pto Natales / Freirina
+164;-23.6260312;-70.38178682;Domingo Faustino Sarmiento / Inés de Suárez
+165;-23.63954122;-70.3824842;Circunvalación Padre Alberto Hurtado / Buenos Aires
+166;-23.64373794;-70.38379312;Circunvalación Padre Alberto Hurtado / Timonel Vargas
+167;-23.64881904;-70.3853488;Circunvalación / Ecuador
+168;-23.65142339;-70.3860569;Circunvalación Padre Alberto Hurtado / Lautaro
+169;-23.66090672;-70.38886786;Circunvalación Padre Alberto Hurtado / Teniente Luis Uribe
+170;-23.66463108;-70.39084196;Circunvalación Padre Alberto Hurtado / Leucotón
+171;-23.66382529;-70.39393187;Araucanía / Andres Sabella
+172;-23.6578112;-70.39136767;Andrés Sabella / Maipú
+173;-23.65594403;-70.38993001;Andrés Sabella / Arturo Prat
+174;-23.65039148;-70.38924336;Andrés Sabella / Tte. Ernesto Riquelme
+175;-23.64622446;-70.3913033;Covadonga Nva / Manuel Antonio Matta
+176;-23.64913353;-70.39525151;Manuel Antonio Matta / Arturo Prat
+177;-23.65021458;-70.39517641;Arturo Prat / José Santos Ossa
+178;-23.65257322;-70.39736509;Teniente Luis Uribe / José Santos Ossa
+179;-23.65272063;-70.39412498;Esmeralda / Baquedano
+180;-23.65202287;-70.39791226;Teniente Luis Uribe / Sotomayor
+181;-23.65179684;-70.39854527;Manuel Antonio Matta / Teniente Luis Uribe
+182;-23.65247003;-70.39940894;Manuel Antonio Matta / Veintiuno de Mayo
+183;-23.65355597;-70.40070176;Manuel Antonio Matta / Copiapó
+184;-23.65686779;-70.4017961;José Miguel Carrera / Aconcagua
+185;-23.66783207;-70.40464729;Angamos / Los Inmigrantes
+186;-23.69186943;-70.42104066;República de Croacia
+187;-23.68222943;-70.41409135;República de Croacia / Cuartel General I del Ejercito
+188;-23.69235895;-70.42096853;República de Croacia / Regimiento Reforzado
+189;-23.66470478;-70.39814293;Argentina / Díaz Gana
+190;-23.65181158;-70.3968662;José Santos Ossa / Maipú
+191;-23.65113839;-70.39595962;José Santos Ossa / Baquedano
+192;-23.65044062;-70.39506912;José Santos Ossa / Arturo Prat
+193;-23.64838661;-70.3924942;José Santos Ossa / Serrano
+194;-23.64767409;-70.39164126;José Santos Ossa / Riquelme
+195;-23.64710407;-70.38906634;Av. Andrés Sabella / 14 de Febrero
+196;-23.64979199;-70.38921654;Andrés Sabella / Riquelme
+197;-23.65292701;-70.38969398;Andrés Sabella / Simón Bolívar
+198;-23.65638134;-70.39052546;Andrés Sabella / Quebrada Baquedano
+199;-23.66135876;-70.39295018;Diagonal Sur / Lientur
+200;-23.66603137;-70.3929019;Diagonal Sur / Pasaje Mirador
+201;-23.66668975;-70.39209187;Circunvalación Padre Alberto Hurtado / Osvaldo Mendoza
+202;-23.66543195;-70.39119065;Circunvalación Padre Alberto Hurtado / Teniente Urbina
+203;-23.66395795;-70.39036989;Av. Circunvalación Padre Hurtado / Tegualda
+204;-23.661629;-70.3891629;Circunvalación Padre Alberto Hurtado / Hernán Mery
+205;-23.65720683;-70.38684547;Av. Circunvalación Padre Hurtado / Sucre
+206;-23.65104994;-70.38588524;Av. Circunvalación Padre Hurtado / Covadonga
+207;-23.64534976;-70.38418472;Av. Circunvalación Padre Hurtado / Ingeniero Mutilla
+208;-23.64065184;-70.38266659;Circunvalación Padre Alberto Hurtado / Huanchaca
+209;-23.63347688;-70.37930846;Av. Circunvalación Padre Alberto Hurtado / Quito
+210;-23.63216961;-70.37752748;Sicilia
+211;-23.62988679;-70.37735849;Sicilia / Paraguay
+212;-23.62868761;-70.37893831;Pdte. Salvador Allende / Calle A
+213;-23.62864829;-70.38110286;Presidente Salvador Allende / Colon
+214;-23.6258469;-70.38178682;Domingo Faustino Sarmiento/ Pto. Natales
+215;-23.62367946;-70.38064689;Pto Natales / Freirina
+216;-23.61889476;-70.38170635;Card Carlos Oviedo Cavada / Vicuña
+217;-23.6151052;-70.37877202;Rancagua / Pto. Montt
+218;-23.61423029;-70.37767231;General Oscar Bonilla / Cancha Rayada
+219;-23.611753;-70.37810147;Gral Oscar Bonilla / 20 de Agosto
+220;-23.60642469;-70.37776351;Los Leones / Abate Molina
+221;-23.60360807;-70.37765086;Los Leones / Irarrázaval
+222;-23.59956246;-70.37672282;Los Leones / Juvenal Morla
+223;-23.59152001;-70.37864864;General Oscar Bonilla / Clodomiro Rozas
+224;-23.58424895;-70.37901878;General Oscar Bonilla / Ignacio Carrera Pinto
+225;-23.57812303;-70.37952304;General Oscar Bonilla / Río Lircay
+226;-23.57568931;-70.37972689;General Oscar Bonilla / Arturo Pérez Canto
+227;-23.57282532;-70.3798905;General Oscar Bonilla / Vladimir Saavedra Nte
+228;-23.56989735;-70.38079441;Gral Oscar Bonilla / Mario Silva Iriarte
+229;-23.57038904;-70.3826344;Huamachuco / Félix García
+230;-23.5732162;-70.38214088;Huamachuco / Vladimir Saavedra
+231;-23.57649564;-70.39075077;Arturo Pérez Canto / Pedro Aguirre Cerda
+232;-23.56842228;-70.39080441;Av. Pedro Aguirre Cerda / Lomas del Sur
+233;-23.55151677;-70.39575577;Oficina Francisco Puelma / Rica Aventura
+234;-23.55891258;-70.39518714;Rica Aventura / Av. Ascotan
+235;-23.5844161;-70.39031625;Pedro Aguirre Cerda / Los cipreses
+236;-23.59493664;-70.38974226;Pedro Aguirre Cerda / Juan Gutenberg
+237;-23.59851048;-70.39134622;Onix / El Yodo
+238;-23.60022117;-70.39089561;El Yodo / Artesanía
+239;-23.60485172;-70.39069176;Calle Iquique / Colorado
+240;-23.61726786;-70.38859426;Paihuano / Ollague
+241;-23.60619366;-70.39076149;Calle Iquique / Victoria
+242;-23.60862191;-70.38870692;Pedro Aguirre Cerda / Los Caimanes
+243;-23.61016043;-70.38504303;Azapa / Coloso
+244;-23.61230842;-70.38286507;Antonio Rendic / Isabel Riquelme
+245;-23.62328381;-70.37580013;Oscar Bonilla / Huasco
+246;-23.62203051;-70.37565529;General Oscar Bonilla / Victor Jara
+247;-23.63114247;-70.37561238;Judea / Av. Circunvalación Padre Alberto Hurtado
+248;-23.63355551;-70.3759557;Jerusalén / Sicilia
+249;-23.63452366;-70.37811756;Quito / Siria
+250;-23.63820945;-70.3820765;Av. Circunvalación Padre Alberto Hurtado / Lima
+251;-23.64071327;-70.38285166;Padre Alberto Hurtado / Huanchaca
+252;-23.64768392;-70.38499206;Circunvalación / Tres Norte
+253;-23.64956349;-70.38556606;Circunvalación Padre Alberto Hurtado / Guayaquil
+254;-23.65552145;-70.38668454;Circunvalación Padre Alberto Hurtado / Las Brisas
+255;-23.6666357;-70.39289117;Diagonal Sur
+256;-23.64937922;-70.40055156;Teniente Luis Uribe / San Martín
+257;-23.64743822;-70.39837897;San Martín / Arturo Prat
+258;-23.64666672;-70.39738655;San Martín / Sucre
+259;-23.6417084;-70.39652019;7º de Línea / Nvo Extremo
+260;-23.63942082;-70.3958416;Séptimo de Línea / Procurador
+261;-23.63839865;-70.39556265;Séptimo de Línea / José Ignacio Zenteno
+262;-23.63753619;-70.39352417;Calle Iquique
+263;-23.63478904;-70.3936851;Calle Iquique / Quito
+264;-23.62857949;-70.39367437;Arica / Tarapacá
+265;-23.62922822;-70.38946331;Antonio Rendic / Colombia
+266;-23.63320658;-70.38797468;Llanquihue / Venezuela
+267;-23.63643291;-70.38777351;Llanquihue / Montevideo
+268;-23.63954122;-70.38642168;Card Carlos Oviedo Cavada / Buenos Aires
+269;-23.63099995;-70.38468361;Paraguay / Osorno
+270;-23.63073456;-70.38089097;Paraguay / El Chaco
+271;-23.6284984;-70.38444757;Presidente Salvador Allende / Francisco Puelma
+272;-23.62826249;-70.38873911;Presidente Salvador Allende / Agustín Edwards
+273;-23.6274319;-70.39313793;Presidente Salvador Allende / Tarapacá
+274;-23.63074439;-70.39401233;Calle Iquique / Uruguay
+275;-23.63236128;-70.39396405;Calle Iquique / México
+276;-23.63769345;-70.39579332;Av. Edmundo Pérez Zujovic / Zenteno
+277;-23.63906454;-70.39593279;Séptimo de Línea / Procurador
+278;-23.64162486;-70.39676428;Av. Séptimo de Linea / Nuevo Extremo
+279;-23.64261752;-70.39708614;Balceda / Club de Yates
+280;-23.64515811;-70.39836287;Sucre / Andrónico Abaroa
+281;-23.64761512;-70.40048718;Jorge Washington / Maipú
+282;-23.64835222;-70.40148497;Jorge Washington / Teniente Uribe
+283;-23.65056838;-70.40088952;Teniente Manuel Orella / Almirante Latorre
+284;-23.65094675;-70.39928555;Capitán Carlos Condell / Teniente Luis Uribe
+285;-23.64883869;-70.39663017;Capitán Carlos Condell /  Capitán Arturo Prat
+286;-23.64950698;-70.39423764;Sucre / José Santos Ossa
+287;-23.65104011;-70.3928268;Sucre / Esmeralda
+288;-23.65221943;-70.39173782;Sucre / Atacama
+289;-23.65985032;-70.39303064;Andrés Sabella / 21 de Mayo
+290;-23.66389408;-70.39280534;Diagonal Sur / Araucanía
+291;-23.66274435;-70.38976908;Circunvalación Padre Alberto Hurtado / Lientur
+292;-23.66010583;-70.38821876;Av. Circunvalación Padre Alberto Hurtado / Maipú
+293;-23.65540352;-70.38650215;Av. Padre Alberto Hurtado / Las Brisas
+294;-23.65385325;-70.38640827;Circunvalación Padre Alberto Hurtado / Los Placeres
+295;-23.63516745;-70.37670135;Jerusalén / Uno Oriente
+296;-23.62802167;-70.37686229;General Oscar Bonilla / Zeggers
+297;-23.62672418;-70.37624002;General Oscar Bonilla / Centenario
+298;-23.61345368;-70.3818351;Rancagua / Plumerillo
+299;-23.61084858;-70.38374484;Antonio Rendic / San  Miguel
+300;-23.61045535;-70.38329959;San Miguel / Las Delicias
+301;-23.6113696;-70.38209796;Las Delicias / Portugal
+302;-23.61194961;-70.38193166;Isabel Riquelme / Patria Vieja
+303;-23.59098907;-70.38965106;Pedro Aguirre Cerda / Los Jacarandaes
+304;-23.57899326;-70.39062738;Pedro Aguirre Cerda / Río de Los Cipreses
+305;-23.56915982;-70.39083391;Pedro Aguirre Cerda / Lidea Moreno
+306;-23.55511146;-70.39539099;Rica Aventura / Oficina Anita
+307;-23.55220031;-70.3914696;Pedro Aguirre Cerda / La Coipa
+308;-23.56710453;-70.38264513;Pablo Neruda / Los Óxidos (Terminal 104)
+309;-23.59714388;-70.37723243;Mateo de Toro y Zambrano / Los Leones
+310;-23.60735372;-70.37780106;Av. Los Leones / San Cristóbal
+311;-23.62457642;-70.38126647;Pto Natales / Peñuela
+312;-23.63188457;-70.38143277;México / Paniri
+313;-23.63212047;-70.38608909;México / Bolivia
+314;-23.64791979;-70.39378166;Manuel Antonio Matta / Simón Bolívar
+315;-23.64775271;-70.39442003;Simón Bolívar / Carlos Condell
+316;-23.64688785;-70.39594889;Almirante Juan José Latorre / Sucre
+317;-23.64760038;-70.39690375;Almirante Juan José Latorre / Arturo Prat
+318;-23.64892714;-70.39843798;Almirante Juan José Latorre / Maipú
+319;-23.65440113;-70.4005301;Copiapó / José Santos Ossa
+320;-23.66182063;-70.39673746;Argentina / Antonio Poupín
+321;-23.66339291;-70.39745092;Argentina / Avelino Contardo
+322;-23.66473426;-70.39828241;Argentina / Díaz Gana
+323;-23.6732979;-70.40159225;Argentina / Homero Ávila
+324;-23.72462867;-70.43645024;Av. Jaime Guzmán Errázuriz / Punta del Sur
+325;-23.73777985;-70.44152498;Av. Jaime Guzmán Errázuriz
+326;-23.71405962;-70.43330132;Av. Jaime Guzmán Errázuriz / Av. Agustín Samsó Sivori
+327;-23.70659398;-70.42447686;Travesía de Coloso / Subida del Desierto
+328;-23.69539471;-70.42145133;Avenida Ejército / Avenida Cerro Paranal
+329;-23.68303019;-70.41217625;Angamos / Victor Domingo Silva
+330;-23.67707103;-70.40866256;Angamos / Mariano Latorre
+331;-23.67311121;-70.40277243;Eduardo Orchard / Temuco
+332;-23.66463108;-70.39505839;Manuel Rodríguez / Avelino Contardo
+333;-23.66021884;-70.39380312;Manuel Rodríguez / 21 de Mayo
+334;-23.65913786;-70.39454341;Veintiuno de Mayo / Saavedra
+335;-23.65666142;-70.39372802;Linares / Teniente Luis Uribe
+336;-23.64826376;-70.391078;Catorce de Febrero / Tte. Ernesto Riquelme
+337;-23.64597384;-70.3888464;Andrés Sabella
+338;-23.63671057;-70.38655043;Card Carlos Oviedo Cavada / Montevideo
+339;-23.63139803;-70.38689375;Card Carlos Oviedo Cavada / Paraguay
+340;-23.62100329;-70.37895441;Pto Natales / Victor Jara
+341;-23.60160248;-70.37705541;Los Leones / Pantaleón Cortés
+342;-23.60145502;-70.37505984;Luis Cruz Martínez / Pantaleón Cortés
+343;-23.59698657;-70.37470579;Luis Cruz Martínez / Mateo Toro y Zambrano
+344;-23.59287684;-70.37854135;General Oscar Bonilla / Nicolás Tirado
+345;-23.58929793;-70.37873447;General Oscar Bonilla / Sargento Manuel Silva
+346;-23.58215456;-70.38145959;Huamachuco / Julio Montt Salamanca
+347;-23.57835903;-70.37801564;Gabriel Silva / Río Maule
+348;-23.57571881;-70.38148642;Arturo Pérez Canto / Huamachuco
+349;-23.52331149;-70.39706469;Caletera Pedro Aguirre Cerda / Autopista Antofagasta
+350;-23.53160403;-70.39315939;Caletera Pedro Aguirre Cerda / Terminal Línea 109
+351;-23.54651059;-70.39179683;Pedro Aguirre Cerda / Quebrada La Chimba Norte
+352;-23.55502786;-70.39135695;Pedro Aguirre Cerda / Oficina Anita
+353;-23.56193176;-70.39113164;Pedro Aguirre Cerda / Oficina Petronila
+354;-23.5698531;-70.39083123;Pedro Aguirre Cerda / Mario Silva
+355;-23.56692752;-70.37946403;Pablo Neruda / Los Chugungos
+356;-23.56821577;-70.37819266;Hilda Cruz Colina / Mario Silva
+357;-23.56838294;-70.37651896;Suspiro
+358;-23.57065455;-70.37711978;Hilda Cruz Colina / Nva Vida
+359;-23.57222793;-70.37693739;Vladimir Saavedra / Los Chungungos
+360;-23.57577289;-70.37534416;Los Pumas / Luis Hernández Parker
+361;-23.57780837;-70.37540853;Gabriel Silva
+362;-23.57534023;-70.37729681;Arturo Pérez Canto / Esperanza
+363;-23.57553689;-70.37964106;Arturo Pérez Canto / Av. General Bonilla
+364;-23.57866386;-70.37948549;General Oscar Bonilla / Stgo. Gabriel Silva
+365;-23.59884475;-70.37852526;General Oscar Bonilla / Juvenal Morla
+366;-23.60119448;-70.37864327;General Oscar Bonilla / Pantaleón Cortés
+367;-23.60346552;-70.37988782;General Oscar Bonilla / Irarrázabal
+368;-23.60581517;-70.37980199;General Oscar Bonilla / Merced
+369;-23.6083024;-70.37957668;General Oscar Bonilla / San Miguel
+370;-23.61033738;-70.37938356;General Oscar Bonilla / Isabel Riquelme
+371;-23.61439741;-70.38210869;Av. Antonio Rendic / Independencia
+372;-23.61710566;-70.38347661;Antonio Rendic / Vicuña
+373;-23.61995148;-70.38528442;Antonio Rendic / Elqui
+374;-23.6218634;-70.38642704;Antonio Rendic / Peñuelas
+375;-23.62279724;-70.3870225;Antonio Rendic / Pisagua
+376;-23.65407191;-70.39476335;Argentina / Maipú
+377;-23.65580645;-70.39554656;Argentina / Orella
+378;-23.65718718;-70.39612591;Argentina / 21 de Mayo
+379;-23.6680114;-70.39899588;Argentina / General José Manuel Borgoño
+380;-23.67215808;-70.40071249;Argentina / Concepción
+381;-23.67616215;-70.40418863;Argentina
+382;-23.67897721;-70.40624857;Argentina / Luis Mancilla
+383;-23.68325126;-70.4096818;Argentina
+384;-23.68641004;-70.41006267;Argentina / Colihue
+385;-23.69014841;-70.41019142;Argentina / Máfil
+386;-23.6926586;-70.41021824;Av Argentina / Collico
+387;-23.69585645;-70.41042209;Argentina / Santa Magdalena
+388;-23.6970894;-70.4073751;Santa Guillermina / Santa Bárbara
+389;-23.69917212;-70.4087162;Acceso Sur Antofagasta
+390;-23.69980577;-70.41344762;Ruta 28 Acceso Sur Antofagasta
+391;-23.69886266;-70.41741729;Avenida de la Minería / Campo Deportivo Minera Escondida
+392;-23.70880425;-70.42977691;Avenidfa Jaime Guzmán / Subida Sur
+393;-23.70076851;-70.42299628;Universidad de Chile / Universidad de Antofagasta
+394;-23.69906896;-70.41724563;Avenida de la Minería / Campo Deportivo Minera Escondida
+395;-23.69925562;-70.40852308;Acceso Sur Antofagasta / Santa Guillermina
+396;-23.69707957;-70.4074502;Santa Guillermina / Santa Mariana
+397;-23.69591049;-70.40918291;Cau Cau / Santa Magdalena
+398;-23.6927372;-70.41005731;Argentina / Collico
+399;-23.68957857;-70.41001439;Argentina / Huape
+400;-23.68742202;-70.40995002;Argentina / Vilcún
+401;-23.68553561;-70.40974617;Avenida Argentina / Trumao
+402;-23.68235716;-70.40908098;Avenida Argentina / Altos del Mar
+403;-23.6794734;-70.40635586;Argentina / Carlos Pezoa Véliz
+404;-23.67769005;-70.40513813;Argentina / Augusto Dhalmar
+405;-23.67393168;-70.40199459;Argentina / Homero Ávila
+406;-23.67248234;-70.40075004;Avenida Argentina / Concepción
+407;-23.67024689;-70.39961278;Avenida Argentina / Chillán
+408;-23.66860099;-70.39899051;Argentina / General José Manuel Borgoño
+409;-23.66696489;-70.39889932;Argentina / Playa Blanca
+410;-23.66501432;-70.3983146;Argentina / Díaz Gana
+411;-23.65957517;-70.3962332;Argentina / Salvador Reyes
+412;-23.6518902;-70.39687157;José Santos Ossa / Maipú
+413;-23.64943819;-70.39390504;José Santos Ossa / Simón Bolívar
+414;-23.6459247;-70.39609373;Simon Bolívar / José de San Martín
+415;-23.63116704;-70.39393187;Calle Iquique / Uruguay
+416;-23.62983027;-70.39398551;Iquique / Tacna
+417;-23.62827723;-70.38971007;Presidente Salvador Allende / Av Antonio Rendic
+418;-23.62308722;-70.38704395;Antonio Rendic / Pisagua
+419;-23.62026113;-70.38528442;Antonio Rendic / Elqui
+420;-23.61668788;-70.38302064;Antonio Rendic / Montegrande
+421;-23.61495774;-70.38203895;Antonio Rendic / Independencia
+422;-23.60826799;-70.37925482;General Oscar Bonilla / San Miguel
+423;-23.60490087;-70.37964106;General Oscar Bonilla / Agustinas
+424;-23.60157791;-70.37853599;General Oscar Bonilla / Pantaleón Cortés
+425;-23.59970993;-70.37840724;General Oscar Bonilla / Juvenal Morla
+426;-23.59503004;-70.37852526;General Oscar Bonilla / Leonardo DaVinci
+427;-23.58670217;-70.37879884;General Oscar Bonilla / Juan Bolívar
+428;-23.58199724;-70.37921727;General Oscar Bonilla / Julio Montt Salamanca
+429;-23.57613181;-70.3766048;Samuel Bonados Morris / Luis Hernández Parker
+430;-23.57538939;-70.37524223;Los Chungungos / Arturo Pérez Canto
+431;-23.57271469;-70.37726462;Los Pumas / Vladimir Saavedra
+432;-23.57098398;-70.37686765;Hilda Cruz Colina / Nva Vida
+433;-23.56931224;-70.37583232;Cosca / Farolito
+434;-23.56869763;-70.38285971;Huamachuco / Mario Silva
+435;-23.56333314;-70.38409888;Heroes de La Concepción (Terminal 110) /  Caparrosa
+436;-23.58402279;-70.37758648;Ignacio Carrera Pinto / Detective Luis Carrasco
+437;-23.58626954;-70.37591279;Cerro Pedregal / Juan Bolívar
+438;-23.61017026;-70.38431346;Antonio Rendic / San Miguel
+439;-23.61813292;-70.38431883;Paihuano / Antonio Rendic
+440;-23.63212047;-70.38805782;Llanquihue / México
+441;-23.66052347;-70.39961815;General Velásquez / Eduardo Orchard
+442;-23.66058735;-70.39723635;General Velásquez / Av. Argentina
+443;-23.66633108;-70.40367901;Angamos / General José Manuel Borgoño
+444;-23.6590052;-70.3987062;Salvador Reyes / Eduardo Orchard
+445;-23.65469595;-70.40033698;José Santos Ossa / Copiapo
+446;-23.63445486;-70.38666844;Card Carlos Oviedo Cavada / Quito
+447;-23.62868024;-70.38698494;Card Carlos Oviedo Cavada / Avenida Salvador Allende
+448;-23.62315111;-70.38442075;Card Carlos Oviedo Cavada / Peñuela
+449;-23.62727463;-70.38695812;Card Carlos Oviedo Cavada / Magallanes
+450;-23.62040858;-70.38266122;Card Carlos Oviedo Cavada / Huasco
+451;-23.61003754;-70.38425982;Antonio Rendic / Vitacura
+452;-23.60786984;-70.38571894;Antonio Rendic / Ongolmo
+453;-23.58671692;-70.37596107;Cerro Pedregal / Juan Bolívar
+454;-23.57262128;-70.3769964;Los Chungungos / Vladimir Saavedra
+455;-23.54195173;-70.38909315;Los Topacios /  Sierra Nevada (Terminal 111)
+456;-23.55676862;-70.40057838;Benito Ocampo
+457;-23.5652754;-70.39132476;Santiago Humberstone / Pedro Aguirre Cerda
+458;-23.56507873;-70.38871765;Caparrossa / Sierra Nevada
+459;-23.57648581;-70.38194239;Huamachuco / Río Lontué
+460;-23.58372781;-70.38128257;Huamachuco / El Abra
+461;-23.58157442;-70.37939429;Julio Montt Salamanca / Avenida General Bonilla
+462;-23.58941592;-70.38246274;Sargento Manuel Silva / El Roble
+463;-23.59229675;-70.38293481;El Roble / Nicolás Tirado
+464;-23.59232133;-70.38546145;Nicolás Tirado / Avenida Radomiro Tomic
+465;-23.59205095;-70.3871727;Nicolás Tirado / Héroes de la Concepción
+466;-23.58930776;-70.38642704;Héroes de La Concepción / Sargento Manuel Silva
+467;-23.5891357;-70.38843334;Sargento Manuel Silva / Pilmaiquén
+468;-23.58723313;-70.38940966;Juan Bolívar / Las Torcazas
+469;-23.58933234;-70.39301455;Los Almendros / Los Naranjos
+470;-23.59198704;-70.39441466;Los Pimientos / Las Rocas
+471;-23.61282945;-70.38836896;Pedro Aguirre Cerda / Salamanca
+472;-23.61554265;-70.38872838;Pedro Aguirre Cerda / Vicuña
+473;-23.61801004;-70.38928628;Pedro Aguirre Cerda / Huasco
+474;-23.62084109;-70.38997293;Pedro Aguirre Cerda / Avenida Sargento Aldea
+475;-23.63441063;-70.39383531;Calle Iquique / Quito
+476;-23.64826376;-70.3977567;Almirante Juan José Latorre / Baquedano
+477;-23.65373778;-70.39484918;Maipú / Atacama
+478;-23.65505957;-70.39355636;Maipú / Curico
+479;-23.65955551;-70.39507449;Eduardo Lefort / General José Velásquez
+480;-23.67798973;-70.40556192;Av. Argentina / Enrique Soro
+481;-23.69584172;-70.41197777;Mar del Plata / Santa Magdalena
+482;-23.69773779;-70.41196704;Santa Marta / Avenida Argentina
+483;-23.67480127;-70.40276169;Argentina / Nicanor Plaza
+484;-23.62714685;-70.39413035;Calle Iquique / Vega Central
+485;-23.62404562;-70.39064884;Mejillones / Vallenar
+486;-23.62213372;-70.39013923;Pedro Aguirre Cerda / Pisagua
+487;-23.62232049;-70.38785398;Loa / Peñuela
+488;-23.62069364;-70.38685083;Loa / Freirina
+489;-23.617607;-70.3865236;Paihuano / Progreso
+490;-23.61723837;-70.38838506;Paihuano / Av. Pedro Aguirre Cerda
+491;-23.61270165;-70.39006948;Calle Iquique / Chalinga
+492;-23.60653283;-70.39069712;Calle Iquique / Victoria
+493;-23.60398166;-70.3905952;Calle Iquique / Cavancha
+494;-23.60175487;-70.3905201;Calle Iquique / Punta Brava
+495;-23.59883;-70.39128184;El Yodo / Onix
+496;-23.59234099;-70.39429128;Nicolás Tirado / Parquemar
+497;-23.58815246;-70.39179683;Los Chañares / Los Aromos
+498;-23.58936676;-70.38451195;Morro de Arica / Sargento Manuel Silva
+499;-23.59086617;-70.38472116;Avenida Radomiro Tomic / Clodomiro Rozas
+500;-23.59238524;-70.38076222;Huamachuco / Emilio Correa
+501;-23.58947982;-70.38082123;Huamachuco / Sargento Manuel Silva
+502;-23.58684966;-70.38104653;Huamachuco / Juan Bolívar
+503;-23.57653006;-70.38187802;Huamachuco / Río Teno
+504;-23.57082664;-70.38253248;Huamachuco / Félix García
+505;-23.56529507;-70.38316011;Huamachuco / Caparrosa
+506;-23.56513772;-70.3904128;Caparrosa / Sierra Nevada
+507;-23.55251995;-70.39512277;Oficina Carmela  / Oficina Lasteria
+508;-23.55131515;-70.39182901;Oficina Carmela / Av Pedro Aguirre Cerda
+509;-23.54442544;-70.38774133;Los Topacios / Oficina Anita
+510;-23.5702907;-70.37881494;Félix García / Los Chungungos
+511;-23.56894839;-70.37864327;Los Chungungos / Mario Silva
+512;-23.5670947;-70.37934601;Los Chungungos /  Nva Vida
+513;-23.56719796;-70.37681401;Cosca / Los Sulfuros
+514;-23.56945975;-70.37584305;Cosca / Félix García
+515;-23.59947889;-70.38205505;Bandera / Juan Antonio Ríos
+516;-23.60860224;-70.38062274;Bandera / San Miguel
+517;-23.62621305;-70.38898051;Avenida Antonio Rendic / Magallanes
+518;-23.62800201;-70.38957059;Antonio Rendic / Avenida Salvador Allende
+519;-23.63617491;-70.38905025;Avenida Antonio Rendic / Montevideo
+520;-23.6407059;-70.3899461;Pedro de Valdivia / Huanchaca
+521;-23.65856298;-70.39653897;Copiapó / Avenida Argentina
+522;-23.67063994;-70.39995611;Argentina / Angol
+523;-23.69246703;-70.40978372;Collico / Reumen
+524;-23.69274702;-70.40774524;Collico / Cerro Negro
+525;-23.68619389;-70.40614665;Secundino Carrizo / Trumao
+526;-23.68582054;-70.40610373;Secundino Carrizo / Trumao
+527;-23.69115544;-70.40812075;Antilhue / Huellelhue
+528;-23.69239825;-70.4099071;Collico / Avenida Argentina
+529;-23.58628921;-70.38106799;Huamachuco / Río Doñihue
+530;-23.57848194;-70.37978053;Gabriel Silva / Avenida General Bonilla
+531;-23.57036937;-70.37953913;Félix García /Avenida General Bonilla
+532;-23.52320327;-70.39637267;Caletera Pedro Aguirre Cerda / Terminal 114
+533;-23.55900109;-70.39126039;Pedro Aguirre Cerda / Oficina Ausonia
+534;-23.58676608;-70.3850913;Heroes de La Concepción / Río Claro
+535;-23.58417028;-70.38383067;Héroes de La Concepción / Ignacio Carrera Pinto
+536;-23.58383598;-70.37495255;Ignacio Carrera Pinto / Cerro Pedregal
+537;-23.58814754;-70.37624002;Cerro Pedregal / Sargento Manuel Silva
+538;-23.58913078;-70.37859499;Sargento Manuel Silva / Avenida General Bonilla
+539;-23.66112783;-70.40194631;José Miguel Carrera / Antonio Poupín
+540;-23.66351083;-70.40241838;Angamos / Avelino Contardo
+541;-23.66587906;-70.40361464;Angamos / Julio Pistelli
+542;-23.67686469;-70.4072839;Augusto D'halmar / Armando Carrera
+543;-23.69638698;-70.41288972;Rodrigo de Triana / Santa Magdalena
+544;-23.69424526;-70.41205287;Rodrigo de Triana / José Bernardo Tagle
+545;-23.66411518;-70.40252567;Angamos / Avelino Contardo
+546;-23.66082319;-70.40130794;Liber Bernardo O'Higgins / General José  Velásquez
+547;-23.65914769;-70.40122211;Liber Bernardo O'Higgins
+548;-23.65803231;-70.40118456;Liber Bernardo O'Higgins / Hugo Silva Endeiza
+549;-23.62718125;-70.38720489;Hernando de Magallanes / Cardenal Carlos Oviedo Cavada
+550;-23.62625237;-70.37625074;Claudio Gay / Oscar Bonilla
+551;-23.62014317;-70.37534416;General Oscar Bonilla / Montegrande
+552;-23.61679109;-70.37680328;General Oscar Bonilla / Punta Arenas
+553;-23.59910037;-70.3737992;Ana María Ibaceta / Stgo Candelaria
+554;-23.58392446;-70.37710905;Ignacio Carrera Pinto / Detective Luis Carrasco
+555;-23.58661368;-70.39005339;Pedro Aguirre Cerda / Los Sauces
+556;-23.58239547;-70.39032698;Av. Pedro Aguirre Cerda / Los Ñandú
+557;-23.56173016;-70.391078;Pedro Aguirre Cerda / Calle Nva
+558;-23.55599168;-70.39126575;Pedro Aguirre Cerda / Oficina Anita
+559;-23.54619093;-70.39170027;Pedro Aguirre Cerda / Los Topacios
+560;-23.53760915;-70.39268732;Pedro Aguirre Cerda / Lapislazuli
+561;-23.54179929;-70.38665235;Oficina Anita / Los Diamantes (Terminal 114)
+562;-23.54450413;-70.38837433;Los Topacios / Sierra Nevada ( Terminal 121)
+563;-23.56530491;-70.39459705;Avenida Rica Aventura / Santiago Humberstone
+564;-23.5681961;-70.39289117;Cerro Moreno / Lidia Moreno
+565;-23.57201159;-70.39558411;Benito Ocampo / Jaime Pedreny
+566;-23.57545331;-70.39467216;Edmundo Pérez Zujovic / El Tepual
+567;-23.57674147;-70.39141059;Chacalluta / Av Pedro Aguirre Cerda
+568;-23.57594498;-70.38259149;Arturo Pérez Canto / Huamachuco
+569;-23.56957775;-70.38097143;Av. General Bonilla / Félix García
+570;-23.59535449;-70.3785789;General Oscar Bonilla / Gutemberg
+571;-23.59734051;-70.37855744;General Oscar Bonilla / Juan Glasinovic
+572;-23.60383419;-70.38250029;Irarrázaval / Quinta Normal
+573;-23.60541701;-70.38497329;Gran Avenida Radomiro Tomic / San Diego
+574;-23.63136854;-70.38933992;Antonio Rendic / Sausalito
+575;-23.63847482;-70.39004803;Pedro de Valdivia / Lima
+576;-23.66974084;-70.40552437;Angamos / La Hermandad
+577;-23.71258617;-70.43278635;Jaime Guzmán Errázuriz
+578;-23.64123172;-70.38980126;Pedro de Valdivia / Huanchaca
+579;-23.63156021;-70.38912535;Av. Antonio Rendic / Paraguay
+580;-23.6286999;-70.38930774;Antonio Rendic / Avenida Salvador Allende
+581;-23.62527924;-70.38830996;Antonio Rendic / Vallenar
+582;-23.60660165;-70.38465142;Gran Avenida Radomiro Tomic / Merced
+583;-23.59901189;-70.37836432;Av. General Bonilla / Sargento Candelaria Pérez
+584;-23.59756172;-70.37845552;General Oscar Bonilla / Juan Glasinovic
+585;-23.57430281;-70.39255321;Cerro Moreno / La Florida
+586;-23.56973509;-70.39291799;Cerro Moreno / Lidea Moreno
+587;-23.56544258;-70.3932935;Santiago Humberstone / Avenida Rica Aventura
+588;-23.56126303;-70.39460778;Rica Aventura / Calle Nva
+589;-23.55898142;-70.39500475;Avenida Rica Aventura / Ascotán
+590;-23.53283852;-70.39233327;Aguas Calientes / Caletera Pedro Aguirre Cerda
+591;-23.57265078;-70.38363755;Vladimir Saavedra / María Eugenia López
+592;-23.65521189;-70.39969862;Copiapó / 14 de Febrero
+593;-23.65698572;-70.39807856;Copiapó / Cochrane
+594;-23.66078389;-70.39653361;Argentina / Antonio Poupín
+595;-23.66587906;-70.40056765;Galleguillos Lorca / Playa Blanca
+596;-23.70884845;-70.42950868;Avenida Jaime Guzmán Errázuriz
+597;-23.66283279;-70.39901733;Eduardo Orchard / Antonio Toro
+598;-23.65925087;-70.3988564;Eduardo Orchard / Salvador Reyes
+599;-23.65780629;-70.40044963;Aconcagua / 14 de Febrero
+600;-23.59937074;-70.3819263;Bandera / Juvenal Morla
+601;-23.59586575;-70.38094461;Huamachuco / Gutemberg
+602;-23.59247864;-70.38176537;Nicolás Tirado / El Roble
+603;-23.507812;-70.40474653;Caletera Pedro Aguirre Cerda
+604;-23.50257786;-70.40798664;Caletera Pedro Aguirre Cerda / Exponor
+605;-23.58695782;-70.38362682;Juan Bolívar / El Roble
+606;-23.73194596;-70.4386282;Avenida Jaime Guzmán Errázurriz
+607;-23.73514285;-70.44016778;Avenida Jaime Guzmán / Baltazar Leighton
+608;-23.66242498;-70.40170491;Avenida Angamos / Antonio Poupín
+609;-23.61781343;-70.38911462;Pedro Aguirre Cerda / Víctor Jara
+610;-23.60140094;-70.38205504;Bandera / Pantaleón Cortés
+611;-23.57679555;-70.39089024;Av Pedro Aguirre Cerda / Arturo Pérez Canto
+612;-23.51039455;-70.40022433;Av El Coihue / Terminal 103
+613;-23.69707466;-70.42209506;Avenida Universidad de Chile / Estadio Militar Los Héroes
+614;-23.55538684;-70.39696813;Oficina Anita / Benito Ocampo
+615;-23.56114501;-70.39879739;Benito Ocampo / Oficina Petronila
+616;-23.56250216;-70.39507449;Borde Mar I / Avenida Rica Aventura
+617;-23.56240873;-70.39128184;Avenida Oficina Petronila / Pedro Aguirre Cerda
+618;-23.54833014;-70.39350271;Oficina Bonasort / Oficina Lastenia
+619;-23.57378655;-70.39121211;Av Pedro Aguirre Cerda / Manquehue
+620;-23.59431231;-70.38302064;El Roble / Leonardo DaVinci
+621;-23.60301328;-70.38228035;Bandera / Irarrázabal
+622;-23.60631163;-70.38085341;Bandera / Abate Molina
+623;-23.61299165;-70.38242519;Avenida Antonio Rendic / Rancagua
+624;-23.61850646;-70.38154542;Card Carlos Oviedo Cavada / Víctor Jara
+625;-23.62379004;-70.3835088;Castro / Pisagua
+626;-23.66443455;-70.39697886;Hermógenes Alfaro / Díaz Gana
+627;-23.66610507;-70.39813757;Hermógenes Alfaro / Playa Blanca
+628;-23.65708399;-70.3924942;Saavedra / Infante
+629;-23.61934693;-70.37798345;Pto Natales / Vicuña
+630;-23.56710699;-70.38363218;Terminal Línea 104
+631;-23.73639016;-70.44069887;Av. Jaime Guzmán Errazuriz / terminal 102
+632;-23.69761991;-70.41170955;Mar del Plata / Terminal 111
+633;-23.5683264;-70.39065152;Av. Pedro Aguirre Cerda / Lomas del Sur
+634;-23.63443274;-70.37805319;Quito / Siria
+635;-23.62723532;-70.39422691;Vega Central
+636;-23.73622319;-70.44081688;Av. Jaime Guzmán Errázuriz
+637;-23.74988386;-70.44711471;Crece Ruta 5 (Las Breas)
+638;-23.76009159;-70.46108365;San Antonio
+639;-23.75971845;-70.46398044;Coloso
+640;-23.76021924;-70.46391606;Caleta Coloso
+641;-23.75963008;-70.45963526;Subida del Estanque
+642;-23.63685309;-70.39014995;Montevideo / Calle Valdivia
+643;-23.6421261;-70.39009631;Calle Valdivia / Eleuterio Ramirez
+644;-23.6443866;-70.39291263;Almirante Juan J. Latorre/ Covadonga Vieja /
+645;-23.65085338;-70.40075541;Teniente Manuel Orella / Alm. Latorre
+646;-23.65483845;-70.40169418;José Miguel Carrera / Coquimbo
+647;-23.54483362;-70.39136231;Los Topacios / Pedro Aguirre Cerda
+648;-23.54811377;-70.39174318;Pedro Aguirre Cerda / Quebrada La Chimba
+869;-23.55268714;-70.39683402;Benito Ocampo  / Oficina Carmela
+870;-23.55247815;-70.39352149;Oficina Carmela / Oficina Lastenia

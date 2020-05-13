@@ -1,0 +1,4 @@
+Original data downloaded on 2017-10-25 from:
+    rome: http://dati.muovi.roma.it/gtfs/rome_static_gtfs.zip
+Extract timezone: Europe/Rome (+0200)
+The data should cover all relevant modes of intra-city public transport.

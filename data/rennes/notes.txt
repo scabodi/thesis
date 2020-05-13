@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    rennes: http://data.keolis-rennes.com/fileadmin/OpenDataFiles/GTFS/GTFS-20160209.zip
+Extract timezone: Europe/Paris (+0100)
+Commuter trains are missing.

@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    nantes: http://data.nantes.fr/fileadmin/data/datastore/nm/mobilite/24440040400129_NM_TAN_00005/ARRETS_HORAIRES_CIRCUITS_TAN_gtfs.zip
+Extract timezone: Europe/Paris (+0100)
+Commuter trains are missing.

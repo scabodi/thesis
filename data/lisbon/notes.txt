@@ -1,0 +1,11 @@
+Original data downloaded on 2017-01-30 from:
+    lisbon,transtejo: http://dadosabertos.cm-lisboa.pt/dataset/5ad57aa3-c96c-4b1d-985a-91aa36b3a9c6/resource/542054f2-8f6f-4a75-8e5e-51b371309ed9/download/gtfs4transtejo.zip
+    lisbon,fertagus: http://dadosabertos.cm-lisboa.pt/dataset/9f1ef3ec-3eb9-4782-9b74-c4be4c5cdb59/resource/3828b311-f49d-4227-9204-0a549f8ed75d/download/gtfs13fertagus.zip
+    lisbon,sul_de_tejo: http://dadosabertos.cm-lisboa.pt/dataset/65495ff0-0e7e-44c3-955f-31ba4d81ae86/resource/89176419-73b1-42a8-9db1-c7a721e6ed59/download/gtfs11.zip
+    lisbon,rodovaria: http://dadosabertos.cm-lisboa.pt/dataset/87d61502-650a-4ee7-9693-34c4514ac0cb/resource/a33fd804-7e3c-45b6-9194-581618d18b69/download/gtfs61.zip
+    lisbon,carris: http://dadosabertos.cm-lisboa.pt/dataset/2c76cf0d-72f0-4344-9354-c83e06e89790/resource/b68bd058-384d-49f7-9ed4-0030221cfb6f/download/gtfs1.zip
+    lisbon,metro: http://dadosabertos.cm-lisboa.pt/dataset/f7b43314-9e3d-487f-861b-c9a9a2d832de/resource/3b2ac2d1-6f0a-4f77-a639-c30b063126b8/download/gtfs2.zip
+    lisbon,soflusa: http://dadosabertos.cm-lisboa.pt/dataset/5b15ed85-2ea4-45ca-9529-c2cf4fc7823e/resource/defe6e36-b39a-44a0-b89f-ff34e8b8a5ad/download/gtfs14.zip
+    portugal,trains: http://dadosabertos.cm-lisboa.pt/dataset/45252e96-2bcc-4708-b6c0-7ff0e10fa155/resource/999f0c3b-5d7e-48de-8c39-c26207b3e982/download/gtfs3.zip
+Extract timezone: Europe/Lisbon (+0000)
+Trams are missing. Services operated by Scotturb are missing (municipalities of Sintra and Cascais).

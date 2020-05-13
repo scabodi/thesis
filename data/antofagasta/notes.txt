@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    antofagasta: http://datos.gob.cl/dataset/90e39a55-42d0-445e-b9d5-c73c07c6579b/resource/9111f713-0bbd-449f-ad65-4e3fce1583be/download/antofagasta5feb16.zip
+Extract timezone: America/Santiago (-0300)
+The data should cover all relevant modes of intra-city public transport, but  in Antofagasta there are also "collectivos" that operate on regular routes but are not centrally coordinated.

@@ -1,0 +1,1918 @@
+stop_I;lat;lon;name
+1;54.552832;-6.045183;Mount Eagles
+2;54.600955;-5.92366;Queens Square
+3;54.555152;-6.042798;Lagmore Reservoir
+4;54.600624;-5.918624;Station Street
+5;54.554886;-6.041874;Lagmore Avenue (Teeling Avenue)
+6;54.600146;-5.908106;Short Strand (Newtownards Road)
+7;54.553893;-6.039826;Lagmore Avenue (Glendowan Park)
+8;54.599795;-5.905037;Tower Street
+9;54.554147;-6.032764;Lagmore Avenue (Glenferna)
+10;54.599367;-5.901588;Templemore Avenue
+11;54.551385;-6.031718;Lagmore Meadows
+12;54.598898;-5.897996;Dee Street
+13;54.54965;-6.031949;Lagmore Drive
+14;54.59833;-5.893589;Ribble Street
+15;54.548405;-6.029103;Lagmore Dale
+16;54.598146;-5.892038;Connswater
+17;54.548348;-6.029468;Lagmore Dale
+18;54.597874;-5.889874;Connswater
+19;54.548739;-6.031766;Lagmore Drive
+20;54.598112;-5.887511;Holywood Arches
+21;54.550946;-6.032216;Lagmore Meadows
+22;54.600047;-5.88466;Dundela Park
+23;54.553815;-6.032205;Lagmore Avenue (Glenferna)
+24;54.601894;-5.882884;Parkgate Avenue
+25;54.553808;-6.039694;Lagmore Avenue (Glendowan Park)
+26;54.554533;-6.041685;Lagmore Avenue (Teeling Avenue)
+27;54.604841;-5.88016;Connsbrook Avenue (Larkfield)
+28;54.605702;-5.876028;Palmerston Road
+29;54.547009;-6.023504;Summerhill Estate
+30;54.607115;-5.874597;Palmerston Road (Station Road)
+31;54.54981;-6.023393;Summerhill Drive (St.Marks)
+32;54.608086;-5.875449;Station Road
+33;54.552587;-6.021841;Brook Activity Centre
+34;54.609335;-5.876885;Sydenham Halt
+35;54.554501;-6.0235;Twinbrook Road
+36;54.610387;-5.874645;Inverary Drive
+37;54.554757;-6.026078;Twinbrook Road
+38;54.609727;-5.872522;Inverary Playing Fields
+39;54.608824;-5.870391;Inverleath Drive
+40;54.608366;-5.868689;Carolhill
+41;54.610003;-5.866707;Ashfield Boys
+42;54.611015;-5.865439;Ashfield Girls
+43;54.560429;-5.998549;Black's Road (Balmoral Hotel)
+44;54.612944;-5.86305;Blanchflower Park
+45;54.56283;-6.001276;Black's Road (Garnock Hill)
+46;54.614666;-5.861803;Tillysburn
+47;54.564081;-6.003983;Black's Road (Brooke Drive)
+48;54.618916;-5.857976;Knocknagoney Road
+49;54.564347;-6.005727;Black's Road (Black's Court)
+50;54.618511;-5.854869;Knocknagoney Primary
+51;54.56575;-6.009781;Black's Road (Erris Grove)
+52;54.618219;-5.853044;Knocknagoney Avenue
+53;54.566112;-6.01025;Black's Road (Ringford Park)
+54;54.565106;-6.008309;Black's Road (Trenchard)
+55;54.618729;-5.857059;Knocknagoney Primary
+56;54.562934;-6.001116;Black's Road (Brooke Drive)
+57;54.619011;-5.859503;Knocknagoney Dale
+58;54.560819;-5.998711;Black's Road (Balmoral Hotel)
+59;54.618537;-5.860249;Tillysburn
+60;54.559348;-5.997236;Black's Road (M1 Onslip)
+61;54.613848;-5.861772;Tillysburn Park
+62;54.612936;-5.862724;Templeton House
+63;54.61084;-5.865283;Ashfield Girls
+64;54.562518;-6.017465;Upper Dunmurry Lane (Glengoland)
+65;54.609445;-5.866995;Ashfield Boys
+66;54.560155;-6.015205;Upper Dunmurry Lane (Corrina Park)
+67;54.608509;-5.868145;Carolhill
+68;54.560511;-6.015874;Upper Dunmurry Lane (Corrina Park)
+69;54.608629;-5.870031;Inverary Avenue
+70;54.562189;-6.01734;Upper Dunmurry Lane (Glengoland)
+71;54.609347;-5.871742;Inverleith Drive
+72;54.556987;-6.010668;Upper Dunmurry Lane (Cherry Road)
+73;54.610072;-5.873546;Inverary Playing Fields
+74;54.55413;-6.013838;Cherry Road
+75;54.609139;-5.877129;Sydenham Station
+76;54.553625;-6.016852;Cherry Park
+77;54.608158;-5.875471;Station Road
+78;54.554942;-6.019164;Aspen Walk
+79;54.607223;-5.874329;Palmerston Road (Station Road)
+80;54.554963;-6.021781;St Luke's
+81;54.605151;-5.87723;Larkfield Road
+82;54.554997;-6.021846;St Luke's
+83;54.605225;-5.879685;Connsbrook Avenue (Larkfield)
+84;54.554957;-6.018995;Aspen Walk
+85;54.603789;-5.88102;Strandburn Drive
+86;54.553728;-6.016986;Cherry Park
+87;54.602713;-5.882017;Parkgate Avenue
+88;54.554415;-6.013634;Cherry Road
+89;54.600116;-5.884465;Glendale Court
+90;54.556629;-6.010355;Upper Dunmurry Lane (Cherry Road)
+92;54.55799;-6.012423;Upper Dunmurry Lane (Credenhill)
+93;54.598255;-5.886689;Holywood Arches
+94;54.563124;-6.021131;Old Colin
+95;54.597946;-5.892096;Connswater
+96;54.563234;-6.026744;Laurelbank
+97;54.598225;-5.89378;Hunt Street
+98;54.565654;-6.02672;Poleglass (Pembroke Loop)
+99;54.598715;-5.89756;Dee Street
+100;54.567585;-6.023583;Pembroke Manor
+101;54.59921;-5.901433;Templemore Avenue
+102;54.570364;-6.026535;Colinbrook Avenue
+103;54.599485;-5.90352;Tower Street
+104;54.568992;-6.02804;Springbank Close
+105;54.599875;-5.906454;Bryson Street
+106;54.567952;-6.029563;Springbank Drive
+107;54.60018;-5.909008;Short Strand (Newtownards Road)
+108;54.564108;-6.02858;Pantridge Road (Pembrooke Loop)
+109;54.599766;-5.917055;Bridge End
+110;54.563305;-6.026519;Laurelbank
+111;54.598917;-5.921604;Oxford Street
+112;54.563361;-6.021046;Old Colin
+113;54.597288;-5.921355;Waterfront Hall
+114;54.56315;-6.034397;Brian's Well Close
+115;54.595744;-5.916854;East Bridge Street (Central Station)
+116;54.561049;-6.035907;Brian's Well Road (Glenkeen)
+117;54.595833;-5.909381;Short Strand (Albert Bridge Road)
+118;54.563523;-6.034264;Brian's Well Close
+119;54.595363;-5.906378;The Mount
+120;54.5605;-6.029987;Bell Steel Road (Glenwood)
+121;54.59533;-5.902673;Templemore Avenue
+122;54.556298;-6.029495;Bell Steel Road (Woodside)
+123;54.595892;-5.900016;Glenmore Street
+124;54.557233;-6.026276;Bell Steel Road (Stewartstown Road)
+125;54.596703;-5.897197;Hornby Street
+126;54.597322;-5.931116;Donegall Square North
+127;54.597771;-5.893628;Bloomfield Commercial Centre
+128;54.599623;-5.882482;Strandtown
+129;54.600426;-5.879879;Strand Cinema
+130;54.601218;-5.878173;Holywood Road (Park Avenue)
+131;54.60347;-5.874979;St Mark's
+132;54.595301;-5.944552;Grosvenor Road Rec. Centre
+133;54.604911;-5.872931;Clonaver
+134;54.595206;-5.947191;184 Grosvenor Road
+135;54.606999;-5.870357;Tudordale
+136;54.595116;-5.949692;Grosvenor Road 210
+137;54.615112;-5.860219;Garnerville Road
+138;54.614785;-5.856655;55 Garnerville Road
+139;54.595459;-5.953225;Royal Hospitals (Grosvenor Road)
+140;54.614801;-5.852767;Upper Garnaville Road
+141;54.596054;-5.956195;Springfield Road - Inner Zone
+142;54.60721;-5.86968;Tudordale
+143;54.597226;-5.958028;Iris Street
+144;54.612617;-5.852436;Old Holywood Road
+145;54.598893;-5.9596;Blackstaff Bar
+146;54.610535;-5.85258;Glenmillan
+147;54.599904;-5.960566;Springfield Road
+148;54.609131;-5.851208;Old Holywood Road.
+149;54.601617;-5.96318;Elswick Street
+150;54.607904;-5.851045;82 Old Holywood Road
+151;54.602192;-5.96511;Pollard Street
+152;54.606232;-5.85411;Cairnburn Road
+153;54.600853;-5.969193;Springdale
+154;54.605416;-5.860245;C I Y M S
+155;54.599475;-5.971724;Farset Int.
+156;54.604364;-5.863615;Circular Road
+157;54.599327;-5.973506;West Circular (Springfield)
+158;54.606175;-5.870821;Circular Road
+159;54.601383;-5.974419;Springfield Parade
+160;54.605824;-5.871392;Station Road
+161;54.603971;-5.974749;West Circular Flats
+162;54.604382;-5.873454;Clonaver
+163;54.605238;-5.974516;West Circular Crescent
+164;54.602865;-5.875618;St Mark's
+165;54.607224;-5.973765;Ballygomartin Bapist Church
+166;54.601076;-5.878113;Holywood Road (Park Avenue)
+167;54.610082;-5.967521;Twaddell Avenue
+168;54.599292;-5.883256;Strandtown
+169;54.611875;-5.967416;The Avenue
+170;54.597446;-5.893953;Bloomfield Commercial Centre
+171;54.613422;-5.964948;The Cabin
+172;54.596898;-5.896163;Hornby Street
+173;54.612739;-5.966044;The Cabin
+174;54.596255;-5.898239;Avoniel
+175;54.611578;-5.96714;Woodvale Parade
+176;54.595253;-5.901999;Templemore Avenue
+177;54.621834;-5.913815;Bretland House
+178;54.59513;-5.906077;The Mount
+179;54.595531;-5.909538;Short Strand (Albert Bridge Road)
+180;54.595614;-5.91585;Maysfield
+181;54.590561;-5.958047;RVH Stores
+182;54.595531;-5.917871;East Bridge Street (Central Station)
+183;54.592443;-5.95634;Childrens Hospital
+184;54.600612;-5.877712;Gelstons Corner
+185;54.593228;-5.954341;RVH Maternity Ward
+186;54.600234;-5.874903;Ranfurly Drive
+187;54.594703;-5.951588;Institute Of Pathology
+188;54.599847;-5.871567;98 Belmont Road
+189;54.599503;-5.971959;Springvale (West Circular Road)
+190;54.599594;-5.869344;126 Belmont Road
+191;54.600183;-5.970445;Springvale Parade
+192;54.599648;-5.86512;Belmont Church Road
+193;54.601572;-5.968659;Springvale Campus
+194;54.600031;-5.863003;Pine Lodge
+195;54.602424;-5.965721;Workman Avenue
+196;54.600564;-5.858422;212 Belmont Road
+197;54.601508;-5.962673;Lanark Way
+198;54.599831;-5.960341;Springfield Road 197
+199;54.601182;-5.853709;Campbell College
+200;54.598948;-5.959543;Blackstaff Bar
+201;54.603113;-5.852358;Schomberg Avenue
+202;54.597838;-5.958289;Peter Pan Complex
+203;54.605168;-5.847998;2 Massey Avenue
+204;54.595668;-5.953695;Grosvenor Road (Royal Hospital)
+205;54.604352;-5.846511;Netherleigh Mews
+206;54.595196;-5.950272;Grosvenor Road Surgery
+207;54.604064;-5.844269;Massey Avenue (Castlehill Road)
+208;54.595259;-5.947769;Grosvenor Road Post Office
+209;54.603583;-5.841559;Cloverhill Gardens
+210;54.595349;-5.946136;Cullingtree Road
+211;54.602462;-5.838913;42 Massey Avenue
+212;54.595723;-5.938784;Grosvenor Road PSNI Station
+213;54.603405;-5.832139;Parliament Buildings
+214;54.60033;-5.827295;I T Division
+215;54.629559;-5.89794;Dargan Road
+216;54.598602;-5.828481;Castle Buildings
+217;54.597207;-5.828799;Sports Ground
+218;54.594915;-5.936259;Europa Stand One
+219;54.595517;-5.827076;Dundonald House
+220;54.607797;-5.973279;Ballygomartin Pres Lecture Hall
+221;54.597055;-5.827623;Craigantlet Buildings
+222;54.60681;-5.973756;Ballygomartin Baptist Church
+223;54.598707;-5.828583;Castle Buildings
+224;54.60577;-5.974197;West Circular Crescent
+225;54.600969;-5.827572;Dept of Agriculture
+226;54.604266;-5.974545;West Circular Road 117
+227;54.603224;-5.832184;Parliament Buildings
+228;54.602486;-5.974511;West Circular Road Flat 8
+229;54.602283;-5.838601;Stormont (Massey Avenue Gates)
+230;54.600962;-5.974099;West Circular Road 59
+231;54.603297;-5.841207;15 Massey Avenue
+232;54.603932;-5.844442;Castlehill Road (Massey Avenue)
+233;54.597561;-5.976339;J P Corry
+234;54.604846;-5.849362;Massey Green
+235;54.597523;-5.979944;Springfield Park
+236;54.604039;-5.850974;Old Holywood Road
+237;54.596812;-5.983499;712 Springfield Road.
+238;54.603062;-5.852292;Schomberg Avenue
+239;54.594765;-5.986939;Divismore Crescent
+240;54.601725;-5.853017;Campbell College
+241;54.592918;-5.990042;Mount Alverno Garage
+242;54.600215;-5.859768;Ormiston
+243;54.591865;-5.991147;Whiterock Business Park
+244;54.599755;-5.864046;Strathearn Court
+245;54.589721;-5.992873;Turf Lodge Shops
+246;54.599354;-5.86644;Belmont Primary School
+247;54.586613;-5.991686;Monagh Road
+248;54.599422;-5.868537;Belmont Park
+249;54.583907;-5.991359;Aitnamona Crescent
+250;54.599939;-5.872893;139 Belmont Road
+251;54.582174;-5.989362;Monagh By-Pass (Glen Road)
+252;54.600311;-5.876429;Belmont Road (Gelstons Corner)
+253;54.58908;-5.93345;Botanic Avenue (Shaftsbury Square)
+254;54.586982;-5.932427;Botanic Avenue
+255;54.584849;-5.931911;College Green
+256;54.584737;-5.929252;Rugby Road
+257;54.585022;-5.926849;Dudley Street
+258;54.58219;-5.989983;Monagh By-Pass (Glen Road)
+259;54.58544;-5.923684;University Avenue
+260;54.583842;-5.991693;Aitnamona Crescent
+261;54.584067;-5.92222;Ormeau Road (Agincourt Avenue)
+262;54.586521;-5.991723;Monagh Road
+263;54.5818;-5.921398;Ormeau Park
+264;54.589873;-5.992919;Monagh Road Shops
+265;54.580532;-5.920564;Candahar Street
+266;54.592723;-5.990503;Mount Alverno Garage
+267;54.578915;-5.919386;South Parade
+268;54.594765;-5.987203;New Barnsley Parade
+269;54.577197;-5.917998;Ulidia
+270;54.595637;-5.985584;665 Springfield Road.
+271;54.574277;-5.915968;Ballynafeigh
+272;54.596642;-5.98401;651 Springfield Road.
+273;54.572367;-5.914701;Nazareth House
+274;54.59764;-5.979925;Springfield Park
+275;54.569673;-5.913746;Rosetta (St John's Church)
+276;54.598352;-5.974697;Whiterock Orange Hall
+277;54.567076;-5.913404;Hampton Park
+278;54.593905;-5.987103;St. Aiden's
+279;54.592922;-5.98473;Whiterock Leisure Centre
+280;54.59181;-5.982174;Ballymurphy Road
+281;54.564645;-5.911252;Forestside
+282;54.591144;-5.98056;Whiterock Belfast Met. College
+283;54.560842;-5.908999;Forster Green
+284;54.590757;-5.976728;St. Maria Goretti Nursery Sch
+285;54.558667;-5.90893;Saintfield Road (Mt.Oriel)
+286;54.590426;-5.974233;Brittons Parade
+287;54.554026;-5.908408;Woodbreda
+288;54.589242;-5.971392;Whiterock Road
+289;54.551701;-5.908541;Beechill Park
+290;54.590483;-5.975215;Brittons Parade
+291;54.548839;-5.906102;Saintfield Road (Glenhugh Park)
+292;54.59075;-5.977238;St. Maria Goretti Nursery Sch
+293;54.562933;-5.910252;Forestside (Knockbreda Cemetry)
+294;54.590952;-5.980092;Whiterock Belfast Met. College
+295;54.591431;-5.925592;Cromac Wood
+296;54.591577;-5.981873;Ballymurphy Road
+297;54.593418;-5.986064;Whiterock Library
+298;54.587061;-5.923623;Shaftesbury Avenue
+299;54.569682;-5.992629;Finaghy Road North
+300;54.585707;-5.922935;Hatfield Street
+301;54.569432;-5.992574;Finaghy Road North
+302;54.570387;-5.911957;Rosetta (Knockbreda Road)
+303;54.573862;-6.000578;Shaw's Road (Stewartstown Road)
+304;54.571339;-5.909216;Knock Eden
+305;54.574439;-6.002709;Rosgoill Park
+306;54.571557;-5.905258;Mount Merrion Park
+307;54.575432;-6.004494;Shaw's Road (Hillhead Cottages)
+308;54.571517;-5.903428;Wynchurch
+309;54.576603;-6.009331;Shaw's Road (Lenadoon Avenue)
+310;54.570986;-5.901504;Mount Merrion, Rosetta Road
+311;54.57668;-6.009989;Shaw's Road (Lenadoon Avenue)
+312;54.570754;-5.901172;Mount Merrion, Rosetta Road
+313;54.575608;-6.004619;Shaw's Road (Hillhead Cottages)
+314;54.571465;-5.903918;Wynchurch
+315;54.574063;-6.001031;Shaw's Road (Stewartstown Road)
+316;54.571347;-5.908427;Knock Eden
+317;54.571894;-5.994812;St Michael's
+318;54.570316;-5.912755;Rosetta (Knockbreda Road)
+319;54.557006;-6.026331;Bell Steel Road (Stewartstown Road)
+320;54.556665;-5.908011;Glendale Park
+321;54.556447;-6.030144;Bell Steel Road (Woodside)
+322;54.547194;-5.903856;Cairnshill Court
+323;54.559163;-6.031511;Bell Steel Road (Brian's Well Road)
+324;54.549281;-5.90076;Finsbury
+325;54.56042;-6.030212;Bell Steel Road (Glenwood)
+326;54.550288;-5.898551;Cairnshill Park
+327;54.562125;-6.028709;Bell Steel Road (Laurelbank)
+328;54.552108;-5.895646;Malvern
+329;54.55628;-5.89233;Four Winds (Ballymaconaghy Road)
+330;54.558082;-5.905609;Glendale
+331;54.568237;-6.013431;Suffolk Road (Woodbourne)
+332;54.557272;-5.903118;Newton Park(Colby)
+333;54.569676;-6.01478;Riverside Mews
+334;54.556638;-5.900473;Glenholm
+335;54.570922;-6.016543;Falcarragh
+336;54.556215;-5.896316;Four Winds Park
+337;54.573718;-6.021711;Donegal Celtic
+338;54.556169;-5.896621;Four Winds Park
+339;54.574728;-6.024055;Suffolk Heights
+340;54.556583;-5.900514;Glenholm
+341;54.575914;-6.023568;Hannahstown Hill
+342;54.557085;-5.902527;Newton Park(Colby)
+343;54.576168;-6.019429;Glencolin
+344;54.557768;-5.905316;Glendale
+345;54.57621;-6.017622;St. Oliver Plunkett
+346;54.562595;-5.909833;Forestside
+347;54.57648;-6.014397;Shaw's Road (Glen Road)
+348;54.551875;-5.895623;Malvern
+349;54.578382;-6.006131;Rosnareen
+350;54.550484;-5.89778;Cairnshill Park
+351;54.578998;-6.003559;Hamill Grove
+352;54.549113;-5.900945;Finsbury
+353;54.580173;-5.998766;CBS
+354;54.552207;-5.909023;Beechill Park
+355;54.580775;-5.995775;Coolnasilla
+356;54.562332;-5.908801;Forster Green
+357;54.580853;-5.990688;Glen Road (St.Theresa's)
+358;54.565001;-5.908871;Forestside
+359;54.583017;-5.985357;Gransha Shops
+360;54.565021;-5.909075;Forestside
+361;54.583817;-5.981006;Glen Parade
+362;54.565048;-5.909356;Forestside (Upper Galwally)
+363;54.599548;-5.937326;Millfield
+364;54.547133;-5.903788;Cainshill Court
+365;54.600145;-5.94248;Divis Tower
+366;54.547805;-5.905523;Top Of The Hill
+367;54.571752;-5.994488;St Michael's
+368;54.54921;-5.90657;Saintfield Road (Glenhugh Park)
+369;54.554111;-5.908556;Woodbreda
+370;54.548888;-6.028377;Stewartstown Road (Lagmore Dale)
+371;54.558648;-5.909238;Saintfield Road (Mount Oriel)
+372;54.551599;-6.027731;Stewartstown Road (Lagmore Avenue)
+373;54.559864;-5.909478;Breda Park
+374;54.552959;-6.027386;Stewartstown Road (Lagmore grove)
+375;54.565812;-5.91271;Hampton Park
+376;54.554391;-6.027079;Stewartstown Road (Twinbrook Road)
+377;54.568823;-5.913866;Annadale Avenue
+378;54.556114;-6.026119;Stewartstown Road (Glasvey Park)
+379;54.570461;-5.914116;Rosetta (St John's Church)
+380;54.559473;-6.023541;Stewartstown Road (Health Centre)
+381;54.573354;-5.915586;Nazareth House
+382;54.561764;-6.021461;Stewartstown Road (Dairy Farm)
+383;54.574576;-5.916461;Ballynafeigh
+384;54.562738;-6.020582;Stewartstown Road
+385;54.576828;-5.918025;Ulidia
+386;54.564087;-6.019508;Glengoland (Roundabout)
+387;54.578425;-5.919262;South Parade
+388;54.561372;-6.021639;Stewartstown Road (Dairy Farm)
+389;54.580698;-5.920982;Candahar Street
+390;54.559119;-6.023645;Stewartstown Road (Health Centre)
+391;54.583826;-5.922429;Ormeau Road (Agincourt Avenue)
+392;54.556027;-6.026033;Stewartstown Road (Glasvey Park)
+393;54.585701;-5.923136;Hatfield Street
+394;54.554044;-6.026967;Stewartstown Road (Twinbrook Road)
+395;54.587836;-5.924131;McClure Street
+396;54.551884;-6.027528;Stewartstown Road (Lagmore Avenue)
+397;54.59082;-5.92558;Gasworks
+398;54.547566;-6.028386;Broom Park
+399;54.591574;-5.9259;Cromac Wood
+400;54.546272;-6.027809;Creighton Mews
+401;54.585252;-5.924207;University Avenue
+402;54.565533;-6.015517;Helen's Wood
+403;54.585002;-5.926088;Dudley Street
+404;54.567087;-6.012327;Stewartstown Road (Woodbourne)
+405;54.584623;-5.929737;Rugby Road
+406;54.568587;-6.008852;Stewartstown Road (Doon Road)
+407;54.585312;-5.932606;College Green
+408;54.570423;-6.005829;Suffolk Avenue
+409;54.587854;-5.932975;Botanic Avenue
+410;54.571107;-6.003109;Hillhead Crescent
+411;54.588985;-5.933595;Botanic Avenue (Shaftsbury Square)
+412;54.572453;-6.00047;St Genevieve's
+413;54.595248;-5.91106;Short Strand (Ravenhill Road)
+414;54.573304;-5.99786;Stewartstown Road (Shaw's Road)
+415;54.592888;-5.910895;Shamrock Street
+416;54.573246;-5.991182;Andersonstown Road (Slievegallion Drive)
+417;54.591263;-5.910228;My Lady's Road
+418;54.57409;-5.986326;Owenvarragh Pk
+419;54.589855;-5.910387;216 Ravenhill Road
+420;54.575904;-5.98206;Fruithill
+421;54.588299;-5.910672;252 Ravenhill Road
+422;54.576858;-5.980652;Fruithill Park
+423;54.586089;-5.911141;51 Ravenhill Road
+424;54.578796;-5.979726;Westwood Centre
+425;54.580413;-5.980333;Kennedy Centre
+426;54.580413;-5.912284;454 Ravenhill Road
+427;54.582546;-5.979442;Milltown Cemetery
+428;54.579272;-5.912531;Ravenhill Park
+429;54.583197;-5.979072;Milltown Cemetery
+430;54.57699;-5.913009;Aquinas Grammar School
+431;54.581366;-5.979791;Kennedy Centre
+432;54.574493;-5.913466;Cherryvale Park
+433;54.579913;-5.979944;Andersonstown Park
+434;54.572338;-5.913925;694 Ravenhill Road
+435;54.577785;-5.979566;Westwood Centre
+436;54.572642;-5.913985;Ravenhill Road (Ormeau Road)
+437;54.576623;-5.980691;Fruithill Park
+438;54.575149;-5.913498;St Jude's Cresent
+439;54.575724;-5.982043;Fruithill
+440;54.576814;-5.913177;187 Ravenhill Road
+441;54.574121;-5.985927;Owenvarragh Pk
+442;54.573208;-5.99042;Andersonstown Road (Slievegallion Drive)
+443;54.572925;-5.993829;Ballyowen
+444;54.57295;-5.996603;Stewartstown Road (Shaw's Road)
+445;54.572142;-6.000641;St Genevieve's
+446;54.580046;-5.912512;Kids Korner
+447;54.570788;-6.004053;Hillhead Crescent
+448;54.583994;-5.911699;Martyrs Memorial
+449;54.569232;-6.007569;Suffolk Library
+450;54.585595;-5.911403;BP Garage
+451;54.567826;-6.010372;Stewartstown Road (Woodbourne)
+452;54.587298;-5.911025;Park Resource Centre
+453;54.564394;-6.017557;Glengoland (Roundabout)
+454;54.589154;-5.910661;Rochester Street
+455;54.590929;-5.910289;My Lady's Road
+456;54.599325;-5.947218;Twin Spires
+457;54.592059;-5.910645;97 Ravenhill Road
+458;54.598588;-5.950477;Conway Street
+459;54.595566;-5.911787;Short Strand
+460;54.594547;-5.907151;Mount Conference Centre
+461;54.596723;-5.954169;Dunville Park
+462;54.593419;-5.906408;Woodstock Link
+463;54.584506;-5.977853;Falls Park
+464;54.591986;-5.903746;Isthmus Street
+465;54.585675;-5.974002;Rossa House
+466;54.590536;-5.902415;Willowfield
+467;54.587338;-5.9713;Falls Road (City Cemetry)
+468;54.587685;-5.900454;Redcar Street
+469;54.589722;-5.968822;Falls Road (St.James's)
+470;54.585304;-5.899282;Loopland
+471;54.590689;-5.967599;Beechview Park
+472;54.604617;-5.850053;340 Belmont Road
+473;54.591371;-5.965714;Ard-Na-Va
+474;54.583537;-5.898555;Courtney Hall
+475;54.592291;-5.961793;Beechmount
+476;54.582099;-5.897969;Ardenlee
+477;54.593003;-5.959833;St Mary's College
+478;54.579876;-5.897183;Bell's Bridge
+479;54.593663;-5.958085;Childrens Hospital
+480;54.576986;-5.896164;Montgomery Road
+481;54.595247;-5.955559;Falls Road (Royal Hospitals)
+482;54.575278;-5.895583;Greenway
+483;54.596775;-5.95422;Dunville Park
+484;54.573473;-5.894946;Somme Drive
+485;54.598245;-5.952179;Falls Library
+486;54.571776;-5.894304;Cregagh Library
+487;54.599224;-5.948107;Twin Spires
+488;54.571031;-5.89397;Cregagh Park
+489;54.600356;-5.942888;Divis Tower
+490;54.568412;-5.896537;Beechgrove Drive
+491;54.599728;-5.937065;Barrack Street
+492;54.566022;-5.902887;Knockbreda High School
+493;54.60558;-5.928009;Little George Street
+494;54.566004;-5.903427;Knockbreda High School
+495;54.608881;-5.924702;Yorkgate Station
+496;54.568334;-5.897567;Rosetta Road
+497;54.612081;-5.923631;York Street (St Paul's)
+498;54.570139;-5.893745;Cregagh Park
+499;54.614932;-5.924464;Mountcollyer
+500;54.572668;-5.894792;The Straight
+501;54.617977;-5.92375;Grove Baths
+502;54.574528;-5.895418;Hamel Drive
+503;54.618862;-5.92337;Bute Street
+504;54.576012;-5.895963;Greenway
+505;54.621843;-5.923503;Skegoneill Ave
+506;54.578022;-5.896681;Bell's Bridge
+507;54.623463;-5.92293;Seaview
+508;54.578338;-5.899142;157 Mount Merrion Avenue
+509;54.625258;-5.923305;York Park
+510;54.577968;-5.900841;137 Mount Merrion Avenue
+511;54.627186;-5.923754;Shore Road (Safeway)
+512;54.576902;-5.90238;101 Mount Merrion Avenue
+513;54.629262;-5.923257;Fortwilliam
+514;54.575687;-5.902434;77 Mount Merrion Avenue
+515;54.631815;-5.923022;Mount Vernon
+516;54.574114;-5.902949;Mount Merrion Avenue
+517;54.633529;-5.923125;Lowwood Park
+518;54.572753;-5.904444;Mounr Merrion Avenue
+519;54.634772;-5.923369;Loughside
+520;54.572059;-5.9056;20 Mount Merrion Avenue
+521;54.63737;-5.923387;Donegall Park Avenue
+522;54.573953;-5.903212;Mount Merrion Avenue
+523;54.63944;-5.923339;Shore Crescent
+524;54.576417;-5.902643;Mount Merrion Church
+525;54.640749;-5.923201;Parkmount
+526;54.57785;-5.901449;150 Mount Merrion Avenue
+527;54.643259;-5.922063;Shore Road (Grays Lane)
+528;54.578492;-5.898274;Willowbrook House
+529;54.645252;-5.920519;Greencastle
+530;54.579978;-5.897379;Onslow
+531;54.647432;-5.919845;M2 Onslip
+532;54.581569;-5.897965;Ardenlee
+533;54.649881;-5.918933;Bawnmore
+534;54.583843;-5.898832;Glendower Street
+535;54.652559;-5.916213;Whitehouse
+536;54.585795;-5.899654;Ravenhill Avenue
+537;54.652571;-5.915858;Whitehouse
+538;54.588572;-5.901112;Omeath Street
+539;54.649943;-5.918691;Bawnmore
+540;54.589636;-5.901864;Willowfield Crescent
+541;54.642053;-5.922366;Shore Road (Grays Lane)
+542;54.592607;-5.904565;Cherryville Street
+543;54.640323;-5.923036;Parkmount
+544;54.59464;-5.907315;Woodstock Lodge
+545;54.638306;-5.923369;Shore Crescent
+546;54.578979;-5.877838;Locksley House
+547;54.637312;-5.923242;Donegall Park Avenue
+548;54.577663;-5.882667;Robinson Centre
+549;54.635243;-5.923244;Loughside
+550;54.577296;-5.887927;Stirling Avenue
+551;54.632429;-5.922957;Lowwood Park
+552;54.577513;-5.892917;Castlereagh College
+553;54.63072;-5.92239;Mount Vernon
+554;54.577446;-5.894459;Castlereagh College
+555;54.627873;-5.92365;Shore Road (Safeway)
+556;54.577283;-5.888885;Stirling Avenue
+557;54.625637;-5.923279;York Drive
+558;54.577784;-5.883112;Robinson Centre
+559;54.578815;-5.878178;Locksley House
+560;54.624146;-5.92295;Seaview
+561;54.576634;-5.876082;Castledona
+562;54.621105;-5.92354;Skegoneill
+563;54.574682;-5.880572;Glensharragh
+564;54.619883;-5.9235;Fife Street
+565;54.572812;-5.884186;Lisnasharragh
+566;54.617579;-5.92382;Ivan Street
+567;54.571486;-5.886537;McCaughan Park
+568;54.615236;-5.924245;Mountcollyer
+569;54.569924;-5.892053;St Finnian's Church
+570;54.571756;-5.886532;Stirling Avenue
+571;54.611991;-5.923359;York Street (St Paul's)
+572;54.573318;-5.883832;Rochester Road
+573;54.610682;-5.922954;Yorkgate Station
+574;54.57537;-5.879584;Clonduff Drive
+575;54.609952;-5.924402;Yorkgate
+576;54.577011;-5.875824;Carncaver Road
+577;54.612036;-5.926695;Upper Canning Street
+578;54.579791;-5.871304;Knock Road
+579;54.614016;-5.926374;Cosgrave Street
+580;54.614881;-5.927961;90 Limestone Road
+581;54.586722;-5.859295;127 Knock Road
+582;54.615651;-5.930561;Newington Pres Church
+583;54.587883;-5.857005;Marie Curie Centre
+584;54.61621;-5.93218;Lawther Street
+585;54.589695;-5.856046;Knock Headquarters
+586;54.617182;-5.934661;Atlantic Avenue
+587;54.589484;-5.855871;Knock Headquarters
+588;54.618285;-5.937511;Limestone Road (Antrim Road)
+589;54.587724;-5.857207;Marie Curie Centre
+590;54.619194;-5.939443;Waterworks
+591;54.586939;-5.858681;Knockvale Park
+592;54.620169;-5.940978;Richmond Square
+593;54.599197;-5.911873;Short Strand
+594;54.620829;-5.941678;Rosemount Gardens
+595;54.598264;-5.909568;Mountpottinger Road
+596;54.622205;-5.942524;Marsden Terrace
+597;54.596379;-5.907234;Madrid Street
+598;54.594816;-5.904374;Castlereagh Street (Albertbridge Road)
+599;54.624906;-5.943266;Madison Avenue
+600;54.593619;-5.901905;Paxton Street
+601;54.626611;-5.943664;Westland Road
+602;54.592318;-5.899302;John Long's Corner
+603;54.62838;-5.9443;Inver Avenue
+604;54.590648;-5.897547;Clara Street
+605;54.6302;-5.945577;120 Cavehill Road
+606;54.588726;-5.896047;Channing Street
+607;54.632966;-5.947628;Bonaparte's
+608;54.632723;-5.951496;Sunningdale Park
+609;54.586195;-5.891717;Loopland Park
+610;54.632033;-5.956638;Kilcoole Park
+611;54.585393;-5.890077;Ladas Drive
+612;54.630479;-5.961231;Carr's Glen (Joanmount)
+613;54.600326;-5.911981;Eastside Park & Ride
+614;54.631497;-5.959826;Boys' Model School
+615;54.583841;-5.886615;Orby Place
+616;54.632081;-5.956798;Kilcoole Park
+617;54.582242;-5.882917;Houston Park
+618;54.633045;-5.949884;Slievedarragh Park
+619;54.632166;-5.947318;Shandarragh Park
+620;54.580729;-5.879351;Orby Street
+621;54.630685;-5.945872;Henderson Avenue
+622;54.579435;-5.876209;Montgomery Road
+623;54.628146;-5.944029;Inver Avenue
+624;54.578725;-5.874531;Clonduff
+625;54.627046;-5.943566;Charnwood Avenue
+626;54.577714;-5.871571;Brentwood Park
+627;54.625149;-5.943243;Westland Road
+628;54.575885;-5.868564;Ballygowan Road
+629;54.623798;-5.943035;Kansas Avenue
+630;54.576744;-5.866463;Glen Road
+631;54.622379;-5.942432;Parkview Lodge
+632;54.579181;-5.865904;Roddens Gardens
+633;54.620712;-5.941434;Rosemount Gardens
+634;54.581102;-5.866303;Whincroft Road
+635;54.618533;-5.937922;Limestone Road (Antrim Road)
+636;54.579935;-5.863979;Glen Rise
+637;54.617617;-5.935664;Atlantic Avenue
+638;54.579146;-5.861922;The Square
+639;54.61611;-5.931659;Currie Primary School
+640;54.577855;-5.858982;Ravenswood Park
+641;54.615085;-5.928353;Cosgrave Heights
+642;54.577933;-5.85402;Creevy Avenue
+643;54.613354;-5.926249;Mervue Street
+644;54.578436;-5.851498;Braniel Church
+645;54.61217;-5.926429;Upper Canning Street
+646;54.579363;-5.850641;Woodview Drive
+647;54.610283;-5.924729;Yorkgate
+648;54.580358;-5.849032;Braniel (Farmhurst Green)
+649;54.580493;-5.845359;178 Lower Braniel Road
+650;54.615393;-5.926321;Mountcollyer Road
+651;54.582275;-5.84079;Briarwood Park
+652;54.616912;-5.925522;Castleton Avenue
+653;54.618;-5.927487;72 Alexandra Park Avenue
+654;54.618548;-5.929446;Elim Christian Centre
+655;54.619795;-5.931473;3 Jellicoe Avenue
+656;54.621665;-5.93094;Grove Playing Fields
+657;54.623321;-5.93172;Skegoneill Drive
+658;54.625009;-5.933201;Somerton Inn
+659;54.582608;-5.840233;293 Lower Braniel Road
+660;54.626346;-5.933842;Somerton Road (Hospice)
+661;54.580228;-5.846062;237 Lower Braniel Road
+662;54.628395;-5.935001;Somerton Road (Fortwilliam Park)
+663;54.57935;-5.850485;Woodview Drive
+664;54.630465;-5.935511;Dominican College
+665;54.578276;-5.85173;Braniel Church
+666;54.632121;-5.935206;96 Somerton Road
+667;54.577846;-5.854476;Creevy Avenue
+668;54.634376;-5.934153;Landsdowne Road
+669;54.57777;-5.859392;Braniel Primary School
+670;54.635679;-5.933628;Glastonbury Avenue
+671;54.578747;-5.862333;The Square
+672;54.637333;-5.933384;Castle Avenue
+673;54.580084;-5.864395;Glen Rise
+674;54.63858;-5.929877;Donegall Park Avenue
+675;54.58104;-5.866267;Whincroft Road
+676;54.640164;-5.92958;Downview Avenue
+677;54.578782;-5.865727;Roddens Gardens
+678;54.639628;-5.932505;Downview
+679;54.576497;-5.866579;Glen Road
+680;54.638074;-5.933022;Donegall Park Avenue
+681;54.575585;-5.86866;Ballygowan Road
+682;54.637162;-5.933399;Castle Avenue
+683;54.577537;-5.871461;Brentwood Park
+684;54.63519;-5.933751;Glastonbury Avenue
+685;54.578579;-5.874595;Clonduff
+686;54.633787;-5.934313;Landsdowne Road
+687;54.581356;-5.881377;Marshalls Road
+688;54.63237;-5.934997;Somerton Park
+689;54.5826;-5.884097;Orangefield Cres.
+690;54.630378;-5.935409;Dominican College
+691;54.583776;-5.886686;Trigo Parade
+692;54.627601;-5.934536;Somerton Road (Fortwilliam Park)
+693;54.585392;-5.890386;Ladas Drive
+694;54.62643;-5.933757;Somerton Road (Hospice)
+695;54.586606;-5.892903;Loopland
+696;54.62457;-5.933158;Somerton Inn
+697;54.623414;-5.931621;Fortwilliam Parade
+698;54.58894;-5.896393;Ardgowan Street
+699;54.621405;-5.9309;Grove Playing Fields
+700;54.590392;-5.897678;Clara Street
+701;54.619572;-5.93142;Alexandra Park Avenue
+702;54.591937;-5.899111;John Long's Corner
+703;54.618777;-5.929856;145 Alexandra Park Avenue
+704;54.593672;-5.90222;Paxton Street
+705;54.617861;-5.926203;41 Alexandra Park Avenue
+706;54.594735;-5.904381;Castlereagh Street (Albertbridge Road)
+707;54.616617;-5.925463;Castleton Avenue
+708;54.595752;-5.906322;The Green
+709;54.615362;-5.926194;Mountcollyer
+710;54.596914;-5.908199;Mountpottinger Road
+711;54.598318;-5.910936;Short Strand (Mountpottinger)
+712;54.607165;-5.851642;Cairnburn Gardens No 36
+713;54.598904;-5.912294;Scirocco Works
+714;54.610107;-5.852478;Old Holywood Road (Kennelbridge) Outside No 116
+715;54.654482;-5.927349;Arthur Road
+716;54.592695;-5.90321;Pottinger Street
+717;54.654546;-5.927898;McIlroy Court
+718;54.592741;-5.901232;Calvin Street
+719;54.656022;-5.921759;Longlands Road
+720;54.592568;-5.899063;Trillick Street
+721;54.657154;-5.91875;Abbeycentre
+722;54.591977;-5.896219;Avoniel Road
+723;54.656548;-5.916908;Abbeycentre
+724;54.591637;-5.892516;Elmgrove
+725;54.654918;-5.91976;Abbeycentre
+726;54.592768;-5.889526;Bloomfield Mill
+727;54.655828;-5.921911;Longlands Road
+728;54.593443;-5.886137;Bloomfield Road (St Donard's)
+729;54.592484;-5.883521;Lichfield Avenue
+730;54.591369;-5.880441;Bloomfield
+731;54.602285;-5.93254;North Street
+732;54.59362;-5.876149;North Road
+733;54.603138;-5.936728;Peter's Hill
+734;54.595289;-5.87544;Cypress Gardens
+735;54.603553;-5.941942;Lower Shankill
+736;54.592514;-5.877267;Orangefield Road
+737;54.603875;-5.946389;Agnes Street
+738;54.591294;-5.880806;Bloomfield Roundabout
+739;54.604047;-5.949659;Shankill Road (Co-op)
+740;54.592544;-5.883914;Litchfield Avenue
+741;54.604213;-5.952309;Berlin Street
+742;54.593179;-5.888203;Holycroft Avenue
+743;54.604327;-5.954303;Tennent Street
+744;54.592173;-5.890414;Abetta Parade
+745;54.604434;-5.955986;Glenwood Street
+746;54.591563;-5.89288;Elmgrove
+747;54.605704;-5.959518;Mayo Street
+748;54.591682;-5.895323;Clara Street
+749;54.606909;-5.961975;Woodvale Avenue
+750;54.592306;-5.898264;Trillick Street
+751;54.607882;-5.96303;Woodvale Park
+752;54.592647;-5.901641;Calvin Street
+753;54.609037;-5.964816;Woodvale Park (Ballygomartin)
+754;54.594591;-5.868574;Stock Brothers
+755;54.602828;-5.981903;Springhill Primary School
+756;54.60422;-5.980056;Ballygomartin (Highcliffe Gardens)
+757;54.592663;-5.86757;King's Road
+758;54.605703;-5.978435;Ballymagarry Lane
+759;54.590372;-5.864411;Clara Park
+760;54.607745;-5.974854;Lyndhurst Gardens
+761;54.608842;-5.972699;Ballygomartin (West Circular Road)
+762;54.609773;-5.970094;Ballygomartin (Glencairn Cres)
+763;54.602742;-5.981771;Springhill Primary School
+764;54.601655;-5.981742;Springmartin Road
+765;54.590474;-5.864854;Clara Park
+766;54.609504;-5.967046;Woodvale Park (Ballygomartin)
+767;54.592542;-5.867698;King's Road
+768;54.601414;-5.981688;Springmartin Road
+769;54.609662;-5.969091;Ballygomartin (Glencairn Cresc)
+770;54.594198;-5.868506;Hewitt Parade
+771;54.608085;-5.973818;Ballygomartin (West Circular Road)
+772;54.584737;-5.865131;24 Clarawood Park
+773;54.606828;-5.9765;Ballygomartin Road
+774;54.610193;-5.972893;Forthriver Road (Ballygomartin)
+775;54.585525;-5.866909;13 Clarawood Estate
+776;54.612009;-5.974836;Forthriver Pass
+777;54.585419;-5.869097;117 Clarawood Park
+778;54.61325;-5.97677;Forthriver Scout Hall
+779;54.585559;-5.868956;Clarawood Flats
+780;54.615344;-5.978726;Forthriver Way
+781;54.586253;-5.870028;Clarawood Grove
+782;54.616594;-5.980367;Forthriver Drive
+783;54.588067;-5.868714;13 Clarawood Park
+784;54.618609;-5.98199;Glencairn Mission Hall
+785;54.588128;-5.867914;4 Clarawood Park
+786;54.620693;-5.984534;Forthriver Parade
+787;54.595469;-5.845859;10 Castlehill Road
+788;54.621309;-5.984656;Glencairn (Forthriver Road)
+789;54.598173;-5.845122;Campbell College Grounds
+790;54.620027;-5.983182;Forthriver Dale
+791;54.598448;-5.844947;43 Castlehill Road
+792;54.618921;-5.982067;Glencairn Mission Hall
+793;54.60273;-5.843787;96 Castlehill Road
+794;54.616925;-5.98043;Forthriver Drive
+795;54.602813;-5.843717;123 Castlehill Road
+796;54.614728;-5.977767;Forthriver Way
+797;54.613079;-5.976227;Forthriver Scout Hall
+798;54.594885;-5.824306;Stoney Road
+799;54.612067;-5.974703;Forthriver Pass
+800;54.597613;-5.887634;Holywood Arches
+801;54.610503;-5.972783;Forthriver Road (Ballygomartin)
+802;54.597233;-5.885476;Grampian Avenue
+803;54.610564;-5.963245;Mount Eden Court
+804;54.596517;-5.883115;Irwin Avenue
+805;54.611576;-5.963389;Woodvale Parade
+806;54.596193;-5.877803;Clonlee Drive
+807;54.612623;-5.963817;Woodvale Road
+808;54.595767;-5.873983;North Road
+809;54.614524;-5.966171;Ardoyne Shops
+810;54.595424;-5.87093;Castleview Terrace
+811;54.595306;-5.870702;Ballyhackamore
+812;54.615988;-5.968422;Everton Complex
+813;54.59605;-5.876658;North Road
+814;54.616639;-5.969415;Somerdale Park
+815;54.596112;-5.878941;Wynfield Court
+816;54.617549;-5.970743;Mercy Primary School
+817;54.596279;-5.882427;Beersbridge Road
+818;54.618251;-5.971835;Abbeydale Park
+819;54.597447;-5.887494;Holywood Arches
+820;54.619114;-5.973205;Wheatfield Gardens
+821;54.57995;-5.877822;Montgomery Road
+822;54.620567;-5.975501;Glenside Park
+823;54.622041;-5.976916;Crumlin Road (Glenbank Corner)
+824;54.594895;-5.860766;Greenwood  Primary
+825;54.623782;-5.977303;28 Ligoniel Road
+826;54.624108;-5.979412;Ligoniel Park
+827;54.594788;-5.857364;Knock Road
+828;54.624977;-5.981993;78 Ligoniel Road
+829;54.594539;-5.85192;Hawthorden Court
+830;54.625858;-5.983644;Ligoniel Community Centre
+831;54.59445;-5.849061;Cabin Hill
+832;54.627306;-5.985801;Wolfhill Centre
+833;54.594484;-5.844589;Stormont Park
+834;54.628456;-5.987216;Ligoniel Place
+835;54.594567;-5.842258;Stormont
+836;54.629567;-5.988178;252 Ligoniel Road
+837;54.594743;-5.83673;Stormont Court
+838;54.631425;-5.98991;Wolfhill
+839;54.594963;-5.831221;Rosepark
+840;54.629398;-5.987836;297 Ligoniel Road
+841;54.594218;-5.826055;Dundonald House
+842;54.604327;-5.931157;Donegall Street
+843;54.594384;-5.819117;Dundonald Cemetery
+844;54.604951;-5.931884;Donegall Street
+845;54.595021;-5.814871;Comber Road
+846;54.605767;-5.933341;Clifton Street
+847;54.595005;-5.811679;Ulster Hospital
+848;54.607103;-5.935949;Carlisle Circus (Clifton Street)
+849;54.595149;-5.811677;Ulster Hospital
+850;54.608226;-5.940117;Crumlin Road (Mater Hospital)
+851;54.59488;-5.814796;Comber Road
+852;54.609036;-5.944239;Crumlin Road (Agnes Street)
+853;54.594204;-5.820231;Dundonald Cemetery
+854;54.610025;-5.9492;Jaffa Street
+855;54.594036;-5.82356;Ardcarn
+856;54.610339;-5.950873;St Mary's
+857;54.594485;-5.827846;Rosepark
+858;54.610948;-5.953985;Tennent Street
+859;54.594768;-5.835106;Summerhill Avenue
+860;54.611528;-5.956877;Flax Street
+861;54.594575;-5.838634;Stormont Court
+862;54.613089;-5.963025;Ardoyne
+863;54.594486;-5.841723;Stormont
+864;54.628222;-5.985318;Mountainhill Walk
+865;54.594399;-5.844457;Stormont Park
+866;54.628677;-5.982959;Old Mill Road
+867;54.594331;-5.847997;Cabin Hill
+868;54.627898;-5.97986;Ligoniel
+869;54.594355;-5.850059;Hawthorden Court
+870;54.628515;-5.983502;Mountainhill Road
+871;54.59467;-5.85712;Knock Road
+872;54.62758;-5.985952;190 Ligoniel Road
+873;54.626795;-5.984682;Ligoniel Church
+874;54.59486;-5.86242;Belmont Church Road
+875;54.625252;-5.982376;133 Ligoniel Road
+876;54.594969;-5.865203;Astoria Gardens
+877;54.624366;-5.980057;Ligoniel Park
+878;54.595075;-5.867242;Hillview Avenue
+879;54.62391;-5.97806;37 Ligoniel Road
+880;54.624051;-5.975687;Leggagh Court
+881;54.624195;-5.974027;Tedburn Park
+882;54.623344;-5.972285;Bilston Road
+883;54.624316;-5.97007;Ballysillan Leisure Centre
+884;54.625681;-5.968235;Silverstream Gardens
+885;54.628364;-5.966512;Churchview
+886;54.629625;-5.968092;Ballysillan Drive
+887;54.631421;-5.970376;Ballysillan Avenue
+888;54.631559;-5.970281;Silverstream (Ballysillan Park)
+889;54.630317;-5.968641;Clareglen
+890;54.588989;-5.934572;Bradbury Place
+891;54.586803;-5.935692;University Road
+892;54.629778;-5.963147;Ballysillan Road
+893;54.584243;-5.936436;Queen's University
+894;54.630482;-5.96196;Carr's Glen
+895;54.582289;-5.936232;Ulster Museum
+896;54.628855;-5.964142;Wallasey Park
+897;54.580546;-5.935351;Ashby Buildings
+898;54.627956;-5.965217;Formby Park
+899;54.578573;-5.934077;Sandhurst Drive
+900;54.625489;-5.968325;Silverstream Gardens
+901;54.576103;-5.933127;Stranmillis Mews
+902;54.623507;-5.972812;Bilston Road
+903;54.573174;-5.933046;Stranmillis College
+904;54.624349;-5.974553;Tedburn Park
+905;54.571699;-5.93442;Sharman Road
+906;54.622998;-5.97625;Crumlin Road (Glenbank Corner)
+907;54.570084;-5.938459;Richmond Park
+908;54.620711;-5.975515;Glenside Park
+909;54.569818;-5.941096;Stranmillis (Broomhill Park)
+910;54.618385;-5.971863;Abbeydale Park
+911;54.570256;-5.938136;Richmond Park
+912;54.57203;-5.934205;Sharman Road
+913;54.616557;-5.968895;Somerdale Park
+914;54.574445;-5.933246;Stranmillis College
+915;54.615798;-5.967923;Everton Complex
+916;54.577217;-5.933714;Ridgeway Street
+917;54.580089;-5.935292;Ashby Buildings
+918;54.614266;-5.965542;Ardoyne Shops
+919;54.582577;-5.936492;Ulster Museum
+920;54.613087;-5.963909;Woodvale Road (Twaddell)
+921;54.584881;-5.936436;Queen's University
+922;54.610516;-5.963054;Mount Eden Court
+923;54.587273;-5.935908;University Road
+924;54.609264;-5.962855;Woodvale Road Youth Club
+925;54.588648;-5.935112;Bradbury Place
+926;54.607816;-5.962853;Woodvale Park
+927;54.606408;-5.960532;Cambrai Street
+928;54.613945;-5.919968;Duncrue Street (Northern Road)
+929;54.605666;-5.959282;Mayo Street
+930;54.616796;-5.91829;Duncrue Street (Milewater Road)
+931;54.604716;-5.95699;Glenwood Street
+932;54.619323;-5.914968;Duncrue Street (McKee Building)
+933;54.604472;-5.954844;Tennent Street
+934;54.62054;-5.91321;Duncrue Street (Powerplant Trade)
+935;54.604368;-5.952231;Berlin Street
+936;54.621686;-5.913367;Bretland House
+937;54.604157;-5.948229;Shankill Road (Co-op)
+938;54.622426;-5.915794;Duncrue Road (Scruttons)
+939;54.604033;-5.945986;Agnes Street
+940;54.62376;-5.915442;Duncrue Pass
+941;54.603721;-5.942021;Lower Shankill
+942;54.625962;-5.914909;Duncrue Road (Musgrave Cash & Carry)
+943;54.603345;-5.93729;Peter's Hill
+944;54.626426;-5.912815;Dargan Crescent (Auto Trader)
+945;54.602721;-5.933512;North Street
+946;54.626433;-5.909824;Dargan Crescent (BKB Bathroom)
+947;54.613081;-5.962467;Ardoyne
+948;54.627551;-5.90804;Dargan Crescent (Vodafone)
+949;54.611456;-5.956049;Cambrai Street
+950;54.629835;-5.906942;Dargan Road (Powerteam)
+951;54.610832;-5.952858;Tennent Street
+952;54.629422;-5.895772;Westbank Road (Thomas Johnston)
+953;54.609906;-5.948182;Century Street
+954;54.630363;-5.893645;Westbank Road (Norse Merchant)
+955;54.609076;-5.94384;Crumlin Road (Agnes Street)
+956;54.631994;-5.890189;Westbank Road (Express Hoses)
+957;54.608206;-5.939356;Crumlin Road (Mater Hospital)
+958;54.634104;-5.886391;Westbank Road (last stop outward)
+959;54.607306;-5.936077;Carlisle Circus (Clifton Street)
+960;54.633831;-5.886505;Westbank Road (first stop inward)
+961;54.606122;-5.933763;Clifton Street
+962;54.631736;-5.890397;Westbank Road (Liverpool Ferry)
+963;54.604869;-5.931628;Donegall Street
+964;54.630891;-5.892068;Westbank Road (Norse Merchant)
+965;54.609916;-5.947036;Oldpark Road (Agnes Street)
+966;54.630124;-5.893824;Westbank Road (last stop inward)
+967;54.610963;-5.948036;Oldpark Library
+968;54.629621;-5.907448;Dargan Road (Powerteam)
+969;54.612268;-5.947992;Hillview Road
+970;54.6281;-5.914433;Duncrue Street (BCC Contract Services)
+971;54.614394;-5.949268;Churchview Court
+972;54.625544;-5.914761;Duncrue Road (Musgrave Cash & Carry)
+973;54.615728;-5.951102;Ardoyne Avenue
+974;54.623448;-5.91535;Duncrue Road (Pickfords)
+975;54.616795;-5.953421;Marrowbone Park
+976;54.619668;-5.91432;Duncrue Street (McKee Building)
+977;54.617854;-5.954315;Deerpark Road (The Park)
+978;54.615195;-5.919127;Duncrue Street (Ulsterbus)
+979;54.619223;-5.953409;Torrens Crescent
+980;54.581218;-5.938172;Malone Road (Eglantine Ave)
+981;54.621548;-5.955216;Cliftonville Circus
+982;54.57979;-5.938948;Malone Road (Chlorine Gardens)
+983;54.62289;-5.959252;Dunkeld Gardens
+984;54.577692;-5.941501;Malone Road (Sans Souci Park)
+985;54.576068;-5.944146;Malone Road (Beechlands)
+986;54.623942;-5.961741;Deerpark Road
+987;54.573125;-5.946695;Malone Road (Notting Hill)
+988;54.625377;-5.963788;Joanmount Park
+989;54.571077;-5.947147;Malone Road (Cranmore Park)
+990;54.62665;-5.965818;Oldpark Shops
+991;54.568496;-5.948244;Malone Road (Osbourne)
+992;54.626392;-5.965189;Oldpark Shops
+993;54.567266;-5.949301;Malone Road (Bladon Drive)
+994;54.624817;-5.962772;Carr's Glen Primary School
+995;54.565785;-5.950303;Malone Road (Myrtlefield Park)
+996;54.623828;-5.961389;Deerpark Road
+997;54.555422;-5.948712;Newforge Lane
+998;54.622861;-5.958769;Dunkeld Gardens
+999;54.562665;-5.952183;Malone Road (Balmoral Avenue)
+1000;54.622054;-5.956226;Cliftonville Circus
+1001;54.56082;-5.953072;Malone Road (Mount Eden Park)
+1002;54.620607;-5.954009;Oldpark Road
+1003;54.559713;-5.954172;Malone Road (Malone Hill Park)
+1004;54.619263;-5.953305;Torrens Crescent
+1005;54.55797;-5.959357;Malone Road (Bristow Park)
+1006;54.618335;-5.953633;Deerpark Road (The Park)
+1007;54.557575;-5.962336;Upper Malone Road (Greenview Park)
+1008;54.616869;-5.953351;Marrowbone Park
+1009;54.555747;-5.965687;Upper Malone Road (Malton Drive)
+1010;54.555005;-5.967487;Upper Malone Road (Dub Lane)
+1011;54.615234;-5.950264;Oldpark Ave
+1012;54.554158;-5.971072;Upper Malone Road (Malone Heights)
+1013;54.612663;-5.947752;Hillview Road
+1014;54.5525;-5.974191;Upper Malone Road (Malone View)
+1015;54.61176;-5.94785;Hillview Court
+1016;54.551616;-5.976441;Finaghy Road South (Trossachs)
+1017;54.610197;-5.947249;Oldpark Road (Agnes Street)
+1018;54.553519;-5.97819;Chippendale Court
+1019;54.613931;-5.937554;Belfast Royal Academy
+1020;54.555927;-5.98073;Erinvale Avenue
+1021;54.614602;-5.939866;Cliftonville Road (Academy)
+1022;54.556637;-5.981031;Finaghy Road South (De Beere Court)
+1023;54.615666;-5.942526;Manor Street
+1024;54.558093;-5.982427;Finaghy Road South Youth Club
+1025;54.616912;-5.945436;Glenard Brook
+1026;54.560057;-5.984213;Finaghy Road South Health Center
+1027;54.618374;-5.948584;Elimgrove Street
+1028;54.562328;-5.986276;Finaghy Park Central
+1029;54.619392;-5.950713;Knutsford Drive
+1030;54.566497;-5.989934;Finaghy Road North (Orchardville)
+1031;54.620422;-5.952766;Kingsmere Avenue
+1032;54.568524;-5.992841;Ladybrook Shops
+1033;54.620125;-5.951962;Kelvin Parade
+1034;54.566691;-5.997398;Ladybrook Avenue
+1035;54.617595;-5.946804;Chestnut Gardens
+1036;54.565973;-6.000346;Ladybrook Cross
+1037;54.61681;-5.944961;Glenard Brook
+1038;54.565541;-6.000087;Ladybrook (Turning Circle)
+1039;54.615572;-5.942114;Manor Street
+1040;54.566804;-5.997239;Ladybrook Avenue
+1041;54.614317;-5.938413;Cliftonville Road (Academy)
+1042;54.568633;-5.992805;Ladybrook Shops
+1043;54.614997;-5.936588;Duncairn Gardens
+1044;54.566268;-5.989524;Finaghy Road North (Orchardville)
+1045;54.614047;-5.934249;Halliday's Road
+1046;54.562201;-5.986031;Finaghy Park Central
+1047;54.613158;-5.931715;Edlingham Street
+1048;54.560404;-5.984339;Finaghy Road South Health Center
+1049;54.612371;-5.929671;Adam Street
+1050;54.555358;-5.979715;Benmore Walk
+1051;54.611643;-5.927695;North City Business Centre
+1052;54.553595;-5.978089;Chippendale Court
+1053;54.612097;-5.929242;North City Business Centre
+1054;54.551955;-5.976521;Finaghy Rd South (Trossachs)
+1055;54.612421;-5.930048;Adam Street
+1056;54.552269;-5.974648;Malone View
+1057;54.613256;-5.932298;Edlingham Street
+1058;54.554593;-5.969877;Malone Heights
+1059;54.614257;-5.934998;Halliday's Road
+1060;54.555999;-5.965417;Malton Drive
+1061;54.608259;-5.936634;Carlisle Circus (Antrim Road)
+1062;54.556953;-5.963762;Fleming Fulton
+1063;54.608986;-5.936395;Lincoln Avenue
+1064;54.557758;-5.961983;Harberton Park
+1065;54.611463;-5.936014;Kane Cottage
+1066;54.558067;-5.958577;House of Sport
+1067;54.613023;-5.936165;New Lodge Road
+1068;54.559476;-5.954567;Malone Road (Malone Hill Park)
+1069;54.614332;-5.936834;Cliftonville Road
+1070;54.560961;-5.953148;Malone Road (Mount Eden Park)
+1071;54.564003;-5.951693;Malone Road (Balmoral Avenue)
+1072;54.615569;-5.937511;Antrim Road (Eia Street)
+1073;54.565486;-5.950645;Malone Road (Myrtlefield Park)
+1074;54.617424;-5.93828;Waterworks
+1075;54.568506;-5.948492;Malone Road (Bladon Drive)
+1076;54.619284;-5.938599;Richmond Lane
+1077;54.571618;-5.947385;Malone Road (Cranmore Park)
+1078;54.621915;-5.938187;Willowbank Gardens
+1079;54.573164;-5.946853;Malone Road (Notting Hill)
+1080;54.624035;-5.938532;Kansas Avenue
+1081;54.574119;-5.946264;Malone Road (Victoria College)
+1082;54.626175;-5.937979;Antrim Road (Salisbury Avenue)
+1083;54.5757;-5.944962;Malone Road (Adelaide Park)
+1084;54.62833;-5.938916;Firmount
+1085;54.630142;-5.938782;Chichester Avenue
+1086;54.578131;-5.940738;Malone Road (Windsor Ave)
+1087;54.633245;-5.937671;North Circular Road
+1088;54.580592;-5.938623;Malone Road (Eglantine Ave)
+1089;54.635493;-5.936881;Strathmore Park
+1090;54.582352;-5.937616;Malone Road (Methodist College)
+1091;54.639165;-5.936523;Donegall Park Avenue
+1092;54.640704;-5.93647;Downview Avenue
+1093;54.58781;-5.936812;Fountainville Avenue
+1094;54.586318;-5.939826;Lisburn Road (City Hospital)
+1095;54.64287;-5.935982;Downview Lodge
+1096;54.584064;-5.943015;Ulsterville Avenue
+1097;54.645251;-5.93522;Gray's Lane
+1098;54.581909;-5.947049;Melrose Street
+1099;54.64735;-5.934834;Antrim Road (Serpentine Road)
+1100;54.580553;-5.9489;Windsor Avenue
+1101;54.651579;-5.934778;Ben Madigan Park
+1102;54.579508;-5.950347;Windsor Road
+1103;54.654038;-5.936582;Kincraig Park
+1104;54.578584;-5.951357;Ethel Street
+1105;54.656388;-5.93788;Tree Tops
+1106;54.577387;-5.952758;Brookland Street
+1107;54.658061;-5.940385;Hazelwood Park
+1108;54.575236;-5.955568;Lisburn Road (Marlborough Park)
+1109;54.659619;-5.94308;Bellevue Park
+1110;54.574025;-5.957386;Cranmore Avenue
+1111;54.663127;-5.947206;Antrim Road (Bellevue)
+1112;54.572926;-5.959091;Lancefield Road
+1113;54.664032;-5.948131;Bellevue Bridge
+1114;54.571622;-5.961286;Maryville Park
+1115;54.66674;-5.950846;Elmfield
+1116;54.56993;-5.964326;Malone Park
+1117;54.668508;-5.953733;Church Road
+1118;54.567645;-5.968995;Lisburn Road (Kings Hall)
+1119;54.670254;-5.957534;Glengormley (Ulster Bank)
+1120;54.566187;-5.972862;Kingscourt
+1121;54.672782;-5.961071;Harmin Parade
+1122;54.565164;-5.975796;Balmoral Park
+1123;54.674064;-5.964237;Rose Park
+1124;54.564282;-5.978295;Priory Park
+1125;54.675166;-5.967092;Antrim Road (Burney's Lane)
+1126;54.676916;-5.972415;Swanston Road
+1127;54.562637;-5.977701;Sicily Park
+1128;54.677473;-5.974363;Sandyknowes
+1129;54.559679;-5.974952;Sicily Park (Priory Park)
+1130;54.677723;-5.974962;Sandyknowes
+1131;54.559161;-5.972936;Balmoral (Finnis Drive)
+1132;54.676271;-5.969869;Swanston Park
+1133;54.560046;-5.975266;Sicily Park (Priory Park)
+1134;54.56342;-5.978505;Sicily Park
+1135;54.675024;-5.966504;Antrim Road (Burney's Lane)
+1136;54.563792;-5.979516;Lisburn Road (Sicily Park)
+1137;54.674319;-5.964666;Rose Park
+1138;54.562399;-5.982739;Grangeville Drive
+1139;54.672422;-5.960275;Harmin Parade
+1140;54.56069;-5.986039;Lisburn Road (Finaghy)
+1141;54.669757;-5.956508;Glengormley (Ulster Bank)
+1142;54.558761;-5.989162;Upton Park
+1143;54.668294;-5.952844;Church Road
+1144;54.667113;-5.951006;Elmfield
+1145;54.555851;-5.992313;Black's Road
+1146;54.618886;-5.949409;Cardigan Drive
+1147;54.552627;-6.000043;Dunmurry Lane
+1148;54.550921;-6.004301;Dunmurry Village
+1149;54.664768;-5.94873;O'Neill Road
+1150;54.548536;-6.009482;Grange Hill
+1151;54.662871;-5.946762;Antrim Road (Bellevue)
+1152;54.544326;-6.01357;Lisburn Road (Seymour Hill)
+1153;54.661381;-5.945019;Whitewell
+1154;54.541404;-6.013005;Ballybog Road
+1155;54.660038;-5.943446;Floral Park
+1156;54.538905;-6.013517;Conway (River Road)
+1157;54.658822;-5.941296;Bellevue Park
+1158;54.541983;-6.01399;Ballybog Road
+1159;54.657849;-5.939992;Hazelwood Park
+1160;54.544937;-6.013058;Lisburn Road (Seymour Hill)
+1161;54.656601;-5.937994;Tree Tops
+1162;54.548821;-6.009309;Grange Hill
+1163;54.652628;-5.935143;Thronemount
+1164;54.550369;-6.006305;Dunmurry Halt
+1165;54.651469;-5.934565;Ben Madigan Park
+1166;54.55121;-6.003432;Dunmurry Village
+1167;54.647017;-5.934553;Antrim Road (Serpentine Road)
+1168;54.553409;-5.999222;Beechlawn Park
+1169;54.556292;-5.992031;Black's Road
+1170;54.642347;-5.936025;Downview Lodge
+1171;54.55849;-5.989739;Upton Park
+1172;54.640494;-5.936295;Downview Avenue
+1173;54.559902;-5.987556;Lowe Memorial Church
+1174;54.638414;-5.936373;Donegall Park Avenue
+1175;54.561835;-5.98403;Lisburn Road (Finaghy)
+1176;54.636657;-5.936482;Belfast Castle
+1177;54.563228;-5.981055;Donegall Park
+1178;54.633697;-5.937327;North Circular Road
+1179;54.564991;-5.976677;Beechmount Park
+1180;54.630229;-5.938619;Chichester Avenue
+1181;54.566028;-5.973868;Kingscourt
+1182;54.628266;-5.938678;Firmount
+1183;54.568236;-5.968542;Lisburn Road (Kings Hall)
+1184;54.625471;-5.937803;Antrim Road (Salisbury Avenue)
+1185;54.569816;-5.964779;Malone Park
+1186;54.624347;-5.938345;Glandore Avenue
+1187;54.570563;-5.963412;Lislea Park
+1188;54.622517;-5.938183;Hopefield Avenue
+1189;54.571994;-5.960904;Osbourne Park
+1190;54.620699;-5.937945;Alexandra Park Avenue
+1191;54.573241;-5.958796;Capstone Street
+1192;54.619498;-5.938372;Richmond Lane
+1193;54.575295;-5.955698;Lisburn Road (Marlborough Park)
+1194;54.618063;-5.938248;Waterworks
+1195;54.577541;-5.952727;Brookland Street
+1196;54.615804;-5.937487;Antrim Road (Eia Street)
+1197;54.579737;-5.950214;Windsor Road
+1198;54.614576;-5.936795;Cliftonville Road
+1199;54.581175;-5.948325;Windsor Avenue
+1200;54.613129;-5.935943;New Lodge Road
+1201;54.582069;-5.947111;Melrose Street
+1202;54.610614;-5.935839;Dawson Street
+1203;54.58354;-5.944467;Ashley Avenue
+1204;54.608375;-5.936382;Carlisle Circus (Antrim Road)
+1205;54.584176;-5.943181;Ulsterville Avenue
+1206;54.646656;-5.921026;Catherine Court
+1207;54.586398;-5.939865;Lisburn Road (City Hospital)
+1208;54.647557;-5.922106;Hazelwood College
+1209;54.587391;-5.938072;Fountainville Avenue
+1210;54.64932;-5.924292;Serpentine Road
+1211;54.589347;-5.935458;Belfast Hostelling International
+1212;54.650599;-5.92592;Vandyck Gardens
+1213;54.589107;-5.938702;Donegall Road 78
+1214;54.651781;-5.927461;Lower WhitewelL(White City)
+1215;54.588765;-5.94282;Donegall Road 175
+1216;54.654453;-5.931038;Upper Whitewell (Throne)
+1217;54.58865;-5.946092;Pandora Street
+1218;54.656365;-5.933364;Throne Centre
+1219;54.588912;-5.950174;McDowells Pharmacy
+1220;54.658157;-5.93605;Fairyknowe Park
+1221;54.588798;-5.954221;Frenchpark Street
+1222;54.660319;-5.939533;Bellevue Park
+1223;54.58859;-5.956709;Donegall Road, Monarch Laundry
+1224;54.660102;-5.939016;Bellevue Park
+1225;54.658091;-5.935858;Fairyknowe Park
+1226;54.656359;-5.933255;Throne Centre
+1227;54.585399;-5.956942;Tates Avenue
+1228;54.653947;-5.930276;Upper Whitewell (Throne)
+1229;54.584769;-5.953644;Donegall Parade
+1230;54.651758;-5.927334;Lower WhitewelL(White City)
+1231;54.586544;-5.951617;Donegall Road 113
+1232;54.650861;-5.926147;Vandyck Gardens
+1233;54.588192;-5.950198;Donegall Road 15
+1234;54.649851;-5.924839;Veryan Gardens
+1235;54.584266;-5.959665;Olympia Leisure Centre
+1236;54.648746;-5.92343;Serpentine Road
+1237;54.646948;-5.921194;Catherine Court
+1238;54.571618;-5.970713;Boucher Road (City Council Depot)
+1239;54.658125;-5.92373;Newtownabbey Courthouse
+1240;54.57161;-5.973158;Stockmans Lane 95
+1241;54.66131;-5.927016;Valley Retail Park
+1242;54.588316;-5.963156;Park Centre
+1243;54.663151;-5.930437;Valley Leisure Centre
+1244;54.588883;-5.966169;Donegall Road 506
+1245;54.589165;-5.967699;Donegall Road 532
+1246;54.576547;-5.97864;Blackstaff Road
+1247;54.661626;-5.927264;Valley Retail Park
+1248;54.571885;-5.973556;Stockmans Lane 99
+1249;54.658378;-5.923708;Newtownabbey Courthouse
+1250;54.573879;-5.96841;Boucher Road (Charles Hurst)
+1251;54.666215;-5.903875;Northern Regional College
+1252;54.670805;-5.902361;Abbey Court
+1253;54.672471;-5.90758;Fernagh Avenue
+1254;54.584563;-5.959663;Autoglass
+1255;54.672985;-5.910888;Cloughfern (Station Road)
+1256;54.586614;-5.958298;Glenmachan Street
+1257;54.589298;-5.968037;Donegall Road 583
+1258;54.588826;-5.965699;Donegall Road 545
+1259;54.588347;-5.962772;Park Centre
+1260;54.588704;-5.956519;Monarchy Laundry
+1261;54.588977;-5.952581;Donegall Road Methodist Church
+1262;54.588962;-5.950582;Donegall Road Disabled Care Centre
+1263;54.68088;-5.951073;Prince Charles Way (Cairnhill Road)
+1264;54.588675;-5.94532;Pandora Street
+1265;54.681453;-5.952789;Ferndale Avenue
+1266;54.588822;-5.942732;Abingdon Drive
+1267;54.682632;-5.957188;Ferndale
+1268;54.589217;-5.937784;Donegall Road 53
+1269;54.684922;-5.961416;Prince Charles Way (Glebe Road)
+1270;54.589403;-5.935123;Belfast Hostelling International
+1271;54.685707;-5.961322;Carnview Road
+1272;54.688002;-5.954405;Waverley Gardens
+1273;54.687666;-5.955055;Waverly
+1274;54.684401;-5.960294;Prince Charles Way (Glebe Road)
+1275;54.682784;-5.957218;Ferndale
+1276;54.680899;-5.950764;Prince Charles Way (Cairnhill Road)
+1277;54.673213;-5.911919;Cloughfern (Station Road)
+1278;54.67274;-5.908723;Fernagh Avenue
+1279;54.672216;-5.906019;Whiteabbey Halt
+1280;54.670913;-5.902356;Abbey Court
+1281;54.668038;-5.902002;Northern Regional College
+1282;54.66223;-5.906967;Shore Road (M5 Roundabout)
+1283;54.66227;-5.907111;Shore Road (M5 Roundabout)
+1284;54.662303;-5.909705;Abbey Park
+1285;54.66415;-5.911263;Rush Park
+1286;54.66651;-5.912546;Doagh Road (Green End)
+1287;54.668683;-5.912926;Abbot's Cross
+1288;54.670401;-5.913215;Heather Park
+1289;54.672729;-5.913517;Cloughfern (Whiteabbey Hospital)
+1290;54.675031;-5.914654;Knockenagh Avenue
+1291;54.677851;-5.916431;King's Road
+1292;54.680205;-5.9179;Hillcrest Villas
+1293;54.681975;-5.919049;Doagh Road (Cherrylands)
+1294;54.686273;-5.922428;Wilson's Factory
+1295;54.6893;-5.926416;Ballyduff
+1296;54.61055;-5.920664;Nelson Street Bus Lane
+1297;54.608566;-5.922208;Nelson Street (Dock Street)
+1298;54.606192;-5.924396;Nelson Street (M3)
+1299;54.604616;-5.928071;Dunbar Link
+1300;54.601502;-5.931194;Royal Avenue (Castle Court)
+1301;54.600449;-5.930644;Royal Avenue
+1302;54.598291;-5.934773;King Street
+1303;54.597179;-5.934123;Wellington Place
+1304;54.597838;-5.93349;College Street
+1305;54.598236;-5.93342;Queen Street
+1306;54.598729;-5.933219;Queen Street
+1307;54.597556;-5.929993;Donegall Place
+1308;54.59692;-5.928553;Donegall Square East
+1309;54.596651;-5.928527;Donegall Square East
+1310;54.596292;-5.928508;Donegall Square East
+1311;54.595823;-5.932133;Howard Street
+1312;54.597433;-5.928246;Chichester Street
+1313;54.597507;-5.927355;Chichester Street
+1314;54.690079;-5.927345;Three Mile Water
+1315;54.68796;-5.924485;Bridge Road
+1316;54.685883;-5.921692;Wilson's Factory
+1317;54.682772;-5.919436;Doagh Road (Cherrylands)
+1318;54.681019;-5.918305;Hillcrest Villas
+1319;54.681635;-5.910665;Glenville (Monkstown Avenue)
+1320;54.681383;-5.910967;Glenville (Monkstown Avenue)
+1321;54.678367;-5.916605;King's Road
+1322;54.674842;-5.914372;Knockenagh Avenue
+1323;54.672304;-5.913321;Cloughfern (Whiteabbey Hospital)
+1324;54.670646;-5.91313;Heather Park
+1325;54.668105;-5.912715;Abbot's Cross
+1326;54.666344;-5.91239;Doagh Road (Green End)
+1327;54.664146;-5.911123;Rush Park
+1328;54.662104;-5.909469;Abbey Park
+1329;54.688105;-5.926098;Ballyduff Road (Doagh Road)
+1330;54.688676;-5.929025;Ballyduff Gardens
+1331;54.690505;-5.928923;Ballyfore Road (Doagh Road)
+1332;54.688403;-5.929946;Ballyduff Gardens
+1333;54.687819;-5.931038;Ballyfore Park
+1334;54.688252;-5.932664;Forthill Park
+1335;54.687665;-5.934128;Forthill Green
+1336;54.687458;-5.936623;Ballyduff (Forthill Drive)
+1337;54.689052;-5.93656;Forthill Drive (Carnmoney)
+1338;54.688751;-5.936686;Forthill Drive (Carnmoney)
+1339;54.68708;-5.934972;Ballyduff (Forthill Drive)
+1340;54.688037;-5.933745;Forthill Green
+1341;54.68927;-5.935091;Fairview Road (Ballyduff Shops)
+1342;54.689681;-5.941822;Glenkyle
+1343;54.689487;-5.945296;Fairview Road (Fairview Gardens)
+1344;54.688555;-5.948218;Fairview Road (Beverley Shops)
+1345;54.689294;-5.949826;Beverley Road
+1346;54.689249;-5.949558;Beverley Road
+1347;54.688723;-5.948017;Fairview Road (Beverley Shops)
+1348;54.689512;-5.945609;Fairview Road (Fairview Gardens)
+1349;54.689709;-5.942896;Glenkyle
+1350;54.689781;-5.936817;Fairview Road
+1351;54.689786;-5.936368;Fairview Road (Carnmoney Terminus)
+1352;54.689101;-5.934221;Fairview Road (Ballyduff Shops)
+1353;54.687767;-5.931546;Ballyfore Park
+1354;54.690362;-5.929453;Ballyfore Road (Doagh Road)
+1355;54.680055;-5.975159;Sandyknowes (Ballyhenry Road)
+1356;54.682217;-5.970404;Sherwood Park
+1357;54.684232;-5.96627;Glencroft Road
+1358;54.685941;-5.96462;Ballycraigy Road
+1359;54.689287;-5.964605;Ballyearl Drive
+1360;54.690689;-5.962445;Ballyhenry (Ballyearl Way)
+1361;54.691482;-5.960752;Milewater Court
+1362;54.691494;-5.956546;Carn Court
+1363;54.688973;-5.957728;New Mossley (Manse Way)
+1364;54.691072;-5.954874;Carn Green
+1365;54.690048;-5.95153;Campbell Road
+1366;54.691279;-5.950734;Mossley Pavilion
+1367;54.69332;-5.951305;The Glade
+1368;54.695019;-5.953256;Uppertown Drive
+1369;54.696506;-5.951506;Mossley (Rail Station)
+1370;54.695818;-5.950803;Mossley Mill
+1371;54.69405;-5.950972;The Villas
+1372;54.69303;-5.950531;Lakeview Grove
+1373;54.689994;-5.951509;Campbell Road
+1374;54.691263;-5.953977;Manse Way
+1375;54.691452;-5.956976;Carn Court
+1376;54.691352;-5.959233;Carn Crescent
+1377;54.691457;-5.961231;Milewater Drive
+1378;54.690197;-5.962365;Ballyhenry (Ballyearl Way)
+1379;54.689497;-5.963974;Ballyearl Drive
+1380;54.686024;-5.964551;Ballycraigy Road
+1381;54.682893;-5.968716;Ballyhenry Road
+1382;54.680953;-5.972748;Ballyhenry Avenue
+1383;54.679856;-5.975466;Sandyknowes (Ballyhenry Road)
+1384;54.602894;-5.930957;Central Library
+1385;54.603861;-5.929455;Interpoint
+1386;54.602654;-5.930887;Central Library
+1387;54.604343;-5.929269;Interpoint
+1388;54.603828;-5.929901;Donegall Street
+1389;54.672628;-5.959457;Glengormley Park
+1390;54.675404;-5.960674;Hillview Park
+1391;54.67706;-5.961441;Ballyclare Road (Northcott)
+1392;54.681047;-5.96301;Glenvarna Walk
+1393;54.682849;-5.963729;Carwood Avenue
+1394;54.684108;-5.964286;Manse Road
+1395;54.683668;-5.963995;Manse Road
+1396;54.681733;-5.963201;Ladysmith Lane
+1397;54.677766;-5.961572;Ballyclare Road (Northcott)
+1398;54.67578;-5.960711;Hillview Park
+1399;54.673209;-5.959576;Glengormley Park
+1400;54.67228;-5.957189;Portland Avenue
+1401;54.673754;-5.956401;Glengormley Pavilion
+1402;54.675063;-5.95569;Inniscoole Park
+1403;54.677124;-5.954556;Coole Park
+1404;54.678727;-5.953641;St. Mary's On The Hill
+1405;54.678965;-5.952159;Carnmoney (Burnthill Road)
+1406;54.678949;-5.952375;Carnmoney (Burnthill Road)
+1407;54.677283;-5.95437;St. Mary's On The Hill
+1408;54.676157;-5.954974;Coole Park
+1409;54.673776;-5.956279;Glengormley Pavilion
+1410;54.671431;-5.957571;Portland Avenue
+1411;54.682055;-5.951451;Carnmoney Primary School
+1412;54.683481;-5.951295;Carnmoney Village (Carnvue)
+1413;54.685275;-5.951174;Ballyduff Road
+1414;54.687158;-5.951062;Beverley Avenue
+1415;54.687756;-5.950934;Beverley Avenue
+1416;54.686557;-5.951004;Waverley Park
+1417;54.68507;-5.951092;Ballyduff Road
+1418;54.683286;-5.951213;Carnmoney Village (Carnvue)
+1419;54.681755;-5.951266;Carnmoney Primary School
+1420;54.669844;-5.962088;Hightown Court
+1421;54.66827;-5.965674;Hightown Park
+1422;54.666784;-5.96902;Hightown Road (Edmund Rice College)
+1423;54.669616;-5.962748;Hightown Court
+1424;54.670877;-5.959923;Hightown (Glengormley)
+1425;54.671003;-5.959392;Hightown (Glengormley)
+1426;54.676105;-5.980686;Scullion's Road
+1427;54.675779;-5.981026;Scullion's Road
+1428;54.607044;-5.925873;Northside Park & Ride
+1429;54.673525;-5.98093;Hightown Avenue
+1430;54.672559;-5.97694;Boxmore
+1431;54.672108;-5.97477;Mallusk Road (Ballyrobert Garage)
+1432;54.669249;-5.964869;Rosehall
+1433;54.66926;-5.965088;Rosehall
+1434;54.669154;-5.974077;Royal Mail (Enterprise Way)
+1435;54.672125;-5.975345;Mallusk Road (Ballyrobert Garage)
+1436;54.673312;-5.980567;Mallusk Drive
+1437;54.67506;-5.987024;Central Park (Mallusk)
+1438;54.676962;-5.993962;Mallusk Road
+1439;54.677986;-5.997555;Trench Road
+1440;54.678734;-5.998063;Hydepark (Trench Road)
+1441;54.67805;-5.990173;Blackwater Road
+1442;54.676819;-5.989323;Cloughmore Road
+1443;54.678973;-6.00116;Academy
+1444;54.679997;-6.005001;Mallusk(Parkmount)
+1445;54.681196;-6.009264;Old Mill Crescent
+1446;54.683151;-6.016473;Craigarogan Quarry
+1447;54.684334;-6.021744;Bernice Road
+1448;54.685514;-6.026829;Fort Road
+1449;54.687852;-6.037105;Oakview
+1450;54.688274;-6.037939;Roughfort (Turning Circle)
+1451;54.685758;-6.027629;Fort Road
+1452;54.684549;-6.022324;Craigarogan Road
+1453;54.683132;-6.016239;Craigarogan Quarry
+1454;54.681314;-6.009493;Old Mill Crescent
+1455;54.680153;-6.005187;Mallusk(Parkmount)
+1456;54.678496;-5.999266;Hydepark Presbyterian Church
+1457;54.677167;-5.994308;Mallusk Road
+1458;54.675076;-5.986529;Central Park (Mallusk)
+1459;54.655735;-5.910888;Merville Garden Village
+1460;54.657463;-5.909457;Merville Mews
+1461;54.65725;-5.90939;Merville Mews
+1462;54.655087;-5.911462;Merville Garden Village
+1463;54.624849;-5.948593;Oldpark (Westland Road)
+1464;54.623611;-5.949588;Knutsford Drive
+1465;54.622651;-5.951169;39 Westland Road
+1466;54.621096;-5.95528;Alliance Avenue (Oldpark Road)
+1467;54.619256;-5.957643;Deerpark Road
+1468;54.618371;-5.961044;Etna Drive
+1469;54.617936;-5.963327;Berwick Road
+1470;54.61739;-5.966265;Alliance Avenue (Ardoyne Road)
+1471;54.615419;-5.96632;Ardoyne Road
+1472;54.61568;-5.966578;Ardoyne Road
+1473;54.617548;-5.965831;Alliance Avenue (Ardoyne Road)
+1474;54.618055;-5.962997;Berwick Road
+1475;54.618498;-5.960731;Alliance Avenue (Tommy & Anne's)
+1476;54.619099;-5.958047;Etna Drive
+1477;54.620792;-5.955762;Alliance Avenue (Oldpark Road)
+1478;54.622699;-5.95136;Westland Road (Golf Course)
+1479;54.60815;-5.921176;Pilot Street
+1480;54.6067;-5.922059;Clarendon Dock
+1481;54.604009;-5.924062;Great Patrick Street
+1482;54.604746;-5.923513;Corporation Square
+1483;54.606508;-5.922444;Clarendon Dock
+1484;54.608007;-5.921426;Pilot Street
+1485;54.604798;-5.923302;Great Patrick Street
+1486;54.594326;-5.934204;Great Northern Mall
+1487;54.594038;-5.934192;Great Northern Mall
+1488;54.592945;-5.933234;Bruce Street
+1489;54.591399;-5.932651;Dublin Road
+1490;54.59102;-5.934349;Albion Street
+1491;54.594233;-5.934567;Great Northern Mall
+1492;54.596252;-5.922541;St George's Market
+1493;54.596203;-5.924596;May Street
+1494;54.596103;-5.926848;May Street
+1495;54.59569;-5.928465;Adelaide St.
+1496;54.592415;-5.926849;Ormeau Ave.
+1497;54.592916;-5.929979;Ormeau Ave.
+1498;54.593088;-5.929934;Ormeau Ave.
+1499;54.595102;-5.931351;Bedford Street
+1500;54.5973;-5.932632;Belfast City Centre
+1501;54.597317;-5.932107;Wellington Place
+1502;54.600093;-5.926938;High Street
+1503;54.603153;-5.916884;Odyssey
+1504;54.606433;-5.910321;Abercorn Basin
+1505;54.608922;-5.906748;Victoria Road
+1506;54.611853;-5.902613;Alexander Dock
+1507;54.613235;-5.900747;Queen's University (Science Park)
+1508;54.613999;-5.899364;Queen's University (Science Park)
+1509;54.611525;-5.902752;Alexander Dock
+1510;54.608601;-5.90695;Victoria Road
+1511;54.598271;-5.924052;Victoria Square
+1512;54.603426;-5.905385;Fraser Street Bridge
+1513;54.603521;-5.899662;Hamilton Road
+1514;54.604486;-5.897074;DRD
+1515;54.606922;-5.893496;Airport Road (Shorts)
+1516;54.608836;-5.890735;River Side
+1517;54.613679;-5.886704;Airport Road (BOC)
+1518;54.617534;-5.885383;Airport Road West
+1519;54.622587;-5.88292;Emo
+1520;54.626142;-5.878082;Moscow Rd / Harbour Lagoon
+1521;54.630258;-5.872289;Portside
+1522;54.633511;-5.867855;Heron Road
+1523;54.634457;-5.86303;Trident House
+1524;54.634432;-5.863539;Trident House
+1525;54.63365;-5.867449;Heron Road
+1526;54.629827;-5.872822;Portside
+1527;54.624021;-5.880825;Moscow Rd / Harbour Lagoon
+1528;54.62233;-5.883082;Phoenix Gas
+1529;54.617459;-5.885205;Airport Road West
+1530;54.608439;-5.891054;River Side
+1531;54.606543;-5.893816;Airport Road (Shorts)
+1532;54.605345;-5.89553;DRD
+1533;54.603233;-5.906373;Fraser St. Bridge
+1534;54.603154;-5.911029;Old Channel Rd.
+1535;54.614567;-5.869666;City Airport
+1536;54.594752;-5.806002;Ballyregan Road (Dundonald)
+1537;54.59479;-5.800213;Burton Avenue
+1538;54.592958;-5.798726;Drumadoon
+1539;54.592178;-5.795494;Davarr Avenue
+1540;54.590827;-5.789236;Craigleith Drive
+1541;54.593587;-5.788129;Craigleith Drive2
+1542;54.593764;-5.785358;Cairnsmore Avenue
+1543;54.592364;-5.786126;Ballybeen (Culross Drive)
+1544;54.590375;-5.78732;Ballybeen (Culross Drive)
+1545;54.588161;-5.787935;Admore Avenue
+1546;54.586881;-5.7889;Beauly Drive
+1547;54.58833;-5.790862;Gleneagles Gardens
+1548;54.588436;-5.794371;Ballybeen (Rank Road)
+1549;54.590875;-5.79545;Inchmarnock Drive
+1550;54.591791;-5.794932;Drumadoon
+1551;54.593187;-5.795418;Davarr Avenue
+1552;54.594861;-5.795403;Brooklands
+1553;54.593588;-5.799559;Robb's Road
+1554;54.594599;-5.802859;Cherry Hill
+1555;54.594712;-5.806432;Ballyregan Road (Dundonald)
+1556;54.594833;-5.812004;The Ulster Hospital
+1557;54.591736;-5.854071;Towell House
+1558;54.5901;-5.849533;King's Road (Barnetts Road)
+1559;54.589057;-5.845285;King's Square
+1560;54.588844;-5.836701;Abbey Road
+1561;54.588598;-5.831428;Granton Heights
+1562;54.588347;-5.826867;Tullycarnet (Presbyterian Church)
+1563;54.588479;-5.818703;Ice Bowl
+1564;54.587222;-5.813522;East Link
+1565;54.586575;-5.807205;Coronation Park
+1566;54.593711;-5.81337;Galway Drive
+1567;54.589207;-5.81332;East Link
+1568;54.586582;-5.807856;No 5
+1569;54.587196;-5.813752;East Link
+1570;54.587876;-5.817005;Ice Bowl
+1571;54.588346;-5.828307;Tullycarnet (Primary School)
+1572;54.588514;-5.832086;Granton House
+1573;54.588864;-5.83836;Abbey Road
+1574;54.588976;-5.844456;Supervalu
+1575;54.587774;-5.847161;Kingsway
+1576;54.587082;-5.8466;Kingsway P
+1577;54.585008;-5.843091;St Patrick's
+1578;54.583801;-5.841444;Gilnahirk Rise
+1579;54.600027;-5.926482;Laganside Bus Station
+1580;54.600044;-5.930651;Royal Avenue (Castle Court)
+1581;54.60098;-5.931191;Royal Avenue (Castle Court)
+1582;54.601147;-5.9313;Royal Avenue (Castle Court)
+1583;54.601573;-5.93148;Royal Avenue (Castle Court)
+1584;54.585173;-5.843571;St Patrick's
+1585;54.586457;-5.84617;Kensington
+1586;54.587779;-5.847301;Cherryvalley
+1587;54.590207;-5.850116;King's Road (Barnetts Road)
+1588;54.591361;-5.853152;King's Road (Knock Road)
+1589;54.583551;-5.981971;Glen Parade
+1590;54.583005;-5.984906;Gransha
+1591;54.582165;-5.987735;Glenowen
+1592;54.580878;-5.992951;Glen Road (St.Theresa's)
+1593;54.580805;-5.994616;Coolnasilla
+1594;54.57995;-5.99924;CBS
+1595;54.579037;-6.002912;Ramoan
+1596;54.57822;-6.006409;Rosnareen
+1597;54.576495;-6.013377;Shaw's Road (Glen Road)
+1598;54.576175;-6.017324;St. Oliver Plunkett
+1599;54.575899;-6.019418;Glencolin
+1600;54.576064;-6.019326;Glencolin
+1601;54.575968;-6.021654;Hannahstown Hill
+1602;54.575832;-6.023576;Glen Road (Suffolk Road)
+1603;54.575139;-6.024405;Suffolk Heights
+1604;54.573782;-6.021686;Donegal Celtic
+1605;54.573101;-6.019978;Old Suffolk Rd.
+1606;54.571132;-6.016719;Falcarragh
+1607;54.568167;-6.013377;Suffolk Road (Woodbourne)
+1608;54.599419;-5.92915;Castle Junction
+1609;54.597851;-5.930068;Donegall Place
+1610;54.595205;-5.955756;Falls Road (Royal Hospitals)
+1611;54.593209;-5.958769;Childrens Hospital
+1612;54.592128;-5.961823;Broadway
+1613;54.591481;-5.964548;Beechmount
+1614;54.590714;-5.96737;Beechview Park
+1615;54.588982;-5.969447;Falls Road (St.James's)
+1616;54.588132;-5.970123;Falls Road (City Cemetry)
+1617;54.586603;-5.971785;St Louise's
+1618;54.58564;-5.973426;Rossa House
+1619;54.584871;-5.976572;Falls Park
+1620;54.591771;-5.948283;Europa Busway
+1621;54.591632;-5.947852;Europa Busway
+1622;54.596273;-5.931557;Donegall Square West
+1623;54.596659;-5.931595;Donegall Square West
+1624;54.597008;-5.931659;Donegall Square West
+1625;54.59512;-5.866936;Ballyhackamore
+1626;54.599205;-5.934055;Castle Street
+1627;54.580226;-5.84809;Braniel (Farmhurst Green)
+1628;54.593451;-5.855007;Knock Road
+1629;54.626858;-5.857938;Holywood Exchange
+1630;54.592745;-5.854878;Knock Road
+1631;54.62814;-5.965932;Churchview
+1632;54.62839;-5.964872;Formby Park
+1633;54.654733;-5.931267;Arthur Bridge
+1634;54.611343;-5.853199;Motelands
+1635;54.616388;-5.850096;Knocknagoney Drive
+1636;54.567786;-5.917017;Annadale Bowling Green
+1637;54.568586;-5.920917;Annadale Allotments
+1638;54.571083;-5.926265;Wellington Square
+1639;54.573876;-5.929444;Annadale Terrace
+1640;54.577092;-5.930095;Lyric
+1641;54.581157;-5.927638;Queen's PEC
+1642;54.582867;-5.924257;Collingwood Avenue
+1643;54.581715;-5.924301;Dunnes
+1644;54.580742;-5.926282;Agra Street
+1645;54.577225;-5.927398;Sunnyside Street
+1646;54.575004;-5.929863;The Terrace
+1647;54.570898;-5.925876;Wellington Square
+1648;54.568781;-5.921261;Annadale Allotments
+1649;54.567977;-5.917794;Annadale Bowling Green
+1650;54.586345;-5.958272;Glenmachan Street
+1651;54.58305;-5.961932;Hurst's
+1652;54.579413;-5.966425;Boucher Retail Park
+1653;54.577566;-5.965966;Boucher Place
+1654;54.577474;-5.966035;Boucher Place
+1655;54.579702;-5.966391;Boucher Retail Park
+1656;54.58303;-5.961435;Hurst's
+1657;54.553636;-6.047228;Village Square
+1658;54.553764;-6.047164;Village Square
+1659;54.556728;-6.041376;Lagmore View
+1660;54.59603;-5.929071;Donegall Square South
+1661;54.595147;-5.794594;Davar Avenue
+1662;54.595017;-5.788123;High School
+1663;54.594364;-5.781697;Carrowreagh Road
+1664;54.59394;-5.778576;Quarry Inn
+1665;54.594285;-5.784493;Carrowreagh Road
+1666;54.595128;-5.791479;High School
+1667;54.583174;-5.796127;Millars Forge
+1668;54.58334;-5.796545;Millars Forge
+1669;54.671686;-5.900133;Whiteabbey Station Road
+1670;54.673404;-5.897613;Dillions Avenue
+1671;54.67666;-5.892882;W/Abbey Presbyterian Church
+1672;54.678164;-5.88972;Circular Road Whiteabbey
+1673;54.673986;-5.896319;Dillons Avenue
+1674;54.671296;-5.900235;Whiteabbey Station Road
+1675;54.688287;-5.918012;Abbey Green
+1676;54.689097;-5.917438;Jordanstown Road
+1677;54.675373;-5.915743;Lacken Walk
+1678;54.674251;-5.916503;Lacken Gardens
+1679;54.673697;-5.918079;Tulleevin Walk
+1680;54.673119;-5.920646;Renagh Park
+1681;54.67241;-5.921152;Altnacreeve Park
+1682;54.689869;-5.91329;Jennings Park
+1683;54.688872;-5.910477;Hollybank Court
+1684;54.686874;-5.908282;Hollybank Primary School
+1685;54.685613;-5.906391;Seagoe Gardens
+1686;54.684321;-5.905739;Hollybank Way
+1687;54.684029;-5.905897;Monkstown (Devenish Drive)
+1688;54.685765;-5.906701;Seagoe Gardens
+1689;54.68744;-5.909439;Hollybank Primary School
+1690;54.68877;-5.910576;Hollybank Court
+1691;54.658882;-5.911765;Newtownabbey Community School
+1692;54.660037;-5.915243;Armoy Gardens
+1693;54.661898;-5.916104;Avonlea Gardens
+1694;54.663195;-5.917998;Rathcoole Diamond
+1695;54.661643;-5.921199;Clonbeg Drive
+1696;54.66256;-5.925647;Clonmore Walk
+1697;54.663083;-5.929763;West Crescent
+1698;54.66465;-5.928596;Carnreagh Bend
+1699;54.667248;-5.92835;Rathcoole (Primary School)
+1700;54.668594;-5.924555;Rathcoole Leisure Park
+1701;54.668908;-5.920162;Derrycoole Walk
+1702;54.667964;-5.917092;Eastway
+1703;54.665932;-5.914274;Green End
+1704;54.665952;-5.914788;Green End
+1705;54.667814;-5.917264;Eastway
+1706;54.668963;-5.919547;Derrycoole Park
+1707;54.668304;-5.925473;Braden Glen
+1708;54.667323;-5.92769;Rathcoole (Primary School)
+1709;54.66436;-5.928645;Carnreagh Bend
+1710;54.689791;-5.912087;Ballyalton Park
+1711;54.6898;-5.916264;White Church
+1712;54.689874;-5.916489;White Church
+1713;54.662498;-5.925347;Clonmore Walk
+1714;54.663437;-5.916625;Rathcoole Diamond
+1715;54.662037;-5.915994;Avonlea Gardens
+1716;54.660085;-5.915154;Armoy Gardens
+1717;54.658986;-5.911868;Newtownabbey Community School
+1718;54.588082;-5.835499;Melfort Drive
+1719;54.587301;-5.835456;Melfort Drive (Kilmory Gardens)
+1720;54.586344;-5.834158;308 Melfort Drive
+1721;54.587869;-5.829439;360 Melfort Drive
+1722;54.586935;-5.829986;Melfort Drive (Alford Park)
+1723;54.586041;-5.834068;71 Melfort Drive
+1724;54.587165;-5.835505;7 Melfort Drive
+1725;54.585373;-5.829035;21 Leven Drive
+1726;54.586233;-5.828868;Leven Drive-Lochinver Drive
+1727;54.586337;-5.830674;Leven Drive-Melfort Drive
+1728;54.586271;-5.828794;Leven Drive-Lochinver Drive
+1729;54.585511;-5.828087;16 Leven Drive
+1730;54.585186;-5.830674;1 Leven Drive
+1731;54.585253;-5.830556;5 Leven Drive
+1732;54.560327;-5.911271;14 Newtownbreda Rd
+1733;54.5532;-5.920831;Belvoir Dive Top Stop
+1734;54.553415;-5.925014;21 Belvoir Drive
+1735;54.553387;-5.928926;67 Belvoir Drive
+1736;54.55171;-5.931549;Belvoir Primary School
+1737;54.551181;-5.937022;147A Belvoir Drive
+1738;54.551441;-5.939786;Moyle Walk
+1739;54.549966;-5.941175;175 Belvoir Drive
+1740;54.548144;-5.941046;Old Milltown Rd
+1741;54.5476;-5.935687;Taylor Court Old Milltown Rd
+1742;54.545426;-5.92785;Hospital Road
+1743;54.545063;-5.924381;Purdysburn Road
+1744;54.543937;-5.916662;Alderwood Hill
+1745;54.545465;-5.909182;Royal Lodge Road
+1746;54.547846;-5.909255;31 Beechill Rd
+1747;54.550816;-5.914197;Beechill Road (Cedarhurst Rd)
+1748;54.55266;-5.918087;Beechill Road (Berkley Court)
+1749;54.547274;-5.926079;Newtownbreda Rd (Greer Pk Ave)
+1750;54.545595;-5.930404;Hydebank Roundabout
+1751;54.547353;-5.938556;Milltown Rd (Maxol Garage)
+1752;54.550482;-5.941333;246 Belvoir Drive
+1753;54.551662;-5.938817;190 Belvoir Drive
+1754;54.550785;-5.936195;134A Belvoir Drive
+1755;54.551624;-5.932238;Belvoir Primary School
+1756;54.553358;-5.929248;Belvoir Drive (Boys Brigade Rd)
+1757;54.55351;-5.924868;Belvoir Drive (Greenwood Lodge)
+1758;54.553405;-5.92116;Belvoir Dive Top Stop
+1759;54.560421;-5.91142;Newtownbreda Rd (Intersport Shop)
+1760;54.591297;-5.810047;East Link Rd
+1761;54.588364;-5.813799;East Link Rd
+1762;54.588642;-5.81381;East Link Rd (Hanwood Ave)
+1763;54.591064;-5.810598;East Link Rd
+1764;54.605663;-5.978292;Ballymagarry Lane
+1765;54.604291;-5.9798;Ballygomartin (Highcliffe Gardens)
+1766;54.600599;-5.980477;Springmartin
+1767;54.567004;-6.012118;Stewartstown Road (Woodbourne)
+1768;54.560057;-5.997553;Black's Road (Oakhurst)
+1769;54.552263;-6.030211;Lagmore Grove
+1770;54.661696;-5.920941;Clonbeg Drive
+1771;54.567443;-5.969951;Park Royal
+1772;54.570128;-6.023632;Colinbrook
+1773;54.559145;-6.033119;Brainswell Road (Glenbawn)
+1774;54.573059;-5.994415;Ballyowen
+1775;54.564457;-6.005924;Black's Road (Black's Court)
+1776;54.61386;-5.851546;Old Holywood Road 139
+1777;54.63874;-5.929675;Castle Gardens 33
+1778;54.638145;-5.926951;Donegall Park Avenue 74
+1779;54.560928;-6.035741;Brian's Well Road (Glenkeen
+1780;54.60719;-5.930783;Great George's Street
+1781;54.606802;-5.931381;Great George's Street
+1782;54.608867;-5.929008;North Queen Street (Yorkgate)
+1783;54.608962;-5.929404;North Queen Street (Yorkgate)
+1784;54.677977;-5.965302;Northcott
+1785;54.677861;-5.965539;Northcott
+1786;54.564211;-6.00412;Black's Road (Brooke Drive)
+1787;54.637906;-5.926276;Donegall Park Avenue 69
+1788;54.63904;-5.932883;Innisfayle Road 26
+1789;54.639597;-5.929603;Castle Gardens 61
+1790;54.676743;-5.968658;Northcott (Link Road)
+1791;54.676646;-5.968586;Northcott (Link Road)
+1792;54.63159;-5.947061;Cavehill Road 10th Stop
+1793;54.631372;-5.959798;Ballysillan Road 3rd Stop
+1794;54.606196;-5.870451;Circular Road 1st Stop
+1795;54.604471;-5.864214;Circular Road (Orchard Lane)
+1796;54.605654;-5.860112;Circular Road 3rd Stop
+1797;54.606307;-5.854039;Cairnburn Road
+1798;54.569739;-5.940764;Stranmillis (Broomhill Park)
+1799;54.565775;-6.014705;Helen's Wood
+1800;54.558935;-6.031582;Bell Steel Road (Brian's Well Road)
+1801;54.561947;-6.02866;Bell Steel Road (Laurelbank)
+1802;54.576684;-5.869724;Glenview  Park
+1803;54.576767;-5.869407;Glenview  Park
+1804;54.557803;-6.011847;Credenhill
+1805;54.58819;-5.835772;Melfort Drive
+1806;54.618146;-5.850232;knocknagoney 12
+1807;54.588714;-5.962529;Park Centre Terminus
+1808;54.589221;-5.864952;Clara Road Entrance
+1809;54.580274;-5.869693;Knock Dual Carriageway 44
+1810;54.589436;-5.864415;Clara Road (Sandown Road)
+1811;54.586663;-5.870129;Clarawood Park 59
+1812;54.545641;-5.90875;Royal Lodge Road
+1813;54.544109;-5.918566;Greenwood Glen
+1814;54.544837;-5.92439;Little Alderwood
+1815;54.671449;-5.972657;Mallusk (Enterprise Way)
+1816;54.671535;-5.97251;Ballyrobert Garage
+1817;54.612105;-5.963147;Woodvale Parade
+1818;54.5493;-5.888462;Laurelgrove
+1819;54.551203;-5.889695;Ballymaconaghy Mews
+1820;54.550851;-5.889739;Ballymaconaghy Mews
+1821;54.61646;-5.895307;Queen's Road (Pyeroy)
+1822;54.615944;-5.895412;Queen's Road (Pyeroy)
+1823;54.603041;-5.91675;Odyssey
+1824;54.555701;-5.891888;Windemere
+1825;54.573634;-5.987892;Andersonstown Leisure Centre
+1826;54.598358;-5.974233;Farset
+1827;54.638359;-5.931979;16 Donegall Park Avenue
+1828;54.552726;-5.91797;Lower Beechill Road
+1829;54.551067;-5.914515;Newtownbreda Factory Estate
+1830;54.548081;-5.909231;355 Beechill Road
+1831;54.550868;-5.921195;Tesco Newtownbreda
+1832;54.597367;-5.930284;City Centre
+1833;54.620928;-5.884715;Easons / Menzies
+1834;54.621123;-5.884268;Easons / Menzies
+1835;54.594629;-5.931228;Ulster Hall
+1836;54.547417;-5.926108;Newtownbreda Rd (Greer Pk Ave)
+1837;54.556775;-5.994539;Black's Road P&R
+1838;54.62147;-5.864433;IKEA
+1839;54.597573;-5.925332;Victoria Centre
+1840;54.676812;-5.892322;Whiteabbey Presbyterian Church
+1841;54.635824;-5.881284;Stenaline terminus
+1842;54.678792;-5.890044;Circular Road
+1843;54.680196;-5.892274;Glenbroome Park
+1844;54.681743;-5.894223;Coolemoyne Park
+1845;54.685183;-5.894646;Glencree Park
+1846;54.686867;-5.894;Railway Court
+1847;54.689005;-5.904404;Hampton Court
+1848;54.689413;-5.905158;Mount Pleasant
+1849;54.686994;-5.893702;Railway Court
+1850;54.68151;-5.893921;Coolemoyne Park
+1851;54.67961;-5.891457;Woodgreen
+1852;54.668803;-5.965043;Hightown Park
+1853;54.672637;-5.983015;Mayfield Link
+1854;54.67019;-5.984963;Alderley Place
+1855;54.668843;-5.985731;Mayfield High Street
+1856;54.668079;-5.987068;Blackrock Road
+1857;54.668516;-5.992356;Blackrock Avenue
+1858;54.669301;-5.996111;Dermont Road
+1859;54.669305;-5.994063;Blackrock Square
+1860;54.669122;-5.989266;Blackrock Avenue
+1861;54.668169;-5.987062;Blackrock Road
+1862;54.670194;-5.985119;Alderley Place
+1863;54.672901;-5.982932;Mayfield Link
+1864;54.669066;-5.989322;Blackrock Avenue
+1865;54.60009;-5.880513;Holywood Road (Strand Cinema)
+1866;54.599248;-5.929428;Castle Junction 1
+1867;54.599185;-5.929964;Castle Junction 2
+1868;54.572719;-5.928218;Annadale Embankment
+1869;54.596113;-5.955767;Colligan Street
+1870;54.623441;-5.943233;Cavehill Road (Cedar Avenue)
+1871;54.618309;-5.927935;Esther Street
+1872;54.603902;-5.912386;Queen's Rd (Premier Inn)
+1873;54.60329;-5.91129;Sydenham Road (CITI Building)
+1874;54.594487;-5.93614;Europa Buscentre
+1875;54.596956;-5.93325;Upper Queen Street 1
+1876;54.596641;-5.93325;Upper Queen Street 2
+1877;54.596278;-5.933339;Upper Queen Street 3
+1878;54.599018;-5.93317;Queen Street 1
+1879;54.588941;-5.790888;Ballybeen (Enler Centre)
+1880;54.605786;-5.909453;Titanic Quarter (Belfast Met)
+1881;54.604605;-5.910936;Queen's Road (PRONI)
+1882;54.596706;-5.938167;Durham Street RBAI
+1883;54.583402;-5.911657;Ravenhill Road, Ardenlee
+1884;54.595183;-5.936052;Belfast, Glengall Street
+1885;54.592501;-5.776862;Old Mill Grove
+1886;54.590651;-5.77793;Old Mill Dale
+1887;54.588884;-5.781219;Coopers Mill Park
+1888;54.590098;-5.778622;Old Mill Park��
+1889;54.591231;-5.777782;Old Mill Dale����
+1890;54.593217;-5.777254;Old Mill Close���
+1891;54.576974;-6.022233;Glen Road Industrial Estate
+1892;54.576837;-6.022297;Glen Road Industrial Estate
+1893;54.578075;-6.026739;Hawthorn Glen
+1894;54.580113;-6.028442;Hannahstown Hill
+1895;54.567171;-5.97576;Musgrave Park Hospital
+1896;54.569389;-5.977508;Musgrave Park Hospital (Withers Building)
+1897;54.56913;-5.982111;Musgrave Park Hospital (Disablement Services)
+1898;54.5677;-5.982359;Musgrave Park Hospital (Meadowlands)l
+1899;54.567506;-5.979523;Musgrave Park Hospital (Estates)
+1900;54.566975;-5.974347;Musgrave Park Hospital (McKinney House 1)
+1901;54.56721;-5.973488;Musgrave Park Hospital (McKinney House 2)
+1902;54.595823;-5.932412;Howard Street
+1903;54.61454;-5.854183;Garnerville Road
+1904;54.614626;-5.856283;Glenluce Drive
+1905;54.615354;-5.860815;Glendhu Manor
+1906;54.596001;-5.797461;Dundonald Park & Ride
+1907;54.596575;-5.938309;Durham Street
+1908;54.592067;-5.934234;Great Victoria Street, Naval Club
+1909;54.603843;-5.944062;Malvern Street
+1910;54.61045;-5.95107;McCandless Street
+1911;54.67817;-5.962713;Northcott
+1912;54.603349;-5.899692;Hamilton Road
+1913;54.614783;-5.898493;Titanic
+1914;54.623661;-5.861742;Holywood Exchange (Retail)
+1915;54.576326;-5.978789;Blackstaff Road
+1916;54.577272;-6.010047;Shaw's Road
+1917;54.577576;-6.009272;Glen Road Heights
+1918;54.582007;-5.792333;Millmount

@@ -1,0 +1,5 @@
+Original data downloaded on 2016-12-07 from:
+    paris,sncf: http://files.transilien.com/horaires/gtfs/export-TN-GTFS-LAST.zip
+    paris,ratp: http://dataratp.download.opendatasoft.com/RATP_GTFS_FULL.zip
+Extract timezone: CET (+0100)
+The data should cover all relevant modes of intra-city public transport.

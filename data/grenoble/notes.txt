@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    grenoble: http://www.metromobilite.fr/data/Horaires/SEM-GTFS.zip
+Extract timezone: Europe/Paris (+0100)
+Commuter trains and regional buses are missing.

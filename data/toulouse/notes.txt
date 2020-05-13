@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    toulouse: https://data.toulouse-metropole.fr/explore/dataset/tisseo-gtfs/files/bd1298f158bc39ed9065e0c17ebb773b/download/
+Extract timezone: Europe/Paris (+0100)
+Commuter trains are missing.
