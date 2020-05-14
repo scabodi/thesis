@@ -18,6 +18,8 @@ if __name__ == '__main__':
 
     csv_path = 'results/all/tables/measures.csv'
 
+    save = True
+
     ''' 
     Create a pandas dataframe to collect all the measures that I want to put in the table
     Each city is one row and the columns are the following:
@@ -37,7 +39,7 @@ if __name__ == '__main__':
     pd.options.display.max_rows = None
     pd.options.display.width = 300
 
-    if path.exists(csv_path):
+    if path.exists(csv_path) and save is False:
         pd.options.display.float_format = '{:,.2f}'.format
         df = pd.read_csv(csv_path)
 
@@ -74,7 +76,7 @@ if __name__ == '__main__':
         df['<c>'] = [round(x, 3) for x in mdf['avg_cc']]
         df['A'] = [x for x in ap_df['area']]
         df['P'] = [int(x/1000) for x in ap_df['population']]
-        df['<k>'] = round(df['E']/df['N'], 2)
+        df['<k>'] = round(2*df['E']/df['N'], 2)
         df['<r>'] = [round(x, 2) for x in m['<r>']]
         df['<l>'] = [round(x, 2) for x in m['<l>']]
 
