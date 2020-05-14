@@ -4,6 +4,29 @@ from os import path
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import scipy.stats as sc
+
+
+def plot_two_colums_dataframe(df, col_x, col_y1, col_y2):
+
+    fig, ax = plt.subplots()
+    ax2 = ax.twinx()
+    x, y1, y2 = df[col_x], df[col_y1], df[col_y2]
+
+    # ax.plot(x, y1, 'bo')
+    # ax2.plot(x, y2, 'r+')
+
+    df.plot(x=col_x, y=col_y1, ax=ax, kind='scatter')
+    df.plot(x=col_x, y=col_y2, ax=ax2, c='r', kind='scatter', marker='+')
+
+    # ax = df1.plot.scatter(x='City', y='<k>', c='A', colormap='plasma')
+    # ax = df1.plot.scatter(x='City', y='<k>')
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(x, rotation=70)
+
+    return fig
+
 
 if __name__ == '__main__':
 
@@ -18,7 +41,7 @@ if __name__ == '__main__':
 
     csv_path = 'results/all/tables/measures.csv'
 
-    save = True
+    save = False
 
     ''' 
     Create a pandas dataframe to collect all the measures that I want to put in the table
@@ -46,18 +69,31 @@ if __name__ == '__main__':
         df['ln(N)'] = [np.log(x) for x in df['N']]
         print(df.describe())
 
-        ''' Plot the <l> vs ln(N) in order to see if they are proportional -- plot with line fitted '''
-        plt.close()
-        sns_fig = sns.regplot(x='<l>', y='ln(N)', data=df)
-        fig = sns_fig.get_figure()
-        fig_name = 'results/all/plots/stats/l_vs_lnN.png'
-        fig.savefig(fig_name)
+        # df.plot(x='N', y='P', kind='scatter')
         # plt.show()
+
+        corr = sc.pearsonr(df['N'], df['P'])
+        print(corr)
+        ''' Plot the <k> for each city '''
+        # df1 = df.copy().sort_values(by=['A'])
+        #
+        # fig = plot_two_colums_dataframe(df1, 'City', '<k>', 'A')
+        # fig_name = 'results/all/plots/stats/avg_degree_vs_area.png'
+        # fig.savefig(fig_name, bbox_inches='tight')
+        # # plt.show()
+        #
+        # ''' Plot the <l> vs ln(N) in order to see if they are proportional -- plot with line fitted '''
+        # plt.close()
+        # sns_fig = sns.regplot(x='<l>', y='ln(N)', data=df)
+        # fig = sns_fig.get_figure()
+        # fig_name = 'results/all/plots/stats/l_vs_lnN.png'
+        # fig.savefig(fig_name)
+        # # plt.show()
         ''' Parameters of fitted line '''
         [m, q] = np.polyfit(df['<l>'], df['ln(N)'], 1)
 
         print(m)
-        # print(df[df['<l>'] == df['<l>'].max()])
+        print(df[df['<k>'] == df['<k>'].min()])
         # df.describe().to_csv('results/all/tables/describe.csv', index=False, float_format='%.2f')
 
     else:
