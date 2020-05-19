@@ -1,72 +1,7 @@
 import network_functions as nf
-import generic_plot_functions as pf
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.cm as cm
-import matplotlib as mpl
-import math
-from collections import Counter
-
-
-def plot_multiple_ccdf_with_colorbar(datavecs, labels, xlabel, ylabel, c, n_nodes):
-
-    # n_nodes -> list of n_nodes
-
-    # styles = (['-', '--', '-.', ':']*7)[:len(datavecs)]
-    markers = (['_', 'v', '^', 'o', '+', 'x', 'd']*7)[:len(datavecs)]
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    colors = plt.cm.plasma(nf.get_normalized_values(c))
-    low_limit = 10**-4
-    # ax.set_yscale('log')
-    # ax.set_xscale('log')
-
-    max_k = 28
-    k_values = range(1, 29)
-    avg_pk = {k: 0 for k in k_values}
-
-    for datavec, label, marker, color, N in zip(datavecs, labels, markers, colors, n_nodes):
-        # sorted_datavec = [x for x in sorted(datavec) if x > 0]
-        # cdf = np.zeros(len(sorted_datavec))
-        # set_datavecs = set(datavecs)
-
-        frequencies = {x: datavec.count(x) for x in datavec}
-        zero_frequencies = {k_value: 0 for k_value in k_values if k_value not in frequencies.keys()}
-        frequencies.update(zero_frequencies)
-        f = nf.order_dict_based_on_list_keys(frequencies, k_values)
-        p_k = {k: v/N for k, v in f.items()}
-
-        ax.loglog(k_values, list(p_k.values()), marker=marker, label=label, color=color, linestyle=' ')
-
-        avg_pk = Counter(avg_pk)+Counter(p_k)
-
-    avg_pk = {k: v/27 for k, v in avg_pk.items() if k > 1}
-    ord_avg_pk = nf.order_dict_based_on_list_keys(avg_pk, avg_pk.keys())
-    x = list(ord_avg_pk.keys())
-    y = list(ord_avg_pk.values())
-    # ax.loglog(list(ord_avg_pk.keys()), list(ord_avg_pk.values()), color='r', marker='o')
-
-    print(ord_avg_pk)
-    logx = np.log(x)
-    logy = np.log(y)
-    [m, q] = np.polyfit(logx, logy, 1)
-    print("m: %.4f, q: %.4f" % (m, q))
-    y_fit = np.exp(m*logx[:15] + q)
-    print(y_fit)
-    ax.plot(x[:15], y_fit, linestyle=':')
-
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
-    ax.grid()
-    ax.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
-              ncol=3, mode="expand", borderaxespad=0.1)
-
-    m = mpl.cm.ScalarMappable(cmap=mpl.cm.plasma)
-    m.set_array(c)
-    fig.colorbar(m)
-
-    return fig
+import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
@@ -159,8 +94,6 @@ if __name__ == '__main__':
     d = {}
     for city, E, N in zip(degrees.keys(), n_edges, n_nodes):
         list_k = degrees[city]
-        if city == 'brisbane':
-            print(list_k)
         row = {
             'min(k)': np.min(list_k),
             'max(k)': np.max(list_k),
@@ -173,18 +106,19 @@ if __name__ == '__main__':
         d[city] = row
     pd.set_option('precision', 2)
     df = pd.DataFrame.from_dict(d).T
-    print(df)
-    print(df[df['max(k)'] == df['max(k)'].max()])
+    # print(df)
+    # print(df[df['max(k)'] == df['max(k)'].max()])
 
-    clusters = nf.get_cluster_dict_for_area()
-    labels = cities
-    xlabel = 'k'
-    ylabel = 'P(k)'
-    datavecs = degrees.values()
-    areas = nf.get_list_sorted_values('area', area_population_dict)
-    n_nodes = nf.get_list_sorted_values('#nodes', measures_dict)
-    fig = plot_multiple_ccdf_with_colorbar(datavecs, labels, xlabel, ylabel, areas, n_nodes)
-    fig.show()
+    # clusters = nf.get_cluster_dict_for_area()
+    # labels = cities
+    # xlabel = 'k'
+    # ylabel = 'P(k)'
+    # datavecs = degrees.values()
+    # areas = nf.get_list_sorted_values('area', area_population_dict)
+    # fig = nf.plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, areas)
+    # # fig.show()
+    # fig_name = 'results/all/plots/basic_measures/degree_distribution.png'
+    # fig.savefig(fig_name, bbox_inches='tight')
 
     # for cluster, list_cities in clusters.items():
     #     datavecs = [list_k for city, list_k in degrees.items() if city in list_cities]
@@ -194,3 +128,20 @@ if __name__ == '__main__':
     #     n_nodes = nf.get_list_sorted_values('#nodes', measures_d)
     #     fig = plot_multiple_ccdf_with_colorbar(datavecs, list_cities, xlabel, ylabel, areas, n_nodes)
     #     fig.show()
+
+    ''' Plot the degree distribution for each city and save the m of the fit line '''
+    gammas = []
+    for city, list_degrees in degrees.items():
+        # print(df)
+        max_k = int(df.T[city][1])
+        xlabel = 'k'
+        ylabel = 'P(k)'
+        plt.close('all')
+        fig, m = nf.plot_degree_distribution(list_degrees, city, xlabel, ylabel, max_k)
+        # fig.show()
+        fig_name = 'results/'+city+'/degree_distribution.png'
+        fig.savefig(fig_name, bbox_inches='tight')
+        gammas.append(m)
+
+    df['\u03B3'] = gammas
+    print(df)

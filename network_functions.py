@@ -165,7 +165,7 @@ def get_assortativity(net):
     return nx.degree_pearson_correlation_coefficient(net)
 
 
-def get_avg_shortest_path_legth(net):
+def get_avg_shortest_path_length(net):
     max_component = max(nx.connected_component_subgraphs(net), key=len)
     return nx.average_shortest_path_length(max_component)
 
@@ -337,9 +337,7 @@ def plot_network_with_centrality_measures(net, measures, measure_name):
     nodes = nx.draw_networkx_nodes(net, pos=nx.get_node_attributes(net, 'pos'), node_size=50, cmap=plt.cm.plasma,
                                    node_color=top, alpha=0.8,
                                    nodelist=sub_nodes)
-    # nodes.set_norm(mcolors.SymLogNorm(linthresh=np.max(measures), linscale=1))
 
-    # labels = nx.draw_networkx_labels(G, pos)
     nx.draw_networkx_edges(net, pos=nx.get_node_attributes(net, 'pos'), alpha=0.2)
 
     plt.title(measure_name+' centrality')
@@ -760,5 +758,103 @@ def plot_bars_frequency_mu_st(labels, mus, sts, type=3, feature=None):
 
     ax.legend(loc=9)
     fig.tight_layout()
+
+    return fig
+
+
+def plot_degree_distribution(degrees, city, xlabel, ylabel, max_k):
+    """
+    Plot distribution with fit line
+
+    :param degrees: list of int - degrees of nodes
+    :param city: str
+    :param xlabel: str
+    :param ylabel: str
+    :param max_k: int - max degree among all cities
+
+    :return: fig, m
+    """
+
+    k_values = range(1, max_k + 1)
+    counter = [0] * max_k
+    for degree in degrees:
+        counter[degree - 1] += 1
+    pk = np.array([v / len(degrees) for v in counter])
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ax.loglog(k_values, pk, marker='o', label=city, linestyle=' ')
+
+    y = [v for v in pk[1:] if v > 0]
+    x = range(2, len(y) + 2)
+    logx = np.log(x)
+    logy = np.log(y)
+    [m, q] = np.polyfit(logx, logy, 1)
+    # print("m: %.4f, q: %.4f" % (m, q))
+    y_fit = np.exp(m * logx + q)
+    m = -m
+    ax.plot(x, y_fit, linestyle=':', label='\u03B3 = %.2f' % m)
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid()
+    ax.legend()
+
+    return fig, m
+
+
+def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, c):
+    """
+    Function that plots several distribution over a log-log plot with a line fit over the average of all the
+    distributions
+
+    :param datavecs: list of lists - all the distributions to plot - lists inside of different length and
+                        they contain the values of degrees for each node
+    :param labels: list of str
+    :param xlabel: str
+    :param ylabel: str
+    :param c: list of values for the colorbar
+
+    :return: fig
+    """
+
+    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:len(datavecs)]
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    colors = plt.cm.plasma(get_normalized_values(c))
+
+    max_k = 28
+    k_values = range(1, max_k + 1)
+    avg_pk = np.array([0] * max_k)
+
+    for datavec, label, marker, color in zip(datavecs, labels, markers, colors):
+        counter = [0] * max_k
+        for degree in datavec:
+            counter[degree - 1] += 1
+        pk = np.array([v / len(datavec) for v in counter])
+
+        ax.loglog(k_values, pk, marker=marker, label=label, color=color, linestyle=' ')
+
+        avg_pk = avg_pk + pk
+
+    y = [v / 27 for v in avg_pk[1:] if v > 0]
+    x = range(2, len(y) + 2)
+
+    logx = np.log(x)
+    logy = np.log(y)
+    [m, q] = np.polyfit(logx, logy, 1)
+    print("m: %.4f, q: %.4f" % (m, q))
+    # print(m*logx + q)
+    y_fit = np.exp(m * logx[:15] + q)
+    # print(y_fit)
+    ax.plot(x[:15], y_fit, linestyle=':')
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid()
+    ax.legend(bbox_to_anchor=(-0.2, 1.02, 1.5, .102), loc='lower left', ncol=5, mode="expand", borderaxespad=0.1)
+
+    m = mpl.cm.ScalarMappable(cmap=mpl.cm.plasma)
+    m.set_array(c)
+    fig.colorbar(m)
 
     return fig
