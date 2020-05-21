@@ -74,7 +74,7 @@ if __name__ == '__main__':
     ylabel = 'P(measure)'
     fig = nf.plot_ccdf(datavecs, labels, xlabel, ylabel)
     # fig.show()
-    fig_name = prefix_png+'ccdf_measures.png'
+    fig_name = prefix_png+'basic_measures/ccdf_measures.png'
     fig.savefig(fig_name)
 
     ''' Plot degree distributions fo all cities '''
