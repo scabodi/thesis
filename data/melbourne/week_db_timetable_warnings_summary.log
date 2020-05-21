@@ -1,0 +1,5 @@
+The feed produced the following warnings:
+trip--arr_time -combinations with five or more consecutive stops having same stop time: 902
+Trip time longer than 7200 seconds: 827
+distance between consecutive stops longer than 20000 meters: 296
+trip--stop_times-combinations with travel time between consecutive stops longer than 30.0 minutes: 72

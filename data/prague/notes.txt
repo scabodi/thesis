@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    prague: http://opendata.iprpraha.cz/DPP/JR/jrdata.zip
+Extract timezone: Europe/Prague (+0100)
+Commuter trains are missing.

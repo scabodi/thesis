@@ -1,0 +1,6 @@
+The feed produced the following warnings:
+trip--arr_time -combinations with five or more consecutive stops having same stop time: 683
+trip--stop_times-combinations with travel time between consecutive stops longer than 30.0 minutes: 605
+distance between consecutive stops longer than 20000 meters: 313
+Trip time longer than 7200 seconds: 16
+trips whose average speed is unrealistic relative to travel mode (route_type=3): 10

@@ -1,0 +1,3 @@
+The feed produced the following warnings:
+trip--arr_time -combinations with five or more consecutive stops having same stop time: 19
+Trip time longer than 7200 seconds: 14

@@ -1,0 +1,4 @@
+The feed produced the following warnings:
+trip--stop_times-combinations with travel time between consecutive stops longer than 30.0 minutes: 405
+Trip time longer than 7200 seconds: 39
+trips whose average speed is unrealistic relative to travel mode (route_type=0): 1

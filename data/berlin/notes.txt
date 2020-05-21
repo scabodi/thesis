@@ -1,0 +1,4 @@
+Original data downloaded on 2016-12-07 from:
+    berlin: http://images.vbb.de/assets/ftp/file/405413.zip
+Extract timezone: Europe/Berlin (+0100)
+The data should cover all relevant modes of intra-city public transport.

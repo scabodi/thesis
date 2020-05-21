@@ -1,0 +1,1368 @@
+stop_I;lat;lon;name
+3;49.61793;5.99866;Holzem, Mamerstrooss
+4;49.701;6.01806;Bour
+11;49.45069;6.02572;Rumelange, A Wiendelen
+19;49.62361;6.23457;Neihaischen, Kiischtewee
+21;49.6227;6.24282;Neuhaeusgen, Iewescht Neihaischen
+23;49.62269;6.23174;Ennescht Neihaischen
+25;49.54877;6.27703;Gondelengermillen
+29;49.5425;6.32479;Erpeldange/Bous, Scheierbierg
+30;49.60981;6.12055;Belair, Wampach
+31;49.61324;6.11597;Luxembourg, Square New York
+32;49.54602;6.32723;Erpeldange/Bous, Kräizgaass
+33;49.61585;6.10261;Belair, Wandmillen
+34;49.54675;6.32498;Erpeldange/Bous, Rollengerstrooss
+35;49.61166;6.10138;Belair, Glaesener-Hartmann
+36;49.616;5.99312;Holzem, Festsall
+37;49.61418;5.99016;Holzem, Bréck
+43;49.51448;5.90256;Obercorn, Neiduerf
+45;49.50315;5.92369;Belval-Rédange, Gare
+46;49.60444;6.11497;Hollerich, Alphonse Munchen
+47;49.59726;6.11776;Hollerich, Assurances Sociales
+48;49.59862;6.12626;Hollerich, Fonderie
+49;49.59514;6.12099;Hollerich, Gare
+50;49.60143;6.11997;Hollerich, Heentze Park
+53;49.77783;6.11689;Essen
+54;49.60424;6.28079;Lenningen, Hakenhaff
+55;49.75331;6.13936;Bënzert
+56;49.60034;6.36669;Lenningen, Am Aker
+57;49.51122;5.92992;Belvaux, Gemeng
+58;49.59921;6.1224;Hollerich, Jean-Baptiste Merkels
+59;49.50116;5.92077;Belvaux, Grenz
+60;49.5108;5.93432;Belvaux, Henri Tudor
+61;49.60341;6.11845;Hollerich, Nancy
+62;49.6;6.10721;Hollerich, P+R Bouillon
+63;49.50778;5.92313;Belvaux, Batting
+64;49.50135;5.93768;Belvaux, Belval
+66;49.50889;5.94334;Belvaux, Brill
+67;49.51443;5.92471;Belvaux-Soleuvre, Gare
+68;49.5989;6.11935;Hollerich, Pierre & Paul
+69;49.60227;6.11661;Hollerich, Poincaré
+71;49.6;6.11791;Hollerich, Salzhaff
+73;49.60032;6.11732;Hollerich, Schluechthaus
+76;49.59898;6.10479;Hollerich, Garage AVL
+78;49.59916;6.10544;Hollerich, AVL Portal
+81;49.60285;5.90972;Fingig, Maerchen
+82;49.60085;5.90088;Fingig, Dillesbierg
+83;49.59962;6.11207;Hollerich, P+R Bouillon Ext.
+84;49.51432;5.92124;Belvaux, Uewerkuererstrooss
+86;49.50478;5.92189;Belvaux, Wenschel
+87;49.57415;5.98536;Bettange, Spillplaz
+91;49.50758;5.92659;Belvaux, Stadium
+93;49.52992;6.11903;Livange, Am Duerf
+94;49.53401;6.12509;Livange, Geespelt
+97;49.7192;6.09156;Schoenfels, Schlass
+98;49.50321;5.93771;Belvaux, Lycée Bel-Val
+99;49.71774;6.09;Schoenfels, Duerf
+100;49.50282;5.94341;Belvaux, Um Bedding
+101;49.51302;5.93143;Belvaux, Ënnert Zolwerwee
+102;49.51388;5.94774;Belvaux, Boulodrome
+103;49.50455;5.93093;Belvaux, Milliounelach
+104;49.51576;5.93521;Belvaux, Paquetbierg
+107;49.72824;6.30141;Beidweiler, Am Duerf
+109;49.73227;6.30215;Beidweiler, Op der Gare
+111;49.51272;5.94099;Belvaux, Roudewee Schoul
+113;49.50155;5.93431;Belvaux, Belval Lyçée
+116;49.51095;5.92873;Belvaux, Gemeng/Post
+118;49.50838;5.92512;Belvaux, Postschoul
+119;49.51031;5.93884;Belvaux, Roudewee
+120;49.65923;6.23931;Oberanven, Rue Schetzel
+121;49.66164;6.23938;Oberanven, rue d'Ernster
+122;49.65815;6.2486;Oberanven, Routstrach
+123;49.65909;6.24276;Oberanven, Gemeng
+124;49.65757;6.24392;Oberanven, Fielsenhaus
+129;49.53962;6.36437;Remich, Piscine
+130;49.54665;6.36161;Remich, Pl. Nico Klopp
+131;49.54643;6.35724;Remich, rte de Luxembourg
+132;49.55368;6.37737;Remich, rue de la Corniche
+134;49.54722;6.35531;Remich, Op der Kopp
+144;49.54861;6.37589;Remich, Maatebierg
+147;49.56762;6.16369;Alzingen, Gässel
+154;49.56774;6.16103;Alzingen, Trapeneck
+155;49.55075;6.37641;Remich, Belvédère
+157;49.56461;6.1623;Alzingen, Hondsbréck
+159;49.55341;6.3805;Remich, Caves St. Martin
+163;49.67289;6.32927;Banzelt, Ort
+164;49.54279;6.36828;Remich, Gare routière
+167;49.52549;6.00435;Foetz, Rond Point
+168;49.71756;6.35283;Boudlerbach, Boudlerbaach
+172;49.76941;6.24024;Heffingen, Al Gemeng
+173;49.7704;6.23992;Heffingen, Centre
+174;49.68939;6.09045;Direndall
+175;49.77095;6.2447;Heffingen, Rue de Christnach
+177;49.76325;6.24153;Heffingen, Thommes
+183;49.48066;6.03714;Kayl, Sportshal
+184;49.48519;6.04436;Kayl, Brill
+185;49.542;6.19942;Weiler-la-Tour, Gëltz
+186;49.54737;6.17402;Weiler-la-Tour, Camping
+187;49.53379;6.18009;Weiler-la-Tour, Schlammestee
+188;49.53948;6.19434;Weiler-la-Tour, Huehlgaass
+189;49.70159;5.98557;Leesbach
+191;49.54627;6.20317;Weiler-la-Tour, Pekebierg
+199;49.48253;6.04305;Kayl, Eecherwee
+200;49.48463;6.03536;Kayl, Gare
+201;49.48689;6.03555;Kayl, Police
+202;49.4872;6.03499;Kayl, Bréck
+203;49.57783;5.96107;Sprinkange, Beim Kräiz
+204;49.4959;6.036;Kayl, Broucherbierg
+205;49.58003;5.96536;Sprinkange/Sprénkeng
+206;49.48129;6.04289;Kayl, Cité Berens
+207;49.58519;5.96551;Sprinkange, Um Kierker
+208;49.48489;6.05111;Kayl, Diddelengerstrooss
+209;49.59544;6.10874;Cessange-Artisans
+210;49.58585;6.10702;Cessange, Tubishaff
+212;49.49598;6.04945;Kayl, Rue de Noertzange
+214;49.58948;6.11501;Cessange, Rue Verte
+215;49.58232;6.09771;Cessange, Rue de Leudelange
+218;49.52198;6.0096;Foetz, Am Butterbrill
+220;49.52126;6.01049;Foetz, Am Brill
+222;49.58635;6.1675;Itzig, An den Espen
+223;49.58208;6.16689;Itzig, Am Kiemert
+224;49.47624;6.00663;Kayl, Arbed'shaff
+225;49.58727;6.16979;Itzig, Hubertuspad
+226;49.49312;6.03653;Kayl, Barrière
+227;49.58899;6.17102;Itzig, Dellbierg
+228;49.58824;6.11125;Cessange, Kuelebierg
+229;49.58542;6.17798;Itzig, Am Horra
+231;49.49181;6.04669;Kayl, abri P.&Ch.
+232;49.48917;6.0388;Kayl, Am Pull
+233;49.59587;6.11573;Cessange, Barrès
+234;49.59443;6.10987;Cessange, Artisans
+236;49.58402;6.10031;Cessange, Antoine
+238;49.58578;6.09932;Cessange, Am Eck
+239;49.58595;6.17177;Itzig, Kierch
+240;49.48686;6.04137;Kayl, Post
+241;49.58907;6.10673;Cessange, Kierch
+242;49.5845;6.16993;Itzig, Kapell
+243;49.59138;6.10565;Cessange, Fischerhaff
+244;49.50163;6.03893;Kayl, Stellwierk
+245;49.58719;6.10331;Cessange, Duerf
+246;49.58591;6.17396;Itzig, Klouschter
+247;49.58145;6.09711;Cessange, Boy Konen
+250;49.54027;6.02107;Wickrange, Rumbaach
+251;49.60269;6.09452;Merl, St. Gengoul
+252;49.61805;6.12556;Limpertsberg, Lycée Robert Schuman
+253;49.62232;6.10807;Limpertsberg, Lefèvre
+254;49.6201;6.12274;Limpertsberg, Lycée de Garçons
+255;49.60583;6.1025;Merl, Orval
+256;49.60745;6.11011;Merl, Parc
+257;49.60306;6.0889;Merl, Plaak
+258;49.6207;6.11857;Limpertsberg, N.S.Pierret
+259;49.60399;6.09297;Merl, St.Hubert
+260;49.62088;6.10762;Limpertsberg, Neumanns-Park
+261;49.5061;6.12604;Bettembourg, Mosselter
+262;49.50936;6.11871;Bettembourg, Parc Merveilleux
+263;49.52007;6.11471;Bettembourg, Peppenger Schleid
+264;49.51959;6.10969;Bettembourg, Am Dreieck
+265;49.6247;6.11516;Limpertsberg, L.T.Michel Lucius
+266;49.51323;6.11011;Bettembourg, Café du Stadion
+267;49.62223;6.11468;Limpertsberg, Léandre Lacroix
+268;49.51657;6.10206;Bettembourg, Gare
+269;49.62097;6.11455;Luxembourg, Uni Campus Limpertsberg
+270;49.51834;6.09762;Bettembourg, Kiircheplaz
+271;49.62438;6.11472;Limpertsberg, L.T.C.
+272;49.52571;6.10082;Bettembourg, 12 Gargullen
+273;49.52011;6.09986;Bettembourg, Al Gemeng
+277;49.66093;6.12591;Bereldange, Elterstrachen
+280;49.60346;6.08492;Merl, Op der Millen
+282;49.65324;6.12741;Bereldange, Schoul
+283;49.65615;6.12716;Bereldange, Police
+284;49.62386;6.12236;Limpertsberg, Wassertuerm
+285;49.6175;6.12492;Limpertsberg, Parking Glacis
+286;49.50815;6.10253;Bettembourg, Krackelshaff-IFSB
+287;49.62369;6.11948;Limpertsberg, Square André
+288;49.50758;6.10697;Bettembourg, Krackelshaff-MOOG
+289;49.50454;6.10929;Bettembourg, Krackelshaff-P&T
+290;49.52022;6.0914;Bettembourg, Rousegärtchen
+292;49.52859;6.10174;Bettembourg, Fankenacker
+300;49.61823;6.12403;Limpertsberg, Allée Scheffer
+301;49.622;6.12676;Limpertsberg, Arts & Métiers
+302;49.56268;6.37239;Stadtbredimus, Wandmillen
+303;49.62197;6.12062;Limpertsberg, Alen Tramsschapp
+304;49.61901;6.12214;Limpertsberg, Alfred de Musset
+305;49.56369;6.36329;Stadtbredimus, Schoul
+306;49.62229;6.11687;Limpertsberg, Batty Weber
+307;49.56436;6.36858;Stadtbredimus, Vinsmoselle
+308;49.56372;6.36439;Stadtbredimus, Kreizgaass
+311;49.56683;6.36256;Stadtbredimus, Schleis
+312;49.62544;6.1202;Limpertsberg, Avenir
+314;49.56239;6.35904;Stadtbredimus, Dicksstrooss
+316;49.71718;6.31028;Eschweiler/Junglinster, Bei der Kiirch
+317;49.62187;6.12949;Limpertsberg, Alen Eecherbierg
+325;49.60226;6.10566;Merl, Conservatoire
+326;49.62636;6.11465;Luxembourg, Siggy vu Lëtzebuerg
+327;49.61932;6.13022;Limpertsberg, Crispinus
+329;49.60985;6.09944;Merl, Kiirfecht
+330;49.61918;6.11702;Limpertsberg, Ermesinde
+331;49.61792;6.11926;Limpertsberg, Henri VII
+332;49.60522;6.11098;Merl, Athénée
+334;49.60216;6.09707;Merl, Barrière
+336;49.61563;6.12064;Limpertsberg, Glacis/Nikloskierfecht
+337;49.60166;6.09458;Merl, Celtes
+338;49.62052;6.12413;Limpertsberg, Guillaume Schneider
+339;49.60541;6.09796;Merl, Laang Heck
+340;49.62261;6.12293;Limpertsberg, Bois
+341;49.6018;6.10124;Merl, Marcel Cahen
+342;49.62203;6.11204;Limpertsberg, Centre Universitaire
+343;49.62288;6.12759;Limpertsberg, Belle-Vue
+348;49.48468;6.3241;Burmerange, Résidence Stoffels
+349;49.48762;6.31998;Burmerange, Um Schotz
+350;49.70122;6.19364;Imbringen, Am Duerf
+351;49.48618;6.32218;Burmerange, Bei der Kiirch
+352;49.61036;6.05033;Bertrange, Gemeng
+355;49.73552;6.28685;Graulinster, Op der Strooss
+356;49.62183;6.04868;Bertrange, Belle Etoile
+357;49.74069;6.2874;Graulinster, Am Duerf
+358;49.73882;6.28792;Graulinster, Haaptstrooss
+359;49.60516;6.07603;Bertrange, Fleuri
+360;49.6131;6.05973;Bertrange-Strassen, Gare
+361;49.60479;6.05228;Bertrange, Dicks
+363;49.75106;6.03544;Openthalt
+364;49.6348;6.21553;Aéroport Luxembourg/Findel
+365;49.62101;6.04802;Bertrange, Waassertuerm
+366;49.63824;6.2322;Findel, Cargo Center
+367;49.60733;6.07013;Bertrange, Richterwee
+368;49.61786;6.0481;Bertrange, Millewee
+369;49.6096;6.06443;Bertrange, Montereale
+370;49.61579;6.0486;Bertrange, Rue de Mamer
+373;49.61193;6.05846;Bertrange, Kierfecht
+374;49.62921;6.20468;Luxembourg, Findel
+376;49.61776;6.05341;Bertrange, Pesch
+378;49.50136;6.35177;Wintrange, Dorefplaz
+379;49.61193;6.04872;Bertrange, Wénkel
+380;49.6203;6.03616;Bertrange, Ecole Européenne II
+382;49.60363;5.92678;Hivange, Kleng Béiwéng
+383;49.60494;5.92443;Hivange, Areler Strooss
+384;49.67898;6.12936;Müllendorf/Mëlleref
+385;49.61165;6.13509;Pfaffenthal, Um Bock
+386;49.67706;6.1247;Steinsel, Michel Rodange Plaz
+387;49.61543;6.13326;Pfaffenthal, Théiwesbur
+388;49.66948;6.11962;Steinsel, Laval
+389;49.67165;6.12027;Steinsel, Gonneschhaff
+390;49.61396;6.13541;Pfaffenthal, Vauban
+393;49.67026;6.12656;Steinsel, Zone Industrielle
+394;49.67542;6.1224;Steinsel, Um Gruef
+395;49.62171;6.13157;Pfaffenthal, Stade G.Diderich
+396;49.62024;6.13259;Pfaffenthal, Sichenhaff
+398;49.67065;6.12454;Steinsel, Kennedy
+402;49.63614;6.40475;Niederdonven, Beim Festsall
+404;49.6343;6.40264;Niederdonven, Bei der Kappell
+405;49.63841;6.40564;Niederdonven, Op der Bréck
+406;49.47244;5.95711;Audun-le-Tiche, Mairie
+407;49.45692;6.07903;Volmerange-les-Mines, Gare
+413;49.62406;6.19375;Findel, Business Center
+417;49.71753;5.95081;Ehner, Krier
+418;49.71717;5.94803;Ehner, Kapell
+422;49.57372;6.25302;Medingen, Aire de virage
+425;49.69414;6.14089;Helmdange, Fautelfiels
+429;49.49958;5.91893;Rédange, Douane
+431;49.5752;6.24886;Medingen
+432;49.74937;6.11329;Berschbach, Lohr
+434;49.74828;6.11326;Berschbach, Fielserstrooss
+436;49.74459;6.11291;Berschbach, Blannenheem
+438;49.65871;6.17419;Stafelter
+440;49.56533;5.88638;Linger, Schoul
+441;49.56284;5.88062;Linger, Velo's Piste
+444;49.44874;6.02484;Ottange, Transformateur
+450;49.45311;6.02666;Rumelange, Cité St. Paul
+456;49.63316;6.33353;Beyren, An der Fuert
+457;49.62995;6.33569;Beyren, Op der Bréck
+458;49.61963;6.27027;Schuttrange, Kanecherstrooss
+459;49.62381;6.2679;Schuttrange, Kiercheplaz
+460;49.62107;6.26619;Schuttrange, Kreizung
+462;49.61803;6.26241;Schuttrange, Um Grousbuer
+463;49.49942;5.94648;Belval-Université, Gare
+475;49.62183;6.27332;Schuttrange, Al-Schëtter Mëtt
+477;49.61215;6.40678;Wormeldange, Erdkaul
+478;49.6088;6.40364;Wormeldange, Geméen
+494;49.6117;6.39868;Wormeldange/Haut, Hiehl
+495;49.6058;6.4016;Wormeldange, Gewân
+500;49.60951;6.40014;Wormeldange/Haut, Körch
+512;49.71769;6.00897;Tuntange, Kiirch
+515;49.71677;6.0096;Tuntange, Duerf
+519;49.71975;6.00435;Tuntange, Sëllerstrooss
+520;49.71646;6.01614;Tuntange, Knupp
+522;49.7132;6.01276;Tuntange, Weisserchen
+530;49.64983;6.23477;Senningerberg, Rue des Résidences
+533;49.64506;6.22126;Senningerberg, Rue du Golf
+535;49.63299;6.21044;Senningerberg, Lou Hemmer
+538;49.64601;6.2281;Senningerberg, rue du Bois
+545;49.65457;6.3021;Mensdorf, Ennen am Duerf
+546;49.65354;6.30583;Mensdorf, Uewen am Duerf
+547;49.57622;6.27559;Ersange/Ierséng
+557;49.63922;6.21649;Senningerberg, Autobunn
+560;49.65513;6.22451;Senningerberg, Breedewues
+562;49.73894;6.03086;Brouch/Mersch, Kloeppel
+563;49.65004;6.22609;Senningerberg, Charlys Statioun
+564;49.73522;6.02038;Brouch/Mersch, Kiirch
+565;49.65163;6.23097;Senningerberg, Gromscheed
+567;49.74197;6.01694;Brouch/Mersch, Kneppchen
+568;49.65012;6.22661;Senningerberg, Kapell
+569;49.64447;6.22097;Senningerberg, Laangschib
+570;49.64558;6.22476;Senningerberg, Mënsterbësch
+572;49.64819;6.23783;Senningerberg, Rue des Pins
+576;49.61424;6.11353;Belair, Service Incendie
+578;49.61498;6.09574;Belair, Rue de l'Ouest
+580;49.61235;6.09759;Belair, Val Ste Croix
+581;49.61497;6.1086;Belair, Stade
+585;49.61044;6.10772;Belair, Kierch
+586;49.60648;6.10671;Belair, Place de France
+587;49.6095;6.10461;Belair, Oradour
+588;49.6075;6.12065;Belair, Rheinsheim
+589;49.60859;6.10778;Belair, Place de Liège
+590;49.47883;5.95891;Audun-le-Tiche, Gare
+594;49.60884;6.11673;Belair, Crécy
+596;49.61028;6.1132;Belair, Sacré-Coeur
+597;49.60666;6.1184;Belair, Guillaume
+598;49.60828;6.11297;Belair, Franciscaines
+599;49.61791;6.09753;Belair, Kannerklinik/Maternité
+601;49.61265;6.11226;Belair, Archiducs
+602;49.61221;6.10823;Belair, Amsterdam
+603;49.6073;6.11496;Belair, Bragance
+604;49.61573;6.0983;Belair, Aubépines
+612;49.58812;6.3727;Hëttermillen
+629;49.77702;6.21916;Ernzen, Manzebach
+631;49.77235;6.22116;Ernzen, Kapell
+641;49.67926;6.351;Berg, Haff Biel
+642;49.68141;6.35739;Berg, Bei der Schmett
+645;49.63159;6.13806;Weimerskirch, Tommys Bruch
+647;49.62634;6.13917;Weimerskirch, St.Vith
+658;49.71553;6.05137;Hollenfels, Vereinsbau
+660;49.71287;6.04828;Hollenfels, Schoul
+665;49.68781;5.91351;Hobscheid, Schoul
+666;49.69354;5.91794;Hobscheid, Steekaul
+667;49.68001;5.92018;Hobscheid, Viirstad
+668;49.69608;5.91882;Hobscheid, Ehnerpad
+669;49.68496;5.91608;Hobscheid, Hiehl
+671;49.51665;6.18777;Frisange, Aal Gemeng
+673;49.51666;6.19815;Frisange, Ennescht Duerf
+674;49.52247;6.18532;Frisange, Hau
+675;49.51588;6.18856;Frisange, Op der Kräizong
+676;49.50678;6.19385;Frisange, Park & Ride
+677;49.51219;6.18896;Frisange, Cité Aaluecht
+679;49.50811;6.28399;Mondorf, Réimecherstrooss
+680;49.50418;6.26614;Mondorf, Kleng Gare
+681;49.50729;6.28517;Mondorf, Daundorf
+682;49.50465;6.27438;Mondorf, Christophorus
+683;49.5063;6.28164;Mondorf, Casino 2000
+684;49.50457;6.27012;Mondorf, Bei der Douane
+685;49.5565;6.28721;Waldbredimus, Kiirch
+686;49.5573;6.29334;Waldbredimus, Hanner Lautesch
+687;49.62224;6.03579;Mamer, Lycee (gare routière)
+694;49.50893;6.27894;Mondorf, Vor Howent
+695;49.50466;6.27687;Mondorf, Brill
+696;49.50993;6.2872;Mondorf, Stade John Grün
+698;49.64406;5.91597;Kleinbettingen, Gare
+699;49.6453;5.91573;Kleinbettingen, Duerf
+701;49.62479;6.01543;Mamer, Holzemerstrooss
+703;49.62567;6.02017;Mamer, Gare
+705;49.62713;6.03233;Mamer, Gaaschtbierg
+706;49.62744;6.01883;Mamer, Eisebunnsbréck
+707;49.63408;6.01667;Mamer, Eglantiers
+708;49.51262;6.28143;Mondorf, Rue J. Dolibois
+709;49.62326;6.01135;Mamer, Coq Hardi
+710;49.50958;6.28268;Mondorf, Av. Gr.D. Charlotte
+711;49.64794;5.92295;Kleinbettingen, Kiirfecht
+712;49.6511;5.99488;Olm, Kräizwee
+713;49.65522;5.99805;Olm, Kréimerech
+714;49.64722;5.99814;Olm, Dréischelsfeld
+715;49.62918;6.02107;Mamer, Zentrum
+716;49.6244;6.03661;Mamer, Tossebierg
+717;49.63147;6.02208;Mamer, Mambra
+719;49.6184;6.02976;Mamer, Lycée (gare ferroviaire)
+720;49.51949;5.89667;Differdange, Seelebunn
+721;49.53263;5.89153;Differdange, Wagner Koepges
+723;49.61902;6.16573;Cents, Gabriel de Marie
+724;49.61415;6.16275;Cents, Halte CFL
+726;49.61837;6.16058;Cents, Arthur Knaff
+728;49.61927;6.17628;Cents, Camille Polfer
+729;49.56294;6.22191;Syren, Klappsbréck
+730;49.74389;6.26578;Blumenthal/Blummendall
+732;49.56524;6.21996;Syren, Nidderbaach
+734;49.56509;6.21482;Syren, Troudelermillen
+735;49.61074;6.14081;Cents, Dinselpuert
+736;49.61239;6.14752;Cents, Fort Dumoulin
+737;49.61834;6.17246;Cents, Carmel
+738;49.61924;6.1633;Cents, Charles de Tornaco
+739;49.62855;6.02532;Mamer, C.I.P.A.
+740;49.63001;6.02562;Mamer, Baerendall
+741;49.6286;6.02917;Mamer, Arelerstrooss
+745;49.52323;5.96479;Ehlerange, Centre
+746;49.52916;5.95081;Ehlerange, Dennebësch
+747;49.51783;5.96572;Ehlerange, Escherstrooss
+750;49.64437;6.26781;P.A.S.-Aalbaach
+751;49.64107;6.27411;P.A.S.-Äisvull
+752;49.64332;6.274;P.A.S.-Bekassin
+753;49.64383;6.26451;P.A.S.-Bombicht
+754;49.63914;6.2704;P.A.S.-Stackint
+756;49.5236;5.96645;Ehlerange, Schoul
+758;49.51449;5.96676;Ehlerange, ZARE ouest
+761;49.52618;5.96151;Ehlerange, Keupewee
+762;49.52574;5.97493;Ehlerange, Monnerecherstrooss
+763;49.52687;5.95479;Ehlerange, Rousebësch
+764;49.57341;6.03291;Roedgen, Laangwis
+765;49.64776;6.25959;Niederanven, Jacques Lamort
+767;49.46886;6.03805;Tétange, Lorei
+768;49.58356;6.14233;Howald, Bei der Kierch
+770;49.47957;6.04312;Tétange, Kierfecht
+771;49.58187;6.14854;Howald, Am Houwaldsbierg
+772;49.47702;6.03569;Tétange, Schungfabrik
+773;49.58605;6.14375;Howald, Jhangeli
+774;49.58301;5.95638;Schouweiler,Kierfecht
+775;49.47903;6.04289;Tétange, Rue Neuve
+776;49.58918;6.14792;Howald, C.I.P.A.
+777;49.47444;6.04038;Tétange, Duerf
+778;49.47751;6.03499;Tétange, Gare
+779;49.58329;6.13656;Howald, Moureschanz
+780;49.47195;6.03879;Tétange, Um Haff
+781;49.58034;6.14599;Howald, Minsbësch
+782;49.57879;6.1276;Gasperich/Howald, P&R Howald
+783;49.57681;6.13535;Howald, Op der Stirzel
+784;49.57907;5.95907;Schouweiler, Binzeriech
+785;49.64671;5.95696;Wandhaff
+786;49.65548;6.25068;Niederanven, Op de Wolleken
+787;49.58259;5.96108;Schouweiler, Bei der Schoul
+788;49.65048;6.25232;Niederanven, Routscheed
+789;49.58104;5.95102;Schouweiler, Schéiferwee
+790;49.64915;6.25983;Niederanven, Millen
+791;49.58523;5.95592;Schouweiler, Belair
+792;49.65122;6.25686;Niederanven, Minsbecherstrooss
+793;49.65294;6.26203;Niederanven, Geisfeld
+794;49.65152;6.25475;Niederanven, Laach
+798;49.57829;6.14756;Howald, Waassertuerm
+799;49.58526;6.13889;Howald, 9 Mai 1944
+800;49.62073;6.18231;Cents, Waassertuerm
+801;49.57828;5.94672;Schouweiler, Kastill
+802;49.5347;6.14463;Crauthem, Beim Schlass
+803;49.58128;5.95834;Schouweiler, Kiirch
+804;49.53719;6.14534;Crauthem, Am Gruef
+805;49.57352;5.96014;Schouweiler, Gare
+806;49.57888;6.13366;Howald, Ronnebësch
+807;49.58752;5.95427;Schouweiler, Hiel
+808;49.58831;6.13919;Howald, Rangwee
+809;49.61159;6.15165;Cents, Nic Rollinger
+810;49.62073;6.17425;Cents, Paul Albrecht
+811;49.61116;6.14322;Cents, Kéibierg-I.N.S.
+812;49.61529;6.15994;Cents, Kierch
+813;49.61386;6.15407;Cents, Tawioun
+814;49.61763;6.16952;Cents, Trèves
+815;49.61253;6.15621;Cents, Pommiers
+816;49.61714;6.16552;Cents, Robert Bruch
+817;49.75157;6.20497;Schmët
+818;49.6169;6.15893;Cents, Jules Salentiny
+829;49.56238;6.10809;Kockelscheuer, Kräizhaff
+830;49.57323;6.11322;Kockelscheuer, Camping
+831;49.55945;6.10875;Kockelscheuer, Plateau
+832;49.56537;6.10854;Kockelscheuer, Patinoire
+833;49.55544;6.10638;Kockelscheuer, Poudrerie
+835;49.73438;6.23267;Godbrange, Bei der Kiirch
+837;49.51898;6.07606;Fennange, Am Duerf
+838;49.51968;6.08304;Fennange, Rue des Champs
+841;49.52129;6.04811;Bergem, Raedelsboesch
+845;49.52409;6.04148;Bergem, Centre
+848;49.51934;6.0457;Bergem, Blummestrooss
+853;49.69429;6.00092;Roodt/Bour, Bréck
+867;49.52758;6.03617;Bergem, Steebréckerwee
+880;49.52231;6.0429;Bergem, Am Haff
+881;49.52394;6.04039;Bergem, Beim Nëssert
+890;49.69092;6.17206;Asselscheuer/Uesselscheier
+891;49.55017;6.31646;Rolling/Bous
+892;49.6027;5.87641;Clemency, Eescherwee
+893;49.59038;5.87934;Clemency, Breedewee
+894;49.59502;5.88072;Clemency, Schwemm
+895;49.60541;5.87811;Clemency, Schock
+899;49.59889;5.87331;Clemency, Gemeng
+900;49.59793;5.88508;Clemency, Féngegerbierg
+901;49.59462;5.87405;Clemency, Ieweschtgaass
+903;49.59453;5.87745;Clemency, Henn
+917;49.76865;6.11026;Pettingen, Barriär
+920;49.77038;6.10735;Pettingen, Schlass
+924;49.64708;5.8907;Sterpenich, rue du Duché
+925;49.64087;6.13676;Luxembourg, Chingiz Aitmatov
+927;49.63883;6.14422;Dommeldange, Parc de l'Europe
+929;49.63646;6.14375;Dommeldange, Van der Meulen
+931;49.63442;6.13946;Dommeldange, Sidney Thomas
+939;49.62259;6.18513;Neudorf, Kalchesbruck
+940;49.6229;6.16427;Neudorf, Huesegrëndchen
+942;49.62122;6.16169;Neudorf, Kierch
+943;49.62351;6.16845;Neiduerf, Kapell
+944;49.62367;6.17729;Neudorf/Weimershof, Fierschterhaus
+945;49.62551;6.1659;Neudorf, Carrières
+947;49.61716;6.15184;Neudorf/Weimershof, Hierzekrëpp
+952;49.63513;6.13424;Dommeldange, Emile Metz
+953;49.63339;6.13692;Dommeldange, Gare
+954;49.63823;6.14155;Dommeldange, Jean Engling
+956;49.63469;6.13862;Dommeldange, Château
+960;49.63296;6.13941;Dommeldange, Contournement
+962;49.64011;6.1529;Dommeldange, Dauschbuer
+969;49.64101;6.13445;Dommeldange, ArcelorMittal
+970;49.62221;6.16472;Neiduerf, Brasserie
+974;49.66958;5.96506;Goeblange, Giewel
+976;49.72161;5.96101;Calmus, Lannekneppchen
+979;49.7237;5.96263;Calmus, Schoul
+981;49.72502;5.96306;Calmus, Wäschbur
+982;49.58799;6.25156;Moutfort, Juxgaass
+983;49.59478;6.25019;Moutfort, Bombasch
+987;49.61228;6.07638;Strassen, Les Thermes
+988;49.62086;6.088;Strassen, Schafsstrachen
+989;49.62146;6.07864;Strassen, Cité Pescher
+990;49.62174;6.08096;Strassen, Oricher-Hoehl
+991;49.7655;6.02836;Grevenknapp, Um ënnschte Knapp
+992;49.76284;6.03179;Grevenknapp, Riesenhaff
+997;49.58739;6.25533;Moutfort, Syrbréck
+999;49.58615;6.26081;Moutfort, Kiem
+1000;49.58794;6.25852;Moutfort, Kapell
+1002;49.65003;5.86983;Barnich-Autelbas, Eglise
+1004;49.648;5.88891;Sterpenich, rue de la Gendarmerie
+1006;49.53965;6.28384;Welfrange, Op der Plaz
+1008;49.62248;6.13032;Eich, Octroi
+1009;49.62762;6.12993;Eich, Eecher Plaz
+1010;49.63176;6.1346;Eich, Klinik
+1011;49.62898;6.13241;Eich, Centre Culturel
+1012;49.62695;6.12768;Eich, Ecole Eich
+1026;49.6222;6.05791;Strassen, Schoenacht
+1027;49.6036;6.0754;Helfenterbréck, Pletzer
+1028;49.60367;6.07808;Helfenterbréck,
+1029;49.61909;6.07208;Strassen, Grande-Duchesse Charlotte
+1030;49.60126;6.06913;Helfent, Automobile Club
+1031;49.61804;6.08751;Strassen, Hondseck
+1032;49.60074;6.06591;Helfent, City Concorde
+1033;49.61736;6.09223;Strassen, Huorgarten
+1034;49.62165;6.06232;Strassen, Geesseneck
+1035;49.62096;6.06651;Strassen, Kesseler
+1037;49.61857;6.07802;Strassen, Kiem
+1040;49.61605;6.0903;Strassen, Les Aubépines
+1055;49.61969;6.07618;Strassen, Benelux
+1057;49.61668;6.08692;Strassen, Michel Angelo
+1058;49.61993;6.09392;Strassen, Primeurs
+1059;49.61782;6.08215;Strassen, Réimerwee
+1060;49.61813;6.05761;Strassen, Riedgen
+1061;49.61062;6.06809;Bertrange, Spatzwiss
+1066;49.6617;6.13614;Walferdange, Gare
+1068;49.65914;6.13081;Walferdange, Gemenge Plaz
+1070;49.61965;6.35309;Gostingen, Am Ennerduerf
+1071;49.62217;6.35389;Gostingen, Kiirch
+1078;49.62448;6.1719;Neudorf, Laangegronn
+1084;49.72936;6.07991;Hunnebour
+1085;49.60857;6.07918;Strassen, Atrium
+1086;49.61898;6.08081;Strassen, Aurélia
+1087;49.62031;6.07154;Strassen, Barblé
+1088;49.61891;6.06922;Strassen, Bechel
+1089;49.61077;6.07999;Strassen, Bourmicht
+1091;49.61863;6.06405;Strassen, Chapelle
+1100;49.52292;5.89416;Differdange, Arbed
+1105;49.66418;6.07228;Kopstal, Bréck
+1107;49.4909;5.97473;Esch/Alzette, Terres Rouges
+1110;49.72089;5.92138;Schweich, Peiffer
+1112;49.52788;5.89086;Differdange, Aal Gare
+1113;49.52174;5.89786;Differdange, Fousbann
+1120;49.54648;6.36497;Remich, Schoul
+1121;49.51837;5.9144;Differdange, Cité Breitfeld
+1123;49.52076;5.9071;Differdange, Hansen
+1125;49.53377;5.88911;Niederkorn, CHEM 2
+1126;49.6793;6.31982;Olingen, Am Kéisbierg
+1127;49.68184;6.30851;Olingen, Beim leschte Wollef
+1128;49.68017;6.31399;Olingen, Rue de Rodenbourg
+1129;49.63799;6.13212;Beggen, Henri Heymans
+1130;49.64742;6.13446;Beggen, Henri Dunant
+1132;49.64923;6.12774;Beggen, Rue du Pont
+1133;49.64345;6.12944;Beggen, Kierch
+1135;49.64586;6.12828;Beggen, Bastogne
+1136;49.6434;6.13478;Beggen, Cyprien Merjai
+1137;49.64154;6.13035;Beggen, Binnchen
+1139;49.52359;6.3381;Wellenstein, rte de Mondorf
+1142;49.52483;6.3417;Wellenstein, Centre
+1144;49.52783;6.34766;Wellenstein, Caves coop.
+1145;49.52127;5.91444;Differdange, Gewännchen
+1147;49.5209;5.90522;Differdange, Profi
+1148;49.66114;6.07231;Kopstal, Kapell
+1149;49.66877;6.07285;Kopstal, Saangen
+1153;49.52411;5.89091;Differdange, Parc Gerlache
+1154;49.61415;6.16201;Hamm, Fetschebur
+1158;49.46162;6.03447;Rumelange, Schmelz
+1159;49.46327;6.01637;Rumelange, Rembour
+1160;49.45426;6.0281;Rumelange, Pl. de France
+1162;49.63145;6.27604;Uebersyren, Kreizgaass
+1163;49.50702;6.31473;Elvange/Mondorf, Villette
+1165;49.46086;6.03035;Rumelange, Maartplaz
+1166;49.50403;6.31883;Elvange, Wëntrengerstrooss
+1168;49.45738;6.03079;Rumelange, Märtyrerstrooss
+1170;49.46202;6.02153;Rumelange, Laangegronn
+1171;49.4642;6.01434;Rumelange, Intermoselle
+1172;49.62645;6.13691;Weimerskirch, Pierre-Eloi Schoué
+1173;49.45981;6.0327;Rumelange, Gare
+1174;49.62795;6.1393;Weimerskirch, Mäertesbur
+1175;49.46218;6.02614;Rumelange, Centre Culturel
+1176;49.62819;6.13301;Weimerskirch, Laval's Park
+1177;49.46503;6.03672;Rumelange, Atelier Kihn
+1178;49.62879;6.13558;Weimerskirch, Knupp
+1179;49.46235;6.02461;Rumelange, Aale Kierfecht
+1180;49.69519;6.06558;Keispelt, Spellen Eck
+1181;49.69338;6.06787;Keispelt, Bei Péickes
+1182;49.62824;6.13586;Weimerskirch, Duerf
+1183;49.74757;5.97394;Schwebach, Bréck
+1184;49.63352;6.1417;Weimerskirch, Biechelchen
+1185;49.62257;6.15891;Weimershof, Pâquerettes
+1186;49.62945;6.17022;Weimershof, Joseph Hackin
+1187;49.74564;5.9709;Schwebach, Am Duerf
+1188;49.62054;6.15394;Weimershof, Bleuets
+1189;49.5052;6.31553;Elvange/Mondorf, Bei Tubes
+1190;49.50202;6.31418;Elvange/Mondorf, Kallekskaul
+1193;49.61572;6.22181;Sandweiler, Schiltzperdgen
+1194;49.6142;6.21527;Sandweiler, rue d'Itzig
+1195;49.60086;6.20563;Sandweiler-Contern, Gare
+1198;49.77318;6.01779;Boevange, Lëtschert
+1204;49.63536;5.91487;Kahler, Gare
+1205;49.63132;5.91677;Kahler, Kiirch
+1206;49.62865;5.9177;Kahler, Schmëtt
+1207;49.60708;6.15527;Hamm, Colonie
+1208;49.60559;6.15256;Hamm, Englebert Neveu
+1209;49.71526;6.24961;Junglinster, Gemeng
+1210;49.61259;6.17254;Hamm, Käschtewee
+1211;49.71146;6.25244;Junglinster, Op der Gare
+1212;49.61001;6.16684;Hamm, Kierch
+1213;49.71483;6.24819;Junglinster, Op der Rumm
+1215;49.71165;6.25285;Junglinster, Rue de la Gare
+1216;49.60936;6.32439;Canach, Post
+1218;49.70818;6.24994;Junglinster, Um Lei
+1219;49.60587;6.30659;Canach, Z.A. Rëckschleed
+1220;49.72001;6.26653;Junglinster, Um Radio
+1221;49.60903;6.32254;Canach, Weber
+1222;49.71542;6.26127;Junglinster, Um Reiland
+1223;49.59815;6.21046;Sandweiler, Du Pont
+1225;49.61704;6.21589;Sandweiler, Hiel
+1226;49.70448;6.24844;Junglinster, Op der Fréinen
+1227;49.61322;6.21213;Sandweiler, Am Eck
+1229;49.61525;6.22286;Sandweiler, Apdikt
+1230;49.61315;6.22672;Sandweiler, Koschterjanshaff
+1233;49.61627;6.21939;Sandweiler, Kiirch
+1235;49.61576;6.20952;Sandweiler, Kontrollstatioun
+1237;49.61225;6.3319;Canach, Am Stee
+1239;49.60684;6.20382;Sandweiler, Schaedhaff
+1240;49.61183;6.32674;Canach, Op der Bréck
+1242;49.60806;6.31592;Canach, Huehlgaass
+1243;49.60404;6.14845;Hamm, Montmédy
+1245;49.61311;6.1699;Hamm, Rue de Bitbourg
+1246;49.61102;6.16978;Hamm, Rue Haute
+1247;49.60914;6.16193;Hamm, Schoul
+1248;49.61483;6.17449;Hamm, Ronndréisch
+1249;49.55816;5.97951;Limpach, Kiirch
+1250;49.55609;5.97996;Limpach, Uecht
+1255;49.60672;6.40559;Wincheringen, Moselbrücke
+1261;49.55549;5.87449;Pétange, Rue des Romains
+1263;49.64615;6.23899;Senningen, Duerfplaz
+1264;49.64974;6.24725;Senningen, Kierch
+1265;49.64911;6.24303;Senningen, Um Kiem
+1281;49.78132;6.18133;Larochette, Hangelsbour
+1283;49.78158;6.21868;Larochette, Millewee
+1284;49.78165;6.21828;Larochette, Pomjeesbau
+1290;49.68893;6.34919;Betzdorf, Gare
+1312;49.70401;6.21199;Bourglinster, Buchholz
+1313;49.70351;6.21747;Bourglinster, Am Duerf
+1314;49.55108;6.20472;Hassel, Dielchen
+1315;49.70707;6.21748;Bourglinster, Am Brill
+1316;49.54997;6.20922;Hassel, Karmesch
+1317;49.54874;6.21265;Hassel, Küneftchen
+1322;49.62525;6.14004;Kirchberg, Prince Félix
+1325;49.58647;6.35881;Greiveldange, Raiffeisekeess
+1326;49.62866;6.16258;Kirchberg, Albert Borschette
+1327;49.62718;6.15149;Kirchberg, Antoine de St Exupéry
+1328;49.58717;6.36352;Greiveldange,Kellerei
+1329;49.63388;6.16761;Kirchberg, Alphonse Weicker
+1330;49.62008;6.13885;Kirchberg, B.E.I.
+1332;49.58702;6.36108;Greiveldange, Neie Wee
+1333;49.58665;6.35871;Greiveldange, Gemengebréck
+1334;49.60977;6.12806;Centre, Hällepull
+1335;49.60009;6.12691;Centre, Etats-Unis
+1336;49.60893;6.1315;Centre, F.D. Roosevelt
+1337;49.60071;6.12949;Centre, Commerce
+1338;49.61315;6.12732;Centre, Forum Royal
+1339;49.61566;6.12677;Centre, Fondation Pescatore
+1340;49.62904;6.16616;Kirchberg, Bricherhaff
+1341;49.62701;6.16674;Kirchberg, Bricher Gässel
+1342;49.56483;6.00822;Reckange/Mess, Findel
+1343;49.56255;6.00375;Reckange/Mess, Am Duerf
+1344;49.62199;6.15287;Kirchberg, Erasme/d'Coque
+1345;49.62583;6.16089;Kirchberg, Coudenhove-Kalergi
+1346;49.62477;6.14539;Kirchberg, Jean Monnet
+1347;49.6324;6.17489;Kirchberg, Hôpital
+1348;49.62915;6.14722;Kirchberg, Kierch
+1349;49.63237;6.17158;Kirchberg, John-F.-Kennedy
+1350;49.61252;6.12272;Centre, Charlys Gare
+1351;49.61;6.13109;Centre, Cathédrale
+1352;49.61898;6.09993;Luxembourg/Strassen, Centre Hospitalier
+1353;49.62792;6.15919;Kirchberg, Uni Campus Kirchberg
+1354;49.60346;6.13315;Centre, Al Avenue/A-Z
+1356;49.60082;6.13321;Luxembourg, Gare Centrale
+1358;49.61354;6.12921;Centre, Badanstalt
+1359;49.61303;6.12885;Centre, Beaumont
+1360;49.59647;6.13112;Centre, Alsace
+1361;49.61032;6.12361;Luxembourg, Monterey Parc
+1362;49.62962;6.15733;Kirchberg, Konrad Adenauer
+1363;49.56285;6.01743;Reckange/Mess, Wolefskaul
+1367;49.66143;5.91516;Steinfort, Al Schmelz
+1368;49.52035;6.22579;Aspelt, Gare
+1369;49.51786;6.23304;Aspelt, Am Grëndchen
+1373;49.55536;5.8754;Pétange, A Rousen
+1375;49.55425;5.87881;Pétange, Gare
+1377;49.55805;5.88545;Pétange, Cité CFL
+1382;49.55649;5.87727;Pétange, Gemeng
+1383;49.65789;5.91136;Steinfort, Um Quai
+1384;49.71796;6.06232;Kuelbecherhaff
+1385;49.65824;5.91348;Steinfort, Schoul
+1386;49.50739;6.00747;Schifflange, Ecole Nelly Stein
+1387;49.55319;5.87843;Pétange, Kierfecht
+1388;49.65965;5.92347;Steinfort, Letzebgerstr.81
+1389;49.55899;5.87277;Pétange, Rue Gillardin
+1390;49.66674;5.91983;Steinfort, Kolonie
+1392;49.65941;5.91336;Steinfort, Gemeng
+1393;49.60067;6.13365;Luxembourg, Gare Centrale
+1395;49.5998;6.13303;Luxembourg, Gare Centrale
+1396;49.60104;6.13306;Luxembourg, Gare Centrale
+1397;49.60665;6.12621;Luxembourg, Ste Zithe
+1398;49.67381;6.00527;Nospelt, Beim Gliesener
+1399;49.60325;6.13434;Luxembourg, Wallis
+1400;49.67269;6.0114;Nospelt, Kräizhiel
+1402;49.59924;6.13333;Luxembourg, Gare routière
+1403;49.72896;6.34161;Brouch/Wecker
+1404;49.60522;6.13057;Luxembourg, rue Heine
+1410;49.55611;5.87605;Pétange, Maartplaz
+1411;49.5572;5.88121;Pétange, Lëtzebuergerstrooss
+1413;49.55654;5.87574;Pétange, Paschtoueschhaus
+1414;49.56099;5.87295;Pétange, Op der Millen
+1415;49.61254;6.12582;Luxembourg/Centre, Royal
+1416;49.67327;6.00895;Nospelt, Pompjeesbau
+1417;49.55322;5.88288;Pétange, Oberst Dässent
+1418;49.55932;5.87362;Pétange, Maison des Jeunes
+1419;49.55445;6.31353;Assel
+1420;49.5074;6.00396;Schifflange, Brill
+1423;49.5059;6.01151;Schifflange, Stadhaus
+1426;49.5065;6.01002;Schifflange, Gare
+1428;49.55265;5.88514;Pétange, Prënzebierg
+1429;49.50521;6.00901;Schifflange, Huele Wee
+1430;49.60654;6.12851;Centre, Martyrs
+1431;49.50753;6.01969;Schifflange, Gringe Wee
+1432;49.60312;6.12475;Luxembourg/Centre, Michel Rodange
+1433;49.50627;6.01632;Schifflange, Niddeschgaass
+1434;49.50402;6.0007;Schifflange, Millchen
+1435;49.61206;6.13159;Centre, Kasinosgaass
+1436;49.50742;6.02765;Schifflange, Poto
+1437;49.60553;6.12936;Centre, Rousegaertchen
+1438;49.6105;6.12504;Luxembourg/Centre, Monterey
+1439;49.60384;6.13077;Luxembourg/Centre, Paris/Zitha
+1444;49.61098;6.12605;Hamilius
+1452;49.63472;6.16748;Kirchberg, Marcel Reuland
+1453;49.63229;6.17004;Kirchberg, Marcel Fischbach
+1455;49.59618;6.21385;Contern, Weiergewan
+1456;49.5968;6.21544;Contern, Kuehne & Nagel
+1457;49.58686;6.23111;Contern, Millewee
+1458;49.58524;6.22758;Contern, Kiircheplaz
+1459;49.58477;6.22552;Contern, Kräizgaass
+1460;49.5865;6.22338;Contern, Birewee
+1461;49.59356;6.22262;Contern, I.E.E.
+1464;49.52029;6.29745;Ellange, Martialis
+1465;49.51559;6.30608;Ellenger Gare
+1468;49.61305;6.11956;Centre, Stäreplaz
+1469;49.60139;6.13694;Luxembourg, Gare Rocade
+1470;49.59791;5.94696;Dahlem, Um Eck
+1471;49.60087;5.9482;Dahlem, Um Pëtz
+1472;49.63432;6.17016;Kirchberg, Luxexpo Entrée Sud
+1474;49.63729;6.16502;Kirchberg, Léon Thyes
+1477;49.63753;6.16917;Kirchberg, Mathias Tresch
+1479;49.62368;6.16077;Kirchberg, Marguerites
+1482;49.62658;6.16387;Kirchberg, Muguets
+1484;49.62006;6.14616;Kirchberg, Parlement Européen
+1485;49.63713;6.17371;Kirchberg, Parking Foire
+1487;49.54608;6.13778;Bivange, Edward Steichen
+1488;49.62389;6.14958;Kirchberg, Léon Hengen
+1490;49.62916;6.16779;Kirchberg, Labours
+1495;49.54156;6.13607;Bivange, Schoul
+1496;49.75134;6.0761;Reckange/Mersch, Hosbich
+1497;49.75124;6.17001;Schoos, Hiervel
+1498;49.74596;6.08462;Reckange/Mersch, Hunnebourerstr.
+1500;49.74824;6.05235;Reckange/Mersch, Barriär
+1501;49.75218;6.08533;Reckange/Mersch, Beim Bur
+1503;49.62854;6.17377;Kirchberg, Rehazenter
+1504;49.63559;6.16895;Kirchberg, Poutty Stein
+1505;49.63235;6.16747;Kirchberg, Réimerwee
+1506;49.6276;6.17162;Kirchberg, Rehazenter Parking
+1507;49.62839;6.15153;Kirchberg, Sichegronn
+1508;49.62835;6.14925;Kirchberg, Schmatt
+1509;49.74747;6.08008;Reckange/Mersch, Schoul
+1510;49.63264;6.16137;Luxembourg, Avalon
+1511;49.62738;6.1433;Kirchberg, Paul Noesen
+1512;49.63165;6.17767;Kirchberg, Pierre Werner
+1513;49.61945;6.14283;Kirchberg, Philharmonie / MUDAM
+1516;49.53954;6.32341;Emeringerhaff
+1522;49.68064;5.94457;Koerich, SES
+1523;49.67001;5.94923;Koerich, Gemeng
+1524;49.67008;5.95274;Koerich, Weidewee
+1525;49.67058;5.94244;Koerich, Fuurt
+1527;49.65866;6.23164;Hostert, Charlys Gare
+1536;49.57341;6.15734;Hesperange, Am Keller
+1537;49.57312;6.14395;Hesperange, Cité Um Schlass
+1538;49.57748;6.16258;Hesperange, Holleschbierg
+1539;49.49732;5.98783;Esch/Alzette, Bd Berwart
+1540;49.57443;6.16006;Hesperange, Itziger Eck
+1541;49.57195;6.1537;Hesperange, Sprëtzenhaus
+1542;49.57143;6.16002;Hesperange, Urbengsschlass
+1543;49.5771;6.15375;Hesperange, Wollefsmillen
+1544;49.5035;5.98194;Esch/Alzette, Rue Henri Dunant
+1545;49.49351;5.97942;Esch/Alzette, Rue du X Sep.
+1546;49.49703;5.97869;Esch/Alzette, Rue Victor Hugo
+1547;49.4878;5.9765;Esch/Alzette, Rue Renaudin
+1549;49.53428;6.24787;Filsdorf, Op der Plaz
+1551;49.53321;6.24565;Filsdorf, Wäschbour
+1553;49.77923;6.08412;Roost, Luxlait
+1554;49.48553;5.97598;Esch/Alzette, Rue des Mines
+1555;49.49649;5.98951;Esch/Alzette, R. de Schiffl.
+1557;49.7016;5.91519;Kreizerbuch
+1560;49.78659;6.09232;Rouscht
+1561;49.48638;5.97282;Esch/Alzette,  Barbourg
+1562;49.48927;5.97758;Esch/Alzette, Rue d'Audun
+1566;49.50331;5.94554;Esch/Alzette, Porte de France
+1567;49.50803;5.99274;Esch/Alzette, Bd Aloyse Meyer
+1568;49.5076;5.95737;Esch/Alzette, Tramschapp
+1572;49.50905;5.95531;Esch/Alzette, Raemerich
+1573;49.4943;5.96825;Esch/Alzette, Peckeschhaff
+1576;49.69929;5.96473;Septfontaines, Schoul
+1578;49.69565;5.98729;Septfontaines, Simmerfarm
+1579;49.49628;5.98663;Esch/Alzette, Place N. Metz
+1581;49.50243;5.97214;Esch/Alzette, Place Benelux
+1589;49.49131;6.06806;Dudelange, Butschebuerg
+1590;49.47138;6.08388;Dudelange, Casino
+1591;49.49159;6.09876;Dudelange, Rue Curie
+1592;49.49267;6.0865;Dudelange-Burange, Gare
+1593;49.48838;6.08572;Dudelange, Rue Jean Simon
+1594;49.48644;6.07269;Dudelange, Route de Kayl
+1596;49.48322;6.08687;Dudelange, Jugendhaus
+1598;49.49143;6.08788;Dudelange, Dennewald
+1601;49.48053;6.08246;Dudelange-Centre, Gare
+1603;49.48438;6.0908;Dudelange, Centre Sportif
+1612;49.60753;6.24179;Oetrange, Prisong
+1613;49.60264;6.26787;Oetrange, Staefeld
+1614;49.59971;6.25693;Oetrange, Trengen Knapp
+1615;49.4787;6.08515;Dudelange, Gemeng
+1616;49.48326;6.08296;Dudelange, Gare
+1617;49.70316;6.16704;Blaschette, Rue de Fischbach
+1618;49.47244;6.0791;Dudelange, Gare-Usines
+1619;49.6995;6.16639;Blaschette, r.de Wormeldange
+1621;49.48198;6.08019;Dudelange, Rue Gaffelt
+1622;49.70224;6.16466;Blaschette, Kreizung
+1628;49.47046;6.08797;Dudelange, Spidol
+1631;49.47976;6.08659;Dudelange, Kiirch
+1634;49.46333;6.08206;Dudelange, Greisendall
+1640;49.6026;6.25847;Oetrange, Gare
+1641;49.59483;6.26017;Oetrange, Kurzebierg
+1642;49.60137;6.26023;Oetrange, Éiter
+1644;49.74301;6.09643;Mersch, Uewermiersch
+1645;49.62921;6.11707;Muhlenbach, Siwemuergen
+1646;49.75538;6.09983;Mersch, Mierscherbierg
+1647;49.75331;6.10309;Mersch, Beim Klouschter
+1649;49.74485;6.09689;Mersch, Lankheck
+1652;49.74772;6.10384;Mersch, Maartplaz
+1653;49.6279;6.12232;Muhlenbach, Eecher Schmelz
+1654;49.75188;6.09781;Mersch, Reckenerstrooss
+1655;49.53493;6.01727;Pontpierre, Pafenheck
+1656;49.62839;6.11324;Muhlenbach, Peiffeschbierg
+1657;49.75051;6.10648;Mersch, Stäereplaz
+1658;49.53119;6.03247;Pontpierre, Steewee
+1659;49.53973;6.034;Pontpierre, Lëtzebuergerstr.
+1660;49.53475;6.03049;Pontpierre, Paschtoueschhaus
+1667;49.48873;6.07008;Dudelange, Rue Angeldall
+1668;49.49294;6.09409;Dudelange, Rue de Hellange
+1669;49.66642;6.34265;Flaxweiler, Op der Bréck
+1671;49.66506;6.34398;Flaxweiler, Bei Knuppeneck
+1672;49.47123;6.0778;Dudelange, Bouledrome P&R
+1673;49.48108;6.09024;Dudelange, Breiningerbierg
+1674;49.49109;6.09699;Dudelange, Am Boujel
+1675;49.47851;6.09362;Dudelange, Rue Belair
+1676;49.4927;6.08912;Dudelange, Biereng
+1682;49.76259;6.16003;Angelsberg, Paafendall
+1685;49.58755;5.98567;Dippach, Um Pull
+1686;49.46863;6.08206;Dudelange, Schmelz
+1687;49.58739;5.97191;Dippach, Op der Kopp
+1688;49.58758;5.98836;Dippach, Um Däich
+1689;49.48365;6.10203;Dudelange, Waldschoul
+1690;49.48427;6.09568;Dudelange, Rue Jean Origer
+1691;49.47813;6.07962;Dudelange, Rue Tattenberg
+1692;49.47457;6.084;Dudelange, Centre Culturel / CNA
+1693;49.46898;6.07975;Dudelange, Skatepark P&R
+1694;49.58894;5.99336;Dippëcherbierg
+1695;49.49503;6.08547;Dudelange, Soibelkaul
+1696;49.58746;5.98374;Dippach, Bei der Crèche
+1697;49.48555;6.0887;Dudelange, Centre Sportif
+1698;49.58779;5.98024;Dippach, Bei der Kapell
+1701;49.48939;6.09509;Dudelange, Maison de retraite
+1704;49.4868;6.09076;Dudelange, Rue du Parc
+1705;49.53544;6.02608;Pontpierre, Op der Bréck
+1706;49.53631;6.02808;Pontpierre, Koppbierg
+1707;49.53312;6.02973;Pontpierre, Bei der Kierch
+1709;49.53371;6.02882;Pontpierre, Freschpesch
+1711;49.47295;6.07592;Dudelange, Rue des Minières
+1712;49.53652;6.02618;Pontpierre, Pompjeesbau
+1713;49.48794;6.09214;Dudelange, Rue Fany Schumacher
+1714;49.54097;6.03578;Pontpierre, Leideleng
+1715;49.49602;6.07546;Dudelange, Rue des Bobineurs
+1716;49.53744;6.03063;Pontpierre, Beim Kueb
+1717;49.4966;6.07894;Dudelange, Rue de Lauenburg
+1718;49.48656;6.08504;Dudelange, Route de Burange
+1720;49.47976;6.08091;Dudelange, Rue de la Fontaine
+1722;49.47238;6.07332;Dudelange, L.N.B. Annexe Alliance
+1724;49.48114;6.10176;Dudelange, Lenkeschléi
+1725;49.50272;5.9793;Esch/Alzette, Rue Nic Biever
+1726;49.50661;5.97889;Esch/Alzette, Nonnewisen
+1727;49.50204;5.96735;Esch/Alzette, Rue M. Müller-Tesch
+1728;49.49993;5.96949;Esch/Alzette, Rue Michel Lentz
+1729;49.75211;6.26091;Reuland
+1730;49.75199;6.11035;Mersch, Gare
+1736;49.48419;6.0975;Dudelange, Rue de la Paix
+1738;49.48112;6.08459;Dudelange, Niddeschgaass
+1740;49.4785;6.08777;Dudelange, Rue Antoine Zinnen
+1741;49.50834;5.9755;Esch/Alzette, Rue Guillaume Capus
+1743;49.48313;6.09128;Dudelange, Lycée Nic Biever
+1744;49.50927;5.96505;Esch/Alzette, Lycée Esch
+1746;49.48471;6.07498;Dudelange, rue Aloyse Kayser
+1748;49.47915;6.09959;Dudelange, Kräizbierg
+1751;49.48324;6.08049;Dudelange, Kierfecht
+1752;49.51768;6.06457;Huncherange, Kreizung
+1753;49.49282;5.98359;Esch/Alzette, Passerelle
+1754;49.51634;6.06434;Huncherange, Kiirch
+1755;49.51828;6.06958;Huncherange, Rue d'Esch 1
+1756;49.50563;5.94828;Esch/Alzette, Cité des Sciences
+1757;49.5177;6.05866;Huncherange, R. Résistance
+1758;49.47495;6.08001;Dudelange, Porte d'Italie
+1759;49.50242;5.96486;Esch/Alzette, Cité Jos Brebsom
+1760;49.50232;5.96497;Esch/Alzette, Bd Pierre Krier
+1762;49.50819;5.97061;Esch/Alzette, Rue M. Dauphin
+1763;49.47642;6.08445;Dudelange, Rue de la Rivière
+1764;49.49407;5.98466;Esch/Alzette, Auberge de Jeunesse
+1765;49.66237;6.13326;Helsem, Tricentenaire
+1766;49.65996;6.13562;Helmsange, Barriär
+1767;49.66595;6.13429;Helsem, Mercatoris
+1768;49.66881;6.13516;Heisdorf, Millewee
+1769;49.66613;6.30376;Roodt/Syre, Barriär
+1770;49.66638;6.30277;Roodt/Syre, Gare
+1771;49.66351;6.29811;Roodt/Syre, Campus scolaire
+1772;49.6592;6.28724;Roodt/Syre, Rothoicht
+1773;49.66659;6.30136;Roodt/Syre, Bowengsbierg
+1774;49.49098;6.0892;Dudelange, Rue Alexandre Fleming
+1775;49.50262;5.97992;Esch/Alzette, Place Lodève
+1776;49.6573;6.29241;Roodt/Syre, Z.I. Rothoicht
+1777;49.49157;6.09405;Dudelange, Rue Pasteur
+1778;49.49348;5.9837;Esch/Alzette, Av. de la Gare
+1779;49.49596;6.08139;Dudelange, Rue des Lamineurs
+1780;49.50521;5.97246;Esch/Alzette, Rue A. Useldinger
+1781;49.49485;6.08131;Dudelange, Rue des Mouleurs
+1782;49.50216;5.98245;Esch/Alzette, Centre hospitalier E. Mayrisch
+1783;49.48598;6.0817;Dudelange, Route de Luxembourg
+1784;49.51573;6.30545;ELLANGE, Ellenger Gare
+1785;49.49325;6.08175;Dudelange, Rue Ribeschpont
+1786;49.48689;5.97796;Esch/Alzette, Wäschbour
+1787;49.75398;6.03563;Finsterthal
+1788;49.48796;6.06285;Dudelange, Scherr
+1789;49.4656;6.08159;Dudelange, Schlackenmillen
+1790;49.50304;5.97639;Esch/Alzette, Wobrécken
+1793;49.54771;5.92786;Sanem, Kierch
+1794;49.54482;5.92199;Sanem, Cité Tornaco
+1796;49.55232;5.92792;Sanem, Op Lohr
+1797;49.54089;5.9131;Sanem, Niederkuererstrooss
+1799;49.48918;5.99583;Esch/Alzette, Burgronn
+1800;49.49485;5.98256;Esch/Alzette, Rue de l'Alzette
+1801;49.60845;6.13547;Grund, Stadgronn-Bréck
+1802;49.50648;5.95871;Esch/Alzette, Tramschapp
+1803;49.50405;5.96635;Esch/Alzette, Rue des Tramways
+1804;49.49712;5.94924;Esch/Alzette, Iewescht Homescht
+1805;49.50023;5.97706;Esch/Alzette, Piscine municipale
+1806;49.49535;5.97213;Esch/Alzette, Place Stalingrad
+1807;49.4974;5.98725;Esch/Alzette, Place N. Metz
+1808;49.49733;5.98274;Esch/Alzette, Rue de l'Eglise
+1811;49.54823;5.92972;Sanem, Zentrum
+1813;49.72644;5.987;Saeul, Kiëm
+1815;49.72657;5.98591;Saeul, Beim Sand
+1816;49.72652;5.98686;Saeul, Raiffeisen
+1817;49.72662;5.98604;Saeul, Post
+1818;49.54693;5.92634;Sanem, Place Tornaco
+1819;49.54408;5.93153;Sanem, Schlass
+1829;49.63204;6.1105;Bambësch, Centre Sportif
+1830;49.51187;6.35659;Schwebsingen, Centre
+1831;49.5082;6.35606;Schwebsingen, Op der Hoh
+1833;49.49156;6.09565;Dudelange, Rue Jacques Thiel
+1835;49.47988;6.10049;Dudelange, Mayrisch Saint-Hubert
+1838;49.47092;6.08412;Dudelange, Rue Grand-Duc Adolphe
+1839;49.68878;6.28833;Rodenbourg, Am Duerf
+1840;49.68676;6.29005;Rodenbourg, An der Schleed
+1841;49.70227;6.24883;Junglinster, P+R
+1842;49.47726;6.08356;Dudelange, Fohrmann
+1843;49.49222;6.09143;Dudelange, Baltzeng
+1844;49.48233;6.0857;Dudelange, Square Mayrisch
+1845;49.483;6.08038;Dudelange, Rue de la Vallée
+1846;49.49096;6.09085;Dudelange, Rue Théodore Thiel
+1847;49.48624;6.07021;Dudelange, Rue Schortgen
+1848;49.48597;6.06611;Dudelange, Scherrwee
+1854;49.49493;6.10968;Riedgen 3
+1856;49.48536;6.11142;Riedgen 1
+1857;49.49128;6.11198;Riedgen 2
+1858;49.57233;6.28114;Trintange, Trenteng
+1861;49.50065;6.11187;Dudelange, Eurohub Sud
+1867;49.56186;5.89742;Bascharage, Sicon
+1868;49.56975;5.9061;Bascharage, Widdems Bierg
+1869;49.56017;5.88603;Bascharage, Théophile Aubart
+1871;49.69272;6.16781;Klingelscheuer
+1880;49.54594;6.01566;Ehlange, Am Brill
+1882;49.5491;6.01272;Ehlange, Am Pull
+1883;49.57054;6.06302;Leudelange, Kamellebierg
+1884;49.56292;6.06565;Leudelange, Gruef
+1885;49.56222;6.06612;Leudelange, Beetebuergerwee
+1886;49.56562;6.07969;Leudelange, Edeleck
+1887;49.58026;6.06146;Leudelange, Bowent
+1888;49.58704;6.05965;Leudelange, Gare
+1889;49.56955;6.05904;Leudelange, Galgebösch
+1890;49.57705;6.09135;Leudelange, Grasbösch
+1891;49.56754;6.06294;Leudelange, Gemeng
+1892;49.66305;6.01889;Kehlen, Zone Industrielle 1
+1893;49.62417;6.09734;Rollingergrund, Steekaul
+1894;49.62429;6.10053;Rollingergrund, Stand de Tir
+1895;49.61513;6.11656;Rollingergrund, Biischtefabrik
+1897;49.6247;6.10459;Rollingergrund, Roudebierg
+1899;49.56551;5.90734;Bascharage, Arcades
+1900;49.54093;6.14525;Roeser, Gemeng
+1902;49.56669;5.91325;Bascharage, Boeltgen
+1903;49.66752;6.03445;Kehlen, Bei Fiewer
+1904;49.54732;6.15017;Roeser, Kiirfecht
+1906;49.57242;6.08001;Leudelange, Schaefert
+1907;49.55885;5.88975;Bascharage, Bomecht
+1908;49.66665;6.0285;Kehlen, Enneschte Buer
+1909;49.54829;6.15107;Roeser, Op der Hoehl
+1910;49.57179;5.92017;Bascharage, Bommelscheier
+1911;49.66619;6.03507;Kehlen, Op der Héicht
+1912;49.54436;6.14925;Roeser, Weilerstrooss
+1914;49.57297;5.92416;Bascharage, Bommertbësch
+1915;49.67043;6.03544;Kehlen, Schaarfeneck
+1918;49.56787;5.91233;Bascharage, Brasserie
+1919;49.6673;6.03837;Kehlen, Um Knapp
+1921;49.56384;5.90472;Bascharage, Centre Sportif
+1922;49.66441;6.01219;Kehlen, Zone Industrielle 3
+1924;49.56537;5.91437;Bascharage, Dicks Lentz
+1926;49.56798;5.9071;Bascharage, Eglise
+1927;49.64896;6.08443;Bridel, Schanz
+1928;49.56342;6.07016;Leudelange, Op der Strooss
+1929;49.65288;6.08337;Bridel, Stuff
+1930;49.65975;6.07849;Bridel, Berk
+1931;49.57036;6.06213;Leudelange, Queesche Wee
+1932;49.65902;6.08159;Bridel, Flamo
+1933;49.56693;6.06443;Leudelange, Wäschbur
+1934;49.56893;6.06901;Leudelange, Stiédswee
+1935;49.569;6.08162;Leudelange, Foyer
+1936;49.6571;6.08269;Bridel, Taverne
+1937;49.66227;6.01519;Kehlen, Zone Industrielle 2
+1938;49.57221;6.0604;Leudelange, Pëssendall
+1939;49.61724;6.1144;Rollingergrund, Bei der Fiels
+1940;49.618;6.11118;Rollingergrund, Beim Klomp
+1941;49.6248;6.09243;Reckenthal, Gäertnerei
+1942;49.48744;6.29119;Emerange, Centre Culturel
+1943;49.57969;6.05731;Leudelange, Ketzelach
+1944;49.55825;5.92385;Bascharage/Sanem, Gare
+1945;49.57389;5.92976;Bascharage, Industriezon
+1946;49.56016;5.88591;Bascharage, Jules Hemmer
+1948;49.55971;5.92177;Bascharage, Op Krattert
+1949;49.56268;5.91781;Bascharage, Pierre Clement
+1951;49.56515;5.90721;Bascharage, Place Schuman
+1953;49.57082;5.91772;Bascharage, Prince Henri
+1955;49.56039;5.8939;Bascharage, R.P. Siebenbour
+1956;49.63098;5.89132;Grass
+1958;49.57289;5.92387;Bascharage, Rue de Schouweiler
+1964;49.62815;6.10663;Rollingergrund, Villeroy & Boch
+1965;49.61909;6.10782;Rollingergrund, Val Fleuri
+1966;49.62183;6.10576;Rollingergrund, Val St André
+1967;49.56714;6.07627;Leudelange, LaLux
+1978;49.59499;6.14347;Bonnevoie, Demy Schlechter
+1979;49.6924;6.06096;Meispelt, Kuesselt
+1980;49.60044;6.14976;Bonnevoie, Chalop
+1981;49.6859;6.05807;Meispelt, Kräizwee
+1984;49.59509;6.13583;Bonnevoie, Dernier Sol
+1987;49.60538;6.13655;Verlorenkost, Al Molkerei
+1990;49.59869;6.14939;Bonnevoie, Anatole France
+1992;49.60664;6.14463;Verlorenkost, Aloyse Meyer
+1993;49.59896;6.14339;Bonnevoie, Carignan
+1994;49.6;6.15074;Bonnevoie, Baden-Powell
+1997;49.62582;6.19803;Cité Aéroport
+1998;49.62198;6.18737;Kalchesbréck, Reno
+1999;49.59723;6.38009;Ehnen, Bromelt
+2000;49.6048;6.38965;Ehnen, Lehboesch
+2001;49.60082;6.38835;Ehnen, Ieselsbreck
+2002;49.60471;6.39281;Ehnen, Lehboesch 2
+2003;49.60179;6.38809;Ehnen, Neie Wee
+2004;49.60076;6.38826;Ehnen, Puddel
+2006;49.54916;6.00149;Pissange, Wäschbur
+2012;49.59292;6.14884;Bonnevoie, Nic Martha
+2014;49.59049;6.14094;Bonnevoie, Neufchâteau
+2016;49.56995;6.15122;Fentange, Duelemerbach
+2019;49.56413;6.15203;Fentange, Fuertwee
+2021;49.5923;6.14647;Bonnevoie, Jules Fischer
+2023;49.60093;6.14509;Bonnevoie, Kofferfabrik
+2024;49.59362;6.15083;Bonnevoie, Kaltreis
+2025;49.56751;6.15249;Fentange, Hiehl
+2026;49.60522;6.14088;Verlorenkost, Lavoisier
+2027;49.56149;6.14879;Fentange, Op de Leemen
+2028;49.60468;6.13817;Verlorenkost, Laboratoire
+2029;49.59109;6.14147;Bonnevoie, Lycée Technique de Bonnevoie/Quais
+2030;49.59687;6.13817;Bonnevoie, Léon XIII
+2031;49.70976;5.98682;Greisch, Op der Quaert
+2034;49.6419;6.01153;Capellen,Eechterfeld
+2036;49.64089;6.01392;Capellen, Pafebruch
+2038;49.66202;6.22894;Rameldange, Op der Bunn
+2039;49.64174;6.00608;Capellen, Hirebësch
+2040;49.66416;6.23917;Rameldange, Bounert
+2041;49.64407;5.99301;Capellen, Police
+2042;49.66599;6.23028;Rameldange, Beim Bësch
+2044;49.64615;5.97728;Capellen, Ponts & Chaussées
+2045;49.66956;6.23411;Rameldange, Beiebierg
+2047;49.64157;6.0016;Capellen, Hireknapp
+2048;49.66561;6.24218;Rameldange, Rëtsch
+2050;49.64592;5.98597;Capellen, Klouschter
+2051;49.66401;6.23045;Rameldange, Am Duerf
+2053;49.52361;6.12674;Peppange, Duerfplaz
+2054;49.5959;6.15016;Bonnevoie, Izegerknupp
+2055;49.52781;6.13267;Peppange, Kirchwois
+2056;49.60371;6.13711;Bonnevoie, Huese Vic
+2057;49.52396;6.1296;Peppange, Musée
+2058;49.59838;6.14692;Bonnevoie, Jean Jacoby
+2059;49.59892;6.14496;Bonnevoie, Emile Duployé
+2060;49.59995;6.14747;Bonnevoie, Egalité
+2061;49.59909;6.1426;Bonnevoie, Gabriel Lippmann
+2062;49.59915;6.14002;Bonnevoie, Fraternité
+2063;49.5933;6.13905;Bonnevoie, Hippodrome
+2064;49.68997;6.05555;Meispelt, Bei Mëllesch
+2070;49.55531;6.32927;Bous, Kierch
+2071;49.55449;6.32576;Bous, Kapell
+2073;49.55607;6.33804;Bous, Herdermillen
+2077;49.55568;6.33388;Bous, Enner dem Pavé
+2081;49.60295;6.14194;Bonnevoie, Pierre Hentges
+2082;49.59887;6.14098;Bonnevoie, Pierre Blanc
+2083;49.59952;6.1373;Bonnevoie, Rotonde
+2085;49.59446;6.14439;Bonnevoie, Pont-Remy
+2087;49.60178;6.13938;Bonnevoie, Virchow
+2088;49.59744;6.14077;Bonnevoie, Vannérus
+2089;49.59789;6.14433;Bonnevoie, Wisestrooss
+2090;49.59378;6.14091;Bonnevoie, Willibrord
+2091;49.60779;6.14221;Verlorenkost, Général Patton
+2092;49.5444;5.88923;Niedercorn, Maison de Retraite
+2093;49.53941;5.89099;Niedercorn, Péitengerwee
+2094;49.53533;5.89155;Niedercorn, Place du Marché
+2096;49.7245;5.91956;Elvange/Beckerich, Gesanksbau
+2097;49.53636;5.89339;Niedercorn, CFL Halte
+2098;49.5432;5.88985;Niedercorn, Cité de la Chiers
+2099;49.53875;5.90382;Niedercorn, Aale Stadion
+2100;49.54615;5.88924;Niedercorn, Altersheim
+2106;49.53343;5.88592;Niedercorn, CHEM 1
+2109;49.54132;5.89033;Niedercorn, Rue de Pétange
+2110;49.53609;5.89124;Niederkorn, Schoul
+2113;49.53727;5.89842;Niedercorn, Suessemerwee
+2118;49.64993;6.39954;Oberdonven
+2129;49.54065;6.26157;Dalheim, Hossegaass
+2131;49.54268;6.25666;Dalheim, Poste
+2143;49.54694;6.25541;Dalheim, Waasserklapp
+2145;49.54309;6.25924;Dalheim, Gemeng
+2147;49.74125;6.11373;Rollingen, Veräinsbau
+2148;49.73543;6.11667;Rollingen, Lëtzebuergerstr.
+2151;49.51;6.25539;Altwies, Buergässel
+2154;49.50911;6.25763;Altwies, An der Kaz
+2155;49.50934;6.25007;Altwies, Beckeschmillen
+2161;49.71246;6.33478;Breinertknupp
+2163;49.71197;6.34272;Breinert
+2172;49.61278;6.13989;Clausen, Plateau Altmunster
+2174;49.61518;6.14654;Clausen, Malakoff
+2175;49.61899;6.15677;Neudorf, Fixmer
+2176;49.69179;6.18416;Eisenborn, Am Duerf
+2177;49.61185;6.14256;Clausen, Tour Jacob
+2178;49.61433;6.14128;Clausen, Ste Cunégonde
+2179;49.61078;6.13917;Clausen, Rumm
+2180;49.63852;5.98242;Capellen, Gare
+2181;49.61354;6.14343;Clausen, Clausener Bréck
+2186;49.70244;6.04071;Ansembourg, Kapell
+2195;49.63834;6.2681;Munsbach, Parc d'Activité Syrdall
+2196;49.63081;6.26881;Munsbach, Op der Gare
+2197;49.63396;6.26704;Munsbach, Minsber Baach
+2198;49.63045;6.26759;Munsbach, Kulturzentrum
+2200;49.6311;6.26869;Munsbach, Gare
+2207;49.74641;6.30915;Rippig, Rippigerkopp
+2208;49.73813;6.32244;Rippig
+2209;49.66222;5.97901;Goetzingen, Kreiz
+2210;49.6596;5.98109;Goetzingen, Kiirch
+2211;49.67396;6.24413;Ernster, Engelshaff
+2212;49.6795;6.2482;Ernster, Duerfplaz
+2213;49.68256;6.24747;Ernster, Naasswiss
+2216;49.57487;5.98208;Bettange, Mess
+2217;49.576;5.98951;Bettange, Dippecherstrooss
+2220;49.54267;6.1337;Berchem, Gare
+2228;49.58375;6.05899;Leudelange, Ackerheek
+2229;49.50672;5.96903;Esch/Alzette, Op Zaepert
+2230;49.57805;6.05771;Leudelange, Schléiwenhaff
+2231;49.50419;5.98487;Esch/Alzette, Op der Léier
+2232;49.4918;5.99534;Esch/Alzette, Nossbierg
+2233;49.49594;5.99017;Esch/Alzette, Neiduerf
+2234;49.76841;6.11502;Moesdorf, Kiirch
+2238;49.49902;5.9824;Esch/Alzette, Lycée des Garçons
+2239;49.50131;5.99653;Esch/Alzette, Leesberg
+2240;49.5104;5.98913;Esch/Alzette, Lallenger Schoul
+2241;49.50188;5.97773;Esch/Alzette, Lycée H. Clement
+2243;49.49664;5.9758;Esch/Alzette, Rue Victor Hugo
+2244;49.49698;5.98312;Esch/Alzette, Grand-rue
+2249;49.50121;5.98051;Esch/Alzette, Rue de l'Hôpital
+2250;49.48485;5.97773;Esch/Alzette, Hiehl
+2253;49.50113;5.98676;Esch/Alzette, Clinique Ste Marie
+2255;49.47965;5.97807;Esch/Alzette, Kazebierg
+2259;49.71333;6.35861;Biwer, Klosmillen
+2262;49.57249;5.99635;Dippach-Reckange, Gare
+2265;49.57278;5.99612;Bettange, Bei der Barriär
+2266;49.5763;5.9926;Bettange, Këscht
+2267;49.49418;5.98544;Esch/Alzette, Gare
+2268;49.50473;5.97554;Esch/Alzette, Fettmeth
+2269;49.49474;5.95929;Esch/Alzette, Ennescht Homescht
+2270;49.48096;5.97758;Esch/Alzette, Place Pierre Ponath
+2271;49.49458;5.98552;Esch/Alzette, Gare (bd. Kenn)
+2272;49.49626;5.98534;Esch/Alzette, Pl. Hôtel de Ville
+2273;49.50484;5.98468;Esch/Alzette, Place de la Paix
+2274;49.64639;6.09799;Biirgerkräiz
+2275;49.50236;5.96854;Esch/Alzette, Bruchschoul
+2277;49.52157;5.98708;Mondercange, Parking Kopp
+2278;49.53242;5.99322;Mondercange, Steebréckenerstrooss
+2280;49.53347;5.99631;Mondercange, Kummerhéicht
+2281;49.52934;5.98316;Mondercange, Schwämm
+2282;49.69298;6.24371;Gonderange, Am Duerf
+2283;49.52852;5.98727;Mondercange, Rommelter Hiel
+2284;49.53324;5.98875;Mondercange, Police
+2285;49.70013;6.24701;Gonderange, Mierchen
+2286;49.5311;5.99095;Mondercange, Pafenheck
+2288;49.69268;6.25288;Gonderange, Eeschëlerstr.
+2290;49.68192;6.13792;Bouferknupp
+2291;49.68962;6.14046;Boufer, Maison de Retraite
+2292;49.5097;5.9682;Esch/Alzette, Cite Verte
+2293;49.50732;5.98367;Esch/Alzette, Cinquantenaire
+2294;49.49973;5.98445;Esch/Alzette, Bibliothèque mun.
+2295;49.4898;5.97552;Esch/Alzette, Conserv. de musique
+2296;49.52767;6.35456;Bech-Kleinmacher, Furwee
+2297;49.61658;5.95214;Garnich, Schmëtt
+2298;49.61545;5.95743;Garnich, Rixegoard
+2299;49.61353;5.95013;Garnich, Brill
+2300;49.74593;6.18541;Fischbach/Mersch, Paschtoueschgaart
+2301;49.61094;5.94974;Garnich, Botterkräiz
+2302;49.7471;6.19074;Fischbach/Mersch, Kräizerbierg
+2303;49.532;6.35445;Bech-Kleinmacher, Centre
+2305;49.58964;6.11831;Gasperich, Beethoven
+2306;49.59223;6.12131;Gasperich, Al Gasperich
+2307;49.49028;5.97883;Esch/Alzette, rue Nelson Mandela
+2308;49.49734;5.98046;Esch/Alzette, Rue Large
+2309;49.53259;5.98698;Mondercange, A Bosselesch
+2310;49.53101;5.9907;Mondercange, Dokter
+2311;49.65864;6.22751;Hostert, Stade Jos Becker
+2312;49.51031;5.98587;Esch/Alzette, Bd. Hubert Clement
+2313;49.59304;6.11699;Gasperich, Gaasperecherbierg
+2314;49.50986;6.06084;Noertzange, Rue Principale
+2315;49.58678;6.12091;Gasperich, François Hogenberg
+2316;49.50792;6.05051;Noertzange, Gare
+2318;49.5938;6.12799;Gasperich, Déportation
+2320;49.58345;6.11534;Gasperich, Cloche d'Or
+2322;49.58989;6.12786;Gasperich, Clemenceau
+2323;49.50827;6.05649;Noertzange, Am Duerf
+2324;49.49261;5.99339;Esch/Alzette, Bourgronn
+2325;49.58023;6.11683;Gasperich, Emile Bian
+2327;49.49193;5.97474;Esch/Alzette, Bd Prince Henri
+2328;49.59128;6.12473;Gasperich, Bei der Auer
+2330;49.5105;5.9946;Esch/Alzette, Bd. Pierre Dupong
+2331;49.52445;5.9885;Mondercange, Dirbett
+2332;49.53119;5.98791;Mondercange, Centre
+2334;49.53887;5.9862;Mondercange, Blach
+2335;49.49504;5.95464;Esch/Alzette, Belval
+2336;49.53104;5.98749;Mondercange, A.Thinnes
+2337;49.50057;5.94753;Esch/Alzette, Av. du Rock'n'Roll
+2338;49.50266;5.94961;Esch/Alzette, Maison du Savoir
+2339;49.49662;5.98122;Esch/Alzette, Place des Remparts
+2340;49.5085;5.98366;Esch/Alzette, Av. de la Paix
+2342;49.4987;5.97087;Esch/Alzette, Auszéibréck
+2344;49.50528;5.98762;Esch/Alzette, Villa Mousset
+2345;49.67452;6.13733;Heisdorf, Klouster
+2346;49.52884;5.98782;Mondercange, Musekssall
+2347;49.53522;5.98354;Mondercange, Kierfecht
+2348;49.676;6.13497;Heisdorf, Altersheem
+2349;49.53898;5.98674;Mondercange, Mausereck
+2350;49.67117;6.13589;Heisdorf, Bei der Parkmauer
+2351;49.67503;6.13942;Heisdorf, Gare
+2352;49.52868;5.99721;Mondercange, Krombach
+2353;49.52879;5.99696;Mondercange, Kazebach
+2354;49.53159;5.98553;Mondercange, J.Bleser Plaz
+2357;49.69297;6.24779;Gonderange, Schoul
+2358;49.69363;6.24291;Gonderange, Op der Breck
+2359;49.69259;6.25253;Gonderange, Op der Gare
+2360;49.69133;6.23959;Gonderange, Stohlbour
+2364;49.64911;5.92801;Hagen, 2 Stengëforterstrooss
+2370;49.65146;5.92351;Hagen, Laach
+2372;49.65374;5.9212;Hagen, Op Eechelter
+2374;49.65025;5.93693;Hagen, Bréck
+2376;49.64867;5.92928;Hagen, Kiirch
+2379;49.74671;6.01028;Buschdorf, Belle Vue
+2380;49.7222;6.21802;Altlinster
+2383;49.75113;6.0118;Buschdorf, Helpërtwee
+2384;49.75049;6.00685;Buschdorf, Määschhaff
+2385;49.71018;6.05877;Marienthal
+2403;49.59025;6.11758;Gasperich, Louis de Froment
+2406;49.59426;6.12552;Gasperich, Lascombes
+2409;49.59316;6.11943;Gasperich, Klensch
+2412;49.58188;6.11222;Gasperich, Guillaume Kroll
+2414;49.60999;6.25878;Schrassig, Bastenhaff
+2415;49.61454;6.25586;Schrassig, Schlassgewan
+2416;49.613;6.259;Schrassig, Schwaarz Kaz
+2417;49.57945;6.11299;Gasperich, Scharfen Eck
+2418;49.58362;6.11368;Gasperich, Ruppert
+2419;49.65699;6.1916;Waldhaff
+2420;49.58916;6.12426;Gasperich, Richard Wagner
+2421;49.58667;6.11691;Gasperich, Raiffeisen
+2422;49.58974;6.11642;Gasperich, Plantin
+2431;49.58134;6.12119;Gasperich, Leonardo da Vinci
+2433;49.58339;6.11785;Gasperich, Jean Piret
+2435;49.6879;6.02996;Dondelange/Dondel
+2436;49.58269;6.12322;Gasperich, Gerhard Mercator
+2439;49.69555;6.02514;Dondelange, Pompstatioun
+2440;49.59206;6.12704;Gasperich, Millewee
+2448;49.73909;5.96859;Kapweiler, Kapell
+2449;49.60882;6.15072;Pulvermuhl, Hammerdällchen
+2452;49.74041;5.96451;Kapweiler, Lavandier
+2455;49.52669;5.93953;Soleuvre, Um Bur
+2456;49.53702;5.93889;Soleuvre, Reitschoul
+2457;49.51798;5.93324;Soleuvre, Dickskopp
+2459;49.51981;5.92659;Soleuvre, Kuss
+2460;49.53345;6.38043;Nennig, Sparkasse
+2461;49.51749;5.94544;Soleuvre, Huuschtewee
+2462;49.54183;6.37331;Nennig, Zoll
+2463;49.53844;6.37653;Nennig, Bahnhof
+2464;49.5221;5.93623;Soleuvre, Pl. de l'Indépendance
+2466;49.51828;5.93644;Soleuvre, Jugendhaus
+2469;49.66136;6.36212;Flaxweiler, Buchholz
+2470;49.66239;6.34647;Flaxweiler, Am Faubourg
+2471;49.50613;6.14189;Hellange, Beteburgerstrooss
+2472;49.51046;6.15828;Hellange, Hoëner Halt
+2474;49.50757;6.14845;Hellange, Kiirch
+2475;49.58783;6.24584;Milbech
+2476;49.52258;5.93697;Soleuvre, Zolwerknapp
+2478;49.51963;5.94391;Soleuvre, Cité 2000
+2480;49.75824;6.1147;Beringen, Wäschbur
+2481;49.52356;5.92652;Soleuvre, Cité Scheierhaff
+2482;49.52135;5.91559;Soleuvre, Cité Kauffmann
+2485;49.57698;5.90971;Hautcharage, Crèche
+2487;49.53205;5.9433;Soleuvre, Aessen
+2488;49.5723;5.90137;Hautcharage, Scheedwee
+2491;49.57369;5.91976;Hautcharage, Stade
+2493;49.5753;5.9092;Hautcharage, Um Kläppchen
+2495;49.58034;5.90998;Hautcharage, Op der Kapel
+2501;49.52262;5.92074;Soleuvre, Déifferdengerstrooss
+2502;49.5311;5.94134;Soleuvre, Collectrice
+2504;49.52354;5.93216;Soleuvre, Emile Mayrisch
+2511;49.56959;6.28388;Roedt
+2524;49.71426;6.12785;Lintgen, An der Kléck
+2529;49.72069;6.12308;Lintgen, Gare
+2530;49.72033;6.12512;Lintgen, Kraïzong
+2539;49.70156;6.1429;Lorentzweiler, Am Duerf
+2540;49.69832;6.14051;Lorentzweiler, Gare
+2541;49.70305;6.1408;Lorentzweiler, An der Kléck
+2548;49.71751;6.3307;Weidig

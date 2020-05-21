@@ -1,0 +1,2 @@
+buffer_center_lat;buffer_center_lon;buffer_radius_km;extract_start_date;link_distance_avg_m;n_connections;n_links;n_stops;network_length_m;vehicle_kilometers
+53.3496878045;-6.2565613870000005;20.0;2016-12-12;508;407240;5567;4571;2832518;149286.45700000064

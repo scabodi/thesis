@@ -1,0 +1,6 @@
+This work "Berlin public transport extract", is provided under Creative Commons "Namensnennung 3.0 Deutschland" (CC BY 3.0 DE) - License.
+The original public transport schedule data has been provided by VBB - Verkehrsverbund Berlin-Brandenburg GmbH under the same license.
+You should have received a copy of the license along with this work. If not, please see <https://creativecommons.org/licenses/by/3.0/de/>.
+The walking distances between stops have been computed based on information from OpenStreetMap (www.openstreetmap.org) which is licensed under the Open Data Commons Open Database License (https://opendatacommons.org/licenses/odbl/) by the OpenStreetMap Foundation.
+The adapted versions of the schedule data have been been created by Rainer Kujala, Christoffer Weckström and Richard Darst.
+No warranties are given.
