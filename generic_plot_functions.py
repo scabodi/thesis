@@ -52,21 +52,18 @@ def plot_measures_with_subplots(nrows, ncols, x_values, y_values, colors, labels
     return fig, axs
 
 
-def plot_measures(measures_dict):
+def plot_measures(df):
     """
-    plot dictionary of measures in multiple subplots
+    plot dataframe of measures in multiple subplots
 
-    :param measures_dict: dict - keys = cities, values = dict of measures to plot
+    :param df: pandas dataframe of basic measures
     :return: fig
     """
-    df = pd.DataFrame.from_dict(measures_dict)
-    print(df.head())
 
-    cities = list(measures_dict.keys())
-    x_values = np.array(cities)
+    x_values = df.columns.values
     y_values = df.values.tolist()
     colors = ['r', 'b', 'g', 'y', 'm']
-    labels = list(measures_dict[cities[0]].keys())
+    labels = df.index.values
 
     fig, axs = plot_measures_with_subplots(len(labels), 1, x_values, y_values, colors, labels)
     fig.legend()

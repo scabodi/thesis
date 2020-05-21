@@ -802,7 +802,7 @@ def plot_degree_distribution(degrees, city, xlabel, ylabel, max_k):
     return fig, m
 
 
-def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, c):
+def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, c, max_k):
     """
     Function that plots several distribution over a log-log plot with a line fit over the average of all the
     distributions
@@ -816,13 +816,12 @@ def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, 
 
     :return: fig
     """
-
-    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:len(datavecs)]
+    n_cities = len(datavecs)
+    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:n_cities]
     fig = plt.figure()
     ax = fig.add_subplot(111)
     colors = plt.cm.plasma(get_normalized_values(c))
 
-    max_k = 28
     k_values = range(1, max_k + 1)
     avg_pk = np.array([0] * max_k)
 
@@ -836,17 +835,18 @@ def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, 
 
         avg_pk = avg_pk + pk
 
-    y = [v / 27 for v in avg_pk[1:] if v > 0]
+    y = [v / n_cities for v in avg_pk[1:] if v > 0]
     x = range(2, len(y) + 2)
 
     logx = np.log(x)
     logy = np.log(y)
     [m, q] = np.polyfit(logx, logy, 1)
     print("m: %.4f, q: %.4f" % (m, q))
-    # print(m*logx + q)
-    y_fit = np.exp(m * logx[:15] + q)
-    # print(y_fit)
-    ax.plot(x[:15], y_fit, linestyle=':')
+
+    if max_k == 27:
+        max_k = 15
+    y_fit = np.exp(m * logx[:max_k] + q)
+    ax.plot(x[:max_k], y_fit, linestyle=':')
 
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
