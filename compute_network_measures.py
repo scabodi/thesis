@@ -1,5 +1,7 @@
 import network_functions as nf
 import networkx as nx
+import matplotlib.pyplot as plt
+import numpy as np
 
 if __name__ == '__main__':
 
@@ -21,46 +23,41 @@ if __name__ == '__main__':
         ''' CREATE NETWORK - undirected and unweighted and add it to the proper dictionary '''
         net = nf.create_network(city, types=types)
 
-        c0 = nx.average_clustering(net, count_zeros=True)
-        c1 = nx.average_clustering(net, count_zeros=False)
-        print(c0)
-        print(c1)
+        r = nf.get_assortativity(net)
+        additional_measures['<r>'].append(r)
 
-        # r = nf.get_assortativity(net)
-        # additional_measures['<r>'].append(r)
-        #
-        # s = nf.get_avg_shortest_path_legth(net)
-        # additional_measures['<l>'].append(s)
-        #
-        # knn = nf.get_avg_degree_connectivity(net)
-        # additional_measures['<knn>'].append(knn)
-        #
-        # ''' plot the network without difference between types of transport '''
-        # nf.plot_network(city, net)
+        s = nf.get_avg_shortest_path_length(net)
+        additional_measures['<l>'].append(s)
 
-    #     ''' Compute centrality measures '''
-    #     [degree, betweenness, closeness, eigenvector] = nf.get_centrality_measures(net, tol)
-    #     centrality_dict[city] = {
-    #         'degree': list(degree),
-    #         'betweenness': list(betweenness),
-    #         'closeness': list(closeness),
-    #         'eigenvector': list(eigenvector),
-    #     }
-    #
-    #     file_name = './results/'+city+'/centrality_measures.json'
-    #     nf.dump_json(file_name, centrality_dict[city])
-    #
-    #     ''' Plot measures against area of specific city '''
-    #     # for each city compute certain measures - first time saved them into a file and then retrieve them each time
-    #     measures_dict[city] = {}
-    #     nf.compute_measures(net, measures_dict[city])
-    #     print(measures_dict[city])
-    #
-    #     ''' Compute degree distribution for each city '''
-    #     # degree -- list of nodes degree
-    #     degrees[city] = [v for k, v in net.degree().items()]
-    #
-    # if dump:
-    #     nf.dump_json(prefix_json+'degrees.json', degrees)
-    #     nf.dump_json(prefix_json+'centrality_measures.json', centrality_dict)
-    #     nf.dump_json(prefix_json+'additional_measures.json', additional_measures)
+        knn = nf.get_avg_degree_connectivity(net)
+        additional_measures['<knn>'].append(knn)
+
+        ''' plot the network without difference between types of transport '''
+        nf.plot_network(city, net)
+
+        ''' Compute centrality measures '''
+        [degree, betweenness, closeness, eigenvector] = nf.get_centrality_measures(net, tol)
+        centrality_dict[city] = {
+            'degree': list(degree),
+            'betweenness': list(betweenness),
+            'closeness': list(closeness),
+            'eigenvector': list(eigenvector),
+        }
+
+        file_name = './results/'+city+'/centrality_measures.json'
+        nf.dump_json(file_name, centrality_dict[city])
+
+        ''' Plot measures against area of specific city '''
+        # for each city compute certain measures - first time saved them into a file and then retrieve them each time
+        measures_dict[city] = {}
+        nf.compute_measures(net, measures_dict[city])
+        print(measures_dict[city])
+
+        ''' Compute degree distribution for each city '''
+        # degree -- list of nodes degree
+        degrees[city] = [v for k, v in net.degree().items()]
+
+    if dump:
+        nf.dump_json(prefix_json+'degrees.json', degrees)
+        nf.dump_json(prefix_json+'centrality_measures.json', centrality_dict)
+        nf.dump_json(prefix_json+'additional_measures.json', additional_measures)

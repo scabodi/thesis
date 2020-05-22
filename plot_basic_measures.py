@@ -56,8 +56,11 @@ if __name__ == '__main__':
 
     ''' Plot #nodes/area on y axis and cities on x axis '''
     df = df.sort_values(by=['#nodes'])
+    print(df)
     x_values = df.index.values
     y_values = [n / a for n, a in zip(df['#nodes'], df['area'])]
+    print(y_values)
+    print(x_values)
 
     plt.plot(x_values, y_values, marker='o')
     plt.xticks(rotation=70)
@@ -130,5 +133,6 @@ if __name__ == '__main__':
 
     df_degrees = df_degrees.T
     df_degrees['\u03B3'] = gammas
+    nf.dump_json('./results/all/json/gammas.txt', gammas)
     print(df_degrees)
     print(df_degrees.describe())

@@ -6,6 +6,8 @@
       <w>cablecar</w>
       <w>ccdf</w>
       <w>centr</w>
+      <w>coeff</w>
+      <w>colheader</w>
       <w>colorbar</w>
       <w>dataframe</w>
       <w>datavec</w>
@@ -16,6 +18,7 @@
       <w>hlen</w>
       <w>kuopio</w>
       <w>logx</w>
+      <w>mystyle</w>
       <w>networkx</w>
       <w>rennes</w>
       <w>savefig</w>
