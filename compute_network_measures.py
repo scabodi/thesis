@@ -1,7 +1,4 @@
 import network_functions as nf
-import networkx as nx
-import matplotlib.pyplot as plt
-import numpy as np
 
 if __name__ == '__main__':
 
@@ -23,6 +20,19 @@ if __name__ == '__main__':
         ''' CREATE NETWORK - undirected and unweighted and add it to the proper dictionary '''
         net = nf.create_network(city, types=types)
 
+        ''' plot the network without difference between types of transport '''
+        nf.plot_network(city, net)
+
+        ''' Compute basic measures for specific city '''
+        measures_dict[city] = {}
+        nf.compute_measures(net, measures_dict[city])
+        # print(measures_dict[city])
+
+        ''' Compute degree distribution for each city '''
+        # degree -- list of nodes degree
+        degrees[city] = [v for k, v in net.degree().items()]
+
+        ''' Compute additional measures '''
         r = nf.get_assortativity(net)
         additional_measures['<r>'].append(r)
 
@@ -31,9 +41,6 @@ if __name__ == '__main__':
 
         knn = nf.get_avg_degree_connectivity(net)
         additional_measures['<knn>'].append(knn)
-
-        ''' plot the network without difference between types of transport '''
-        nf.plot_network(city, net)
 
         ''' Compute centrality measures '''
         [degree, betweenness, closeness, eigenvector] = nf.get_centrality_measures(net, tol)
@@ -46,16 +53,6 @@ if __name__ == '__main__':
 
         file_name = './results/'+city+'/centrality_measures.json'
         nf.dump_json(file_name, centrality_dict[city])
-
-        ''' Plot measures against area of specific city '''
-        # for each city compute certain measures - first time saved them into a file and then retrieve them each time
-        measures_dict[city] = {}
-        nf.compute_measures(net, measures_dict[city])
-        print(measures_dict[city])
-
-        ''' Compute degree distribution for each city '''
-        # degree -- list of nodes degree
-        degrees[city] = [v for k, v in net.degree().items()]
 
     if dump:
         nf.dump_json(prefix_json+'degrees.json', degrees)
