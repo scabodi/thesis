@@ -13,6 +13,8 @@ import seaborn as sns
 import matplotlib.colors as mc
 from colormap import rgb2hex, rgb2hls, hls2rgb
 
+''' JSON '''
+
 
 def load_json(file):
     """
@@ -40,36 +42,7 @@ def dump_json(file, d):
         json.dump(d, fp)
 
 
-def load_nodes(net, path):
-    """
-    Load nodes from specific file and add them to the network obj
-
-    :param net: networkx object
-    :param path: path to retrieve info about nodes (stops)
-    """
-
-    nodes_info = pd.read_csv(path, delimiter=";")
-    df = pd.DataFrame(nodes_info, columns=['stop_I', 'lat', 'lon', 'name'])
-    # print(df)
-    for index, row in df.iterrows():
-        net.add_node(row['stop_I'], coords=(row['lat'], row['lon']), pos=(row['lon'], row['lat']))
-
-
-def load_edges(net, path, types):
-    """
-    Load edges from specific file and add them to the network obj
-
-    :param types: dict of types of route with each color assigned
-    :param net: networkx object
-    :param path: path to retrieve info about edges
-
-    """
-
-    edges_info = pd.read_csv(path, delimiter=";")
-    df = pd.DataFrame(edges_info, columns=['from_stop_I', 'to_stop_I', 'd', 'duration_avg', 'n_vehicles',
-                                           'route_I_counts', 'route_type'])
-    for index, row in df.iterrows():
-        net.add_edge(row['from_stop_I'], row['to_stop_I'],  color=types[row['route_type']])
+''' Get cities PARAMETERS (colors, type of transport, cities, etc.)  '''
 
 
 def get_types_of_transport_and_colors():
@@ -139,6 +112,41 @@ def order_dict_based_on_list_keys(d, l, condition=False):
     return ordered_d
 
 
+''' CREATE AND PLOT NETWORK '''
+
+
+def load_nodes(net, path):
+    """
+    Load nodes from specific file and add them to the network obj
+
+    :param net: networkx object
+    :param path: path to retrieve info about nodes (stops)
+    """
+
+    nodes_info = pd.read_csv(path, delimiter=";")
+    df = pd.DataFrame(nodes_info, columns=['stop_I', 'lat', 'lon', 'name'])
+    # print(df)
+    for index, row in df.iterrows():
+        net.add_node(row['stop_I'], coords=(row['lat'], row['lon']), pos=(row['lon'], row['lat']))
+
+
+def load_edges(net, path, types):
+    """
+    Load edges from specific file and add them to the network obj
+
+    :param types: dict of types of route with each color assigned
+    :param net: networkx object
+    :param path: path to retrieve info about edges
+
+    """
+
+    edges_info = pd.read_csv(path, delimiter=";")
+    df = pd.DataFrame(edges_info, columns=['from_stop_I', 'to_stop_I', 'd', 'duration_avg', 'n_vehicles',
+                                           'route_I_counts', 'route_type'])
+    for index, row in df.iterrows():
+        net.add_edge(row['from_stop_I'], row['to_stop_I'],  color=types[row['route_type']])
+
+
 def create_network(city, types=None, edges_file=None):
     """
     Create network from g (if g is not None) or from cvs files
@@ -161,19 +169,6 @@ def create_network(city, types=None, edges_file=None):
     return net
 
 
-def get_assortativity(net):
-    return nx.degree_pearson_correlation_coefficient(net)
-
-
-def get_avg_shortest_path_length(net):
-    max_component = max(nx.connected_component_subgraphs(net), key=len)
-    return nx.average_shortest_path_length(max_component)
-
-
-def get_avg_degree_connectivity(net):
-    return nx.average_degree_connectivity(net)
-
-
 def make_proxy(clr, **kwargs):
     return Line2D([0, 1], [0, 1], color=clr, **kwargs)
 
@@ -188,40 +183,31 @@ def plot_network(city, net):
 
     """
     colors = nx.get_edge_attributes(net, 'color').values()
-    all_colors = list(dict.fromkeys(colors))
+    all_colors = set(colors)
     all_edge_types = {'g': 'Tram', 'orange': 'Subway', 'r': 'Rail', 'b': 'Bus', 'aqua': 'Ferry',
                       'y': 'Cable car', 'm': 'Gondola', 'maroon': 'Funicular'}
-    ordered_colors = [color for x in all_edge_types.keys() for color in all_colors if color == x]
-    edge_types = {}
-    for k, v in all_edge_types.items():
-        if k in ordered_colors:
-            edge_types[k] = v
-    # all_colors = ['g', 'orange', 'r', 'b', 'aqua', 'y', 'k',  'm', 'maroon']
+    edge_types = {color: all_edge_types[color] for color in all_colors}
+
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
 
-    nx.draw_networkx_nodes(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=5,
-                           node_shape='')
+    nx.draw_networkx(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=5, node_shape='',
+                     edge_color=colors, alpha=0.5)
 
-    nx.draw_networkx_edges(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), edge_color=colors, alpha=0.5)
-    '''
-    nx.draw(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=5, node_shape='',
-            edge_color=colors)
-    '''
-    proxies = [make_proxy(clr, lw=5) for clr in ordered_colors]
-    # and some text for the legend -- you should use  from df.
+    proxies = [make_proxy(clr, lw=5) for clr in edge_types.keys()]
     labels = [edge_type for clr, edge_type in edge_types.items()]
     plt.legend(proxies, labels)
 
-    fig_name = './data/' + city + '/network.png'
-    # change background color
-    # ax.set_facecolor('k')
+    # to change background color --> ax.set_facecolor('k')
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
-    fig.savefig(fig_name)
 
-    # fig.show()
+    fig_name = './data/' + city + '/network.png'
+    fig.savefig(fig_name)
     plt.close()
+
+
+''' Compute NETWORK MEASURES (BASIC, ADDITIONAL and CENTRALITY) '''
 
 
 def compute_measures(net, dict):
@@ -252,6 +238,19 @@ def compute_measures(net, dict):
     # C -- average clustering coefficient
     C = nx.average_clustering(net, count_zeros=True)
     dict['avg_cc'] = C
+
+
+def get_assortativity(net):
+    return nx.degree_pearson_correlation_coefficient(net)
+
+
+def get_avg_shortest_path_length(net):
+    max_component = max(nx.connected_component_subgraphs(net), key=len)
+    return nx.average_shortest_path_length(max_component)
+
+
+def get_avg_degree_connectivity(net):
+    return nx.average_degree_connectivity(net)
 
 
 def get_centrality_measures(network, tol):
@@ -286,6 +285,9 @@ def get_centrality_measures(network, tol):
     return [degree, betweenness, closeness, eigenvector_centrality]
 
 
+''' Plot NETWORK with nodes colorbar depending on some measures '''
+
+
 def get_ordered_x_percent(measures, percentage):
     """
     :param measures: list of int or float
@@ -313,13 +315,13 @@ def get_normalized_values(values):
     return res
 
 
-def plot_network_with_centrality_measures(net, measures, measure_name):
+def plot_network_with_node_color_based_on_measure(net, measures, title):
     """
     Plot city network with nodes colored depending on centrality measure (NOTE: not all nodes!)
 
     :param net: networkx obj
     :param measures: list of floats
-    :param measure_name: str - type of centrality measure
+    :param title: str - title of the plot
 
     :return: fig
     """
@@ -335,15 +337,16 @@ def plot_network_with_centrality_measures(net, measures, measure_name):
             sub_nodes.append(node)
 
     nodes = nx.draw_networkx_nodes(net, pos=nx.get_node_attributes(net, 'pos'), node_size=50, cmap=plt.cm.plasma,
-                                   node_color=top, alpha=0.8,
-                                   nodelist=sub_nodes)
-
+                                   node_color=top, alpha=0.8, nodelist=sub_nodes)
     nx.draw_networkx_edges(net, pos=nx.get_node_attributes(net, 'pos'), alpha=0.2)
 
-    plt.title(measure_name+' centrality')
+    plt.title(title)
     fig.colorbar(nodes)
     plt.axis('off')
     return fig
+
+
+''' Plot DISTRIBUTIONS -- TO REVIEW '''
 
 
 def plot_distribution(x_values, y_values, x_label, y_label):
@@ -470,9 +473,125 @@ def plot_multiple_lines(x_values, y_values, labels, xlabel, ylabel):
     ax.set_ylabel(ylabel)
     ax.legend(loc=0)
     ax.grid(alpha=0.2)
-    plt.yscale('log')
+    # plt.yscale('log')
 
     return fig
+
+
+def plot_distribution_log_log(datavec, city, xlabel, ylabel, max_x):
+    """
+    Plot distribution with fit line
+
+    :param datavec: list of int - degrees of nodes
+    :param city: str
+    :param xlabel: str
+    :param ylabel: str
+    :param max_x: int - max value
+
+    :return: fig, m
+    """
+
+    x_values = range(1, max_x + 1)
+    counter = [0] * max_x
+    for value in datavec:
+        counter[value - 1] += 1
+    px = np.array([v / len(datavec) for v in counter])
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    ax.loglog(x_values, px, marker='o', label=city, linestyle=' ')
+
+    y = [v for v in px[1:] if v > 0]
+    x = range(2, len(y) + 2)
+    logx = np.log(x)
+    logy = np.log(y)
+    [m, q] = np.polyfit(logx, logy, 1)
+    # print("m: %.4f, q: %.4f" % (m, q))
+    y_fit = np.exp(m * logx + q)
+    m = -m
+    ax.plot(x, y_fit, linestyle=':', label='\u03B3 = %.2f' % m)
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid()
+    ax.legend()
+
+    return fig, m
+
+
+def plot_multiple_distributions_with_colorbar_log_log(datavecs, labels, xlabel, ylabel, c, max_x):
+    """
+    Function that plots several distribution over a log-log plot with a line fit over the average of all the
+    distributions
+
+    :param datavecs: list of lists - all the distributions to plot - lists inside of different length and
+                        they contain the values of degrees for each node
+    :param labels: list of str
+    :param xlabel: str
+    :param ylabel: str
+    :param c: list of values for the colorbar
+    :param max_x: max value among all datavecs
+
+    :return: fig
+    """
+    n = len(datavecs)
+    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:n]
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    colors = plt.cm.plasma(get_normalized_values(c))
+
+    x_values = range(1, max_x + 1)
+    avg_px = np.array([0] * max_x)
+
+    for datavec, label, marker, color in zip(datavecs, labels, markers, colors):
+        counter = [0] * max_x
+        for value in datavec:
+            counter[value - 1] += 1
+        px = np.array([v / len(datavec) for v in counter])
+
+        ax.loglog(x_values, px, marker=marker, label=label, color=color, linestyle=' ')
+
+        avg_px = avg_px + px
+
+    y = [v / n for v in avg_px[1:] if v > 0]
+    x = range(2, len(y) + 2)
+
+    logx = np.log(x)
+    logy = np.log(y)
+    [m, q] = np.polyfit(logx, logy, 1)
+    print("m: %.4f, q: %.4f" % (m, q))
+
+    if max_x == 28:
+        max_x = 15
+    y_fit = np.exp(m * logx[:max_x] + q)
+    ax.plot(x[:max_x], y_fit, linestyle=':')
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid()
+    ax.legend(bbox_to_anchor=(-0.2, 1.02, 1.5, .102), loc='lower left', ncol=5, mode="expand", borderaxespad=0.1)
+
+    m = mpl.cm.ScalarMappable(cmap=mpl.cm.plasma)
+    m.set_array(c)
+    fig.colorbar(m)
+
+    return fig
+
+
+def plot_two_columns_dataframe(df, col_x, col_y1, col_y2):
+    fig, ax = plt.subplots()
+    ax2 = ax.twinx()
+    x, y1, y2 = df[col_x], df[col_y1], df[col_y2]
+
+    df.plot(x=col_x, y=col_y1, ax=ax, kind='scatter')
+    df.plot(x=col_x, y=col_y2, ax=ax2, color='r', kind='scatter', marker='+')
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(x, rotation=70)
+
+    return fig
+
+
+''' DISTANCE ANALYSIS '''
 
 
 def bfs(graph, vertex):
@@ -659,7 +778,7 @@ def plot_distances_fractions(fractions):
     return fig
 
 
-''' Frequency analysis '''
+''' FREQUENCY ANALYSIS '''
 
 
 def hex_to_rgb(hex):
@@ -761,114 +880,3 @@ def plot_bars_frequency_mu_st(labels, mus, sts, type=3, feature=None):
 
     return fig
 
-
-def plot_degree_distribution(degrees, city, xlabel, ylabel, max_k):
-    """
-    Plot distribution with fit line
-
-    :param degrees: list of int - degrees of nodes
-    :param city: str
-    :param xlabel: str
-    :param ylabel: str
-    :param max_k: int - max degree among all cities
-
-    :return: fig, m
-    """
-
-    k_values = range(1, max_k + 1)
-    counter = [0] * max_k
-    for degree in degrees:
-        counter[degree - 1] += 1
-    pk = np.array([v / len(degrees) for v in counter])
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    ax.loglog(k_values, pk, marker='o', label=city, linestyle=' ')
-
-    y = [v for v in pk[1:] if v > 0]
-    x = range(2, len(y) + 2)
-    logx = np.log(x)
-    logy = np.log(y)
-    [m, q] = np.polyfit(logx, logy, 1)
-    # print("m: %.4f, q: %.4f" % (m, q))
-    y_fit = np.exp(m * logx + q)
-    m = -m
-    ax.plot(x, y_fit, linestyle=':', label='\u03B3 = %.2f' % m)
-
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
-    ax.grid()
-    ax.legend()
-
-    return fig, m
-
-
-def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, c, max_k):
-    """
-    Function that plots several distribution over a log-log plot with a line fit over the average of all the
-    distributions
-
-    :param datavecs: list of lists - all the distributions to plot - lists inside of different length and
-                        they contain the values of degrees for each node
-    :param labels: list of str
-    :param xlabel: str
-    :param ylabel: str
-    :param c: list of values for the colorbar
-
-    :return: fig
-    """
-    n_cities = len(datavecs)
-    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:n_cities]
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    colors = plt.cm.plasma(get_normalized_values(c))
-
-    k_values = range(1, max_k + 1)
-    avg_pk = np.array([0] * max_k)
-
-    for datavec, label, marker, color in zip(datavecs, labels, markers, colors):
-        counter = [0] * max_k
-        for degree in datavec:
-            counter[degree - 1] += 1
-        pk = np.array([v / len(datavec) for v in counter])
-
-        ax.loglog(k_values, pk, marker=marker, label=label, color=color, linestyle=' ')
-
-        avg_pk = avg_pk + pk
-
-    y = [v / n_cities for v in avg_pk[1:] if v > 0]
-    x = range(2, len(y) + 2)
-
-    logx = np.log(x)
-    logy = np.log(y)
-    [m, q] = np.polyfit(logx, logy, 1)
-    print("m: %.4f, q: %.4f" % (m, q))
-
-    if max_k == 27:
-        max_k = 15
-    y_fit = np.exp(m * logx[:max_k] + q)
-    ax.plot(x[:max_k], y_fit, linestyle=':')
-
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
-    ax.grid()
-    ax.legend(bbox_to_anchor=(-0.2, 1.02, 1.5, .102), loc='lower left', ncol=5, mode="expand", borderaxespad=0.1)
-
-    m = mpl.cm.ScalarMappable(cmap=mpl.cm.plasma)
-    m.set_array(c)
-    fig.colorbar(m)
-
-    return fig
-
-
-def plot_two_columns_dataframe(df, col_x, col_y1, col_y2):
-    fig, ax = plt.subplots()
-    ax2 = ax.twinx()
-    x, y1, y2 = df[col_x], df[col_y1], df[col_y2]
-
-    df.plot(x=col_x, y=col_y1, ax=ax, kind='scatter')
-    df.plot(x=col_x, y=col_y2, ax=ax2, color='r', kind='scatter', marker='+')
-
-    ax.set_xticks(x)
-    ax.set_xticklabels(x, rotation=70)
-
-    return fig
