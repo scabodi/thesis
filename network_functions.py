@@ -858,3 +858,17 @@ def plot_multiple_distributions_with_colorbar(datavecs, labels, xlabel, ylabel, 
     fig.colorbar(m)
 
     return fig
+
+
+def plot_two_columns_dataframe(df, col_x, col_y1, col_y2):
+    fig, ax = plt.subplots()
+    ax2 = ax.twinx()
+    x, y1, y2 = df[col_x], df[col_y1], df[col_y2]
+
+    df.plot(x=col_x, y=col_y1, ax=ax, kind='scatter')
+    df.plot(x=col_x, y=col_y2, ax=ax2, color='r', kind='scatter', marker='+')
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(x, rotation=70)
+
+    return fig

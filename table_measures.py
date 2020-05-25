@@ -7,26 +7,6 @@ import seaborn as sns
 import networkx as nx
 
 
-def plot_two_columns_dataframe(df, col_x, col_y1, col_y2):
-    fig, ax = plt.subplots()
-    ax2 = ax.twinx()
-    x, y1, y2 = df[col_x], df[col_y1], df[col_y2]
-
-    # ax.plot(x, y1, 'bo')
-    # ax2.plot(x, y2, 'r+')
-
-    df.plot(x=col_x, y=col_y1, ax=ax, kind='scatter')
-    df.plot(x=col_x, y=col_y2, ax=ax2, c='r', kind='scatter', marker='+')
-
-    # ax = df1.plot.scatter(x='City', y='<k>', c='A', colormap='plasma')
-    # ax = df1.plot.scatter(x='City', y='<k>')
-
-    ax.set_xticks(x)
-    ax.set_xticklabels(x, rotation=70)
-
-    return fig
-
-
 if __name__ == '__main__':
 
     cities = nf.get_list_cities_names()
@@ -41,7 +21,7 @@ if __name__ == '__main__':
 
     csv_path = 'results/all/tables/measures.csv'
 
-    save = True
+    save, save_html = False, False
     compare_clustering_coeff = False
 
     ''' 
@@ -51,12 +31,16 @@ if __name__ == '__main__':
         - E = #edges
         - A = area in km^2
         - P = population 
-        - <k> = avg degree
-        - D = density
         - d = diameter
         - <c> = avg clustering coefficient
-        - <r> = avg assortativity
+        - rho = N/A, density of nodes per area
+        - <k> = avg degree
+        - r = assortativity
         - <l> = avg path length 
+        - <knn> = avg nearest neighbor
+        - ln(N) = natural log of nodes
+        - gamma = fitting parameter of degree distribution
+        
     '''
 
     pd.options.display.max_columns = None
@@ -71,7 +55,6 @@ if __name__ == '__main__':
             n = int(df_measures['#nodes'][city])
 
             net_er = nx.fast_gnp_random_graph(n, p)
-            # nx.draw(net_er, pos=nx.spring_layout(net_er))
             c = nx.average_clustering(net_er)
             c_er.append(c)
         df_measures['c_er'] = [x if x > 0 else 0.000001 for x in c_er]
@@ -83,9 +66,8 @@ if __name__ == '__main__':
         df = pd.read_csv(csv_path)
 
         ''' Plot the <k> for each city '''
-        df1 = df.copy().sort_values(by=['A'])
-
-        fig = plot_two_columns_dataframe(df1, 'City', '<k>', 'A')
+        df1 = df.sort_values(by=['A'])
+        fig = nf.plot_two_columns_dataframe(df1, 'City', '<k>', 'A')
         fig_name = 'results/all/plots/stats/avg_degree_vs_area.png'
         fig.savefig(fig_name, bbox_inches='tight')
 
@@ -122,7 +104,8 @@ if __name__ == '__main__':
         df = df.drop('density', axis=1)
         df = df.rename(columns={'#nodes': 'N', '#edges': 'E', 'diameter': 'd', 'avg_cc': '<c>',
                                 'population': 'P', 'area': 'A'})
-        df = df[['N', 'E', 'A', 'P', 'd', '<c>']]
+        df['City'] = cities
+        df = df[['City', 'N', 'E', 'A', 'P', 'd', '<c>']]
         df['ds'] = df['N'] / df['A']
         df['<k>'] = round(2 * df['E'] / df['N'], 2)
         df['r'] = [round(x, 2) for x in dict_additional['<r>']]
@@ -131,11 +114,12 @@ if __name__ == '__main__':
         df['ln(N)'] = [np.log(x) for x in df['N']]
         df['y'] = gammas
 
-        df['A'] = pd.Series(["{0:,.1f}".format(val) for val in df['A']], index=df.index)
-        df['<l>'] = pd.Series(["{0:,.1f}".format(val) for val in df['<l>']], index=df.index)
+        if save_html is True:
+            df['A'] = pd.Series(["{0:,.1f}".format(val) for val in df['A']], index=df.index)
+            df['<l>'] = pd.Series(["{0:,.1f}".format(val) for val in df['<l>']], index=df.index)
 
-        # with open('./results/all/tables/measures_html.html', 'w') as f:
-        #     f.write(html_string.format(table=df.to_html(classes='mystyle')))
+            with open('./results/all/tables/measures_html.html', 'w') as f:
+                f.write(html_string.format(table=df.to_html(classes='mystyle')))
 
         print(df)
         df.to_csv(csv_path, index=False)
