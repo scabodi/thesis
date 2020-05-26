@@ -1,9 +1,6 @@
 import network_functions as nf
 import matplotlib.pyplot as plt
 import os
-import scipy.stats as stats
-import seaborn as sns
-import numpy as np
 
 if __name__ == '__main__':
 
@@ -22,8 +19,8 @@ if __name__ == '__main__':
 
         print('Processing ' + city + ' ...')
 
-        # net = nf.create_network(city, types=types)
-        # nf.plot_network(city, net)
+        net = nf.create_network(city, types=types)
+        nf.plot_network(city, net)
 
         ''' Load centrality measures for specific city '''
         json_path = 'results/'+city+'/centrality_measures.json'
@@ -31,55 +28,37 @@ if __name__ == '__main__':
         for k, v in centrality_measures.items():
             centrality_dict[k].append(v)
 
-        # ''' Plot ccdf of all measures of centrality considered for current city '''
-        # fig = nf.plot_ccdf(datavecs=list(centrality_measures.values()), labels=list(centrality_measures.keys()),
-        #                    xlabel='measure', ylabel='P(measure)')
-        # dir_name = './results/'+city+'/centrality_measures/'
-        # if not os.path.exists(dir_name):
-        #     os.makedirs(dir_name)
-        # fig_name = dir_name + 'ccdf_centrality_measures.png'
-        # fig.savefig(fig_name)
-        #
-        # ''' Plot all distributions together '''
-        # fig = nf.plot_multiple_lines(x_values=net.nodes(), y_values=list(centrality_measures.values()),
-        #                              labels=list(centrality_measures.keys()), xlabel='measure', ylabel='P(measure)')
-        # dir_name = './results/' + city + '/centrality_measures/'
-        # if not os.path.exists(dir_name):
-        #     os.makedirs(dir_name)
-        # fig_name = dir_name+'all_centrality_distributions.png'
-        # fig.savefig(fig_name)
-        #
-        # for k, v in centrality_measures.items():
-        #     sorted_values = v.copy()
-        #     sorted_values.sort()
-        #
-        #     ''' Plot distribution of current centrality measure'''
-        #     fig1 = nf.plot_distribution(list(net.nodes()), list(sorted_values), "nodes", k)
-        #     dir_name = './results/'+city+'/centrality_measures/distributions/'
-        #     if not os.path.exists(dir_name):
-        #         os.makedirs(dir_name)
-        #     fig_name = dir_name+'distr_plot_'+k+'_centrality.png'
-        #     fig1.savefig(fig_name)
-        #
-        #     ''' Plot network with 20% of significant nodes with color depending on value of centrality '''
-        #     fig2 = nf.plot_network_with_node_color_based_on_measure(net=net, measures=v, title=k+' centrality')
-        #     dir_name = './results/'+city+'/centrality_measures/network/'
-        #     if not os.path.exists(dir_name):
-        #         os.makedirs(dir_name)
-        #     fig_name = dir_name+'network_'+k+'_centrality.png'
-        #     fig2.savefig(fig_name)
-        #     plt.close('all')
+        ''' Plot ccdf of all measures of centrality considered for current city '''
+        fig = nf.plot_ccdf(datavecs=list(centrality_measures.values()), labels=list(centrality_measures.keys()),
+                           xlabel='measure', ylabel='P(measure)')
+        # fig.show()
+        dir_name = './results/'+city+'/centrality_measures/'
+        if not os.path.exists(dir_name):
+            os.makedirs(dir_name)
+        fig_name = dir_name + 'ccdf_centrality_measures.png'
+        fig.savefig(fig_name)
 
-# print(centrality_measures)
-# df = pd.DataFrame.from_dict(centrality_measures)
-# print(df)
-# values = [np.array(v) for k, v in centrality_measures.items()]
-#
-# # Save in the dict for each type of centrality a list of lists of values to plot later
-# for k, v in centrality_measures.items():
-#     if k not in centrality_dict:
-#         centrality_dict[k] = []
-#     centrality_dict[k].append(list(v))
+        for measure, values in centrality_measures.items():
+            plt.close('all')
+
+            # ''' Plot distribution of current centrality measure'''
+            fig1 = nf.plot_ccdf(datavecs=[values], labels=[measure], xlabel=measure, ylabel='P(' + measure + ')',
+                                marker='o')
+            dir_name = './results/'+city+'/centrality_measures/distributions/'
+            if not os.path.exists(dir_name):
+                os.makedirs(dir_name)
+            fig_name = dir_name+'distr_plot_'+measure+'_centrality.png'
+            fig1.savefig(fig_name)
+
+            ''' Plot network with 20% of significant nodes with color depending on value of centrality '''
+            fig2 = nf.plot_network_with_node_color_based_on_measure(net=net, measures=values,
+                                                                    title=measure+' centrality')
+            dir_name = './results/'+city+'/centrality_measures/network/'
+            if not os.path.exists(dir_name):
+                os.makedirs(dir_name)
+            fig_name = dir_name+'network_'+measure+'_centrality.png'
+            fig2.savefig(fig_name)
+            plt.close('all')
 
     ''' Plot all distributions of the same centrality type for all the cities coloring with colormap the 
     line depending on the area of the city and the population of it  '''
@@ -97,6 +76,3 @@ if __name__ == '__main__':
         fig_name = './results/all/plots/centrality_measures/ccdf_' + measure + '_centrality_population.png'
         # fig.show()
         fig.savefig(fig_name, bbox_inches='tight')
-
-
-

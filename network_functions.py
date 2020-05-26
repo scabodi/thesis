@@ -369,7 +369,7 @@ def plot_distribution(x_values, y_values, x_label, y_label):
     return fig
 
 
-def plot_ccdf(datavecs, labels, xlabel, ylabel):
+def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
 
     """
     Plots in a single figure the complementary cumulative distributions (1-CDFs)
@@ -387,13 +387,19 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     for datavec, label, style in zip(datavecs, labels, styles):
-        sorted_datavec = sorted(datavec)
-        ccdf = np.zeros(len(sorted_datavec))
+        sorted_vals = np.sort(np.unique(datavec))
+        ccdf = np.zeros(len(sorted_vals))
         n = float(len(datavec))
-        for i, val in enumerate(sorted_datavec, 0):
-            to_sum = [x for x in datavec if x >= val]
-            ccdf[i] = len(to_sum)/n
-        ax.loglog(sorted_datavec, ccdf, linestyle=style, label=label)
+        for i, val in enumerate(sorted_vals):
+            ccdf[i] = np.sum(datavec >= val) / n
+        if marker is not None:
+            ax.loglog(sorted_vals, ccdf, linestyle=' ', label=label, marker=marker)
+        else:
+            ax.loglog(sorted_vals, ccdf, linestyle=style, label=label)
+        ''' For a less precise and faster execution use:
+        sorted_vals = np.sort(datavec)
+        ccdf = np.linspace(1, 1./len(datavec), len(datavec))
+        ax.loglog(sorted_vals, ccdf, linestyle=style, label=label)'''
 
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)

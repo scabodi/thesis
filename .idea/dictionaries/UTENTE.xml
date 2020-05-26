@@ -17,12 +17,16 @@
       <w>facecolor</w>
       <w>hlen</w>
       <w>kuopio</w>
+      <w>linestyle</w>
+      <w>linspace</w>
+      <w>loglog</w>
       <w>logx</w>
       <w>mystyle</w>
       <w>networkx</w>
       <w>rennes</w>
       <w>savefig</w>
       <w>turku</w>
+      <w>vals</w>
       <w>xlabel</w>
       <w>xticks</w>
       <w>ylabel</w>
