@@ -285,6 +285,20 @@ def get_centrality_measures(network, tol):
     return [degree, betweenness, closeness, eigenvector_centrality]
 
 
+def set_degree_betweenness_dict_for_city(net, dict_k_b, city):
+    betweenness = nx.betweenness_centrality(net)
+    k_b = {}
+    for node in net.nodes():
+        k = net.degree(node)
+        if k not in k_b:
+            k_b[k] = []
+        k_b[k].append(betweenness[node])
+
+    for k in sorted(k_b.keys()):
+        avg = np.mean(k_b[k])
+        dict_k_b[city][k] = avg
+
+
 ''' Plot NETWORK with nodes colorbar depending on some measures '''
 
 

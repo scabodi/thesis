@@ -1,6 +1,23 @@
 import network_functions as nf
 import matplotlib.pyplot as plt
 import os
+import networkx as nx
+import numpy as np
+
+
+def plot_correlation_measures_log_log(x_values, y_values, xlabel, ylabel):
+
+    fig = plt.figure()
+    ax = fig.subplots(111)
+    ax.loglog(x_values, y_values,  marker='o', linestyle=' ')
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid()
+    ax.legend()
+
+    return fig
+
 
 if __name__ == '__main__':
 
@@ -13,6 +30,8 @@ if __name__ == '__main__':
     area_population_dict = nf.load_json(area_population_file)
     areas = nf.get_list_sorted_values('area', area_population_dict)
     populations = nf.get_list_sorted_values('population', area_population_dict)
+
+    degree_betweenness = nf.load_json('results/all/json/degree_betweenness.json')
 
     ''' Computations over each city '''
     for city in cities:
@@ -41,7 +60,7 @@ if __name__ == '__main__':
         for measure, values in centrality_measures.items():
             plt.close('all')
 
-            # ''' Plot distribution of current centrality measure'''
+            ''' Plot distribution of current centrality measure'''
             fig1 = nf.plot_ccdf(datavecs=[values], labels=[measure], xlabel=measure, ylabel='P(' + measure + ')',
                                 marker='o')
             dir_name = './results/'+city+'/centrality_measures/distributions/'
