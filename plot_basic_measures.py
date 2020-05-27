@@ -97,8 +97,9 @@ if __name__ == '__main__':
 
     ''' Plot all the degree distributions in one plot'''
 
-    fig = nf.plot_multiple_distributions_with_colorbar_log_log(datavecs=degrees.values(), labels=cities, xlabel='k',
-                                                               ylabel='P(k)', c=areas, max_x=28)
+    fig = nf.plot_multiple_distributions_with_colorbar_log_log_and_fitted_line(datavecs=degrees.values(),
+                                                                               labels=cities, xlabel='k',
+                                                                               ylabel='P(k)', c=areas, max_x=28)
     fig_name = 'results/all/plots/basic_measures/degree_distribution.png'
     fig.savefig(fig_name, bbox_inches='tight')
 
@@ -113,8 +114,9 @@ if __name__ == '__main__':
                 datavecs.append(degrees[city])
                 areas.append(area_population_dict[city]['area'])
 
-        fig = nf.plot_multiple_distributions_with_colorbar_log_log(datavecs=datavecs, labels=list_cities, xlabel='k',
-                                                                   ylabel='P(k)', c=areas, max_x=max_k)
+        fig = nf.plot_multiple_distributions_with_colorbar_log_log_and_fitted_line(datavecs=datavecs,
+                                                                                   labels=list_cities, xlabel='k',
+                                                                                   ylabel='P(k)', c=areas, max_x=max_k)
         fig_name = prefix_png+'basic_measures/clusters/'+cluster+'_P(k).png'
         fig.savefig(fig_name, bbox_inches='tight')
 

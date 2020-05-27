@@ -438,33 +438,81 @@ def plot_multiple_ccdf_with_colorbar(datavecs, labels, xlabel, ylabel, c):
     :return: fig
     """
 
-    styles = (['-', '--', '-.', ':']*7)[:len(datavecs)]
+    # styles = (['-', '--', '-.', ':']*7)[:len(datavecs)]
+    n = len(datavecs)
+    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:n]
     fig = plt.figure()
     ax = fig.add_subplot(111)
     colors = plt.cm.plasma(get_normalized_values(c))
     low_limit = 10**-4
 
-    for datavec, label, style, color in zip(datavecs, labels, styles, colors):
+    for datavec, label, marker, color in zip(datavecs, labels, markers, colors):
         sorted_datavec = [x for x in sorted(datavec) if x > low_limit]
         cdf = np.zeros(len(sorted_datavec))
-
         for i, val in enumerate(sorted_datavec, 0):
             cdf[i] = val
             if i > 0:
                 cdf[i] += cdf[i-1]
         sum_tot = cdf[len(cdf)-1]
         ccdf = [1-(x/sum_tot) for x in cdf]
-        ax.loglog(sorted_datavec, ccdf, linestyle=style, label=label, color=color)
+        ax.loglog(sorted_datavec, ccdf, marker=marker, label=label, linestyle=' ', color=color)
 
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
     ax.grid()
-    ax.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
-              ncol=3, mode="expand", borderaxespad=0.1)
+    # ax.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left', ncol=3, mode="expand", borderaxespad=0.1)
+    ax.legend(bbox_to_anchor=(-0.2, 1.02, 1.5, .102), loc='lower left', ncol=5, mode="expand", borderaxespad=0.1)
 
     m = mpl.cm.ScalarMappable(cmap=mpl.cm.plasma)
     m.set_array(c)
     fig.colorbar(m)
+
+    return fig
+
+
+def plot_multiple_distributions_with_colorbar_log_log(x_values, y_values, labels, xlabel, ylabel, c):
+
+    n = len(labels)
+    markers = (['_', 'v', '^', 'o', '+', 'x', 'd'] * 7)[:n]
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    colors = plt.cm.plasma(get_normalized_values(c))
+
+    for xs, ys, label, marker, color in zip(x_values, y_values, labels, markers, colors):
+        ax.loglog(xs, ys, marker=marker, label=label, linestyle=' ', color=color)
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.grid()
+    ax.legend(bbox_to_anchor=(-0.2, 1.02, 1.5, .102), loc='lower left', ncol=5, mode="expand", borderaxespad=0.1)
+
+    m = mpl.cm.ScalarMappable(cmap=mpl.cm.plasma)
+    m.set_array(c)
+    fig.colorbar(m)
+
+    return fig
+
+
+def plot_correlation_measures_log_log(x_values, y_values, xlabel, ylabel, title):
+
+    fig, ax = plt.subplots()
+
+    ax.plot(x_values, y_values, marker='o', linestyle=' ')
+    ax.set_yscale('log')
+    ax.set_xscale('log')
+
+    logx = np.log(x_values[1:])
+    logy = np.log(y_values[1:])
+    [m, q] = np.polyfit(logx, logy, 1)
+    print("m: %.4f, q: %.4f" % (m, q))
+    y_fit = np.exp(m * logx + q)
+    ax.plot(x_values[1:], y_fit, linestyle=':', label='\u03B7 = %.2f' % m)
+
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.set_title(title)
+    ax.grid()
+    ax.legend()
 
     return fig
 
@@ -538,7 +586,7 @@ def plot_distribution_log_log(datavec, city, xlabel, ylabel, max_x):
     return fig, m
 
 
-def plot_multiple_distributions_with_colorbar_log_log(datavecs, labels, xlabel, ylabel, c, max_x):
+def plot_multiple_distributions_with_colorbar_log_log_and_fitted_line(datavecs, labels, xlabel, ylabel, c, max_x):
     """
     Function that plots several distribution over a log-log plot with a line fit over the average of all the
     distributions

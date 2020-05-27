@@ -1,23 +1,6 @@
 import network_functions as nf
 import matplotlib.pyplot as plt
 import os
-import networkx as nx
-import numpy as np
-
-
-def plot_correlation_measures_log_log(x_values, y_values, xlabel, ylabel):
-
-    fig = plt.figure()
-    ax = fig.subplots(111)
-    ax.loglog(x_values, y_values,  marker='o', linestyle=' ')
-
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
-    ax.grid()
-    ax.legend()
-
-    return fig
-
 
 if __name__ == '__main__':
 
@@ -57,6 +40,16 @@ if __name__ == '__main__':
         fig_name = dir_name + 'ccdf_centrality_measures.png'
         fig.savefig(fig_name)
 
+        ''' Plot correlation between degree and average betweenness centrality '''
+        fig = nf.plot_correlation_measures_log_log(x_values=[int(x) for x in degree_betweenness[city].keys()],
+                                                   y_values=list(degree_betweenness[city].values()), xlabel='k',
+                                                   ylabel='<b>', title=city)
+        dir_name = './results/' + city + '/centrality_measures/'
+        if not os.path.exists(dir_name):
+            os.makedirs(dir_name)
+        fig_name = dir_name + 'degree_betweenness_correlation.png'
+        fig.savefig(fig_name, bbox_inches='tight')
+
         for measure, values in centrality_measures.items():
             plt.close('all')
 
@@ -79,13 +72,13 @@ if __name__ == '__main__':
             fig2.savefig(fig_name)
             plt.close('all')
 
-    ''' Plot all distributions of the same centrality type for all the cities coloring with colormap the 
+    ''' Plot all distributions of the same centrality type for all the cities coloring with colormap the
     line depending on the area of the city and the population of it  '''
     for measure, values in centrality_dict.items():
         xlabel = measure
         ylabel = 'P('+measure+')'
         labels = cities
-
+        # TODO see if avg the measure over the x values makes sense
         fig = nf.plot_multiple_ccdf_with_colorbar(values, labels, xlabel, ylabel, c=areas)
         fig_name = './results/all/plots/centrality_measures/ccdf_'+measure+'_centrality_area.png'
         # fig.show()
@@ -95,3 +88,14 @@ if __name__ == '__main__':
         fig_name = './results/all/plots/centrality_measures/ccdf_' + measure + '_centrality_population.png'
         # fig.show()
         fig.savefig(fig_name, bbox_inches='tight')
+
+    ''' Plot overall correlation degree-avg betweenness '''
+    x_values, y_values = [], []
+    for city in cities:
+        x_values.append(list(degree_betweenness[city].keys()))
+        y_values.append(list(degree_betweenness[city].values()))
+
+    fig = nf.plot_multiple_distributions_with_colorbar_log_log(x_values=x_values, y_values=y_values, labels=cities,
+                                                               xlabel='k', ylabel='<b>', c=areas)
+    fig_name = './results/all/plots/centrality_measures/k_avg_betweenness.png'
+    fig.savefig(fig_name, bbox_inches='tight')
