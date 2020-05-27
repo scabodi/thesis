@@ -444,10 +444,11 @@ def plot_multiple_ccdf_with_colorbar(datavecs, labels, xlabel, ylabel, c):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     colors = plt.cm.plasma(get_normalized_values(c))
-    low_limit = 10**-4
+    # low_limit = 10**-4
 
     for datavec, label, marker, color in zip(datavecs, labels, markers, colors):
-        sorted_datavec = [x for x in sorted(datavec) if x > low_limit]
+        # sorted_datavec = [x for x in sorted(datavec) if x > low_limit]
+        sorted_datavec = sorted(datavec)
         cdf = np.zeros(len(sorted_datavec))
         for i, val in enumerate(sorted_datavec, 0):
             cdf[i] = val
