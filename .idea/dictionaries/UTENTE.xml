@@ -6,6 +6,7 @@
       <w>cablecar</w>
       <w>ccdf</w>
       <w>centr</w>
+      <w>centralities</w>
       <w>coeff</w>
       <w>colheader</w>
       <w>colorbar</w>
@@ -25,6 +26,7 @@
       <w>networkx</w>
       <w>rennes</w>
       <w>savefig</w>
+      <w>stdevs</w>
       <w>turku</w>
       <w>vals</w>
       <w>xlabel</w>

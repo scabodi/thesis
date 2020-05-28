@@ -12,6 +12,7 @@ import statistics as st
 import seaborn as sns
 import matplotlib.colors as mc
 from colormap import rgb2hex, rgb2hls, hls2rgb
+from scipy.optimize import curve_fit
 
 ''' JSON '''
 
@@ -111,6 +112,18 @@ def order_dict_based_on_list_keys(d, l, condition=False):
         ordered_d = {k: d[k] for k in l}
     return ordered_d
 
+
+def get_html_string():
+    html_string = '''
+                    <html>
+                      <head><title>Table of network measures</title></head>
+                      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+                      <body>
+                        {table}
+                      </body>
+                    </html>.
+                    '''
+    return html_string
 
 ''' CREATE AND PLOT NETWORK '''
 
@@ -393,6 +406,7 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
     :param labels: labels for the data vectors, list of strings
     :param xlabel: x label for the figure, string
     :param ylabel: y label for the figure, string
+    :param marker: marker for the line
 
     :return: fig
     """
@@ -406,6 +420,7 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
         n = float(len(datavec))
         for i, val in enumerate(sorted_vals):
             ccdf[i] = np.sum(datavec >= val) / n
+        # x_values = range(1, len(sorted_vals) + 1)
         if marker is not None:
             ax.loglog(sorted_vals, ccdf, linestyle=' ', label=label, marker=marker)
         else:
@@ -414,6 +429,11 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
         sorted_vals = np.sort(datavec)
         ccdf = np.linspace(1, 1./len(datavec), len(datavec))
         ax.loglog(sorted_vals, ccdf, linestyle=style, label=label)'''
+        if xlabel == 'betweenness':
+            [m, q] = np.polyfit(sorted_vals, np.log(ccdf), 1)
+            print("m: %.4f, q: %.4f" % (m, q))
+            y_fit = np.exp(m * sorted_vals + q)
+            ax.plot(sorted_vals, y_fit, linestyle=':', label='\u03B7 = %.2f' % m)
 
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
@@ -515,7 +535,7 @@ def plot_correlation_measures_log_log(x_values, y_values, xlabel, ylabel, title)
     ax.grid()
     ax.legend()
 
-    return fig
+    return fig, m
 
 
 def plot_multiple_lines(x_values, y_values, labels, xlabel, ylabel):
@@ -547,12 +567,12 @@ def plot_multiple_lines(x_values, y_values, labels, xlabel, ylabel):
     return fig
 
 
-def plot_distribution_log_log(datavec, city, xlabel, ylabel, max_x):
+def plot_distribution_log_log(datavec, label, xlabel, ylabel, max_x):
     """
     Plot distribution with fit line
 
     :param datavec: list of int - degrees of nodes
-    :param city: str
+    :param label: str
     :param xlabel: str
     :param ylabel: str
     :param max_x: int - max value
@@ -567,7 +587,7 @@ def plot_distribution_log_log(datavec, city, xlabel, ylabel, max_x):
     px = np.array([v / len(datavec) for v in counter])
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    ax.loglog(x_values, px, marker='o', label=city, linestyle=' ')
+    ax.loglog(x_values, px, marker='o', label=label, linestyle=' ')
 
     y = [v for v in px[1:] if v > 0]
     x = range(2, len(y) + 2)

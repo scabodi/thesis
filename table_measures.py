@@ -86,15 +86,8 @@ if __name__ == '__main__':
 
         pd.options.display.float_format = lambda x: '{:,.0f}'.format(x) if round(x, 0) == x else '{:,.2f}'.format(x)
         pd.set_option('colheader_justify', 'center')
-        html_string = '''
-                        <html>
-                          <head><title>Table of network measures</title></head>
-                          <link rel="stylesheet" type="text/css" href="df_style.css"/>
-                          <body>
-                            {table}
-                          </body>
-                        </html>.
-                        '''
+        html_string = nf.get_html_string()
+
         df_measures = pd.read_json(measures_file)
         df_area_population = pd.read_json(area_population_file)
         dict_additional = nf.load_json(additional_measures)
