@@ -110,16 +110,15 @@ if __name__ == '__main__':
     ''' Plot all distributions of the same centrality type for all the cities coloring with colormap the
     # line depending on the area of the city and the population of it  '''
     for measure, values in centrality_dict.items():
-        xlabel = measure
-        ylabel = 'P('+measure+')'
-        labels = cities
 
-        fig = nf.plot_multiple_ccdf_with_colorbar(values, labels, xlabel, ylabel, c=areas)
+        fig = nf.plot_multiple_ccdf_with_colorbar(datavecs=values, labels=cities, xlabel=measure, ylabel='1-CDF',
+                                                  c=areas)
         fig_name = './results/all/plots/centrality_measures/ccdf_'+measure+'_centrality_area.png'
         fig.savefig(fig_name, bbox_inches='tight')
         # fig.show()
 
-        fig = nf.plot_multiple_ccdf_with_colorbar(values, labels, xlabel, ylabel, c=populations)
+        fig = nf.plot_multiple_ccdf_with_colorbar(datavecs=values, labels=cities, xlabel=measure, ylabel='1-CDF',
+                                                  c=populations)
         fig_name = './results/all/plots/centrality_measures/ccdf_' + measure + '_centrality_population.png'
         fig.savefig(fig_name, bbox_inches='tight')
         # fig.show()
@@ -131,6 +130,6 @@ if __name__ == '__main__':
         y_values.append(list(degree_betweenness[city].values()))
 
     fig = nf.plot_multiple_distributions_with_colorbar_log_log(x_values=x_values, y_values=y_values, labels=cities,
-                                                               xlabel='k', ylabel='<b>', c=areas)
+                                                               xlabel='k', ylabel='<g(k)>', c=areas)
     fig_name = './results/all/plots/centrality_measures/k_avg_betweenness.png'
     fig.savefig(fig_name, bbox_inches='tight')
