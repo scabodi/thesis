@@ -20,7 +20,7 @@ if __name__ == '__main__':
     areas = nf.get_list_sorted_values('area', area_population_dict)
     populations = nf.get_list_sorted_values('population', area_population_dict)
 
-    etas = []
+    etas, gammas = [], []
     ''' Computations over each city '''
     for city in cities:
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
         fig, m = nf.plot_correlation_measures_log_log(x_values=[int(x) for x in degree_betweenness[city].keys()],
                                                       y_values=list(degree_betweenness[city].values()), xlabel='k',
                                                       ylabel='<b>', title=city)
-        etas.append(m)
+        gammas.append(m)
         dir_name = './results/' + city + '/centrality_measures/'
         if not os.path.exists(dir_name):
             os.makedirs(dir_name)
@@ -61,9 +61,11 @@ if __name__ == '__main__':
             plt.close('all')
 
             ''' Plot distribution of current centrality measure'''
-            fig1 = nf.plot_ccdf(datavecs=[values], labels=[measure], xlabel=measure, ylabel='1-CDF(x)',
-                                marker='o')
-            # fig1.show()
+            fig1, m = nf.plot_ccdf(datavecs=[values], labels=[measure], xlabel=measure, ylabel='1-CDF(x)',
+                                   marker='o')
+            if m is not None:
+                etas.append(m)
+            fig1.show()
             dir_name = './results/'+city+'/centrality_measures/distributions/'
             if not os.path.exists(dir_name):
                 os.makedirs(dir_name)
@@ -90,14 +92,15 @@ if __name__ == '__main__':
     df = pd.DataFrame.from_dict(nf.load_json(centralities_path)).T
     df.fillna(0.0)
 
-    df_bc_cols = ['City', 'max(g(i))', '<g(i)>', 'max(g(k))', '<g(k)>', 'n']  # \u03B7
+    df_bc_cols = ['City', 'max(g(i))', '<g(i)>', 'n', 'max(g(k))', '<g(k)>', 'y']  # \u03B7
     df_bc = pd.DataFrame(columns=df_bc_cols)
     df_bc['City'] = cities
     df_bc['max(g(i))'] = [np.max(x) for x in df.betweenness]
     df_bc['<g(i)>'] = [np.mean(x) for x in df.betweenness]
+    df_bc['n'] = etas
     df_bc['max(g(k))'] = np.array(df_bc_k.loc['max'])
     df_bc['<g(k)>'] = np.array(df_bc_k.loc['mean'])
-    df_bc['n'] = etas
+    df_bc['y'] = gammas
 
     print(df_bc)
 

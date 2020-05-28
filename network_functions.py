@@ -414,6 +414,7 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
     styles = ['-', '--', '-.', ':']
     fig = plt.figure()
     ax = fig.add_subplot(111)
+    m = None
     for datavec, label, style in zip(datavecs, labels, styles):
         sorted_vals = np.sort(np.unique(datavec))
         ccdf = np.zeros(len(sorted_vals))
@@ -440,7 +441,7 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
     ax.legend(loc=0)
     ax.grid()
 
-    return fig
+    return fig, m
 
 
 def plot_multiple_ccdf_with_colorbar(datavecs, labels, xlabel, ylabel, c):
