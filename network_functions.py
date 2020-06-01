@@ -12,7 +12,6 @@ import statistics as st
 import seaborn as sns
 import matplotlib.colors as mc
 from colormap import rgb2hex, rgb2hls, hls2rgb
-from scipy.optimize import curve_fit
 
 ''' JSON '''
 
