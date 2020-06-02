@@ -89,6 +89,17 @@ def get_cluster_dict_for_area():
     return result
 
 
+def get_capital_cities():
+    result = ['athens', 'berlin', 'dublin', 'helsinki', 'lisbon', 'luxembourg', 'paris', 'prague', 'rome', 'sydney']
+    return result
+
+
+def get_capitals_with_central_station_node():
+    result = {'athens': 461, 'berlin': 146, 'dublin': 332, 'helsinki': 22, 'lisbon': 1490, 'luxembourg': 1356,
+              'paris': 953, 'prague': 94, 'rome': 196, 'sydney': 36611}
+    return result
+
+
 def get_types_for_city(path):
 
     info = pd.read_csv(path, delimiter=";")
@@ -123,6 +134,7 @@ def get_html_string():
                     </html>.
                     '''
     return html_string
+
 
 ''' CREATE AND PLOT NETWORK '''
 
@@ -704,9 +716,10 @@ def bfs(graph, vertex):
 
 
 def bfs_with_distance(graph, vertex, coords):
-    queue = deque([vertex])
-    level = {vertex: 0}
-    parent = {vertex: None}
+    queue = deque([vertex])  # create a queue
+    level = {vertex: 0}      # create a dictionary for all the levels of the nodes
+    parent = {vertex: None}  # create a dictionary to record parent of each node visited
+    # create dict to record distances in km
     distances_bfs = {vertex: 0}
     distances_eu = {vertex: 0}
     # bfs_dist, eu_dist = [], []
@@ -725,7 +738,7 @@ def bfs_with_distance(graph, vertex, coords):
                 parent[n] = v
                 # compute distance from current node to vertex (core_node)
                 distances_bfs[n] = distances_bfs[v] + geodesic(coords[v], coords[n]).km
-                # compute euclidean distance
+                # compute euclidean distance from starting node to current one
                 distances_eu[n] = geodesic(coords[vertex], coords[n]).km
 
     return level, parent, distances_bfs, distances_eu
