@@ -44,7 +44,7 @@ if __name__ == '__main__':
         fig = pf.create_scatter(x_values=x_val, y_values=areas, x_label=x_label, y_label='area',
                                 labels=df.index.values, colors=colors_cities)
         fig_name = prefix_png+'basic_measures/continents_division/'+x_label+'_continents.png'
-        fig.savefig(fig_name)
+        fig.savefig(fig_name, bbox_inches='tight')
     plt.close('all')
 
     ''' Plot x: #nodes, y: #edges and size of scatter points proportional to area of the city'''
