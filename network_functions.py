@@ -374,8 +374,8 @@ def plot_network_with_node_color_based_on_measure(net, measures, title):
             top.append(measure)
             sub_nodes.append(node)
 
-    nodes = nx.draw_networkx_nodes(net, pos=nx.get_node_attributes(net, 'pos'), node_size=50, cmap=plt.cm.plasma,
-                                   node_color=top, alpha=0.8, nodelist=sub_nodes)
+    nodes = nx.draw_networkx_nodes(net, pos=nx.get_node_attributes(net, 'pos'), node_size=[v*10**5 for v in top],
+                                   cmap=plt.cm.plasma, node_color=top, alpha=0.8, nodelist=sub_nodes)
     nx.draw_networkx_edges(net, pos=nx.get_node_attributes(net, 'pos'), alpha=0.2)
 
     plt.title(title)
@@ -981,4 +981,3 @@ def plot_bars_frequency_mu_st(labels, mus, sts, type=3, feature=None):
     fig.tight_layout()
 
     return fig
-

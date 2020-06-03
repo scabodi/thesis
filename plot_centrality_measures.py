@@ -75,6 +75,7 @@ if __name__ == '__main__':
             ''' Plot network with 20% of significant nodes with color depending on value of centrality '''
             fig2 = nf.plot_network_with_node_color_based_on_measure(net=net, measures=values,
                                                                     title=measure+' centrality')
+            fig2.show()
             dir_name = './results/'+city+'/centrality_measures/network/'
             if not os.path.exists(dir_name):
                 os.makedirs(dir_name)

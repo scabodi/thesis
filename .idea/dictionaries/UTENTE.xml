@@ -3,6 +3,7 @@
     <words>
       <w>assortativity</w>
       <w>betweenness</w>
+      <w>borderaxespad</w>
       <w>cablecar</w>
       <w>ccdf</w>
       <w>centeroidnp</w>
@@ -24,6 +25,7 @@
       <w>loglog</w>
       <w>logx</w>
       <w>mystyle</w>
+      <w>ncol</w>
       <w>networkx</w>
       <w>rennes</w>
       <w>savefig</w>
@@ -33,6 +35,7 @@
       <w>xlabel</w>
       <w>xticks</w>
       <w>ylabel</w>
+      <w>yscale</w>
     </words>
   </dictionary>
 </component>
