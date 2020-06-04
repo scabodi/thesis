@@ -6,6 +6,7 @@
       <w>borderaxespad</w>
       <w>cablecar</w>
       <w>ccdf</w>
+      <w>centeroid</w>
       <w>centeroidnp</w>
       <w>centr</w>
       <w>centralities</w>
@@ -15,9 +16,11 @@
       <w>dataframe</w>
       <w>datavec</w>
       <w>datavecs</w>
+      <w>dijskstra</w>
       <w>distr</w>
       <w>eigenvector</w>
       <w>facecolor</w>
+      <w>geopy</w>
       <w>hlen</w>
       <w>kuopio</w>
       <w>linestyle</w>
@@ -32,6 +35,7 @@
       <w>stdevs</w>
       <w>turku</w>
       <w>vals</w>
+      <w>vedere</w>
       <w>xlabel</w>
       <w>xticks</w>
       <w>ylabel</w>

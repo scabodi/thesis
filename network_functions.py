@@ -12,6 +12,8 @@ import statistics as st
 import seaborn as sns
 import matplotlib.colors as mc
 from colormap import rgb2hex, rgb2hls, hls2rgb
+from scipy.spatial import distance
+import os
 
 ''' JSON '''
 
@@ -98,6 +100,33 @@ def get_capitals_with_central_station_node():
     result = {'athens': 461, 'berlin': 146, 'dublin': 332, 'helsinki': 22, 'lisbon': 1490, 'luxembourg': 1356,
               'paris': 953, 'prague': 94, 'rome': 196, 'sydney': 36611}
     return result
+
+
+def centeroid_np(arr):
+    length = arr.shape[0]
+    sum_x = np.sum(arr[:, 0])
+    sum_y = np.sum(arr[:, 1])
+    return sum_x/length, sum_y/length
+
+
+def get_central_node(coords):
+    # if the results have already been saved in a file, retrieve them
+    central_nodes_json = 'results/all/json/central_nodes.json'
+    if os.path.exists(central_nodes_json) and os.path.isfile(central_nodes_json):
+        return load_json(central_nodes_json)
+
+    # otherwise, calculate central node of the biggest connected component
+    # find barycenter
+    a = np.array(list(coords.values()))
+    centre = centeroid_np(a)
+    # look for nearest node in the network
+    nearest = tuple(min(a, key=lambda x: distance.euclidean(x, centre)))
+    central_node = None
+    for n, coord in coords.items():
+        if coord == nearest:
+            central_node = n
+            break
+    return central_node
 
 
 def get_types_for_city(path):
@@ -795,6 +824,23 @@ def compute_paths(parent, core_node):
             paths[k].append(k)
 
     return paths
+
+
+def compute_near_and_far_distances_dictionaries(nodes, bfs_list, eu_list):
+
+    max_eu = max(eu_list)
+    threshold_near = 1 / 4 * max_eu
+    threshold_far = 1 / 2 * max_eu  # vedere 3/4
+
+    close_distances, far_distances = {}, {}
+
+    for node, bfs, eu in zip(nodes, bfs_list, eu_list):
+        if bfs < threshold_near:
+            close_distances[node] = bfs
+        elif bfs > threshold_far:
+            far_distances[node] = bfs
+
+    return close_distances, far_distances
 
 
 def get_distances(paths, coords1, coords):
