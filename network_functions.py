@@ -888,25 +888,26 @@ def get_all_distances(net, core_node):
     return real_distances['bfs'], real_distances['ed']
 
 
-def plot_distances_for_single_city(bfs_list, eu_list):
+def plot_distances_for_single_city(first, second, colors, labels, bins, xlabel, ylabel):
 
-    mu1 = st.mean(bfs_list)
-    sd1 = st.stdev(bfs_list)
+    mu1 = st.mean(first)
+    sd1 = st.stdev(first)
 
-    mu2 = st.mean(eu_list)
-    sd2 = st.stdev(eu_list)
+    mu2 = st.mean(second)
+    sd2 = st.stdev(second)
 
     params = [mu1, sd1, mu2, sd2]
 
     fig = plt.figure()
 
     sns.set(style="white", palette="muted", color_codes=True)
-    sns.distplot(bfs_list, color="skyblue", label="bfs \u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=30)
-    sns.distplot(eu_list, color="red", label="euclidean \u03BC=%.2f, \u03C3=%.2f" % (mu2, sd2), bins=30)
+    sns.distplot(first, color=colors[0], label=labels[0]+' \u03BC=%.2f, \u03C3=%.2f' % (mu1, sd1), bins=bins[0])
+    sns.distplot(second, color=colors[1], label=labels[1]+' \u03BC=%.2f, \u03C3=%.2f' % (mu2, sd2), bins=bins[1])
 
-    plt.xlabel('Distances')
-    plt.ylabel('Probability')
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
     plt.legend(loc='upper right')
+    plt.tight_layout()
 
     return fig, params
 
