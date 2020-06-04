@@ -20,7 +20,7 @@ if __name__ == '__main__':
     central_nodes = {}
 
     n_core_nodes = 20
-    dump = True  # put True if you want to save again values into json file
+    dump = False  # put True if you want to save again values into json file
 
     # all_bfs, all_ed = [], []  # list of lists of values for each city
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
         distances_info['bfs'].append(city_bfs)
         distances_info['eu'].append(city_ed)
 
-        central_node = nf.get_central_node(coords)
+        central_node = nf.get_central_node(coords)[city]
         central_nodes[city] = central_node
 
         ''' Breadth first visit of the graph starting from the central node  '''
@@ -82,13 +82,23 @@ if __name__ == '__main__':
         close_distances, far_distances = nf.compute_near_and_far_distances_dictionaries(nodes=distances_bfs.keys(),
                                                                                         bfs_list=distances_bfs.values(),
                                                                                         eu_list=distances_eu.values())
-        # TODO find periferal nodes
+        '''find periferal nodes '''
+        periferal_dict = {node: True for node in distances_eu.keys()}
+
+        for edge in net.edges():
+            if edge[0] in periferal_dict and edge[1] in periferal_dict:
+                # a, b = int(edge[0]), int(edge[1])
+                if distances_eu[edge[0]] > distances_eu[edge[1]]:
+                    periferal_dict[edge[1]] = False
+                if distances_eu[edge[0]] < distances_eu[edge[1]]:
+                    periferal_dict[edge[0]] = False
 
         if dump:
             nf.dump_json(bfs_central, distances_bfs)
             nf.dump_json(eu_central, distances_eu)
             nf.dump_json(bfs_close_json, close_distances)
             nf.dump_json(bfs_far_json, far_distances)
+            nf.dump_json(dir_json + 'periferal.json', periferal_dict)
 
         if city in capitals:
             level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, capitals[city], coords_for_geopy)

@@ -896,6 +896,8 @@ def plot_distances_for_single_city(bfs_list, eu_list):
     mu2 = st.mean(eu_list)
     sd2 = st.stdev(eu_list)
 
+    params = [mu1, sd1, mu2, sd2]
+
     fig = plt.figure()
 
     sns.set(style="white", palette="muted", color_codes=True)
@@ -906,7 +908,7 @@ def plot_distances_for_single_city(bfs_list, eu_list):
     plt.ylabel('Probability')
     plt.legend(loc='upper right')
 
-    return fig
+    return fig, params
 
 
 def plot_distances_fractions(fractions):

@@ -21,6 +21,7 @@
       <w>eigenvector</w>
       <w>facecolor</w>
       <w>geopy</w>
+      <w>histo</w>
       <w>hlen</w>
       <w>kuopio</w>
       <w>linestyle</w>
@@ -30,6 +31,7 @@
       <w>mystyle</w>
       <w>ncol</w>
       <w>networkx</w>
+      <w>periferal</w>
       <w>rennes</w>
       <w>savefig</w>
       <w>stdevs</w>
