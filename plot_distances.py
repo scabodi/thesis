@@ -6,6 +6,7 @@ import numpy as np
 if __name__ == '__main__':
 
     cities = nf.get_list_cities_names()
+    capitals = nf.get_capital_cities()
     clusters = nf.get_cluster_dict_for_area()
 
     # distances_file = 'results/all/json/all_distances.json'
@@ -58,18 +59,41 @@ if __name__ == '__main__':
         first = list(close_distances.values())
         second = list(far_distances.values())
         bins = [int(np.sqrt(len(first))), int(np.sqrt(len(second)))]
-        fig1, p = nf.plot_distances_for_single_city(first=first, second=second, colors=colors,
+        fig1, _ = nf.plot_distances_for_single_city(first=first, second=second, colors=colors,
                                                     labels=["close nodes", "far nodes"], bins=bins,
                                                     xlabel='Distance in km from central node', ylabel='P(distance)')
 
         # fig1.show()
         fig_name = dir_plots+'close_far_distances.png'
         fig1.savefig(fig_name)
+
+        ''' Same plot but from POI node - just for capitals '''
+        if city in capitals:
+            close_distances = nf.load_json('results/' + city + '/distance_analysis/json/capital_bfs_close.json')
+            far_distances = nf.load_json('results/' + city + '/distance_analysis/json/capital_bfs_far.json')
+
+            first = list(close_distances.values())
+            second = list(far_distances.values())
+            bins = [int(np.sqrt(len(first))), int(np.sqrt(len(second)))]
+            fig1, _ = nf.plot_distances_for_single_city(first=first, second=second, colors=colors,
+                                                        labels=["close nodes", "far nodes"], bins=bins,
+                                                        xlabel='Distance in km from POI central node',
+                                                        ylabel='P(distance)')
+
+            # fig1.show()
+            fig_name = dir_plots + 'capital_close_far_distances.png'
+            fig1.savefig(fig_name)
+
         plt.close('all')
 
         ''' Cumulative distribution of distances from central node '''
 
         ''' Network plot of periferal nodes '''
+        peripheral_dict = nf.load_json('results/'+city+'/distance_analysis/json/peripheral.json')
+        net = nf.create_network(city, types=nf.get_types_of_transport_and_colors())
+        sub_net = net.subgraph(list(peripheral_dict.keys()))
+        # TODO change function and return fig!!!
+        # nf.plot_network(city, sub_net)
 
     nf.dump_json('results/all/json/parameter_distances.json', mu_st)
 
