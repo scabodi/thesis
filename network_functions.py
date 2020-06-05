@@ -484,6 +484,7 @@ def plot_ccdf(datavecs, labels, xlabel, ylabel, marker=None):
     ax.set_ylabel(ylabel)
     ax.legend(loc=0)
     ax.grid()
+    fig.tight_layout()
 
     return fig, m
 
