@@ -3,6 +3,7 @@ import network_functions as nf
 import networkx as nx
 import random as rd
 import os
+from geopy.distance import geodesic
 
 
 if __name__ == '__main__':
@@ -25,7 +26,7 @@ if __name__ == '__main__':
     # all_bfs, all_ed = [], []  # list of lists of values for each city
 
     ''' Computations over each city '''
-    for city in cities:
+    for city in cities[12:]:
 
         print('Processing ' + city + ' ...')
 
@@ -85,13 +86,15 @@ if __name__ == '__main__':
         '''find peripheral nodes '''
         peripheral_dict = {node: True for node in distances_eu.keys()}
 
-        for edge in net.edges():
-            if edge[0] in peripheral_dict and edge[1] in peripheral_dict:
-                # a, b = int(edge[0]), int(edge[1])
-                if distances_eu[edge[0]] > distances_eu[edge[1]]:
-                    peripheral_dict[edge[1]] = False
-                if distances_eu[edge[0]] < distances_eu[edge[1]]:
-                    peripheral_dict[edge[0]] = False
+        max_eu_distance = max(distances_eu.values())
+        d = max_eu_distance/10
+        for v in distances_eu.keys():
+            for w in distances_eu.keys():
+                if v != w:
+                    if geodesic(coords_for_geopy[v], coords_for_geopy[w]).km < d:
+                        # compare the distances of the two nodes from the center
+                        if distances_eu[v] < distances_eu[w]:
+                            peripheral_dict[v] = False
 
         nf.dump_json(dir_json + 'peripheral.json', peripheral_dict)
         if dump:

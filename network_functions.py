@@ -226,14 +226,13 @@ def make_proxy(clr, **kwargs):
     return Line2D([0, 1], [0, 1], color=clr, **kwargs)
 
 
-def plot_network(city, net):
+def plot_network(net, node_list=None):
     """
     Plot networkx object for the specified city
     Each edge has its color depending on the route type and the node shape is '' because they are not displayed
 
-    :param city: str
     :param net: networkx obj
-
+    :param node_list: nodes to be represented
     """
     colors = nx.get_edge_attributes(net, 'color').values()
     all_colors = set(colors)
@@ -244,20 +243,25 @@ def plot_network(city, net):
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
 
-    nx.draw_networkx(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=5, node_shape='',
-                     edge_color=colors, alpha=0.5)
-
-    proxies = [make_proxy(clr, lw=5) for clr in edge_types.keys()]
-    labels = [edge_type for clr, edge_type in edge_types.items()]
-    plt.legend(proxies, labels)
+    if node_list is None:
+        nx.draw_networkx(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=5,
+                         node_shape='', edge_color=colors, alpha=0.5)
+        proxies = [make_proxy(clr, lw=5) for clr in edge_types.keys()]
+        labels = [edge_type for clr, edge_type in edge_types.items()]
+        plt.legend(proxies, labels)
+    else:
+        nx.draw_networkx(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=100,
+                         nodelist=node_list, node_color='red', alpha=0.5, edge_color='gray')
 
     # to change background color --> ax.set_facecolor('k')
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
+    fig.tight_layout()
 
-    fig_name = './data/' + city + '/network.png'
-    fig.savefig(fig_name)
-    plt.close()
+    # fig_name = './data/' + city + '/network.png'
+    # fig.savefig(fig_name)
+    # plt.close()
+    return fig
 
 
 ''' Compute NETWORK MEASURES (BASIC, ADDITIONAL and CENTRALITY) '''

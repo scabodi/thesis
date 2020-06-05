@@ -27,7 +27,9 @@ if __name__ == '__main__':
         print('Processing ' + city + ' ...')
 
         net = nf.create_network(city, types=types)
-        nf.plot_network(city, net)
+        fig = nf.plot_network(net)
+        fig_name = './results/' + city + '/network.png'
+        fig.savefig(fig_name)
 
         ''' Load centrality measures for specific city '''
         json_path = 'results/'+city+'/centrality_measures.json'
