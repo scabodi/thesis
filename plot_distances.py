@@ -98,27 +98,27 @@ if __name__ == '__main__':
 
         ''' Cumulative distribution of distances from central node '''
 
-        ''' Network plot of periferal nodes '''
-        peripheral_dict = nf.load_json('results/'+city+'/distance_analysis/json/peripheral.json')
-        peripheral_nodes = [int(node) for node, is_peripheral in peripheral_dict.items() if is_peripheral is True]
+        # ''' Network plot of periferal nodes '''
+        # peripheral_dict = nf.load_json('results/'+city+'/distance_analysis/json/peripheral.json')
+        # peripheral_nodes = [int(node) for node, is_peripheral in peripheral_dict.items() if is_peripheral is True]
+        #
+        # net = nf.create_network(city, types=nf.get_types_of_transport_and_colors())
+        # percentage = (len(peripheral_nodes) / len(net.nodes()))*100
+        # print('There are %d peripheral nodes.\n They represent %d %% of all the nodes.'
+        #       % (len(peripheral_nodes), percentage))
+        # fig = nf.plot_network(net, node_list=peripheral_nodes)
+        # fig.show()
+        # fig_name = dir_plots+'network_peripheral.png'
+        # fig.savefig(fig_name)
 
-        net = nf.create_network(city, types=nf.get_types_of_transport_and_colors())
-        percentage = (len(peripheral_nodes) / len(net.nodes()))*100
-        print('There are %d peripheral nodes.\n They represent %d %% of all the nodes.'
-              % (len(peripheral_nodes), percentage))
-        fig = nf.plot_network(net, node_list=peripheral_nodes)
-        fig.show()
-        fig_name = dir_plots+'network_peripheral.png'
-        fig.savefig(fig_name)
-
-    nf.dump_json('results/all/json/parameter_distances.json', mu_st)
-
-    for cluster, values in clusters.items():
-
-        f = {k: v for k, v in fractions.items() if k in values}
-        fig = nf.plot_distances_fractions(f)
-        dir_name = './results/all/plots/distances/fractions/'
-        if not os.path.exists(dir_name):
-            os.makedirs(dir_name)
-        fig_name = dir_name+'fractions_'+cluster+'_.png'
-        fig.savefig(fig_name, bbox_inches='tight')
+    # nf.dump_json('results/all/json/parameter_distances.json', mu_st)
+    #
+    # for cluster, values in clusters.items():
+    #
+    #     f = {k: v for k, v in fractions.items() if k in values}
+    #     fig = nf.plot_distances_fractions(f)
+    #     dir_name = './results/all/plots/distances/fractions/'
+    #     if not os.path.exists(dir_name):
+    #         os.makedirs(dir_name)
+    #     fig_name = dir_name+'fractions_'+cluster+'_.png'
+    #     fig.savefig(fig_name, bbox_inches='tight')
