@@ -27,7 +27,7 @@ if __name__ == '__main__':
         print('Processing ' + city + ' ...')
 
         net = nf.create_network(city, types=types)
-        fig = nf.plot_network(net)
+        fig, _ = nf.plot_network(net)
         fig_name = './results/' + city + '/network.png'
         fig.savefig(fig_name)
 

@@ -26,7 +26,7 @@ if __name__ == '__main__':
     # all_bfs, all_ed = [], []  # list of lists of values for each city
 
     ''' Computations over each city '''
-    for city in cities[12:]:
+    for city in cities:
 
         print('Processing ' + city + ' ...')
 
@@ -52,28 +52,28 @@ if __name__ == '__main__':
         max_component = max(nx.connected_component_subgraphs(net), key=len)
         coords = nx.get_node_attributes(max_component, 'pos')
         coords_for_geopy = nx.get_node_attributes(net, 'coords')
-
-        ''' Breadth first visit of the graph starting from a random node - repeated 20 times '''
-        for i in range(n_core_nodes):
-
-            core_node = rd.choice(list(max_component.nodes()))
-            # print("Core node = %d" % core_node)
-            '''
-            for each core node visit the network and record 2 types of distances for each reached node:
-                1. bfs - minimum hop not minimum distance
-                2. euclidean distance
-            all in km
-            maybe visit a weighted graph with dijskstra
-            '''
-            level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, core_node, coords_for_geopy)
-
-            # bfs, ed = nf.get_all_distances(net, core_node)
-            # concatenate those list to city ones
-            city_bfs.extend(distances_bfs.values())
-            city_ed.extend(distances_eu.values())
-
-        distances_info['bfs'].append(city_bfs)
-        distances_info['eu'].append(city_ed)
+        #
+        # ''' Breadth first visit of the graph starting from a random node - repeated 20 times '''
+        # for i in range(n_core_nodes):
+        #
+        #     core_node = rd.choice(list(max_component.nodes()))
+        #     # print("Core node = %d" % core_node)
+        #     '''
+        #     for each core node visit the network and record 2 types of distances for each reached node:
+        #         1. bfs - minimum hop not minimum distance
+        #         2. euclidean distance
+        #     all in km
+        #     maybe visit a weighted graph with dijskstra
+        #     '''
+        #     level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, core_node, coords_for_geopy)
+        #
+        #     # bfs, ed = nf.get_all_distances(net, core_node)
+        #     # concatenate those list to city ones
+        #     city_bfs.extend(distances_bfs.values())
+        #     city_ed.extend(distances_eu.values())
+        #
+        # distances_info['bfs'].append(city_bfs)
+        # distances_info['eu'].append(city_ed)
 
         central_node = nf.get_central_node(coords)[city]
         central_nodes[city] = central_node
@@ -86,35 +86,46 @@ if __name__ == '__main__':
         '''find peripheral nodes '''
         peripheral_dict = {node: True for node in distances_eu.keys()}
 
+        for edge in net.edges():
+            if edge[0] in peripheral_dict and edge[1] in peripheral_dict:
+                # a, b = int(edge[0]), int(edge[1])
+                if distances_eu[edge[0]] > distances_eu[edge[1]]:
+                    peripheral_dict[edge[1]] = False
+                if distances_eu[edge[0]] < distances_eu[edge[1]]:
+                    peripheral_dict[edge[0]] = False
+
+        peripheral_list = [node for node, flag in peripheral_dict.items() if flag is True]
+
+        print('Reached nodes = %d, first peripherals = %d' % (len(peripheral_dict), len(peripheral_list)))
         max_eu_distance = max(distances_eu.values())
         d = max_eu_distance/10
-        for v in distances_eu.keys():
-            for w in distances_eu.keys():
+        for v in peripheral_list:
+            for w in peripheral_list:
                 if v != w:
                     if geodesic(coords_for_geopy[v], coords_for_geopy[w]).km < d:
                         # compare the distances of the two nodes from the center
                         if distances_eu[v] < distances_eu[w]:
                             peripheral_dict[v] = False
 
-        nf.dump_json(dir_json + 'peripheral.json', peripheral_dict)
-        if dump:
-            nf.dump_json(bfs_central, distances_bfs)
-            nf.dump_json(eu_central, distances_eu)
-            nf.dump_json(bfs_close_json, close_distances)
-            nf.dump_json(bfs_far_json, far_distances)
-            nf.dump_json(dir_json + 'peripheral.json', peripheral_dict)
-
-        if city in capitals:
-            level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, capitals[city], coords_for_geopy)
-            close_distances, far_distances = nf.compute_near_and_far_distances_dictionaries(
-                nodes=distances_bfs.keys(), bfs_list=distances_bfs.values(), eu_list=distances_eu.values())
-            if dump:
-                nf.dump_json(dir_json + 'capital_bfs_central.json', distances_bfs)
-                nf.dump_json(dir_json + 'capital_eu_central.json', distances_eu)
-                nf.dump_json(dir_json + 'capital_bfs_close.json', close_distances)
-                nf.dump_json(dir_json + 'capital_bfs_far.json', far_distances)
-
-    if dump:
-        nf.dump_json(bfs_json, distances_info['bfs'])
-        nf.dump_json(eu_json, distances_info['eu'])
-        nf.dump_json(central_nodes_json, central_nodes)
+        nf.dump_json(dir_json + 'peripheral_nodes.json', peripheral_dict)
+    #     if dump:
+    #         nf.dump_json(bfs_central, distances_bfs)
+    #         nf.dump_json(eu_central, distances_eu)
+    #         nf.dump_json(bfs_close_json, close_distances)
+    #         nf.dump_json(bfs_far_json, far_distances)
+    #         nf.dump_json(dir_json + 'peripheral.json', peripheral_dict)
+    #
+    #     if city in capitals:
+    #         level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, capitals[city], coords_for_geopy)
+    #         close_distances, far_distances = nf.compute_near_and_far_distances_dictionaries(
+    #             nodes=distances_bfs.keys(), bfs_list=distances_bfs.values(), eu_list=distances_eu.values())
+    #         if dump:
+    #             nf.dump_json(dir_json + 'capital_bfs_central.json', distances_bfs)
+    #             nf.dump_json(dir_json + 'capital_eu_central.json', distances_eu)
+    #             nf.dump_json(dir_json + 'capital_bfs_close.json', close_distances)
+    #             nf.dump_json(dir_json + 'capital_bfs_far.json', far_distances)
+    #
+    # if dump:
+    #     nf.dump_json(bfs_json, distances_info['bfs'])
+    #     nf.dump_json(eu_json, distances_info['eu'])
+    #     nf.dump_json(central_nodes_json, central_nodes)

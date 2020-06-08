@@ -261,7 +261,7 @@ def plot_network(net, node_list=None):
     # fig_name = './data/' + city + '/network.png'
     # fig.savefig(fig_name)
     # plt.close()
-    return fig
+    return fig, ax
 
 
 ''' Compute NETWORK MEASURES (BASIC, ADDITIONAL and CENTRALITY) '''
