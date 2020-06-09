@@ -1028,13 +1028,14 @@ def plot_distribution_frequency(f_list, color):
     return fig
 
 
-def plot_bars_frequency_mu_st(labels, mus, sts, type=3, feature=None):
+def plot_bars_mu_st(labels, mus, sts, ylabel, title=None, type=3, feature=None, feature_label=None, color=None):
 
     types_and_colors = get_types_of_transport_and_colors()
     dict_number_types = get_dict_number_type_of_transport()
 
     type_of_transport = dict_number_types[type]
-    color = types_and_colors[type]
+    if color is None:
+        color = types_and_colors[type]
     h = mc.to_hex(color)
     r, g, b = hex_to_rgb(h)  # hex to rgb format
     darker = darken_color(r, g, b, 0.5)
@@ -1047,8 +1048,11 @@ def plot_bars_frequency_mu_st(labels, mus, sts, type=3, feature=None):
     ax.bar(x + width / 2, sts, width, label='\u03C3', color=darker, alpha=0.5, edgecolor='k')
 
     # Add some text for labels, title and custom x-axis tick labels, etc.
-    ax.set_ylabel('Number of vehicles')
-    ax.set_title(type_of_transport + ' transport network', color=color)
+    ax.set_ylabel(ylabel)
+    if title is None:
+        ax.set_title(type_of_transport + ' transport network', color=color)
+    else:
+        ax.set_title(title, color=color)
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=70)
 
@@ -1056,10 +1060,15 @@ def plot_bars_frequency_mu_st(labels, mus, sts, type=3, feature=None):
         ax1 = ax.twinx()
         x = np.arange(len(labels))
         y = feature
-        ax1.plot(x, y, color='k', label='Population', marker='o')
-        y1_labels = ['{}'.format(int(i)) + 'M' for i in ax1.get_yticks() / 10**6]
-        ax1.set_yticklabels(y1_labels)
-        ax1.set_ylabel('Millions of inhabitants')
+        ax1.plot(x, y, color='k', label=feature_label, marker='o')
+        if feature_label == 'Population':
+            y1_labels = ['{}'.format(int(i)) + 'M' for i in ax1.get_yticks() / 10**6]
+            ax1.set_yticklabels(y1_labels)
+            ax1.set_ylabel('Millions of inhabitants')
+        elif feature_label == 'Area':
+            y1_labels = ['{}'.format(round(i, 1)) + 'K' for i in ax1.get_yticks() / 10 ** 3]
+            ax1.set_yticklabels(y1_labels)
+            ax1.set_ylabel('Thousands of km')
         ax1.legend(loc=2)
 
     ax.legend(loc=9)

@@ -40,8 +40,9 @@ for type in means.keys():
 
     populations = [v['population'] for k, v in area_population_dict_ordered.items() if k in ordered_means[type].keys()]
 
-    fig = nf.plot_bars_frequency_mu_st(ordered_means[type].keys(), ordered_means[type].values(),
-                                       ordered_stdev[type].values(), type, populations)
+    fig = nf.plot_bars_mu_st(labels=ordered_means[type].keys(), mus=ordered_means[type].values(),
+                             sts=ordered_stdev[type].values(), ylabel='Number of vehicles',
+                             type=type, feature=populations, feature_label='Population')
     # fig.show()
     fig_name = './results/all/plots/frequencies/'+dict_number_types[type]+'_bar_mu_st.png'
     fig.savefig(fig_name, bbox_inches='tight')
