@@ -98,7 +98,7 @@ def get_capital_cities():
 
 def get_capitals_with_central_station_node():
     result = {'athens': 461, 'berlin': 146, 'dublin': 332, 'helsinki': 22, 'lisbon': 1490, 'luxembourg': 1356,
-              'paris': 953, 'prague': 94, 'rome': 196, 'sydney': 36611}
+              'paris': 953, 'prague': 94, 'rome': 477, 'sydney': 36611}
     return result
 
 
@@ -932,6 +932,37 @@ def plot_distances_fractions(fractions):
               ncol=3, mode="expand", borderaxespad=0.1)
 
     return fig
+
+
+def get_peripheral_nodes(net, coords, distances_eu, json_file=None):
+
+    if json_file is not None:
+        return load_json(json_file)
+
+    peripheral_dict = {node: True for node in distances_eu.keys()}
+
+    for edge in net.edges():
+        if edge[0] in peripheral_dict and edge[1] in peripheral_dict:
+            # a, b = int(edge[0]), int(edge[1])
+            if distances_eu[edge[0]] > distances_eu[edge[1]]:
+                peripheral_dict[edge[1]] = False
+            if distances_eu[edge[0]] < distances_eu[edge[1]]:
+                peripheral_dict[edge[0]] = False
+
+    peripheral_list = [node for node, flag in peripheral_dict.items() if flag is True]
+
+    print('Reached nodes = %d, first peripherals = %d' % (len(peripheral_dict), len(peripheral_list)))
+    max_eu_distance = max(distances_eu.values())
+    d = max_eu_distance/10
+    for v in peripheral_list:
+        for w in peripheral_list:
+            if v != w:
+                if geodesic(coords[v], coords[w]).km < d:
+                    # compare the distances of the two nodes from the center
+                    if distances_eu[v] < distances_eu[w]:
+                        peripheral_dict[v] = False
+
+    return peripheral_dict
 
 
 ''' FREQUENCY ANALYSIS '''
