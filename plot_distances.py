@@ -112,7 +112,7 @@ if __name__ == '__main__':
         # fig_name = dir_plots+'network_peripheral_nodes.png'
         # fig.savefig(fig_name)
 
-    # nf.dump_json('results/all/json/parameter_distances.json', mu_st)
+    nf.dump_json('results/all/json/parameter_distances.json', mu_st)
     #
     # for cluster, values in clusters.items():
     #

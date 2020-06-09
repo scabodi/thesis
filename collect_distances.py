@@ -23,7 +23,7 @@ if __name__ == '__main__':
     central_nodes = {}
 
     n_core_nodes = 20
-    dump = True  # put True if you want to save again values into json file
+    dump = False  # put True if you want to save again values into json file
 
     df = pd.DataFrame(columns=['City', 'N', 'comp 1', 'comp 2', 'comp 3', 'comp 4', 'n comp'])
     df['City'] = cities
@@ -56,44 +56,44 @@ if __name__ == '__main__':
 
         city_bfs, city_ed = [], []
 
-        # ''' Analysis on connected components '''
-        # df.loc[[city], ['N']] = n_nodes
-        # connected_components = sorted(nx.connected_components(net), key=len, reverse=True)
-        # df.loc[[city], ['n comp']] = len(connected_components)
-        # for i, cc in enumerate(connected_components, 1):
-        #     sub_net = net.subgraph(cc)
-        #     fig, ax = nf.plot_network(sub_net)
-        #     n_nodes_cc = len(cc)
-        #     if 'comp '+str(i) in df.columns:
-        #         df.loc[[city], ['comp '+str(i)]] = n_nodes_cc
-        #     ax.set_title(city+' component with %d nodes out of %d' % (n_nodes_cc, n_nodes))
-        #     fig.savefig(dir_components+'component_%d' % i, bbox_inches='tight')
+        ''' Analysis on connected components '''
+        df.loc[[city], ['N']] = n_nodes
+        connected_components = sorted(nx.connected_components(net), key=len, reverse=True)
+        df.loc[[city], ['n comp']] = len(connected_components)
+        for i, cc in enumerate(connected_components, 1):
+            sub_net = net.subgraph(cc)
+            fig, ax = nf.plot_network(sub_net)
+            n_nodes_cc = len(cc)
+            if 'comp '+str(i) in df.columns:
+                df.loc[[city], ['comp '+str(i)]] = n_nodes_cc
+            ax.set_title(city+' component with %d nodes out of %d' % (n_nodes_cc, n_nodes))
+            fig.savefig(dir_components+'component_%d' % i, bbox_inches='tight')
 
         max_component = max(nx.connected_component_subgraphs(net), key=len)
         coords = nx.get_node_attributes(max_component, 'pos')
         coords_for_geopy = nx.get_node_attributes(net, 'coords')
 
-        # ''' Breadth first visit of the graph starting from a random node - repeated 20 times '''
-        # for i in range(n_core_nodes):
-        #
-        #     core_node = rd.choice(list(max_component.nodes()))
-        #     # print("Core node = %d" % core_node)
-        #     '''
-        #     for each core node visit the network and record 2 types of distances for each reached node:
-        #         1. bfs - minimum hop not minimum distance
-        #         2. euclidean distance
-        #     all in km
-        #     maybe visit a weighted graph with dijskstra
-        #     '''
-        #     level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, core_node, coords_for_geopy)
-        #
-        #     # bfs, ed = nf.get_all_distances(net, core_node)
-        #     # concatenate those list to city ones
-        #     city_bfs.extend(distances_bfs.values())
-        #     city_ed.extend(distances_eu.values())
-        #
-        # distances_info['bfs'].append(city_bfs)
-        # distances_info['eu'].append(city_ed)
+        ''' Breadth first visit of the graph starting from a random node - repeated 20 times '''
+        for i in range(n_core_nodes):
+
+            core_node = rd.choice(list(max_component.nodes()))
+            # print("Core node = %d" % core_node)
+            '''
+            for each core node visit the network and record 2 types of distances for each reached node:
+                1. bfs - minimum hop not minimum distance
+                2. euclidean distance
+            all in km
+            maybe visit a weighted graph with dijskstra
+            '''
+            level, parent, distances_bfs, distances_eu = nf.bfs_with_distance(net, core_node, coords_for_geopy)
+
+            # bfs, ed = nf.get_all_distances(net, core_node)
+            # concatenate those list to city ones
+            city_bfs.extend(distances_bfs.values())
+            city_ed.extend(distances_eu.values())
+
+        distances_info['bfs'].append(city_bfs)
+        distances_info['eu'].append(city_ed)
 
         central_node = nf.get_central_node(coords)[city]
         central_nodes[city] = central_node
@@ -105,14 +105,14 @@ if __name__ == '__main__':
                                                                                         eu_list=distances_eu.values())
 
         '''find peripheral nodes '''
-        # peripheral_dict = nf.get_peripheral_nodes(net=net, coords=coords_for_geopy, distances_eu=distances_eu,
-        #                                           json_file=dir_json + 'peripheral_nodes.json')
+        peripheral_dict = nf.get_peripheral_nodes(net=net, coords=coords_for_geopy, distances_eu=distances_eu,
+                                                  json_file=dir_json + 'peripheral_nodes.json')
         if dump:
             nf.dump_json(bfs_central, distances_bfs)
             nf.dump_json(eu_central, distances_eu)
             nf.dump_json(bfs_close_json, close_distances)
             nf.dump_json(bfs_far_json, far_distances)
-            # nf.dump_json(dir_json + 'peripheral.json', peripheral_dict)
+            nf.dump_json(dir_json + 'peripheral.json', peripheral_dict)
 
         if city in capitals:
             ''' Plot geo central node and POI central node '''
@@ -132,14 +132,14 @@ if __name__ == '__main__':
                 nf.dump_json(dir_json + 'capital_bfs_close.json', close_distances)
                 nf.dump_json(dir_json + 'capital_bfs_far.json', far_distances)
 
-    # if dump:
-    #     nf.dump_json(bfs_json, distances_info['bfs'])
-    #     nf.dump_json(eu_json, distances_info['eu'])
-    #     nf.dump_json(central_nodes_json, central_nodes)
+    if dump:
+        nf.dump_json(bfs_json, distances_info['bfs'])
+        nf.dump_json(eu_json, distances_info['eu'])
+        nf.dump_json(central_nodes_json, central_nodes)
 
-    # print(df)
-    # df1 = df.replace(np.nan, '', regex=True)
-    # df1.style.set_properties(**{'text-align': 'center'})
-    # html_string = nf.get_html_string()
-    # with open('./results/all/tables/components_html.html', 'w') as f:
-    #     f.write(html_string.format(table=df1.to_html(classes='mystyle')))
+    print(df)
+    df1 = df.replace(np.nan, '', regex=True)
+    df1.style.set_properties(**{'text-align': 'center'})
+    html_string = nf.get_html_string()
+    with open('./results/all/tables/components_html.html', 'w') as f:
+        f.write(html_string.format(table=df1.to_html(classes='mystyle')))

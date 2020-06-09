@@ -98,7 +98,7 @@ def get_capital_cities():
 
 def get_capitals_with_central_station_node():
     result = {'athens': 461, 'berlin': 146, 'dublin': 332, 'helsinki': 22, 'lisbon': 1490, 'luxembourg': 1356,
-              'paris': 953, 'prague': 94, 'rome': 477, 'sydney': 36611}
+              'paris': 953, 'prague': 484, 'rome': 477, 'sydney': 36611}
     return result
 
 
