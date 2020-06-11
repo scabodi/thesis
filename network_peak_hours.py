@@ -3,6 +3,7 @@ import network_functions as nf
 import pandas as pd
 import matplotlib.pyplot as plt
 import networkx as nx
+import os
 
 
 def plot_network_with_nodes_colormap(net, measure_name, max, title, type):
@@ -42,77 +43,95 @@ def plot_network_with_nodes_colormap(net, measure_name, max, title, type):
     return fig
 
 
-# for each city and type of transport, add two counters (one for peak hour and the other for avg hour)
-# to each node of the network and increase them when the start node is in that hour
+def set_net_attributes_and_plot(net, attr_name, attr_dict, type, dir_plots, dict_number_types):
 
-cities = nf.get_list_cities_names()
-types_and_colors = nf.get_types_of_transport_and_colors()
-dict_number_types = nf.get_dict_number_type_of_transport()
-time_zones = nf.get_dict_cities_time_zones()
+    # add attributes to nodes in the network
+    nx.set_node_attributes(net, attr_name, attr_dict[type])
+    max_peak = max(attr_dict[type].values())
 
-json_file = './results/all/json/peak_mean_info.json'
-peak_mean_info = nf.load_json(json_file)
+    # plot network with colors based on the value of the attribute
+    title = city + ' '+attr_name+' ' + dict_number_types[type] + ' transport network'
+    fig = plot_network_with_nodes_colormap(net, attr_name, max_peak, title, type)
+    if fig is not None:
+        fig_name = dir_plots + dict_number_types[type] + '_'+attr_name+'.png'
+        fig.savefig(fig_name, bbox_inches='tight')
 
-for city in cities:
 
-    print('Processing '+city+' ...')
-    data_file = './data/'+city+'/network_temporal_day.csv'
-    prefix = './results/'+city+'/'
-    # for each city create a dictionary of the frequencies of vehicles divided by type of transport
+if __name__ == '__main__':
 
-    route_types = nf.get_types_for_city(data_file)
-    # dictionary for the different time slots and type of transportation
-    frequency_dict = {type: {} for type in route_types}
+    cities = nf.get_list_cities_names()
+    types_and_colors = nf.get_types_of_transport_and_colors()
+    dict_number_types = nf.get_dict_number_type_of_transport()
+    time_zones = nf.get_dict_cities_time_zones()
 
-    net = nf.create_network(city, types=types_and_colors)
-    nodes = net.nodes()
-    peak_hour_dict = {type: {node: 0 for node in nodes} for type in route_types}
-    mean_hour_dict = {type: {node: 0 for node in nodes} for type in route_types}
+    json_file = './results/all/json/peak_mean_info.json'
+    peak_mean_info = nf.load_json(json_file)
 
-    daily_info = pd.read_csv(data_file, delimiter=";")
-    df = pd.DataFrame(daily_info, columns=['from_stop_I', 'to_stop_I', 'dep_time_ut', 'arr_time_ut', 'route_type',
-                                           'trip_I', 'route_I'])
+    for city in cities:
 
-    # lines = set()  # for now just for bus transport network
-    time_zone = time_zones[city]*3600  # seconds to add or subtract from unix time
-    for index, row in df.iterrows():
-        start = row['from_stop_I']
-        end = row['to_stop_I']
-        unix_time = int(row['dep_time_ut'])+time_zone
-        type = str(row['route_type'])
-        trip_id = str(row['trip_I'])
+        print('Processing '+city+' ...')
 
-        timestamp = ' '.join(time.ctime(unix_time).split())
-        # print(timestamp)
-        hour = int(timestamp.split(' ')[3][:2])
-        if hour in peak_mean_info[type][city]:
-            # increase correct counter
-            index = peak_mean_info[type][city].index(hour)
-            if index == 0:
-                # peak hour
-                peak_hour_dict[int(type)][start] += 1
-            else:
-                mean_hour_dict[int(type)][start] += 1
+        data_file = './data/'+city+'/network_temporal_day.csv'
+        dir_plots = './results/' + city + '/frequency_analysis/plots/'
+        if not os.path.exists(dir_plots):
+            os.makedirs(dir_plots)
 
-    for type in route_types:
-        # add attributes to nodes in the network
-        nx.set_node_attributes(net, 'peak_hour', peak_hour_dict[type])
-        max_peak = max(peak_hour_dict[type].values())
-        # plot network with colors based on the value of the attribute
-        title = city+' peak hour ' + dict_number_types[type] + ' transport network'
-        fig = plot_network_with_nodes_colormap(net, 'peak_hour', max_peak, title, type)
-        if fig is not None:
-            fig_name = prefix+dict_number_types[type]+'_peak_hour.png'
-            fig.savefig(fig_name, bbox_inches='tight')
-            # fig.show()
-            # plt.close()
+        route_types = nf.get_types_for_city(data_file)
 
-        # do the same thing for the mean hour values
-        nx.set_node_attributes(net, 'mean_hour',  mean_hour_dict[type])
-        title = city + ' average hour ' + dict_number_types[type] + ' transport network'
-        fig = plot_network_with_nodes_colormap(net, 'mean_hour', max_peak, title, type)
-        if fig is not None:
-            fig_name = prefix + dict_number_types[type] + '_mean_hour.png'
-            fig.savefig(fig_name, bbox_inches='tight')
-            # fig.show()
-        plt.close('all')
+        net = nf.create_network(city, types=types_and_colors)
+        nodes = net.nodes()
+        # create two dictionaries {key = type of transport, value = {key=node, value=counter}
+        # the counter is incremented when the start node is in that hour
+        peak_hour_dict = {type: {node: 0 for node in nodes} for type in route_types}
+        mean_hour_dict = {type: {node: 0 for node in nodes} for type in route_types}
+
+        daily_info = pd.read_csv(data_file, delimiter=";")
+        df = pd.DataFrame(daily_info, columns=['from_stop_I', 'to_stop_I', 'dep_time_ut', 'arr_time_ut', 'route_type',
+                                               'trip_I', 'route_I'])
+
+        time_zone = time_zones[city]*3600  # seconds to add or subtract from unix time
+        for index, row in df.iterrows():
+            start = row['from_stop_I']
+            end = row['to_stop_I']
+            unix_time = int(row['dep_time_ut'])+time_zone
+            type = str(row['route_type'])
+            trip_id = str(row['trip_I'])
+
+            timestamp = ' '.join(time.ctime(unix_time).split())
+            # print(timestamp)
+            hour = int(timestamp.split(' ')[3][:2])
+            if hour in peak_mean_info[type][city]:
+                # increase correct counter
+                index = peak_mean_info[type][city].index(hour)
+                if index == 0:
+                    # peak hour
+                    peak_hour_dict[int(type)][start] += 1
+                else:
+                    mean_hour_dict[int(type)][start] += 1
+
+        for type in route_types:
+            # add attributes to nodes in the network
+            nx.set_node_attributes(net, 'peak_hour', peak_hour_dict[type])
+            max_peak = max(peak_hour_dict[type].values())
+            # plot network with colors based on the value of the attribute
+            title = city+' peak hour ' + dict_number_types[type] + ' transport network'
+            fig = plot_network_with_nodes_colormap(net, 'peak_hour', max_peak, title, type)
+            if fig is not None:
+                fig_name = dir_plots + dict_number_types[type] + '_peak_hour.png'
+                fig.savefig(fig_name, bbox_inches='tight')
+                if os.path.exists('./results/' + city + '/' + dict_number_types[type] + '_peak_hour.png'):
+                    os.remove('./results/' + city + '/' + dict_number_types[type] + '_peak_hour.png')
+                # fig.show()
+                # plt.close()
+
+            # do the same thing for the mean hour values
+            nx.set_node_attributes(net, 'mean_hour',  mean_hour_dict[type])
+            title = city + ' average hour ' + dict_number_types[type] + ' transport network'
+            fig = plot_network_with_nodes_colormap(net, 'mean_hour', max_peak, title, type)
+            if fig is not None:
+                fig_name = dir_plots + dict_number_types[type] + '_mean_hour.png'
+                fig.savefig(fig_name, bbox_inches='tight')
+                if os.path.exists('./results/' + city + '/' + dict_number_types[type] + '_mean_hour.png'):
+                    os.remove('./results/' + city + '/' + dict_number_types[type] + '_mean_hour.png')
+                # fig.show()
+            plt.close('all')

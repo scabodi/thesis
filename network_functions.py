@@ -985,7 +985,7 @@ def darken_color(r, g, b, factor=0.1):
     return adjust_color_lightness(r, g, b, 1 - factor)
 
 
-def plot_bar_frequencies(d, color, path, title):
+def plot_bar_frequencies(d, color, title):
     colors = [color]*len(d)
     d_morning = dict(list(d.items())[:12])
     d_afternoon = dict(list(d.items())[12:])
@@ -1005,10 +1005,6 @@ def plot_bar_frequencies(d, color, path, title):
     plt.title(title)
     plt.xlabel('Hours')
     plt.ylabel('Number of vehicles')
-    # plt.xticks(d.values(), d.keys())
-    plt.savefig(path)
-    plt.show()
-    plt.close()
 
 
 def plot_distribution_frequency(f_list, color):
@@ -1021,7 +1017,7 @@ def plot_distribution_frequency(f_list, color):
     sns.set(style="white", palette="muted", color_codes=True)
     sns.distplot(f_list, color=color, label="\u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=15)
 
-    plt.xlabel('Frequency')
+    plt.xlabel('Number of vehicles per hour')
     plt.ylabel('Probability')
     plt.legend(loc='upper right')
 
