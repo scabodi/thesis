@@ -1118,11 +1118,11 @@ def plot_network_with_nodes_colormap(net, measure_name, max, title):
     return fig
 
 
-def set_net_attributes_and_plot(net, city, attr_name, attr_dict, type, dir_plots, type_of_transport):
+def set_net_attributes_and_plot(net, city, attr_name, attr_dict, dir_plots, type_of_transport, max_peak):
 
     # add attributes to nodes in the network
-    nx.set_node_attributes(net, attr_name, attr_dict[type])
-    max_peak = max(attr_dict[type].values())
+    nx.set_node_attributes(net, attr_name, attr_dict)
+    # max_peak = max(attr_dict[type].values())
 
     # plot network with colors based on the value of the attribute
     title = city + ' '+attr_name+' ' + type_of_transport + ' transport network'

@@ -3,6 +3,7 @@ import network_functions as nf
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import networkx as nx
 
 
 if __name__ == '__main__':
@@ -76,11 +77,14 @@ if __name__ == '__main__':
             if not os.path.exists(dir_type):
                 os.makedirs(dir_type)
 
+            max_peak = max(peak_hour_dict[str(type)].values())
             # set attributes and plot network with colormap depending on number of vehicles in PEAK HOUR
-            nf.set_net_attributes_and_plot(net=net, city=city, attr_name='peak_hour', attr_dict=peak_hour_dict,
-                                           type=str(type), dir_plots=dir_type, type_of_transport=type_of_transport)
+            nf.set_net_attributes_and_plot(net=net, city=city, attr_name='peak_hour',
+                                           attr_dict={int(k): v for k, v in peak_hour_dict[str(type)].items()},
+                                           dir_plots=dir_type, type_of_transport=type_of_transport, max_peak=max_peak)
 
             # do the same for MEAN HOUR
-            nf.set_net_attributes_and_plot(net=net, city=city, attr_name='mean_hour', attr_dict=mean_hour_dict,
-                                           type=str(type), dir_plots=dir_type, type_of_transport=type_of_transport)
+            nf.set_net_attributes_and_plot(net=net, city=city, attr_name='mean_hour',
+                                           attr_dict={int(k): v for k, v in mean_hour_dict[str(type)].items()},
+                                           dir_plots=dir_type, type_of_transport=type_of_transport, max_peak=max_peak)
             plt.close('all')
