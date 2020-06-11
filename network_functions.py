@@ -1131,9 +1131,6 @@ def set_net_attributes_and_plot(net, city, attr_name, attr_dict, type, dir_plots
         # fig.show()
         fig_name = dir_plots + type_of_transport + '_'+attr_name+'.png'
         fig.savefig(fig_name, bbox_inches='tight')
-        # TODO remove
-        if os.path.exists('./results/' + city + '/distances_histo.png'):
-            os.remove('./results/' + city + '/distances_histo.png')
 
 
 def get_mean_and_peak_hour(frequency_dict, route_type):
