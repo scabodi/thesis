@@ -781,7 +781,7 @@ def bfs_with_distance(graph, vertex, coords):
 def add_weights_to_network(net):
 
     w_dict = {}
-    coords = nx.get_node_attributes(net, 'pos')
+    coords = nx.get_node_attributes(net, 'coords')
     for e in net.edges():
         w = geodesic(coords[e[0]], coords[e[1]]).km
         w_dict[e] = w
