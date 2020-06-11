@@ -986,6 +986,7 @@ def darken_color(r, g, b, factor=0.1):
 
 
 def plot_bar_frequencies(d, color, title):
+
     colors = [color]*len(d)
     d_morning = dict(list(d.items())[:12])
     d_afternoon = dict(list(d.items())[12:])
@@ -999,12 +1000,15 @@ def plot_bar_frequencies(d, color, title):
 
     colors[m_morning] = darker
     colors[m_afternoon] = darker
-    # fig = plt.figure()
-    plt.close()
-    plt.bar(*zip(*d.items()), color=colors, alpha=0.5)
-    plt.title(title)
-    plt.xlabel('Hours')
-    plt.ylabel('Number of vehicles')
+
+    fig, ax = plt.subplots()
+    ax.bar(*zip(*d.items()), color=colors, alpha=0.5)
+    ax.set_title(title)
+    ax.set_xlabel('Hours')
+    ax.set_ylabel('Number of vehicles')
+    fig.tight_layout()
+
+    return fig
 
 
 def plot_distribution_frequency(f_list, color):
@@ -1014,8 +1018,10 @@ def plot_distribution_frequency(f_list, color):
 
     fig = plt.figure()
 
-    sns.set(style="white", palette="muted", color_codes=True)
-    sns.distplot(f_list, color=color, label="\u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=15)
+    sns.set_style("white")
+    # kwargs = dict(hist_kws={'alpha': .6}, kde_kws={'linewidth': 2})
+    # sns.set(style="white", palette="muted", color_codes=True)
+    sns.distplot(f_list, color=color, label="\u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=len(f_list))
 
     plt.xlabel('Number of vehicles per hour')
     plt.ylabel('Probability')
@@ -1071,3 +1077,75 @@ def plot_bars_mu_st(labels, mus, sts, ylabel, title=None, type=3, feature=None, 
     fig.tight_layout()
 
     return fig
+
+
+def plot_network_with_nodes_colormap(net, measure_name, max, title):
+    """
+    Plot city network with nodes colored depending on centrality measure (NOTE: not all nodes!)
+
+    :param net: networkx obj
+    :param measure_name: str - type of centrality measure
+    :param max: max value
+    :param title: str - title of the figure
+
+    :return: fig
+    """
+
+    fig = plt.figure(figsize=(12, 12))
+
+    measures = [net.node[n][measure_name] for n in net.nodes()]
+    # top_20_percent = measures
+    # if type == 3:
+    #     top_20_percent = nf.get_ordered_x_percent(measures, 0.5)
+
+    sub_nodes, top = [], []
+    for node, measure in zip(net.nodes(), measures):
+        if measure > 0:
+            top.append(measure)
+            sub_nodes.append(node)
+
+    if not sub_nodes:
+        return None
+    nodes = nx.draw_networkx_nodes(net, pos=nx.get_node_attributes(net, 'pos'), node_size=50, cmap=plt.cm.plasma,
+                                   node_color=top, alpha=0.8, vmax=max,
+                                   nodelist=sub_nodes)
+
+    nx.draw_networkx_edges(net, pos=nx.get_node_attributes(net, 'pos'), alpha=0.2)
+
+    plt.title(title)
+    fig.colorbar(nodes)
+    plt.axis('off')
+    return fig
+
+
+def set_net_attributes_and_plot(net, city, attr_name, attr_dict, type, dir_plots, type_of_transport):
+
+    # add attributes to nodes in the network
+    nx.set_node_attributes(net, attr_name, attr_dict[type])
+    max_peak = max(attr_dict[type].values())
+
+    # plot network with colors based on the value of the attribute
+    title = city + ' '+attr_name+' ' + type_of_transport + ' transport network'
+    fig = plot_network_with_nodes_colormap(net, attr_name, max_peak, title)
+    if fig is not None:
+        # fig.show()
+        fig_name = dir_plots + type_of_transport + '_'+attr_name+'.png'
+        fig.savefig(fig_name, bbox_inches='tight')
+        # TODO remove
+        if os.path.exists('./results/' + city + '/distances_histo.png'):
+            os.remove('./results/' + city + '/distances_histo.png')
+
+
+def get_mean_and_peak_hour(frequency_dict, route_type):
+
+    peak_hour = max(frequency_dict[route_type], key=frequency_dict[route_type].get)
+
+    # save info about peak hour of the city and the mean value
+    mean = st.mean(frequency_dict[route_type].values())
+    values = frequency_dict[route_type].values()
+    closest_value = min(values, key=lambda list_value: abs(list_value - mean))
+    # closest_key = int([k for k, v in frequency_dict[i].items() if v == closest_value])
+    closest_key = str(list(frequency_dict[route_type].keys())
+                      [list(frequency_dict[route_type].values()).index(closest_value)])
+
+    return peak_hour, closest_key
