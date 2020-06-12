@@ -28,20 +28,20 @@ if __name__ == '__main__':
 
     ''' Order all dictionaries based on means of frequency for each city'''
     ordered_means, ordered_stdev, area_population_dict_ordered = {}, {}, {}
-    for k, v in means.items():
-        ordered_means[k] = nf.order_dict_based_on_values(v)
-    labels = ordered_means[3].keys()
-    for k, v in stdev.items():
-        ordered_stdev[k] = nf.order_dict_based_on_list_keys(v, labels, True)
-    area_population_dict_ordered = nf.order_dict_based_on_list_keys(area_population_dict, labels)
+    for type_of_transport in means.keys():
+        ordered_means[type_of_transport] = nf.order_dict_based_on_values(means[type_of_transport])
+        ordered_stdev[type_of_transport] = nf.order_dict_based_on_list_keys(stdev[type_of_transport],
+                                                                            ordered_means[type_of_transport].keys())
 
     ''' Plot bars for mean and standard deviations with population info - all cities divided by type of transport '''
     for type in means.keys():
 
-        populations = [v['population'] for k, v in area_population_dict_ordered.items() if k in
-                       ordered_means[type].keys()]
+        labels = ordered_means[type].keys()
+        area_population_dict_ordered = nf.order_dict_based_on_list_keys(area_population_dict, labels, True)
+        populations = [v['population'] for k, v in area_population_dict_ordered.items()
+                       if k in ordered_means[type].keys()]
 
-        fig = nf.plot_bars_mu_st(labels=ordered_means[type].keys(), mus=ordered_means[type].values(),
+        fig = nf.plot_bars_mu_st(labels=labels, mus=ordered_means[type].values(),
                                  sts=ordered_stdev[type].values(), ylabel='Number of vehicles',
                                  type=type, feature=populations, feature_label='Population')
         # fig.show()
