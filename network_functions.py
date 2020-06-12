@@ -1018,15 +1018,16 @@ def plot_distribution_frequency(f_list, color):
 
     fig = plt.figure()
 
-    # sns.set_style("white")
-    # kwargs = dict(hist_kws={'alpha': .6}, kde_kws={'linewidth': 2})
-    # sns.set(style="white", palette="muted", color_codes=True)
+    plt.rcParams["patch.force_edgecolor"] = True
+
     sns.distplot(f_list, color=color, label="\u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=len(f_list),
                  hist_kws=dict(edgecolor="white", linewidth=2))
 
     plt.xlabel('Number of vehicles per hour')
     plt.ylabel('Probability')
     plt.legend(loc='upper right')
+
+    plt.rcParams["patch.force_edgecolor"] = False
 
     return fig
 

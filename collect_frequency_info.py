@@ -24,8 +24,6 @@ if __name__ == '__main__':
     df_btn['City'] = cities
     df_btn.set_index("City", inplace=True)
 
-    plt.rcParams["patch.force_edgecolor"] = True
-
     for city in cities:
 
         print('Processing '+city+' ...')
