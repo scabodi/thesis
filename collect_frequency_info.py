@@ -24,6 +24,8 @@ if __name__ == '__main__':
     df_btn['City'] = cities
     df_btn.set_index("City", inplace=True)
 
+    plt.rcParams["patch.force_edgecolor"] = True
+
     for city in cities:
 
         print('Processing '+city+' ...')
@@ -39,13 +41,12 @@ if __name__ == '__main__':
         json_path = dir_json + 'frequencies_info.json'
 
         route_types = nf.get_types_for_city(data_file)
-        frequency_dict, lines = {}, []
+        frequency_dict, lines = {type: {} for type in route_types}, []
 
         if dump:
             ''' for each city create a dictionary of the frequencies of vehicles divided by type of transport 
                 key = type of transport, value = {key = time slot, value = number of vehicles}'''
             # dictionary for the different time slots and type of transportation
-            frequency_dict = {type: {} for type in route_types}
             slots = [str(n).zfill(2) for n in range(24)]     # [00, 01, 02...] time slots of 1 hour each
 
             for i in route_types:
@@ -90,7 +91,9 @@ if __name__ == '__main__':
                     frequency_dict[i][hour] = len(set_trip_ids)
 
                 ''' Find and save info about peak hour and mean hour '''
-                peak_hour, mean_hour = nf.get_mean_and_peak_hour(frequency_dict=frequency_dict, route_type=i)
+                f_list = [x for x in frequency_dict[i].values() if x > 0]
+                peak_hour, mean_hour = nf.get_mean_and_peak_hour(frequencies=f_list, frequency_dict=frequency_dict,
+                                                                 route_type=i)
                 if str(i) not in peak_mean_info:
                     peak_mean_info[str(i)] = {}
                 peak_mean_info[str(i)][city] = [int(peak_hour), int(mean_hour)]
@@ -103,12 +106,14 @@ if __name__ == '__main__':
             ''' Plot #vehicles for each hour for each type of transport and city '''
             title = city+' '+dict_number_types[i]+' transport network'
             fig = nf.plot_bar_frequencies(frequency_dict[i], types_and_colors[i], title)
+            # fig.show()
             fig_name = dir_type + dict_number_types[i] + '_frequency_plot.png'
             fig.savefig(fig_name)
 
             '''Plot of distributions of frequencies - all type of transport distributions'''
             f_list = [x for x in frequency_dict[i].values() if x > 0]
             fig = nf.plot_distribution_frequency(f_list, types_and_colors[i])
+            # fig.show()
             fig_name = dir_type + dict_number_types[i] + '_distribution_plot.png'
             fig.savefig(fig_name, bbox_inches='tight')
             plt.close('all')

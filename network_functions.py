@@ -1018,10 +1018,11 @@ def plot_distribution_frequency(f_list, color):
 
     fig = plt.figure()
 
-    sns.set_style("white")
+    # sns.set_style("white")
     # kwargs = dict(hist_kws={'alpha': .6}, kde_kws={'linewidth': 2})
     # sns.set(style="white", palette="muted", color_codes=True)
-    sns.distplot(f_list, color=color, label="\u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=len(f_list))
+    sns.distplot(f_list, color=color, label="\u03BC=%.2f, \u03C3=%.2f" % (mu1, sd1), bins=len(f_list),
+                 hist_kws=dict(edgecolor="white", linewidth=2))
 
     plt.xlabel('Number of vehicles per hour')
     plt.ylabel('Probability')
@@ -1133,14 +1134,28 @@ def set_net_attributes_and_plot(net, city, attr_name, attr_dict, dir_plots, type
         fig.savefig(fig_name, bbox_inches='tight')
 
 
-def get_mean_and_peak_hour(frequency_dict, route_type):
+# def get_mean_and_peak_hour(frequency_dict, route_type):
+#
+#     peak_hour = max(frequency_dict[route_type], key=frequency_dict[route_type].get)
+#
+#     # save info about peak hour of the city and the mean value
+#     mean = st.mean(frequency_dict[route_type].values())
+#     values = frequency_dict[route_type].values()
+#     closest_value = min(values, key=lambda list_value: abs(list_value - mean))
+#     # closest_key = int([k for k, v in frequency_dict[i].items() if v == closest_value])
+#     closest_key = str(list(frequency_dict[route_type].keys())
+#                       [list(frequency_dict[route_type].values()).index(closest_value)])
+#
+#     return peak_hour, closest_key
+
+
+def get_mean_and_peak_hour(frequencies, frequency_dict, route_type):
 
     peak_hour = max(frequency_dict[route_type], key=frequency_dict[route_type].get)
 
     # save info about peak hour of the city and the mean value
-    mean = st.mean(frequency_dict[route_type].values())
-    values = frequency_dict[route_type].values()
-    closest_value = min(values, key=lambda list_value: abs(list_value - mean))
+    mean = st.mean(frequencies)
+    closest_value = min(frequencies, key=lambda list_value: abs(list_value - mean))
     # closest_key = int([k for k, v in frequency_dict[i].items() if v == closest_value])
     closest_key = str(list(frequency_dict[route_type].keys())
                       [list(frequency_dict[route_type].values()).index(closest_value)])
