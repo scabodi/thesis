@@ -21,8 +21,8 @@ if __name__ == '__main__':
             type = int(type_of_transport)
             if type not in means and type not in stdev:
                 means[type], stdev[type] = {}, {}
-            # values = [x for x in dict_values.values() if x > 0]
-            values = dict_hour_freq.values()
+            values = [x for x in dict_hour_freq.values() if x > 0]
+            # values = dict_hour_freq.values()
             means[type][city] = st.mean(values)
             stdev[type][city] = st.stdev(values)
 
