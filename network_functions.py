@@ -102,6 +102,26 @@ def get_capitals_with_central_station_node():
     return result
 
 
+def get_continents_dict():
+    result = {'America': ['antofagasta', 'detroit', 'winnipeg'],
+              'Europe': ['athens', 'belfast', 'berlin', 'bordeaux', 'dublin', 'grenoble', 'helsinki', 'kuopio',
+                         'lisbon', 'luxembourg', 'nantes', 'palermo', 'paris', 'prague', 'rennes', 'rome',
+                         'toulouse', 'turku', 'venice'],
+              'Oceania': ['adelaide', 'brisbane', 'canberra', 'melbourne', 'sydney']}
+    return result
+
+
+def get_city_continent_dict():
+    result = {'adelaide': 'Oceania', 'antofagasta': 'America', 'athens': 'Europe', 'belfast': 'Europe',
+              'berlin': 'Europe', 'bordeaux': 'Europe', 'brisbane': 'Oceania', 'canberra': 'Oceania',
+              'detroit': 'America', 'dublin': 'Europe', 'grenoble': 'Europe', 'helsinki': 'Europe',
+              'kuopio': 'Europe', 'lisbon': 'Europe', 'luxembourg': 'Europe', 'melbourne': 'Oceania',
+              'nantes': 'Europe', 'palermo': 'Europe', 'paris': 'Europe', 'prague': 'Europe', 'rennes': 'Europe',
+              'rome': 'Europe', 'sydney': 'Oceania', 'toulouse': 'Europe', 'turku': 'Europe', 'venice': 'Europe',
+              'winnipeg': 'America'}
+    return result
+
+
 def centeroid_np(arr):
     length = arr.shape[0]
     sum_x = np.sum(arr[:, 0])

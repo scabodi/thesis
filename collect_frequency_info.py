@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     peak_mean_info = {}
 
-    dump = False
+    dump = True
 
     pd.set_option('colheader_justify', 'center')
     # dataframe for info about all BTNs
@@ -52,8 +52,8 @@ if __name__ == '__main__':
 
             ''' Read the temporal information from network_temporal_day.csv '''
             daily_info = pd.read_csv(data_file, delimiter=";")
-            df = pd.DataFrame(daily_info, columns=['from_stop_I', 'to_stop_I', 'dep_time_ut', 'arr_time_ut', 'route_type',
-                                                   'trip_I', 'route_I'])
+            df = pd.DataFrame(daily_info, columns=['from_stop_I', 'to_stop_I', 'dep_time_ut', 'arr_time_ut',
+                                                   'route_type', 'trip_I', 'route_I'])
 
             lines = set()  # just for bus transport network
             time_zone = time_zones[city]*3600  # seconds to add or subtract from unix time
@@ -145,3 +145,6 @@ if __name__ == '__main__':
         html_string = nf.get_html_string()
         with open('./results/all/tables/frequencies_html.html', 'w') as f:
             f.write(html_string.format(table=df_btn.to_html(classes='mystyle')))
+
+        dataframe_file = './results/all/tables/frequencies.csv'
+        df_btn.to_csv(dataframe_file)
