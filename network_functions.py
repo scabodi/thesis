@@ -738,18 +738,19 @@ def plot_multiple_distributions_with_colorbar_log_log_and_fitted_line(datavecs, 
     return fig
 
 
-def plot_two_columns_dataframe(df, col_x, col_y1, col_y2):
+def plot_two_columns_dataframe(df, col_x, col_y1, col_y2=None):
     fig, ax = plt.subplots()
-    ax2 = ax.twinx()
-    x, y1, y2 = df[col_x], df[col_y1], df[col_y2]
 
     df.plot(x=col_x, y=col_y1, ax=ax, kind='scatter')
-    df.plot(x=col_x, y=col_y2, ax=ax2, color='r', kind='scatter', marker='+')
+    if col_y2 is not None:
+        ax2 = ax.twinx()
+        x = df[col_x]
+        df.plot(x=col_x, y=col_y2, ax=ax2, color='r', kind='scatter', marker='+')
 
-    ax.set_xticks(x)
-    ax.set_xticklabels(x, rotation=70)
+        ax.set_xticks(x)
+        ax.set_xticklabels(x, rotation=70)
 
-    return fig
+    return fig, ax
 
 
 ''' DISTANCE ANALYSIS '''

@@ -67,7 +67,7 @@ if __name__ == '__main__':
 
         ''' Plot the <k> for each city '''
         df1 = df.sort_values(by=['A'])
-        fig = nf.plot_two_columns_dataframe(df1, 'City', '<k>', 'A')
+        fig, _ = nf.plot_two_columns_dataframe(df=df1, col_x='City', col_y1='<k>', col_y2='A')
         fig_name = 'results/all/plots/stats/avg_degree_vs_area.png'
         fig.savefig(fig_name, bbox_inches='tight')
 

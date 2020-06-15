@@ -32,10 +32,27 @@ if __name__ == '__main__':
         fig.savefig(fig_name)
 
         ''' Load centrality measures for specific city '''
-        json_path = 'results/'+city+'/centrality_measures.json'
+        json_path = 'results/'+city+'/centrality_measures/json/centrality_measures.json'
         centrality_measures = nf.load_json(json_path)
         for k, v in centrality_measures.items():
             centrality_dict[k].append(v)
+
+        ''' Scatter plots: betweenness vs closeness and betweenness vs eigenvector'''
+        df_centralities = pd.DataFrame.from_dict(centrality_measures)
+        fig, ax = nf.plot_two_columns_dataframe(df=df_centralities, col_x='betweenness', col_y1='closeness')
+        ax.set_title(city)
+        fig.show()
+        dir_scatter = './results/' + city + '/centrality_measures/scatter/'
+        if not os.path.exists(dir_scatter):
+            os.makedirs(dir_scatter)
+        fig_name = dir_scatter + 'betweenness_vs_closeness.png'
+        fig.savefig(fig_name)
+
+        fig, ax = nf.plot_two_columns_dataframe(df=df_centralities, col_x='betweenness', col_y1='eigenvector')
+        ax.set_title(city)
+        fig.show()
+        fig_name = dir_scatter + 'betweenness_vs_eigenvector.png'
+        fig.savefig(fig_name)
 
         ''' Plot ccdf of all measures of centrality considered for current city '''
         fig = nf.plot_ccdf(datavecs=list(centrality_measures.values()), labels=list(centrality_measures.keys()),
