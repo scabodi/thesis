@@ -246,13 +246,13 @@ def make_proxy(clr, **kwargs):
     return Line2D([0, 1], [0, 1], color=clr, **kwargs)
 
 
-def plot_network(net, node_list=None):
+def plot_network(net, node_dict=None):
     """
     Plot networkx object for the specified city
     Each edge has its color depending on the route type and the node shape is '' because they are not displayed
 
     :param net: networkx obj
-    :param node_list: nodes to be represented
+    :param node_dict: nodes to be represented with corresponding color
     """
     colors = nx.get_edge_attributes(net, 'color').values()
     all_colors = set(colors)
@@ -263,15 +263,21 @@ def plot_network(net, node_list=None):
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
 
-    if node_list is None:
+    if node_dict is None:
         nx.draw_networkx(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=5,
                          node_shape='', edge_color=colors, alpha=0.5)
         proxies = [make_proxy(clr, lw=5) for clr in edge_types.keys()]
         labels = [edge_type for clr, edge_type in edge_types.items()]
         plt.legend(proxies, labels)
     else:
-        nx.draw_networkx(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=100,
-                         nodelist=node_list, node_color='red', alpha=0.5, edge_color='gray')
+        nx.draw_networkx_nodes(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=100,
+                               nodelist=list(node_dict.keys()), node_color=list(node_dict.values()), alpha=0.8)
+        nx.draw_networkx_edges(net, pos=nx.get_node_attributes(net, 'pos'), edge_color='gray', alpha=0.2)
+        proxies = [make_proxy(clr, lw=5) for clr in set(node_dict.values())]
+        labels = ['peripheral', 'geographical centre']
+        if len(set(node_dict.values())) == 3:
+            labels.append('POI centre')
+        plt.legend(proxies, labels)
 
     # to change background color --> ax.set_facecolor('k')
     ax.get_xaxis().set_visible(False)
