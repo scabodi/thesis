@@ -157,8 +157,10 @@ if __name__ == '__main__':
         fig, ax = nf.plot_network(net, node_dict=peripheral_nodes)
         ax.set_title(city+' peripheral nodes (%d)' % n_peripheral)
         fig.show()
-        fig_name = dir_plots+'network_peripheral_nodes.png'
+        fig_name = dir_plots+city+'_network_peripheral_nodes.png'
         fig.savefig(fig_name)
+        if os.path.exists(dir_plots+'network_peripheral_nodes.png'):
+            os.remove(dir_plots+'network_peripheral_nodes.png')
 
     nf.dump_json('results/all/json/parameter_distances.json', mu_st)
 

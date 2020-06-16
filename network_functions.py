@@ -273,11 +273,11 @@ def plot_network(net, node_dict=None):
         nx.draw_networkx_nodes(net, ax=ax, pos=nx.get_node_attributes(net, 'pos'), with_labels=False, node_size=100,
                                nodelist=list(node_dict.keys()), node_color=list(node_dict.values()), alpha=0.8)
         nx.draw_networkx_edges(net, pos=nx.get_node_attributes(net, 'pos'), edge_color='gray', alpha=0.2)
-        proxies = [make_proxy(clr, lw=5) for clr in set(node_dict.values())]
-        labels = ['peripheral', 'geographical centre']
+        proxies = [make_proxy(clr, lw=5) for clr in sorted(set(node_dict.values()))]
+        labels = ['geographical centre', 'peripheral']
         if len(set(node_dict.values())) == 3:
-            labels.append('POI centre')
-        plt.legend(proxies, labels)
+            labels.insert(0, 'POI centre')
+        plt.legend(proxies, labels, loc='best')
 
     # to change background color --> ax.set_facecolor('k')
     ax.get_xaxis().set_visible(False)
