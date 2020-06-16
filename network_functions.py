@@ -944,6 +944,28 @@ def plot_distances_for_single_city(first, second, colors, labels, bins, xlabel, 
     return fig, params
 
 
+def plot_close_and_far_nodes_for_single_city(close_1, close_2, far_1, far_2, colors, labels, bins, xlabel, ylabel):
+
+    fig = plt.figure()
+
+    sns.set(style="white", palette="muted", color_codes=True)
+    sns.distplot(close_1, color=colors[0], label=labels[0]+' \u03BC=%.2f, \u03C3=%.2f'
+                 % (st.mean(close_1), st.stdev(close_1)), bins=bins[0])
+    sns.distplot(close_2, color=colors[1], label=labels[1] + ' \u03BC=%.2f, \u03C3=%.2f'
+                 % (st.mean(close_2), st.stdev(close_2)), bins=bins[0])
+    sns.distplot(far_1, color=colors[2], label=labels[2] + ' \u03BC=%.2f, \u03C3=%.2f'
+                 % (st.mean(far_1), st.stdev(far_1)), bins=bins[1])
+    sns.distplot(far_2, color=colors[3], label=labels[3] + ' \u03BC=%.2f, \u03C3=%.2f'
+                 % (st.mean(far_2), st.stdev(far_2)), bins=bins[1])
+
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.legend(loc='upper right')
+    plt.tight_layout()
+
+    return fig
+
+
 def plot_distances_fractions(fractions):
 
     fig = plt.figure()

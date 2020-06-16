@@ -61,6 +61,26 @@ if __name__ == '__main__':
         fig_name = dir_plots+'close_far_distances.png'
         fig1.savefig(fig_name)
 
+        eu_json = './results/' + city + '/distance_analysis/json/eu_central.json'
+        eu_distances = nf.load_json(eu_json)
+
+        close_eu, far_eu = [], []
+        for node, eu_d in eu_distances.items():
+            if node in close_distances:
+                close_eu.append(eu_d)
+            elif node in far_distances:
+                far_eu.append(eu_d)
+
+        fig = nf.plot_close_and_far_nodes_for_single_city(close_1=first, close_2=close_eu, far_1=second, far_2=far_eu,
+                                                          colors=['skyblue', 'blue', 'red', 'darkred'],
+                                                          labels=['close bfs', 'close eu', 'far bfs', 'far eu'],
+                                                          bins=bins, xlabel='Distance in km from central node',
+                                                          ylabel='P(distance)')
+        # fig.show()
+        fig_name = dir_plots + 'close_far_distances_eu_and_bfs.png'
+        fig.savefig(fig_name)
+        plt.close('all')
+
         ''' Plot 1-CDF curve of distances from central node '''
         central_bfs = nf.load_json('results/'+city+'/distance_analysis/json/bfs_central.json')
         central_eu = nf.load_json('results/'+city+'/distance_analysis/json/eu_central.json')
@@ -87,6 +107,27 @@ if __name__ == '__main__':
             fig_name = dir_plots + 'capital_close_far_distances.png'
             fig1.savefig(fig_name)
 
+            eu_json_capital = './results/' + city + '/distance_analysis/json/capital_eu_central.json'
+            eu_distances_capital = nf.load_json(eu_json_capital)
+
+            close_eu, far_eu = [], []
+            for node, eu_d in eu_distances_capital.items():
+                if node in close_distances:
+                    close_eu.append(eu_d)
+                elif node in far_distances:
+                    far_eu.append(eu_d)
+
+            fig = nf.plot_close_and_far_nodes_for_single_city(close_1=first, close_2=close_eu, far_1=second,
+                                                              far_2=far_eu,
+                                                              colors=['skyblue', 'blue', 'red', 'darkred'],
+                                                              labels=['close bfs', 'close eu', 'far bfs', 'far eu'],
+                                                              bins=bins, xlabel='Distance in km from central node',
+                                                              ylabel='P(distance)')
+            # fig.show()
+            fig_name = dir_plots + 'capital_close_far_distances_eu_and_bfs.png'
+            fig.savefig(fig_name)
+
+            ''' 1-CDF plot '''
             central_bfs_capital = nf.load_json('results/' + city + '/distance_analysis/json/capital_bfs_central.json')
             central_eu_capital = nf.load_json('results/' + city + '/distance_analysis/json/capital_eu_central.json')
             datavecs = [list(central_bfs_capital.values()), list(central_eu_capital.values())]
