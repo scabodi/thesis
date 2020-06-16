@@ -159,8 +159,6 @@ if __name__ == '__main__':
         fig.show()
         fig_name = dir_plots+city+'_network_peripheral_nodes.png'
         fig.savefig(fig_name)
-        if os.path.exists(dir_plots+'network_peripheral_nodes.png'):
-            os.remove(dir_plots+'network_peripheral_nodes.png')
 
     nf.dump_json('results/all/json/parameter_distances.json', mu_st)
 
