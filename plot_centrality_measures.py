@@ -20,7 +20,7 @@ if __name__ == '__main__':
     areas = nf.get_list_sorted_values('area', area_population_dict)
     populations = nf.get_list_sorted_values('population', area_population_dict)
 
-    etas, gammas = [], []
+    lambdas, etas = [], []
     ''' Computations over each city '''
     for city in cities:
 
@@ -69,7 +69,7 @@ if __name__ == '__main__':
         fig, m = nf.plot_correlation_measures_log_log(x_values=[int(x) for x in degree_betweenness[city].keys()],
                                                       y_values=list(degree_betweenness[city].values()), xlabel='k',
                                                       ylabel='<b>', title=city)
-        gammas.append(m)
+        etas.append(m)
         dir_name = './results/' + city + '/centrality_measures/'
         if not os.path.exists(dir_name):
             os.makedirs(dir_name)
@@ -83,7 +83,7 @@ if __name__ == '__main__':
             fig1, m = nf.plot_ccdf(datavecs=[values], labels=[measure], xlabel=measure, ylabel='1-CDF(x)',
                                    marker='o')
             if m is not None:
-                etas.append(m)
+                lambdas.append(m)
             fig1.show()
             dir_name = './results/'+city+'/centrality_measures/distributions/'
             if not os.path.exists(dir_name):
@@ -117,12 +117,14 @@ if __name__ == '__main__':
     df_bc['City'] = cities
     df_bc['max(g(i))'] = [np.max(x) for x in df.betweenness]
     df_bc['<g(i)>'] = [np.mean(x) for x in df.betweenness]
-    df_bc['n'] = etas
+    df_bc['lambda'] = lambdas
     df_bc['max(g(k))'] = np.array(df_bc_k.loc['max'])
     df_bc['<g(k)>'] = np.array(df_bc_k.loc['mean'])
-    df_bc['y'] = gammas
+    df_bc['eta'] = etas
 
     print(df_bc)
+
+    df_bc.to_csv('./results/all/tables/betweenness.csv')
 
     # with open('./results/all/tables/betweenness_html.html', 'w') as f:
     #     f.write(html_string.format(table=df_bc.to_html(classes='mystyle')))
