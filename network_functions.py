@@ -1124,7 +1124,7 @@ def plot_bars_mu_st(labels, mus, sts, ylabel, title=None, type=3, feature=None, 
         elif feature_label == 'Area':
             y1_labels = ['{}'.format(round(i, 1)) + 'K' for i in ax1.get_yticks() / 10 ** 3]
             ax1.set_yticklabels(y1_labels)
-            ax1.set_ylabel('Thousands of km')
+            ax1.set_ylabel('Thousands of km^2')
         ax1.legend(loc=2)
 
     ax.legend(loc=9)
