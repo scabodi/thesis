@@ -85,9 +85,9 @@ def get_list_sorted_values(value_str, dict):
 def get_cluster_dict_for_area():
     result = {'0-100': ['kuopio', 'rennes', 'luxembourg', 'antofagasta'],
               '100-300': ['paris', 'palermo', 'turku', 'belfast'],
-              '300-500': ['dublin', 'winnipeg', 'canberra', 'athens', 'venice', 'rome', 'prague'],
+              '300-500': ['dublin', 'winnipeg', 'canberra', 'athens', 'venice', 'rome', 'prague', 'detroit'],
               '500-1000': ['grenoble', 'nantes', 'helsinki', 'toulouse', 'adelaide'],
-              '1000+': ['berlin', 'bordeaux', 'lisbon', 'brisbane', 'sydney', 'melbourne', 'detroit']}
+              '1000+': ['berlin', 'bordeaux', 'lisbon', 'brisbane', 'sydney', 'melbourne']}
     return result
 
 
@@ -966,7 +966,7 @@ def plot_close_and_far_nodes_for_single_city(close_1, close_2, far_1, far_2, col
     return fig
 
 
-def plot_distances_fractions(fractions):
+def plot_distances_fractions(fractions, legend=True):
 
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -977,8 +977,11 @@ def plot_distances_fractions(fractions):
     ax.set_xlabel('Fraction')
     ax.set_ylabel('Density')
     ax.grid()
-    ax.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
-              ncol=3, mode="expand", borderaxespad=0.1)
+    if legend:
+        ax.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
+                  ncol=3, mode="expand", borderaxespad=0.1)
+    else:
+        ax.get_legend().remove()
 
     return fig
 
