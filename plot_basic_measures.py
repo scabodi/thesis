@@ -98,7 +98,6 @@ if __name__ == '__main__':
     df_degrees = pd.DataFrame.from_dict(d)
 
     ''' Plot all the degree distributions in one plot'''
-
     fig = nf.plot_multiple_distributions_with_colorbar_log_log_and_fitted_line(datavecs=degrees.values(),
                                                                                labels=cities, xlabel='k',
                                                                                ylabel='P(k)', c=areas, max_x=28)
