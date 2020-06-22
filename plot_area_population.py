@@ -21,7 +21,7 @@ if __name__ == '__main__':
     labels = ['areas', 'population']
 
     fig1 = pf.plot_bars_with_subplots(2, 1, cities, y_values, colors, labels)
-    fig_name = 'area_population_plot.png'
+    fig_name = './results/all/plots/basic_measures/area_population_plot.png'
     plt.savefig(fig_name)
     plt.close()
 

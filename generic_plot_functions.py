@@ -116,10 +116,6 @@ def create_scatter(x_values, y_values, x_label, y_label, labels, colors, areas=N
     ax.set_ylabel(y_label)
     ax.grid(alpha=0.2)
     plt.subplots_adjust(top=0.75)
-    # legend = ax.legend(loc='lower left', bbox_to_anchor=(-0.05, 1.01), ncol=5,
-    #                    borderaxespad=0.1, frameon=False)
-    # for handle in legend.legendHandles:
-    #     handle.set_sizes([15.0])
 
     leg = Legend(ax, dots[:3], ['Oceania', 'America', 'Europe'], loc='best', frameon=False)
     for handle in leg.legendHandles:

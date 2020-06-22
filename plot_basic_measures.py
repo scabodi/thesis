@@ -37,19 +37,21 @@ if __name__ == '__main__':
     df_area_population = pd.DataFrame.from_dict(area_population_dict)
     df = pd.concat([df_measures, df_area_population]).T
     x_values = [df['#nodes'], df['#edges'], df['density'], df['diameter'], df['avg_cc']]
-    x_labels = list(df.columns.values)[:5]
+    x_labels = ['N', 'E', 'density', 'd', '<c>']
     areas = df['area']
     markers = ['.', 'x', '+', 'o', '^']
     for x_val, x_label, i in zip(x_values, x_labels, range(len(x_values))):
-        fig = pf.create_scatter(x_values=x_val, y_values=areas, x_label=x_label, y_label='area',
+        fig = pf.create_scatter(x_values=x_val, y_values=areas, x_label=x_label, y_label='A',
                                 labels=df.index.values, colors=colors_cities)
+        if x_label == '<c>':
+            x_label = 'avg_cc'
         fig_name = prefix_png+'basic_measures/continents_division/'+x_label+'_continents.png'
         fig.savefig(fig_name, bbox_inches='tight')
     plt.close('all')
 
     ''' Plot x: #nodes, y: #edges and size of scatter points proportional to area of the city'''
-    fig = pf.create_scatter(x_values=df['#nodes'], y_values=df['#edges'], x_label='number_of_nodes',
-                            y_label='number_of_edges', labels=cities, colors=colors_cities, areas=df['area'])
+    fig = pf.create_scatter(x_values=df['#nodes'], y_values=df['#edges'], x_label='N',
+                            y_label='E', labels=cities, colors=colors_cities, areas=df['area'])
     fig_name = prefix_png+'basic_measures/continents_division/nodes_vs_edges_continents_alpha_legends.png'
     fig.savefig(fig_name, bbox_inches='tight')
     plt.close('all')
@@ -62,7 +64,7 @@ if __name__ == '__main__':
     plt.plot(x_values, y_values, marker='o')
     plt.xticks(rotation=70)
     plt.subplots_adjust(bottom=0.25)
-    plt.ylabel('#nodes/area')
+    plt.ylabel('N/A')
     fig_name = prefix_png+'basic_measures/density_of_nodes.png'
     plt.savefig(fig_name, bbox_inches='tight')
 
@@ -72,12 +74,12 @@ if __name__ == '__main__':
     labels = ['area', '#nodes', '#edges']
     xlabel = 'measure'
     ylabel = 'P(measure)'
-    fig = nf.plot_ccdf(datavecs, labels, xlabel, ylabel)
+    fig, _ = nf.plot_ccdf(datavecs, labels, xlabel, ylabel)
     # fig.show()
     fig_name = prefix_png+'basic_measures/ccdf_measures.png'
     fig.savefig(fig_name)
 
-    ''' Plot degree distributions fo all cities '''
+    ''' Plot degree distributions for all cities '''
     degrees = nf.load_json(degrees_file)
     values = degrees.values()
 
@@ -100,6 +102,7 @@ if __name__ == '__main__':
     fig = nf.plot_multiple_distributions_with_colorbar_log_log_and_fitted_line(datavecs=degrees.values(),
                                                                                labels=cities, xlabel='k',
                                                                                ylabel='P(k)', c=areas, max_x=28)
+    fig.show()
     fig_name = 'results/all/plots/basic_measures/degree_distribution.png'
     fig.savefig(fig_name, bbox_inches='tight')
 
@@ -124,7 +127,7 @@ if __name__ == '__main__':
     gammas = []
     for city, list_degrees in degrees.items():
         plt.close('all')
-        fig, m = nf.plot_distribution_log_log(datavec=list_degrees, city=city, xlabel='k', ylabel='P(k)',
+        fig, m = nf.plot_distribution_log_log(datavec=list_degrees, label=city, xlabel='k', ylabel='P(k)',
                                               max_x=int(df_degrees[city][1]))
         fig_name = 'results/'+city+'/degree_distribution.png'
         fig.savefig(fig_name, bbox_inches='tight')
@@ -132,6 +135,6 @@ if __name__ == '__main__':
 
     df_degrees = df_degrees.T
     df_degrees['\u03B3'] = gammas
-    nf.dump_json('./results/all/json/gammas.txt', gammas)
+    # nf.dump_json('./results/all/json/gammas.txt', gammas)
     # print(df_degrees)
     # print(df_degrees.describe())
